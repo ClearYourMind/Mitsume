@@ -90,7 +90,15 @@
             "Key": "09e1e43a-7e23-4646-b5d3-e8c93c4745da",
             "Value": {
                 "id": "e9b9126a-9483-4ef7-9ca3-07d09bcd5577",
-                "resourcePath": "objects\\ob_init\\ob_init.yy",
+                "resourcePath": "objects\\ob_game_master\\ob_game_master.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0afcb789-00b5-4410-b842-a6fc1fb231da",
+            "Value": {
+                "id": "63feb5f9-8694-4c2b-9ddd-c39a56635b74",
+                "resourcePath": "objects\\ob_moving\\ob_moving.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -207,6 +215,14 @@
             }
         },
         {
+            "Key": "3b611ee8-db50-47e7-90fb-46fc7ea8ef10",
+            "Value": {
+                "id": "a3ebd186-ef3b-453b-b43c-a2fad8bb396b",
+                "resourcePath": "scripts\\sc_move\\sc_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3cfaf5ec-1753-4736-b72f-48633c2f96a3",
             "Value": {
                 "id": "46d2636a-dca8-4ae2-b2e9-db9d3f4ff126",
@@ -228,6 +244,22 @@
                 "id": "3f359fbc-101c-46cf-b7bc-e36a6dce10df",
                 "resourcePath": "views\\408bb447-c540-4aea-80d8-3241426db220.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "40e88fc5-ca17-46a8-8dab-f35662fe13f3",
+            "Value": {
+                "id": "94627d4e-63f0-42b1-b5c9-ef9cabfba102",
+                "resourcePath": "objects\\ob_hero\\ob_hero.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4591971c-c7f0-4c43-8d1b-ef9c83ed46f4",
+            "Value": {
+                "id": "eb755cce-0603-4104-a85e-9365015dddc8",
+                "resourcePath": "objects\\ob_heroparent\\ob_heroparent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -824,7 +856,8 @@
         }
     ],
     "script_order": [
-        "76a31bce-1689-49c4-93ce-f71216c24499"
+        "76a31bce-1689-49c4-93ce-f71216c24499",
+        "3b611ee8-db50-47e7-90fb-46fc7ea8ef10"
     ],
     "tutorial": ""
 }

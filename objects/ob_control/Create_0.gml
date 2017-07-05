@@ -1,8 +1,5 @@
 globalvar debugstr
 globalvar keys
-globalvar hero
-globalvar paused
-globalvar counter
 
 enum k {
 	Left,
@@ -33,13 +30,4 @@ _key[k.Jump ] = ord("H")
 _key[k.Fire ] = ord("G")
 _key[k.altFire] = ord("J")
 
-hero = noone
-
-paused = false
-
-counter = 0
-
-image_speed = 0.1  // global timing in image_index :)
-
-alarm[0] = 50
 
