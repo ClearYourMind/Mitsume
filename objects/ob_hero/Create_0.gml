@@ -11,14 +11,14 @@ enum a {
 }
 
 grav = 5  // weight
-stopFactor = 0.00001
+stopFactor = 0.0001
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
 
-accel = 120
+accel = 200
 
-maxspeedX = 40
+maxspeedX = 80
 maxspeedY = totalMaxSpeed
 
 jumpSpeed = 40
@@ -27,4 +27,6 @@ _jumpTime = 0 // current
 
 feetcollision = true
 
-sp_hero_move = sp_hero_stand
+
+image_speed = 0.1
+ 

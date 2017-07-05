@@ -1,63 +1,18 @@
-/// @desc Move 
+/// @desc Control & Collision
 
-/// control
-var animType = sp_hero_stand
+sc_hero_control()
 
-canJump = feetcollision
+var xy = sc_check_collision_ahead(ob_wall)
 
-// Кнопки
-if keys[k.Left] {
-    forward = -1
-    accelX = accel * forward
-    animType = sp_hero_move
-} 
-if keys[k.Right] {
-    forward = 1
-    accelX = accel * forward
-    animType = sp_hero_move
-} 
-//if keys[k.Jump] {
-//    if canJump { 
-//        speedY = -jumpSpeed
-//        animType = sp_hero_jump
-//        _jumpTime = jumpTime
-//        canJump = false
-//        sc_play_sound(sn_jump, false)
-//	}    
-//    if _jumpTime > 0 {
-//        _jumpTime -= dTime
-//        speedY = -jumpSpeed
-//    }
-//}   
-    
-//if (abs(speedY) > 0) or (feetcollision == false) {
-//    animType = sp_hero_jump
-//    speedY += grav
-//}
-
-//if keys[k.Fire] {
-//   if feetcollision
-//     animType = sp_hero_fire
-//   else
-//     animType = sp_hero_jumpfire
-//   if canShoot {
-//      with instance_create_depth(x, y-7, 0, weapon) {
-//         forward = other.forward
-//         other.alarm[1] = reloadtime    // set reload to player
-//      }
-//      canShoot = false
-//   }  
-   
-//} else canShoot = true
-
-if (not (keys[k.Left] or keys[k.Right]) or keys[k.Fire] or keys[k.altFire]) and feetcollision {
-    accelX = 0
-}  
-
-image_xscale = forward
-sprite_index = animType
-
-
-
+if is_array(xy) {
+	debugstr = string(xy[0]) + "; " + string(xy[1])
+	if xy[0]>=0 {
+		accelX = 0
+		speedX = 0
+		hspeed = 0
+		//x += xy[0]
+	}
+}
 
 event_inherited()
+
