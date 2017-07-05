@@ -19,3 +19,12 @@ stopFactor = 0.00001
 accel = 120
 
 maxspeedX = 40
+maxspeedY = totalMaxSpeed
+
+jumpSpeed = 40
+jumpTime = 0.5 //sec
+_jumpTime = 0 // current
+
+feetcollision = true
+
+sp_hero_move = sp_hero_stand
