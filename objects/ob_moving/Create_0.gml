@@ -9,3 +9,7 @@ grav = 0
 
 maxspeedX = 0
 maxspeedY = 0
+
+// actual movement per frame
+dX = 0 
+dY = 0

@@ -1,4 +1,4 @@
-/// @desc Returns [x,y] array of distances where collision will occure
+/// @desc Returns [x,y] array of distances where collision will occur
 /// @arg Object to check collision with
 
 // check for collision for ob_moving AHEAD
@@ -15,16 +15,16 @@ if not object_is_ancestor(object_index, ob_moving) exit
 //	return [-1, -1]
 //}
 
-var _d = hspeed*1.5
+var _d = dX + sign(dX)   // + 1 pixel
 if place_meeting(x+_d, y, obj) {
-	for (var i=1; i<abs(_d); i++)
+	for (var i=0; i<abs(_d); i++)
 	if not place_meeting(x+i*sign(_d), y, obj)
 		return [_d, 0]
 }
 
-var _d = vspeed*1.5
+var _d = dY + sign(dY)   // + 1 pixel
 if place_meeting(x, y+_d, obj) {
-	for (var i=1; i<abs(_d); i++)
+	for (var i=0; i<abs(_d); i++)
 	if not place_meeting(x, y+i*sign(_d), obj)
 		return [0, _d]
 }
