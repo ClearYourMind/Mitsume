@@ -1,46 +1,15 @@
-/// @desc Bounce against
+/// @desc Bounce against wall
 
-exit
+//other.image_blend = c_red
 
+image_xscale = 1
+var result = sc_check_collision_mask(other)
+image_xscale = forward
+mask_index = sp_hero_stand
 
-var _x = x
-var _y = y
-
-mask_index = sp_hero_collision_top
-if place_meeting(_x-dX, _y, other) {
-	while place_meeting(_x-dX, _y, other) _y++   
-	speedY = 0
-	accelY = 0
-//	dY = 0
-}
-
-mask_index = sp_hero_collision_bottom
-place_meeting(_x-dX, _y, other) {
-  while place_meeting(_x-dX, _y, other) _y--   
-    _y += 1
-	grav = 0
-	speedY = 0
-	accelY = 0
-	dY = 0
+if result = d.Up {
+	_jumpTime = 0
+} else
+if result = d.Down {
 	feetcollision = true
 }
-
-mask_index = sp_hero_collision_right
-if place_meeting(_x, _y-dY, other) {
-	while place_meeting(_x, _y-dY, other) _x--   
-	speedX = 0
-	accelX = 0
-	dX = 0
-}
-
-mask_index = sp_hero_collision_left
-if place_meeting(_x, _y-dY, other) {
-	while place_meeting(_x, _y-dY, other) _x++   
-	speedX = 0
-	accelX = 0
-	dX = 0
-}
-
-mask_index = sp_hero_stand
-x = _x
-y = _y

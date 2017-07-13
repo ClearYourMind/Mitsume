@@ -18,6 +18,7 @@ if keys[k.Right] {
 if keys[k.Jump] {
     if canJump { 
         speedY = -jumpSpeed
+		y--
         animType = sp_hero_jump
         _jumpTime = jumpTime
         canJump = false

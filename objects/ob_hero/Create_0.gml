@@ -9,19 +9,26 @@ enum a {
 	Jump,
 	JumpFire
 }
+enum d {
+	None,
+	Left,
+	Right,
+	Up,
+	Down
+}
 
 oGrav = 550  // weight
-oStopFactor = 0.01
+oStopFactor = 0.0001
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
 
 accel = 200
 
-maxspeedX = 200
+maxspeedX = 80
 maxspeedY = totalMaxSpeed
 
-jumpSpeed = 150
+jumpSpeed = 160
 jumpTime = 0.2 //sec
 _jumpTime = 0 // current
 
@@ -29,4 +36,6 @@ feetcollision = true
 
 
 image_speed = 0.1
+//image_alpha = 0.3
+
  
