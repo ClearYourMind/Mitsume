@@ -20,7 +20,6 @@ while true {
 	mask_index = sp_hero_collision_bottom
 	if place_meeting(_x-dX, _y, obj) {
 		_y -=  bbox_bottom - other.bbox_top
-		grav = 0
 		speedY = 0
 		dY = 0
 		result = d.Down

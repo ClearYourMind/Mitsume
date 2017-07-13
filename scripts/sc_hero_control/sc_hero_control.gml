@@ -35,7 +35,7 @@ if keys[k.Jump] {
     
 if abs(speedY)>0 or feetcollision == false {
     animType = sp_hero_jump
-	grav = oGrav
+//	grav = oGrav
 }
 
 //if keys[k.Fire] {

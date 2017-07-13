@@ -17,7 +17,7 @@ enum d {
 	Down
 }
 
-oGrav = 550  // weight
+grav = 800  // weight
 oStopFactor = 0.0001
 
 // 0 -> accel  for 1 sec
@@ -28,8 +28,8 @@ accel = 200
 maxspeedX = 80
 maxspeedY = totalMaxSpeed
 
-jumpSpeed = 160
-jumpTime = 0.2 //sec
+jumpSpeed = 200
+jumpTime = 0.20 //sec
 _jumpTime = 0 // current
 
 feetcollision = true
