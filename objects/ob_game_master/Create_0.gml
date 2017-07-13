@@ -13,7 +13,7 @@ application_surface_enable(false)
 maxChannel = 64
 
 audio_channel_num(maxChannel)
-audio_set_master_gain(0, 0.5)
+audio_set_master_gain(0, 0.1)
 
 dTime = 0
 minFPS = 20

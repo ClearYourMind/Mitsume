@@ -1,8 +1,16 @@
 /// @desc Process keys
 
-if keyboard_check(vk_escape) {
-	game_end()
-	exit
+if keyboard_check_pressed(vk_escape) {
+	alarm[0] = 5
+}
+if keyboard_check_released(vk_escape) {
+	if escHold {
+		game_restart()
+		exit
+	} else {
+		game_end()
+		exit
+	}
 }
 
 for (var i=0; i<array_length_1d(_key); i++) {

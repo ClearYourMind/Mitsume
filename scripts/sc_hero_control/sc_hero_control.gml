@@ -28,12 +28,13 @@ if keys[k.Jump] {
         speedY = -jumpSpeed
     }
 } else {
-	canJump = true
+	_jumpTime = 0
+	//canJump = true
 }  
     
-if (abs(speedY) > 0) or (feetcollision == false) {
+if abs(speedY)>0 or feetcollision == false {
     animType = sp_hero_jump
-    speedY += grav
+	grav = oGrav
 }
 
 //if keys[k.Fire] {
@@ -53,11 +54,21 @@ if (abs(speedY) > 0) or (feetcollision == false) {
 
 if (not (keys[k.Left] or keys[k.Right]) or keys[k.Fire] or keys[k.altFire]) and feetcollision {
     accelX = 0
-}  
+	stopFactor = oStopFactor
+}
+
+if not (keys[k.Left] or keys[k.Right]) {
+	accelX = 0
+}
+	
+if not feetcollision {
+	stopFactor = 1
+}
 
 image_xscale = forward
 if sprite_index != animType {
 	sprite_index = animType
+	mask_index = sp_hero_stand
 	image_index = 0
 }
 

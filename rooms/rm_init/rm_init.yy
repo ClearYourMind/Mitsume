@@ -170,8 +170,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_1BD57929",
-                    "x": 138,
-                    "y": 155,
+                    "x": 95,
+                    "y": 140,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -207,7 +207,7 @@
                     "objId": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3",
                     "rotation": 0,
                     "scaleX": 3,
-                    "scaleY": 3
+                    "scaleY": 2.1875
                 }
             ]
         },

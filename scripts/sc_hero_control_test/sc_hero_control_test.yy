@@ -1,8 +1,8 @@
 {
-    "id": "3b611ee8-db50-47e7-90fb-46fc7ea8ef10",
+    "id": "f445e7c9-eef3-495b-b6b4-99881156685b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sc_move",
+    "name": "sc_hero_control_test",
     "IsCompatibility": false,
     "IsDnD": false
 }

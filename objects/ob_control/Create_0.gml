@@ -30,4 +30,4 @@ _key[k.Jump ] = ord("H")
 _key[k.Fire ] = ord("G")
 _key[k.altFire] = ord("J")
 
-
+escHold = false

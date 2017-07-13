@@ -10,19 +10,19 @@ enum a {
 	JumpFire
 }
 
-grav = 5  // weight
-stopFactor = 0.01
+oGrav = 550  // weight
+oStopFactor = 0.01
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
 
 accel = 200
 
-maxspeedX = 80
+maxspeedX = 200
 maxspeedY = totalMaxSpeed
 
-jumpSpeed = 40
-jumpTime = 0.5 //sec
+jumpSpeed = 150
+jumpTime = 0.2 //sec
 _jumpTime = 0 // current
 
 feetcollision = true
