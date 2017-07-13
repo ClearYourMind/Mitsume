@@ -12,10 +12,10 @@ if accelX = 0
 
 if abs(accelY) > 0 {
 	speedY += accelY * dTime
-	if abs(speedY) > maxspeedY
-		speedY = maxspeedY * sign(speedY)
 }
 speedY += grav * dTime
+if abs(speedY) > maxspeedY
+	speedY = maxspeedY * sign(speedY)
 
 dX = min(totalMaxSpeed, speedX * dTime)
 dY = min(totalMaxSpeed, speedY * dTime)

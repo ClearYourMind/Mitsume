@@ -26,7 +26,7 @@ oStopFactor = 0.0001
 accel = 200
 
 maxspeedX = 80
-maxspeedY = totalMaxSpeed
+maxspeedY = 400
 
 jumpSpeed = 200
 jumpTime = 0.20 //sec
