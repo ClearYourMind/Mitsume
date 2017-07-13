@@ -6,5 +6,5 @@ sc_hero_control()
 event_inherited()
 
 feetcollision = false
-	
+collided = false
 
