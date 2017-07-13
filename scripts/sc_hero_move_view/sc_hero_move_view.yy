@@ -1,8 +1,8 @@
 {
-    "id": "4450661d-acae-4fb3-ad43-ab58284b1fa6",
+    "id": "29d1ece2-c397-42b1-8c9f-8c0d62ca932f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sc_check_collision_ahead",
+    "name": "sc_hero_move_view",
     "IsCompatibility": false,
     "IsDnD": false
 }
