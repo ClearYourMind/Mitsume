@@ -218,7 +218,7 @@
             "Key": "29d1ece2-c397-42b1-8c9f-8c0d62ca932f",
             "Value": {
                 "id": "7d74b1ed-37b2-49f4-be54-4e9c588eb3ba",
-                "resourcePath": "scripts\\sc_hero_move_view\\sc_hero_move_view.yy",
+                "resourcePath": "scripts\\sc_view_follow_hero\\sc_view_follow_hero.yy",
                 "resourceType": "GMScript"
             }
         },

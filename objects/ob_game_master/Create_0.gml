@@ -7,6 +7,7 @@ globalvar hero
 globalvar paused
 globalvar counter
 globalvar totalMaxSpeed
+globalvar debugstr
 
 application_surface_enable(false)
 
@@ -26,3 +27,4 @@ counter = 0
 totalMaxSpeed = 15 // pix per frame
 
 
+draw_set_font(fn_default)

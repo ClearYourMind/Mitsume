@@ -1,4 +1,3 @@
-globalvar debugstr
 globalvar keys
 
 enum k {
