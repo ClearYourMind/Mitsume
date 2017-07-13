@@ -33,7 +33,7 @@ jumpTime = 0.20 //sec
 _jumpTime = 0 // current
 
 feetcollision = true
-collided = false
+health = 6
 
 image_speed = 0.1
 //image_alpha = 0.3

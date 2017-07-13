@@ -1,7 +1,6 @@
 // @desc Move view to follow hero
 
-if not instance_exists(hero)
-	exit
+if not instance_exists(hero) exit
 
 var moveSpeed = 100 * dTime
 

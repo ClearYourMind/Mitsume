@@ -1,5 +1,14 @@
 /// @desc Draw debug info
+
+if recover {
+	if image_alpha = 0
+		image_alpha = 1
+	else
+		image_alpha = 0	
+	draw_self()
+} else 
 draw_self()
+
 exit
 
 draw_set_colour(c_red)

@@ -1,7 +1,6 @@
-/// @desc Bounce against wall
+/// @desc Bounce
 
 //other.image_blend = c_red
-collided = true
 image_xscale = 1
 var result = sc_check_collision_mask(other)
 image_xscale = forward

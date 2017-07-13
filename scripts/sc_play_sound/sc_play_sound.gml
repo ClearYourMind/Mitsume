@@ -1,6 +1,6 @@
 /// @desc sc_play_sound(sound, loop)
-/// @param sound
-/// @param loop
+/// @param sound to play
+/// @param loop or not
 
 var _snd  = argument0;
 var _loop = argument1;

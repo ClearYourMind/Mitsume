@@ -5,7 +5,6 @@ event_inherited()
 animEnded = false
 
 hurt = false
-dead = false
 recover = false
 feetcollision = false
 
