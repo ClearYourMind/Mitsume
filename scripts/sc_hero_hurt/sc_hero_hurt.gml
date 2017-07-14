@@ -1,6 +1,7 @@
 // @desc Hurt
 
-if not (recover or hurt) {
+if not (recover or hurt) 
+if health > 0 {
 	hurt = true
 	accelX = 0
 	accelY = 0
