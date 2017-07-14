@@ -9,7 +9,8 @@ if health > 0 {
 	if other.x < x forward = -1
 	
 	speedX = -maxspeedX * forward * 0.75
-	speedY = -maxspeedX * 1.5
+	speedY = -maxspeedX * 3
+	y-=2
 	sprite_index = sp_hero_hurt
 	image_index = 0
 	animEnded = false

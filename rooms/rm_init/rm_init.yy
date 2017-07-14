@@ -159,14 +159,14 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_1BD57929",
-                    "x": 368,
-                    "y": 72,
+                    "x": 312,
+                    "y": 40,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
                     },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
+                    "creationCodeFile": "InstanceCreationCode_inst_1BD57929.gml",
+                    "creationCodeType": ".gml",
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_1BD57929",
                     "objId": "40e88fc5-ca17-46a8-8dab-f35662fe13f3",
@@ -364,7 +364,7 @@
                     "objId": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3",
                     "rotation": 0,
                     "scaleX": 1,
-                    "scaleY": 6
+                    "scaleY": 5
                 },
                 {
                     "id": "e7074bcb-a9a6-47df-b69c-bd01f6fe3876",
@@ -532,7 +532,7 @@
                     "objId": "8a9a04e5-00cc-4c83-91d0-8e9435d87610",
                     "rotation": 0,
                     "scaleX": 2,
-                    "scaleY": 4
+                    "scaleY": 5
                 }
             ]
         },
@@ -744,7 +744,7 @@
                     2147483648,
                     2147483648,
                     2147483648,
-                    2147483648,
+                    0,
                     2147483648,
                     85,
                     2147483648,
@@ -784,7 +784,7 @@
                     2147483648,
                     2147483648,
                     2147483648,
-                    85,
+                    0,
                     2147483648,
                     2147483648,
                     2147483648,

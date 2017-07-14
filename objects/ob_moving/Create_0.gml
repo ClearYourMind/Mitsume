@@ -13,3 +13,8 @@ maxspeedY = 0
 // actual movement per frame
 dX = 0 
 dY = 0
+
+w1 = x - bbox_left
+w2 = bbox_right - x
+h1 = y - bbox_top
+h2 = bbox_bottom - y

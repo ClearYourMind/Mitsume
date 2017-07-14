@@ -1,46 +1,50 @@
 /// @desc Checks collision using masks
-/// @arg Object to check collision with
+/// @arg obj to check collision with
+/// @arg dir where to check
 
-/// @desc Bounce against
+/// For ob_moving
+
 var _x = x
 var _y = y
 var obj = argument0
-var result = d.None
+var dir = argument1
+var result = false
 
-while true {
+switch dir {
+case d.Up:
 	mask_index = sp_hero_collision_top
-	if place_meeting(_x-dX, _y, obj) {
-		_y -=  bbox_top - other.bbox_bottom - 1
+	if place_meeting(_x-dX, _y-dY, obj) {
+		_y -=  (_y-h1) - other.bbox_bottom - 1
 		speedY = 0
 		dY = 0
-		result = d.Up
-		break
+		result = true
 	}
-
+	break
+case d.Down:
 	mask_index = sp_hero_collision_bottom
 	if place_meeting(_x-dX, _y, obj) {
-		_y -=  bbox_bottom - other.bbox_top
+		_y -=  (_y+h2) - other.bbox_top //+ 0.5
 		speedY = 0
 		dY = 0
-		result = d.Down
-		break
+		result = true
 	}
-
+	break
+case d.Right:
 	mask_index = sp_hero_collision_right
 	if place_meeting(_x, _y-dY, obj) {
-		_x -=  bbox_right - other.bbox_left - 0.91
+		_x -=  (_x+w2) - other.bbox_left + 0.51// 0.91
 		speedX = 0
 		dX = 0
-		result = d.Right
-		break
+		result = true
 	}
-
+	break
+case d.Left:
 	mask_index = sp_hero_collision_left
 	if place_meeting(_x, _y-dY, obj) {
-		_x -= bbox_left - other.bbox_right - 0.09
+		_x -= (_x-w1) - other.bbox_right - 0.51
 		speedX = 0
 		dX = 0
-		result = d.Left
+		result = true
 	}
 	break
 }
