@@ -1,3 +1,3 @@
 /// @desc init values
 
-moveSpeed = 20
+speedY = 20
