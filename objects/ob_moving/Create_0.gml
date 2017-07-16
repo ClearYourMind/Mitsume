@@ -14,6 +14,8 @@ maxspeedY = 0
 dX = 0 
 dY = 0
 
+// values are always positive
+// (if sprite_offset is inside bbox)
 w1 = x - bbox_left
 w2 = bbox_right - x
 h1 = y - bbox_top

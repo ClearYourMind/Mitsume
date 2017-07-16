@@ -1,13 +1,13 @@
 /// @desc Move vertically in loop
 
-y += moveSpeed * dTime
-
 if y > initPos + maxPos {
-	y = initPos + maxPos
-	moveSpeed = -moveSpeed
+	y = initPos + maxPos - vspeed
+	speedY = -speedY
 }
 
 if y < initPos + minPos {
-	y = initPos + minPos
-	moveSpeed = -moveSpeed
+	y = initPos + minPos - vspeed
+	speedY = -speedY
 }
+
+event_inherited()
