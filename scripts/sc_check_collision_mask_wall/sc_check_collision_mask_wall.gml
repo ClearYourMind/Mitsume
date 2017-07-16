@@ -11,7 +11,7 @@ var result = false
 switch dir {
 case d.Up:
 	mask_index = sp_hero_collision_top
-	if place_meeting(_x-dX, _y-dY, obj) {
+	if place_meeting(_x-dX, _y, obj) {
 		_y -=  (_y-h1) - other.bbox_bottom - 1
 		speedY = 0
 		dY = 0
