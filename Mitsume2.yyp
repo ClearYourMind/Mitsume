@@ -178,7 +178,7 @@
             "Key": "212363f1-7588-467f-bf20-99720326b9ee",
             "Value": {
                 "id": "4d661152-f506-4e77-b8c7-104833bd4023",
-                "resourcePath": "scripts\\sc_check_collision_mask\\sc_check_collision_mask.yy",
+                "resourcePath": "scripts\\sc_hero_check_collision_mask\\sc_hero_check_collision_mask.yy",
                 "resourceType": "GMScript"
             }
         },

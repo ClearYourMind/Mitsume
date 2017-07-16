@@ -2,6 +2,8 @@
 /// @arg obj to check collsion with
 /// @arg dir where to check
 
+// Mask, according with dir, should be set before
+
 var _x = x
 var _y = y
 var obj = argument0
@@ -15,7 +17,6 @@ case d.Left:
 	result = sc_check_collision_mask_wall(obj, dir)
 	break
 case d.Down:
-	mask_index = sp_hero_collision_bottom
 	if place_meeting(_x-dX, _y, obj) {
 		_y -=  (_y+h2) - (other.y-other.h1)
 		speedY = 0

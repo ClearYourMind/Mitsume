@@ -1,7 +1,5 @@
 /// @desc Bounce
 
-image_xscale = 1
-
 // don't check d.Up when hero falls
 if speedY>0
 	var dirs = [d.Down, d.Left, d.Right]
@@ -10,13 +8,9 @@ else
 
 for (var i=0; i<array_length_1d(dirs); i++) {
 	var dir = dirs[i]
-	if sc_check_collision_mask(other, dir)
+	if sc_hero_check_collision_mask(other, dir)
 		break
 }
-
-image_xscale = forward
-mask_index = sp_hero_stand
-
 
 if dir = d.Up {
 	_jumpTime = 0
