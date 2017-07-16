@@ -5,12 +5,12 @@ sc_hero_control()
 
 event_inherited()
 
-debugstr = ""
+//debugstr = ""
 
-if feetcollision
-	debugstr += " FEET "
-if headcollision
-	debugstr += " HEAD "
+//if feetcollision
+//	debugstr += " FEET "
+//if headcollision
+//	debugstr += " HEAD "
 
 feetcollision = false
 headcollision = false

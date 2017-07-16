@@ -18,7 +18,7 @@ enum d {
 }
 
 grav = 800  // weight
-oStopFactor = 0.0001
+oStopFactor = 0.00001
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
