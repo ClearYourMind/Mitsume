@@ -7,6 +7,7 @@ phase = 0
 timeout = 0
 forward = -1
 newMode = true
+found = false
 
 maxspeedY = 400
 
@@ -26,4 +27,6 @@ strength = 1
 
 feetcollision = false
 sidecollision = false
+
+debug = true
 

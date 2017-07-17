@@ -65,8 +65,6 @@ if mode == 0 {   // idle
 	}
 }
 
-//debugstr = "mode = "+string(mode)+"; phase = "+string(phase)
-
 if mode == 1 {   // attack
 	if sidecollision and feetcollision {
 		// jump over obstacle
@@ -92,14 +90,13 @@ if mode == 1 {   // attack
 		}	
 		if phase = 1 {
 			if feetcollision {
-		        mode = 0
+				phase = 0
+		        mode = 1
 				newMode = true
-		        timeout = 0
 				show_debug_message("End of attack")
 			}
 		}
     }
-//	debugstr += "; d = "+string(d)
 }
 
 
@@ -111,13 +108,13 @@ if feetcollision {
 
 // check range ahead  
 if d <= range {
-	var found = false
+	found = false
+	var yRange = 100
 	
 	if sign(hero.x-x) = forward
-	found = ( collision_line(x, y-5 , hero.x, y-5 , hero, false, true) and not
-			  collision_line(x, y-5 , hero.x, y-5 , ob_wall, false, true) ) or
-			( collision_line(x, y-20, hero.x, y-20, hero, false, true) and not
-			  collision_line(x, y-20, hero.x, y-20, ob_wall, false, true) )
+	if abs(hero.y-y) <= yRange
+	found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
+			  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
 			  
 	if found {
 		if mode!=1 {
