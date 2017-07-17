@@ -1,8 +1,13 @@
 /// @desc process AI
 
 /// AI
+if not instance_exists(hero) {
+	event_inherited()
+	exit
+}
 
-var d;
+var d = point_distance(x,y, hero.x, hero.y)
+var jumpPower = 0.6
 
 // start modes
 if newMode {
@@ -42,74 +47,61 @@ if newMode {
 // process modes
 
 if mode == 0 {   // idle
-	timeout-=dTime
+	if feetcollision 
+		timeout-=dTime
 	if timeout<=0 {
 		mode = 0
 		newMode = true
 	}
-	
+		
 	if phase == 1 {
-		// jump
+		// jump over obstacle
 		if sidecollision and feetcollision {
-			speedY = -maxspeedY*0.5
+			speedY = -maxspeedY * jumpPower
 			y-=2
 			feetcollision = false
+			timeout = timeout*0.25 - dTime
 		}
 	}
-	
-	// check range ahead  
-	var _x, _y, i = 0 
-	var found = false
-
-	repeat (range) {
-	    i++
-	    _x = x + 15*i*forward
-	    _y = y - 16
-	    if collision_point(_x, _y, hero, false, true) {
-	        mode = 1     // start attack
-			newMode = true
-			found = true
-	        break
-	    }
-	    if collision_point(_x, _y, ob_wall, false, true) {
-	        break
-	    }  
-	}   
-	
-	
 }
 
+//debugstr = "mode = "+string(mode)+"; phase = "+string(phase)
+
 if mode == 1 {   // attack
-	d = point_distance(x,y, hero.x, hero.y)
-    if d > 70 {
-        if sidecollision and feetcollision {
-			// jump
-			speedY = -maxspeedY * 0.5
-			y-=2
-			feetcollision = false
-		}
+	if sidecollision and feetcollision {
+		// jump over obstacle
+		speedY = -maxspeedY * jumpPower
+		y-=2
+		feetcollision = false
+	}
+	if d > 45 {
+		phase= 0 
+		show_debug_message("Approaching")
     } else {
 		if phase = 0
-        if feetcollision and abs(speedX) > maxspeedX*0.5 {
+        if feetcollision and abs(speedX) >= maxspeedX*0.75 {
 			// jump
-			speedY = -maxspeedY * 0.5
+			speedY = -maxspeedY * jumpPower
 			y-=2
 			feetcollision = false
 			phase = 1
 	        sprite_index = sp_dog_walk
 	        image_index = 0
 			image_speed = 0
+			show_debug_message("Begin of attack")
 		}	
 		if phase = 1 {
 			if feetcollision {
 		        mode = 0
 				newMode = true
 		        timeout = 0
+				show_debug_message("End of attack")
 			}
 		}
     }
-    
+//	debugstr += "; d = "+string(d)
 }
+
 
 // ALWAYS
 if feetcollision {   
@@ -117,6 +109,31 @@ if feetcollision {
 } else
     stopFactor = 1
 
+// check range ahead  
+if d <= range {
+	var found = false
+	
+	if sign(hero.x-x) = forward
+	found = ( collision_line(x, y-5 , hero.x, y-5 , hero, false, true) and not
+			  collision_line(x, y-5 , hero.x, y-5 , ob_wall, false, true) ) or
+			( collision_line(x, y-20, hero.x, y-20, hero, false, true) and not
+			  collision_line(x, y-20, hero.x, y-20, ob_wall, false, true) )
+			  
+	if found {
+		if mode!=1 {
+			mode = 1
+			phase = 0
+			newMode = true
+		}
+	} else {
+		if mode!=0
+		if phase = 0 {
+			mode = 0
+			newMode = true
+			timeout = 0
+		}
+	}   
+}
 
 image_xscale = forward
 

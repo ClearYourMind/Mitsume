@@ -5,11 +5,10 @@ if health > 0 {
 	hurt = true
 	accelX = 0
 	accelY = 0
-	if other.x > x
-		forward =  1
-	if other.x < x
-		forward = -1
 	
+	forward = sign(other.x - x)
+	if forward = 0 forward = 1
+		
 	speedX = -maxspeedX * forward * 0.75
 	speedY = -maxspeedX * 2
 	y-=dY+2

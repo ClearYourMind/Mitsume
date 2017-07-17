@@ -17,8 +17,7 @@ oAccel = 300
 oStopFactor = 0.001
 grav = 800
 
-range = 10 // шагов по 16
-//seehero = false
+range = 150
 
 strength = 1
 
