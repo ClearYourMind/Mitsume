@@ -5,8 +5,11 @@ draw_self()
 if not instance_exists(hero)
 	exit
 	
+
 if debug {
-	if point_distance(x, y, hero.x, hero.y) <= range {
+	var xDist = abs(x - hero.x)
+	var yDist = abs(y - hero.y)
+	if (xDist <= xRange) and (yDist <= yRange) {
 		if found
 			draw_set_color(c_lime)
 		else

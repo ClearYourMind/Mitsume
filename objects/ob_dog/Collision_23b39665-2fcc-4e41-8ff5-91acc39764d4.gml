@@ -1,12 +1,13 @@
 /// @desc Ride
+
 var result = false
 
-if not headcollision 
 if speedY>0 {
-	var result = sc_hero_check_collision_mask(other, d.Down)
+	var result = sc_dog_check_collision_mask(other, d.Down)
 }
 
 if result {
 	y+=1
 	feetcollision = true	
 }
+

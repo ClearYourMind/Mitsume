@@ -6,7 +6,9 @@ if not instance_exists(hero) {
 	exit
 }
 
-var d = point_distance(x,y, hero.x, hero.y)
+var xDist = hero.x - x
+var yDist = hero.y - y
+
 var jumpPower = 0.6
 
 // start modes
@@ -72,7 +74,7 @@ if mode == 1 {   // attack
 		y-=2
 		feetcollision = false
 	}
-	if d > 45 {
+	if abs(xDist) > 45 {
 		phase= 0 
 		show_debug_message("Approaching")
     } else {
@@ -107,29 +109,27 @@ if feetcollision {
     stopFactor = 1
 
 // check range ahead  
-if d <= range {
-	found = false
-	var yRange = 100
+found = false
+if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
 	
-	if sign(hero.x-x) = forward
-	if abs(hero.y-y) <= yRange
+	if sign(xDist) = forward
 	found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
 			  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
-			  
-	if found {
-		if mode!=1 {
-			mode = 1
-			phase = 0
-			newMode = true
-		}
-	} else {
-		if mode!=0
-		if phase = 0 {
-			mode = 0
-			newMode = true
-			timeout = 0
-		}
-	}   
+}
+
+if found {
+	if mode!=1 {
+		mode = 1
+		phase = 0
+		newMode = true
+	}
+} else {
+	if mode!=0
+	if phase = 0 {
+		mode = 0
+		newMode = true
+		timeout = 0
+	}
 }
 
 image_xscale = forward
