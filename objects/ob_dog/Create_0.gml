@@ -28,5 +28,5 @@ strength = 1
 feetcollision = false
 sidecollision = false
 
-debug = true
+debug = false
 

@@ -2,11 +2,9 @@
 
 draw_self()
 
-if not instance_exists(hero)
-	exit
-	
-
 if debug {
+	if not instance_exists(hero)
+		exit
 	var xDist = abs(x - hero.x)
 	var yDist = abs(y - hero.y)
 	if (xDist <= xRange) and (yDist <= yRange) {

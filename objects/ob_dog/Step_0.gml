@@ -76,7 +76,6 @@ if mode == 1 {   // attack
 	}
 	if abs(xDist) > 45 {
 		phase= 0 
-		show_debug_message("Approaching")
     } else {
 		if phase = 0
         if feetcollision and abs(speedX) >= maxspeedX*0.75 {
@@ -88,14 +87,12 @@ if mode == 1 {   // attack
 	        sprite_index = sp_dog_walk
 	        image_index = 0
 			image_speed = 0
-			show_debug_message("Begin of attack")
 		}	
 		if phase = 1 {
 			if feetcollision {
 				phase = 0
 		        mode = 1
 				newMode = true
-				show_debug_message("End of attack")
 			}
 		}
     }

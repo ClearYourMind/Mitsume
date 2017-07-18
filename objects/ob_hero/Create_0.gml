@@ -39,5 +39,5 @@ health = 6
 image_speed = 0.1
 //image_alpha = 0.3
 
-
+weapon = instance_create_depth(0,0,0, ob_weapon_1)
  

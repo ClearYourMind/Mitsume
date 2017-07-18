@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "02edaf41-d808-4165-9bd7-f545814630e9",
+            "Value": {
+                "id": "af40a8fc-3447-4edb-a633-63f98afc7c86",
+                "resourcePath": "objects\\ob_weapon_1\\ob_weapon_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "03d584ae-ece0-4cd9-9b0f-bad8ae6b26f2",
             "Value": {
                 "id": "7c1309da-ca18-4234-bfb1-f05deea4d1c9",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "23bb75fe-eb7b-4095-a71d-2b25f1c5d7ca",
+            "Value": {
+                "id": "9c9acec5-3a9a-461a-ba37-cb45712e8878",
+                "resourcePath": "views\\23bb75fe-eb7b-4095-a71d-2b25f1c5d7ca.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "24b8ae1e-f953-44f2-a4c6-1d85bb3ed05a",
             "Value": {
                 "id": "a8871e66-654d-4513-b204-4ad554b1dea4",
@@ -259,6 +275,14 @@
             "Value": {
                 "id": "46d2636a-dca8-4ae2-b2e9-db9d3f4ff126",
                 "resourcePath": "views\\3cfaf5ec-1753-4736-b72f-48633c2f96a3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3e0187ae-755b-4227-9c7e-e6c9a7347416",
+            "Value": {
+                "id": "d0f3ab39-63e8-4a5b-b32c-750c7fd69dac",
+                "resourcePath": "views\\3e0187ae-755b-4227-9c7e-e6c9a7347416.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -572,6 +596,14 @@
                 "id": "89e1a3ac-46bd-4d61-bbc0-274f2710dfe9",
                 "resourcePath": "views\\7b84b5a9-13ef-4a12-afbe-1cbeda311ad2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7dd34ba5-fe34-4f5b-b1d1-8228d5c5fa41",
+            "Value": {
+                "id": "2b83bce3-460f-4d57-9635-add473a6216f",
+                "resourcePath": "objects\\ob_shot_1\\ob_shot_1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1092,6 +1124,14 @@
                 "id": "cd414ddc-9e90-4498-8bbb-8e8da1add766",
                 "resourcePath": "objects\\ob_dog\\ob_dog.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f95e37f4-f37f-40b1-b975-d46b8f7eda63",
+            "Value": {
+                "id": "22c288da-6860-4916-85aa-51b029a4911e",
+                "resourcePath": "sprites\\sp_shot_1\\sp_shot_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

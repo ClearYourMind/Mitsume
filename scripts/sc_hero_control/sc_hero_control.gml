@@ -4,6 +4,7 @@ var animType = sp_hero_stand
 
 canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 canJump = feetcollision and canMove
+canShoot = instance_exists(weapon) and not hurt
 
 // Кнопки
 if canMove {
@@ -40,20 +41,17 @@ if abs(speedY)>0 or feetcollision == false {
     animType = sp_hero_jump
 }
 
-//if keys[k.Fire] {
-//   if feetcollision
-//     animType = sp_hero_fire
-//   else
-//     animType = sp_hero_jumpfire
-//   if canShoot {
-//      with instance_create_depth(x, y-7, 0, weapon) {
-//         forward = other.forward
-//         other.alarm[1] = reloadtime    // set reload to player
-//      }
-//      canShoot = false
-//   }  
-   
-//} else canShoot = true
+if canShoot {
+	if keys[k.Fire] {
+		if feetcollision
+			animType = sp_hero_fire
+		else
+			animType = sp_hero_jumpfire
+		if canShoot {
+			weapon.shoot = true
+		}
+	} else weapon.shoot = false
+}
 
 // Stopping on the ground
 if (not (keys[k.Left] or keys[k.Right]) or not canMove) and feetcollision {
