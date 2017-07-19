@@ -4,13 +4,10 @@ if not instance_exists(hero) exit
 
 var moveSpeed = 100 * dTime
 
-var view_x = camera_get_view_x(view_camera[0])
-var view_y = camera_get_view_y(view_camera[0])
-var view_w = camera_get_view_width (view_camera[0])
-var view_h = camera_get_view_height(view_camera[0])
-var view_xborder = camera_get_view_border_x(view_camera[0])
-var view_yborder = camera_get_view_border_y(view_camera[0])
-
+view_x = camera_get_view_x(view_camera[0])
+view_y = camera_get_view_y(view_camera[0])
+view_w = camera_get_view_width (view_camera[0])
+view_h = camera_get_view_height(view_camera[0])
 
 
 var dx = hero.x - ((view_x + view_w) - view_xborder)

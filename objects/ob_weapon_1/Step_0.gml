@@ -16,8 +16,3 @@ if shoot {
 if _reloadTime > 0
 	_reloadTime -= dTime
 
-
-if oIndex != floor(image_index) {
-	image_blend = color1
-	oIndex = -1
-}

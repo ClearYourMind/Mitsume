@@ -1,6 +1,5 @@
+event_inherited()
 /// @desc Draw debug info
-
-draw_self()
 
 if debug {
 	if not instance_exists(hero)

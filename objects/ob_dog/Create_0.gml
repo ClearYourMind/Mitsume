@@ -20,7 +20,7 @@ grav = 800
 
 xRange = 150
 yRange = 80
-strength = 1
+strength = 5
 
 //dropvalue = 20
 //dropitem = ob_drop_coin
