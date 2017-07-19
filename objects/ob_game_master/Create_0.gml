@@ -18,7 +18,7 @@ globalvar view_yborder
 
 application_surface_enable(false)
 
-maxChannel = 64
+maxChannel = 1
 
 audio_channel_num(maxChannel)
 audio_set_master_gain(0, 0.1)

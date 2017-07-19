@@ -47,7 +47,8 @@
         "531b2995-a7ba-4733-b039-f6e2eaf1f06d",
         "e414bfb1-a15c-4a00-afac-ba22898cc0ad",
         "b9ac0133-2523-4d17-8a9f-168b0bc5e9e2",
-        "0a98f042-b5f4-4cc1-8cfe-538a88743ba3"
+        "0a98f042-b5f4-4cc1-8cfe-538a88743ba3",
+        "7302c8ec-9dde-493d-9b6b-56e26fac8493"
     ],
     "layers": [
         {
@@ -154,8 +155,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_1BD57929",
-                    "x": 176,
-                    "y": 40,
+                    "x": 168,
+                    "y": 328,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -1008,6 +1009,30 @@
                     "rotation": 0,
                     "scaleX": 2,
                     "scaleY": 3.5
+                },
+                {
+                    "id": "7302c8ec-9dde-493d-9b6b-56e26fac8493",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "immortal",
+                    "x": 232,
+                    "y": 336,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "InstanceCreationCode_immortal.gml",
+                    "creationCodeType": ".gml",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "immortal",
+                    "objId": "f7248f4d-d6ad-414e-9c46-e8f873960569",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
                 }
             ]
         },
@@ -2211,7 +2236,7 @@
             "animationFPS": 15,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4290739734
+                "Value": 4291587665
             },
             "hspeed": 0,
             "htiled": false,
