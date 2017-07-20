@@ -13,7 +13,7 @@ for (var i=0; i<array_length_1d(dirs); i++) {
 }
 
 if dir = d.Up {
-	_jumpTime = 0
+	sc_timeout_stop(jumpTime)
 	headcollision = true
 } else
 if dir = d.Down {

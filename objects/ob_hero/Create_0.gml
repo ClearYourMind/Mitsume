@@ -29,8 +29,9 @@ maxspeedX = 80
 maxspeedY = 400
 
 jumpSpeed = 200
-jumpTime = 0.20 //sec
-_jumpTime = 0 // current
+jumpTime = sc_timeout_new(0.20) //sec
+
+recoverTime = sc_timeout_new(2) // sec
 
 feetcollision = true
 headcollision = false

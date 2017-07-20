@@ -24,16 +24,16 @@ if keys[k.Jump] {
 	    speedY = -jumpSpeed
 		y-=2
 	    animType = sp_hero_jump
-	    _jumpTime = jumpTime
+		sc_timeout_start(jumpTime)
 	    canJump = false
 	    sc_play_sound(sn_jump, false)
 	}    
-	if _jumpTime > 0 {
-	    _jumpTime -= dTime
+	if not sc_timeout_over(jumpTime) {
 	    speedY = -jumpSpeed
 	}
 } else {
-	_jumpTime = 0
+	sc_timeout_stop(jumpTime)
+	//_jumpTime = 0
 	//canJump = true
 }  
    
@@ -48,9 +48,11 @@ if canShoot {
 		else
 			animType = sp_hero_jumpfire
 		if canShoot {
-			weapon.shoot = true
+			with weapon	event_perform(ev_other, ev_user0)
 		}
-	} else weapon.shoot = false
+	} else
+		with weapon event_perform(ev_other, ev_user1)
+
 }
 
 // Stopping on the ground

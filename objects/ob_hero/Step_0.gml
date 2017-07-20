@@ -5,13 +5,6 @@ sc_hero_control()
 
 event_inherited()
 
-//debugstr = ""
-
-//if feetcollision
-//	debugstr += " FEET "
-//if headcollision
-//	debugstr += " HEAD "
-
 feetcollision = false
 headcollision = false
 
@@ -24,9 +17,7 @@ if hurt {
 	if animEnded {
 		hurt = false
 		recover = true
-		alarm_set(0, 100)
+		sc_timeout_start(recoverTime)
 	}
 }
 
-
-//show_debug_message(debugstr)

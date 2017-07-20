@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00bcbbf9-ac23-40b5-a873-019a4cedb875",
+            "Value": {
+                "id": "dea49d0d-150b-40a9-bfa5-e0921b39c690",
+                "resourcePath": "scripts\\sc_timeout_over\\sc_timeout_over.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "019d8a77-29f4-49b7-bae0-3ffc7a04a0f6",
             "Value": {
                 "id": "c1f40394-8826-487d-8e92-fe1d4c9e0c19",
@@ -271,6 +279,14 @@
             }
         },
         {
+            "Key": "35d40666-db48-453d-862f-579c52bd3ca2",
+            "Value": {
+                "id": "304e1dbf-4fae-497b-9093-e3924f30281c",
+                "resourcePath": "scripts\\sc_timeout_stop\\sc_timeout_stop.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "37b5e1be-a237-45a6-856c-2c8b034a948b",
             "Value": {
                 "id": "ca21df8b-ac48-4d3a-80e9-7985fd866c6d",
@@ -436,6 +452,14 @@
                 "id": "db32e5d0-5c0b-4262-ba4e-276c6d5ff2f9",
                 "resourcePath": "sounds\\sn_destroy\\sn_destroy.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
+            "Value": {
+                "id": "f92366d2-066c-4947-a199-222afeff1a23",
+                "resourcePath": "scripts\\sc_timeout_is_started\\sc_timeout_is_started.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1055,6 +1079,14 @@
             }
         },
         {
+            "Key": "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
+            "Value": {
+                "id": "4f2fa2b5-fc6c-4d9e-a4a2-84f32ff9d779",
+                "resourcePath": "scripts\\sc_timeout_start\\sc_timeout_start.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "eb76405b-75bb-48f8-be0f-315e9c8e6d30",
             "Value": {
                 "id": "8dbaa55d-ff39-4ae0-968e-8eb16fa9231d",
@@ -1151,6 +1183,14 @@
             }
         },
         {
+            "Key": "fad470e9-4fea-458b-bfd1-957efd76be47",
+            "Value": {
+                "id": "13367f55-770c-41f1-8ddf-33d25f2ebdf7",
+                "resourcePath": "scripts\\sc_timeout_new\\sc_timeout_new.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fb00acdd-1465-4414-beb5-00e5491a9c2c",
             "Value": {
                 "id": "408a8a95-608c-4f53-99c8-d42ad06dae8c",
@@ -1193,7 +1233,12 @@
         "1a275287-7250-40c4-8b44-c218c55ce201",
         "8f5155a3-86a9-4836-9ed9-b2d106f66447",
         "b24e550b-12cb-4d3a-a568-9b19a94353e2",
-        "212363f1-7588-467f-bf20-99720326b9ee"
+        "212363f1-7588-467f-bf20-99720326b9ee",
+        "fad470e9-4fea-458b-bfd1-957efd76be47",
+        "00bcbbf9-ac23-40b5-a873-019a4cedb875",
+        "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
+        "35d40666-db48-453d-862f-579c52bd3ca2",
+        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133"
     ],
     "tutorial": ""
 }
