@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "d2877602-73f6-4646-ad30-56c5e487bdc7",
+            "Value": {
+                "id": "10129368-693c-483b-87c8-319e453bd3e0",
+                "resourcePath": "objects\\ob_gamepad_control\\ob_gamepad_control.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d34ba316-77c2-4e09-8924-eb5379dd23aa",
             "Value": {
                 "id": "a5dffe89-756c-4854-8ff4-eb9580a51bf6",

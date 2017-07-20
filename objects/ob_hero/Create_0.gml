@@ -18,17 +18,17 @@ enum d {
 }
 
 grav = 800  // weight
-oStopFactor = 0.00001
+oStopFactor = 5 * power(10, -6)
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
 
 accel = 200
 
-maxspeedX = 80
+maxspeedX = 85
 maxspeedY = 400
 
-jumpSpeed = 200
+jumpSpeed = 185
 jumpTime = sc_timeout_new(0.20) //sec
 
 recoverTime = sc_timeout_new(2) // sec
