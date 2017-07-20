@@ -4,8 +4,8 @@ event_inherited()
 hurt = false
 hurtstep = 0
 
-hurtTimeout = 0.05
-_hurtTimeout = 0
+hurtTime = 0.05
+_hurtTime = 0
 
 strength = 1
 dropvalue = 0

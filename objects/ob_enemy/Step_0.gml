@@ -5,17 +5,17 @@ if strength<=0
 	instance_destroy()
 
 if hurt {
-	if _hurtTimeout > 0
-		_hurtTimeout -= dTime
+	if _hurtTime > 0
+		_hurtTime -= dTime
 
-	if _hurtTimeout	<= 0 {
+	if _hurtTime	<= 0 {
 		switch hurtstep {
 		case 0:
-			_hurtTimeout = hurtTimeout
+			_hurtTime = hurtTime
 			hurtstep=1
 			break
 		case 1: 
-			_hurtTimeout = 0
+			_hurtTime = 0
 			hurt = false
 			hurtstep = 0
 			image_blend = c_white

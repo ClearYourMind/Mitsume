@@ -6,8 +6,6 @@ var moveSpeed = 100 * dTime
 
 view_x = camera_get_view_x(view_camera[0])
 view_y = camera_get_view_y(view_camera[0])
-view_w = camera_get_view_width (view_camera[0])
-view_h = camera_get_view_height(view_camera[0])
 
 
 var dx = hero.x - ((view_x + view_w) - view_xborder)
@@ -40,7 +38,4 @@ if view_y + view_h > room_height
    
 
 camera_set_view_pos(view_camera[0], view_x, view_y)
-camera_set_view_size(view_camera[0], view_w, view_h)
-camera_set_view_border(view_camera[0], view_xborder, view_yborder)
-
 

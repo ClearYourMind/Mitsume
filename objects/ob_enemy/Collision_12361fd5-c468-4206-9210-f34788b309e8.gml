@@ -4,7 +4,7 @@
 if not hurt {
 	strength -= other.hit
 	hurtstep = 0
-	_hurtTimeout = hurtTimeout
+	_hurtTime = hurtTime
 	hurt = true
 	sc_play_sound(sn_hit, false)
 }
