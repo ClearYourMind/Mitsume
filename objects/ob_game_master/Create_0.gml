@@ -16,6 +16,12 @@ globalvar view_h
 globalvar view_xborder
 globalvar view_yborder
 
+enum depths {
+	explosions = -1,
+	shots = -1,
+	general = 0
+}
+
 application_surface_enable(false)
 
 maxChannel = 1

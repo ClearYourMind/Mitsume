@@ -33,6 +33,8 @@ jumpTime = sc_timeout_new(0.20) //sec
 
 recoverTime = sc_timeout_new(2) // sec
 
+aftershotTime = sc_timeout_new(0.5)
+
 feetcollision = true
 headcollision = false
 health = 6
@@ -40,5 +42,5 @@ health = 6
 image_speed = 0.1
 //image_alpha = 0.3
 
-weapon = instance_create_depth(0,0,0, ob_weapon_1)
+weapon = instance_create_depth(0,0, depths.shots, ob_weapon_1)
  

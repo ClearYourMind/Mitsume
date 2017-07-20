@@ -1,3 +1,3 @@
 /// @desc Create explosion
 
-instance_create_depth(x, y, -1, ob_explode1)
+instance_create_depth(x, y, depths.explosions, ob_explode1)

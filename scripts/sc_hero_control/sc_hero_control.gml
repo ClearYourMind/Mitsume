@@ -3,6 +3,7 @@
 var animType = sp_hero_stand
 
 canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
+		  and sc_timeout_over(aftershotTime)
 canJump = feetcollision and canMove
 canShoot = instance_exists(weapon) and not hurt
 
@@ -47,12 +48,16 @@ if canShoot {
 			animType = sp_hero_fire
 		else
 			animType = sp_hero_jumpfire
-		if canShoot {
-			with weapon	event_perform(ev_other, ev_user0)
-		}
+		with weapon	event_perform(ev_other, ev_user0)
+		sc_timeout_start(aftershotTime)
 	} else
 		with weapon event_perform(ev_other, ev_user1)
-
+	if not sc_timeout_over(aftershotTime) {
+		if feetcollision
+			animType = sp_hero_fire
+		else
+			animType = sp_hero_jumpfire
+	}
 }
 
 // Stopping on the ground
