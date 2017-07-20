@@ -3,6 +3,6 @@ event_inherited()
 
 forward = 1
 
-maxspeedX = 120
+maxspeedX = 200
 hit = 1
 
