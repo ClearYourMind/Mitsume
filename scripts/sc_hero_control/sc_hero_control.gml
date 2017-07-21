@@ -4,7 +4,7 @@ var newAnim = sp_hero_stand
 var newForward = forward
 
 canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
-		  and not sc_timeout_is_started(aftershotTime)
+		  and not sc_timeout_is_started(pauseTime)
 canJump = feetcollision and canMove
 canShoot = instance_exists(weapon) and not hurt
 
@@ -22,7 +22,7 @@ if canMove {
 	} 
 } else {
 	// move hero when on air and firing
-	if not feetcollision and sc_timeout_is_started(aftershotTime) {
+	if not feetcollision and sc_timeout_is_started(pauseTime) {
 		if keys[k.Left] {
 		    newForward = -1
 		    accelX = accel * newForward
@@ -47,8 +47,6 @@ if keys[k.Jump] {
 	}
 } else {
 	sc_timeout_stop(jumpTime)
-	//_jumpTime = 0
-	//canJump = true
 }  
    
 if abs(speedY)>0 or feetcollision == false {
@@ -57,20 +55,39 @@ if abs(speedY)>0 or feetcollision == false {
 
 if canShoot {
 	if keys[k.Fire] {
-		if feetcollision
-			newAnim = sp_hero_fire
-		else
-			newAnim = sp_hero_jumpfire
 		with weapon	event_perform(ev_other, ev_user0)
-		sc_timeout_start(aftershotTime)
+		sc_timeout_start(pauseTime)
+		pauseAnim = after.Shot
 	} else
 		with weapon event_perform(ev_other, ev_user1)
-	if not sc_timeout_over(aftershotTime) {
-		if feetcollision
-			newAnim = sp_hero_fire
-		else
-			newAnim = sp_hero_jumpfire
+	
+	if keys[k.altFire] {
+		if not instance_exists(arrow)
+			arrow = instance_create_depth(0,0, depths.shots, ob_arrow)
+		newAnim = sp_hero_arrow
+		image_index = 0
+			
+		sc_timeout_start(pauseTime)
+		pauseAnim = after.Spawn
 	}
+
+	// paused animations
+	if not sc_timeout_over(pauseTime) {
+		if pauseAnim = after.Shot {
+			if feetcollision
+				newAnim = sp_hero_fire
+			else
+				newAnim = sp_hero_jumpfire
+		}
+		if not keys[k.altFire]
+		if pauseAnim = after.Spawn {
+			newAnim = sp_hero_arrow
+			image_index = 1
+		}
+	} else {
+		pauseAnim = after.None
+	}
+
 }
 
 // Stopping on the ground
@@ -88,7 +105,7 @@ if not feetcollision {
 }
 
 // Don't turn hero when on air and firing
-if not feetcollision and sc_timeout_is_started(aftershotTime) {
+if not feetcollision and sc_timeout_is_started(pauseTime) {
 	newForward = forward
 }
 

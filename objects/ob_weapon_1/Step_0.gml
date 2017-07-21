@@ -1,9 +1,12 @@
 /// @desc Process timeout
 
+if hero.hurt
+	shoot = false
+
 if shoot {
 	if sc_timeout_over(reloadTime) {
 		sc_play_sound(sn_shot, false)
-		with instance_create_depth(hero.x, hero.y-7, depths.shots, ob_shot_1)
+		with instance_create_depth(hero.x, hero.y-7, depth, ob_shot_1)
 			speedX = maxspeedX * hero.forward
 	}
 	

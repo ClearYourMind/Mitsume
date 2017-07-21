@@ -2,12 +2,10 @@ event_inherited()
 
 /// @desc Init values
 
-enum a {
-	Stand,
-	Walk,
-	Fire,
-	Jump,
-	JumpFire
+enum after {
+	None,
+	Shot,
+	Spawn
 }
 enum d {
 	None,
@@ -29,11 +27,12 @@ maxspeedX = 85
 maxspeedY = 400
 
 jumpSpeed = 185
-jumpTime = sc_timeout_new(0.20) //sec
+jumpTime = sc_timeout_new(0.20) 
 
-recoverTime = sc_timeout_new(2) // sec
+recoverTime = sc_timeout_new(2) 
 
-aftershotTime = sc_timeout_new(0.12)
+pauseTime = sc_timeout_new(0.2)
+pauseAnim = after.None
 
 feetcollision = true
 headcollision = false
@@ -43,4 +42,5 @@ image_speed = 0.1
 //image_alpha = 0.3
 
 weapon = instance_create_depth(0,0, depths.shots, ob_weapon_1)
+arrow = noone
  
