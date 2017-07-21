@@ -1,11 +1,9 @@
 /// @desc Init values
 
-globalvar maxChannel
 globalvar dTime
 globalvar minFPS
 globalvar hero
 globalvar paused
-globalvar counter
 globalvar totalMaxSpeed
 globalvar debugstr
 
@@ -21,13 +19,6 @@ enum depths {
 	shots = -1,
 	general = 0
 }
-
-application_surface_enable(false)
-
-maxChannel = 2
-
-audio_channel_num(maxChannel)
-audio_set_master_gain(0, 0.25)
 
 dTime = 0
 minFPS = 30
