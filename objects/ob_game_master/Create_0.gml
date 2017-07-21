@@ -24,10 +24,10 @@ enum depths {
 
 application_surface_enable(false)
 
-maxChannel = 1
+maxChannel = 2
 
 audio_channel_num(maxChannel)
-audio_set_master_gain(0, 0.75)
+audio_set_master_gain(0, 0.25)
 
 dTime = 0
 minFPS = 30

@@ -1,8 +1,10 @@
+event_inherited()
 /// @desc Process phases
 
-/// Procedure phase
+if not instance_exists(hero)
+	phase = ar.Disappear
 
-if phase == ar.Appear {
+if phase = ar.Appear {
     x = hero.x + cos(angle)* radius
     y = hero.y + sin(angle)* radius  
     radius -= dRad * dTime
@@ -14,40 +16,90 @@ if phase == ar.Appear {
 		sc_play_sound(sn_arrow, false)
 }
 
-/*
-if phase == ar.Hold {
+
+if phase = ar.Hold {
     forward = hero.forward  
+	image_xscale = forward
     x = hero.x - 6*forward
     y = hero.y 
-    image_angle = (-45 * forward)+90
-    gravity  = 0
-}
- 
-if phase == ar.Launch {
-    hspeed = 4 * forward
-    gravity = 0.4
-    image_angle = direction
+    image_angle = 90 - 45*forward
+	speedX = 0
+	speedY = 0
+	accelX = 0
+	accelY = 0
 }
 
-if phase == ar.Stay {
-    gravity = 0
-    speed = 0
+if phase = ar.LaunchBegin {
+	speedX = maxspeedX * forward
+	accelX = -oAccel * forward
+	image_angle = 0
+	phase = ar.Launch	
 }
 
-if phase == ar.Recall {
-    direction = point_direction(x,y,hero.x, hero.y)
-    speed = 4
-    if point_distance(hero.x, hero.y,x,y) < 5 phase = ar_Hold    
+if phase = ar.Launch {
+	forward = sign(speedX)
+	image_xscale = forward
+	oY = y
+}
+
+if phase = ar.Stay {
+    speedX = 0
+	speedY = 0
+	accelX = 0
+	accelY = 0
+	y = oY
+}
+
+if phase = ar.SagBegin {
+	speedY =  sagSpeed
+	accelY = -sagAccel
+	y+=1
+	phase = ar.Sag
+	sc_play_sound(sn_arrow4, false)
+}
+
+if phase = ar.Sag {
+	if stepped = false {
+		phase = ar.Stay
+		y = oY
+	} else {
+		hero.y += dY
+	}
+	if y+dY < oY {
+		phase = ar.Stay
+		y = oY
+		if stepped {
+			hero.speedY += speedY*2
+			hero.y -= 2+dY
+			stepped = false
+//			feetcollision = false
+		}
+//		speedY = 0
+//		accelY = 0
+	}
+}
+
+if phase = ar.Recall {
+    image_angle += imageSpeed * dTime
+    speedX = lengthdir_x(maxspeedX, point_direction(x,y,hero.x, hero.y))
+    speedY = lengthdir_y(maxspeedX, point_direction(x,y,hero.x, hero.y))
+    if point_distance(hero.x, hero.y, x ,y) < 5
+		phase = ar.Hold    
 }
 
 if phase == ar.Disappear {
-    image_speed = 0.1
-    speed = 0
-    if image_index > 6.8 {
+    image_speed = 0.15
+    speedX = 0
+	accelX = 0
+	speedY = 0
+	accelY = 0
+    if animEnded {
         instance_destroy()
-        hero.arrow = noone
+        //hero.arrow = noone
     }
 }
 
+animEnded = false
+stepped = false
 //image_xscale = hero.forward
 

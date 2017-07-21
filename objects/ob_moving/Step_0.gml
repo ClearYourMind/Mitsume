@@ -7,6 +7,7 @@ if abs(accelX) > 0 {
 		speedX = maxspeedX * sign(speedX)
 }
 if accelX = 0
+if stopFactor != 1
 	speedX *= power(stopFactor, dTime)
 
 

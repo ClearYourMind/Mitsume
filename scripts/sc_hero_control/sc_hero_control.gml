@@ -66,9 +66,21 @@ if canShoot {
 			arrow = instance_create_depth(0,0, depths.shots, ob_arrow)
 		newAnim = sp_hero_arrow
 		image_index = 0
-			
-		sc_timeout_start(pauseTime)
-		pauseAnim = after.Spawn
+		if arrow.phase = ar.Hold {
+			sc_timeout_start(pauseTime)
+			pauseAnim = after.Spawn
+		}
+		if arrow.phase = ar.Stay
+			arrow.phase = ar.Recall
+	} else {
+		if instance_exists(arrow) {
+	        if (arrow.phase = ar.Appear) or (arrow.phase = ar.Recall)
+				arrow.phase = ar.Disappear
+	        if arrow.phase = ar.Hold {
+	            arrow.phase = ar.LaunchBegin
+	            sc_play_sound(sn_arrow2, false)
+	        }
+		}
 	}
 
 	// paused animations
