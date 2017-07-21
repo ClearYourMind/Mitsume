@@ -27,7 +27,7 @@ maxspeedX = 85
 maxspeedY = 400
 
 jumpSpeed = 185
-jumpTime = sc_timeout_new(0.20) 
+jumpTime = sc_timeout_new(0.225) 
 
 recoverTime = sc_timeout_new(2) 
 

@@ -13,3 +13,4 @@ if argument_count > 1 {
 } else
 	timer[@ t.current] = timer[t.inittime]
 
+//timer [@ t.current] -= dTime

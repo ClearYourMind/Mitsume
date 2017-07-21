@@ -19,7 +19,7 @@ if phase = ar.Appear {
 
 if phase = ar.Hold {
     forward = hero.forward  
-	image_xscale = forward
+	image_xscale = 1
     x = hero.x - 6*forward
     y = hero.y 
     image_angle = 90 - 45*forward
@@ -63,14 +63,14 @@ if phase = ar.Sag {
 		phase = ar.Stay
 		y = oY
 	} else {
-		hero.y += dY
+		hero.y += dY 
 	}
 	if y+dY < oY {
 		phase = ar.Stay
 		y = oY
 		if stepped {
-			hero.speedY += speedY*2
-			hero.y -= 2+dY
+			hero.speedY = speedY
+			hero.y -= 2-dY
 			stepped = false
 //			feetcollision = false
 		}

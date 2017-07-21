@@ -24,8 +24,8 @@ angleSpeed = pi*4  // in radians
 imageSpeed = 360*5
 dRad = 200
 
-sagSpeed = 100
-sagAccel = 1500
+sagSpeed = 135
+sagAccel = 1200//1650
 
 image_speed = 0
 
@@ -35,7 +35,7 @@ stepped = false
 
 oAccel = 400
 maxspeedX = 250
-maxspeedY = sagSpeed
+maxspeedY = 180
 oY = 0
 
 animEnded = false

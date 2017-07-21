@@ -6,8 +6,10 @@ if recover {
 	else
 		image_alpha = 0	
 	draw_self()
-} else 
-draw_self()
+} else {
+	image_alpha = 1
+	draw_self()
+}
 
 exit
 

@@ -7,7 +7,7 @@ if speedY>0 {
 }
 
 if result {
-	y+=1//.5
+	y += 1.5
 	feetcollision = true	
 	arrow.stepped = true
 	if arrow.phase = ar.Stay {
