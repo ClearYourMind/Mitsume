@@ -10,4 +10,4 @@ case 1:
 	instance_create_depth(0,0,0, ob_gamepad_control)
 }
 
-alarm_set(0, 30)
+alarm_set(0, 25)
