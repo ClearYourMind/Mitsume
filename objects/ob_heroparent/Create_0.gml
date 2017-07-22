@@ -13,3 +13,5 @@ forward = 1    // 1 or -1
 canMove = true
 canJump = false
 canShoot = true
+
+score = 0

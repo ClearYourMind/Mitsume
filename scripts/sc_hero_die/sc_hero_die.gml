@@ -14,4 +14,6 @@ with instance_create_depth(x, y, depths.general, ob_hero_dead) {
 	image_xscale = -other.forward
 }
 
+with ob_gui event_perform(ev_other, ev_user0)
+
 instance_destroy()

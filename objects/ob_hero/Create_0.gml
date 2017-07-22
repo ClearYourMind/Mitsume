@@ -36,7 +36,9 @@ pauseAnim = after.None
 
 feetcollision = true
 headcollision = false
-health = 6
+
+maxhealth = 6
+health = maxhealth
 
 image_speed = 0.1
 //image_alpha = 0.3

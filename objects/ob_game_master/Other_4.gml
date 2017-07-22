@@ -1,6 +1,6 @@
 /// @desc Init instance-based vars
 
-if instance_exists(ob_heroparent ) {
+if instance_exists(ob_heroparent) {
 	 hero = ob_heroparent
 
 // set view
@@ -12,3 +12,9 @@ if instance_exists(ob_heroparent ) {
 	camera_set_view_pos(view_camera[0], view_x, view_y)
 	//camera_set_update_script(view_camera[0], sc_view_follow_hero)
 }
+
+
+// create GUI
+
+instance_create_depth(0,0, depths.gui, ob_hero_gui)
+with ob_gui event_perform(ev_other, ev_user0)

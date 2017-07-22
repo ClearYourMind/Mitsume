@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "43d8ae1a-5776-4bdb-8df4-6ea8b17e967f",
+            "Value": {
+                "id": "49b858c2-2db8-4e4a-9d55-2d825ccde174",
+                "resourcePath": "sprites\\sp_gui_health\\sp_gui_health.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "441f1481-75e0-450d-98fa-ffe32e86741b",
             "Value": {
                 "id": "af8bf44a-8c55-4cc8-b224-241fed815950",
@@ -695,6 +703,14 @@
             }
         },
         {
+            "Key": "8780fe29-8c13-409c-9182-4167b98255f5",
+            "Value": {
+                "id": "243f1103-e685-4ca5-8d12-d83b455183c9",
+                "resourcePath": "scripts\\sc_hero_gui_update\\sc_hero_gui_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "882eea21-0424-415a-8559-6a80f1f9d5a1",
             "Value": {
                 "id": "95df4c67-3e60-43e7-bfd6-a47aa95c8a0f",
@@ -719,6 +735,14 @@
             }
         },
         {
+            "Key": "88a482dc-3255-44e9-994a-a9a4ea8aa551",
+            "Value": {
+                "id": "7d480b59-f115-47b8-97d0-8761f5fa54e4",
+                "resourcePath": "sprites\\sp_gui_frame\\sp_gui_frame.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a9a04e5-00cc-4c83-91d0-8e9435d87610",
             "Value": {
                 "id": "52bc1207-dfc2-4c76-aac9-8905d4439f97",
@@ -732,6 +756,14 @@
                 "id": "1bae5f68-837a-4d12-9348-9de0958e12e2",
                 "resourcePath": "views\\8ae0c62c-74ff-444d-94c9-4d1dc4ce4899.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8c2eee4a-93ba-49ea-bee6-51fe09d711d7",
+            "Value": {
+                "id": "c9da21af-88c9-48e8-96ed-ab2c622797f1",
+                "resourcePath": "sprites\\sp_gui_number\\sp_gui_number.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -852,6 +884,14 @@
                 "id": "588df01c-b35c-4ff4-9b3d-d957857bbbac",
                 "resourcePath": "sprites\\sp_hero_dead\\sp_hero_dead.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a6461aa8-09d8-42c0-8679-eede68cc9492",
+            "Value": {
+                "id": "ec9d6149-199a-4958-aaf9-b9328fc94515",
+                "resourcePath": "objects\\ob_hero_gui\\ob_hero_gui.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1028,6 +1068,14 @@
                 "id": "91737747-33b0-47db-8bed-bb763ea91343",
                 "resourcePath": "sounds\\sn_destroy2\\sn_destroy2.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "cfd94a36-d9fd-4370-848e-c39750a6a7d1",
+            "Value": {
+                "id": "a39c93db-daa1-4d8d-a01c-8cf7eb810c4e",
+                "resourcePath": "objects\\ob_gui\\ob_gui.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1286,7 +1334,8 @@
         "00bcbbf9-ac23-40b5-a873-019a4cedb875",
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
         "35d40666-db48-453d-862f-579c52bd3ca2",
-        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133"
+        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
+        "8780fe29-8c13-409c-9182-4167b98255f5"
     ],
     "tutorial": ""
 }

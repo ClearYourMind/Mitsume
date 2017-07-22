@@ -17,7 +17,8 @@ globalvar view_yborder
 enum depths {
 	explosions = -1,
 	shots = -1,
-	general = 0
+	general = 0,
+	gui = -2
 }
 
 dTime = 0
@@ -38,3 +39,5 @@ view_w = camera_get_view_width (view_camera[0])
 view_h = camera_get_view_height(view_camera[0])
 
 restartTime = sc_timeout_new(4)
+
+gameStarted = false
