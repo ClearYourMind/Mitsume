@@ -14,4 +14,4 @@ canMove = true
 canJump = false
 canShoot = true
 
-score = 0
+score = 12345
