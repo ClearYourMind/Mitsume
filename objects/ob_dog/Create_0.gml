@@ -22,8 +22,8 @@ xRange = 150
 yRange = 80
 strength = 5
 
-//dropvalue = 20
-//dropitem = ob_drop_coin
+dropvalue = 20
+dropitem = ob_coin
 
 feetcollision = false
 sidecollision = false

@@ -1,6 +1,6 @@
 ///@desc Start countdown from 0 or inittime
 ///@arg timer id
-///@arg zero_start or not
+///@arg zero_start (default - false)
 
 var timer = argument[0]
 if not is_array(timer) 

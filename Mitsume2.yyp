@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "9afbd38c-e42d-4060-a1ee-1ff4e9f9d840",
+            "Value": {
+                "id": "c67633d1-3bf6-4e57-9a73-dcf7f1b89770",
+                "resourcePath": "objects\\ob_explode_coin\\ob_explode_coin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9cc43447-a03c-4453-b75e-895357a9ce25",
             "Value": {
                 "id": "6818a60e-ac37-4a9f-841b-53a005fb3adb",
@@ -1402,12 +1410,12 @@
         "8f5155a3-86a9-4836-9ed9-b2d106f66447",
         "b24e550b-12cb-4d3a-a568-9b19a94353e2",
         "212363f1-7588-467f-bf20-99720326b9ee",
+        "8780fe29-8c13-409c-9182-4167b98255f5",
         "fad470e9-4fea-458b-bfd1-957efd76be47",
         "00bcbbf9-ac23-40b5-a873-019a4cedb875",
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
         "35d40666-db48-453d-862f-579c52bd3ca2",
-        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
-        "8780fe29-8c13-409c-9182-4167b98255f5"
+        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133"
     ],
     "tutorial": ""
 }

@@ -9,4 +9,4 @@ _hurtTime = 0
 
 strength = 1
 dropvalue = 0
-//dropitem = ob_drop_coin
+dropitem = ob_coin

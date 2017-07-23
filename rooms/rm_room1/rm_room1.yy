@@ -964,13 +964,13 @@
                     "id": "7302c8ec-9dde-493d-9b6b-56e26fac8493",
                     "modelName": "GMRInstance",
                     "mvc": "1.0",
-                    "ignore": true,
+                    "ignore": false,
                     "inheritItemSettings": false,
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "immortal",
-                    "x": 232,
-                    "y": 336,
+                    "x": 224,
+                    "y": 320,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
