@@ -3,7 +3,7 @@ event_inherited()
 
 index = 1  // image_index in sp_gui_weapon
 
-reloadTime = sc_timeout_new(0.075, true)
+reloadTime = sc_timeout_new(0.2, true)
 
-image_speed = 0.15
+image_speed = 0.1
 

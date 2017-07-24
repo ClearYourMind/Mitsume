@@ -3,6 +3,7 @@ event_inherited()
 
 forward = 1
 
-maxspeedX = 200
+maxspeedX = 170
+maxspeedY = 170
 hit = 1
-
+angle = 0
