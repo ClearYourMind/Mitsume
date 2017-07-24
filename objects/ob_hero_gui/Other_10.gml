@@ -10,61 +10,32 @@ elementCount = 0
 var _x = 15
 var _y = 0
 
-var elem = []
-elem[el.pos   ] = [_x, _y]
-elem[el.sprite] = sp_gui_health
-elem[el.index ] = 0
-element[n++] = elem
+sc_gui_add_element(sp_gui_health, 0, [_x, _y])
 
 repeat health {
 	_x+=8
-	elem = []
-	elem[el.pos   ] = [_x, _y]
-	elem[el.sprite] = sp_gui_health
-	elem[el.index ] = 1
-	ob_gui.element[n++] = elem
+	sc_gui_add_element(sp_gui_health, 1, [_x, _y])
 }
 repeat (hero.maxhealth - health) {      
 	_x+=8
-	elem = []
-	elem[el.pos   ] = [_x, _y]
-	elem[el.sprite] = sp_gui_health
-	elem[el.index ] = 2
-	ob_gui.element[n++] = elem
+	sc_gui_add_element(sp_gui_health, 2, [_x, _y])
 }
+
 _x+=8
-elem = []
-elem[el.pos   ] = [_x, _y]
-elem[el.sprite] = sp_gui_health
-elem[el.index ] = 3
-ob_gui.element[n++] = elem
+sc_gui_add_element(sp_gui_health, 3, [_x, _y])
 
 
 //weapon
 _x+=32
-elem = []
-elem[el.pos   ] = [_x, _y]
-elem[el.sprite] = sp_gui_frame
-elem[el.index ] = 0
-ob_gui.element[n++] = elem
+sc_gui_add_element(sp_gui_frame, 0, [_x, _y])
 
-if instance_exists(hero.weapon) {
-	elem = []
-	elem[el.pos   ] = [_x, _y]
-	elem[el.sprite] = sp_gui_weapon
-	elem[el.index ] = hero.weapon.index
-	ob_gui.element[n++] = elem
-}
-
+if instance_exists(hero.weapon)
+	sc_gui_add_element(sp_gui_weapon, hero.weapon.index, [_x, _y])
 
 //score
 _x+=32
 
-elem = []
-elem[el.pos   ] = [_x, _y]
-elem[el.sprite] = sp_gui_coin
-elem[el.index ] = 0
-ob_gui.element[n++] = elem
+sc_gui_add_element(sp_gui_coin, 0, [_x, _y])
 
 _x++
 var i = 0, number = 0, s = score, pow = 0
@@ -73,13 +44,5 @@ repeat(6) {
     pow = power(10, 6-i)
     number = s div pow
     s -= number * pow
-	elem = []
-	elem[el.pos   ] = [_x + 8*i, _y]
-	elem[el.sprite] = sp_gui_number
-	elem[el.index ] = number
-	ob_gui.element[n++] = elem
+	sc_gui_add_element(sp_gui_number, number, [_x + 8*i, _y])
 }
-
-
-ob_gui.elementCount = n
-

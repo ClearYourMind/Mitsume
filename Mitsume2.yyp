@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "558c89bc-4680-4111-a34f-ac5d4981c3d5",
+            "Value": {
+                "id": "a639a67e-2a71-40f2-87df-c41c556141dd",
+                "resourcePath": "scripts\\sc_weapon_switch\\sc_weapon_switch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "55a07022-6af3-42e4-afcf-d23d9dda4ba1",
             "Value": {
                 "id": "fb5f1f20-3a48-4758-b417-471031aef639",
@@ -1451,6 +1459,7 @@
         "b24e550b-12cb-4d3a-a568-9b19a94353e2",
         "212363f1-7588-467f-bf20-99720326b9ee",
         "8780fe29-8c13-409c-9182-4167b98255f5",
+        "558c89bc-4680-4111-a34f-ac5d4981c3d5",
         "fad470e9-4fea-458b-bfd1-957efd76be47",
         "00bcbbf9-ac23-40b5-a873-019a4cedb875",
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",

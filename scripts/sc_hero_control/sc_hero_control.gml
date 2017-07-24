@@ -55,11 +55,11 @@ if abs(speedY)>0 or feetcollision == false {
 
 if canShoot {
 	if keys[k.Fire] {
-		with weapon	event_perform(ev_other, ev_user0)
+		sc_weapon_switch(true)
 		sc_timeout_start(pauseTime)
 		pauseAnim = after.Shot
 	} else
-		with weapon event_perform(ev_other, ev_user1)
+		sc_weapon_switch(false)
 	
 	if keys[k.altFire] {
 		if not instance_exists(arrow)
@@ -117,7 +117,7 @@ if not feetcollision {
 }
 
 // Don't turn hero when on air and firing
-if not feetcollision and sc_timeout_is_started(pauseTime) {
+if not feetcollision and pauseAnim = after.Shot {
 	newForward = forward
 }
 
