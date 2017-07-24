@@ -1,7 +1,7 @@
 event_inherited()
 /// @desc Init values
 
-index = 0  // image_index in sp_gui_weapon
+index = 1  // image_index in sp_gui_weapon
 
 reloadTime = sc_timeout_new(0.075, true)
 

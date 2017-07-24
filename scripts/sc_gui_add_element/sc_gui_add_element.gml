@@ -1,7 +1,7 @@
 /// @desc Add element in array
 /// @arg sprite index
 /// @arg subimage number
-/// @arg pos [x, y]
+/// @arg pos [x; y]
 
 
 // of ob_gui
