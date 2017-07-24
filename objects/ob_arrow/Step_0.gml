@@ -48,6 +48,9 @@ if phase = ar.Stay {
 	accelX = 0
 	accelY = 0
 	y = oY
+	if not sc_timeout_is_started(lifeTime) and
+	   not sc_timeout_is_started(fadeTime)
+		sc_timeout_start(lifeTime)
 }
 
 if phase = ar.SagBegin {
@@ -74,6 +77,7 @@ if phase = ar.Sag {
 			stepped = false
 //			feetcollision = false
 		}
+		dY = 0
 //		speedY = 0
 //		accelY = 0
 	}
@@ -85,10 +89,14 @@ if phase = ar.Recall {
     speedY = lengthdir_y(maxspeedX, point_direction(x,y,hero.x, hero.y))
     if point_distance(hero.x, hero.y, x ,y) < 5
 		phase = ar.Hold    
+	sc_timeout_stop(lifeTime)
+	sc_timeout_stop(fadeTime)
+	flashing = false
 }
 
-if phase == ar.Disappear {
+if phase = ar.Disappear {
     image_speed = 0.15
+	image_alpha = 0.75
     speedX = 0
 	accelX = 0
 	speedY = 0
@@ -103,3 +111,15 @@ animEnded = false
 stepped = false
 //image_xscale = hero.forward
 
+/// Process timer
+
+if sc_timeout_is_started(lifeTime)
+if sc_timeout_over(lifeTime) {
+	flashing = true
+	sc_timeout_start(fadeTime)
+}	
+
+if sc_timeout_is_started(fadeTime)
+if sc_timeout_over(fadeTime) {
+	phase = ar.Disappear
+}

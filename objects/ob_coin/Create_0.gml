@@ -19,7 +19,7 @@ floorcollision = false
 initiated = false
 flashing = false
 
-lifeTime = sc_timeout_new(100)
+lifeTime = sc_timeout_new(10)
 fadeTime = 5
 sc_timeout_start(lifeTime)
 

@@ -19,4 +19,4 @@ if health > 0 {
 	sc_play_sound(sn_hurt, false)
 }
 
-with ob_gui event_perform(ev_other, ev_user0)
+sc_gui_update()

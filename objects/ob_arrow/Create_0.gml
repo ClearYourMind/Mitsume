@@ -15,7 +15,10 @@ enum ar {
 
 phase = ar.Appear
 
-lifetime = sc_timeout_new(10)
+lifeTime = sc_timeout_new(10)
+fadeTime = sc_timeout_new(5)
+
+flashing = false
 
 // appearing values
 angle = 0

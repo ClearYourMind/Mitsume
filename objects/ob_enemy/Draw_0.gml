@@ -6,10 +6,10 @@ draw_self()
 if hurt {
 	switch hurtstep {
 	case 0:
-		image_blend = $7B7BFF
+		image_blend = $6666FF
 		break
 	case 1:
-		image_blend = $FF7B7B
+		image_blend = $FF6666
 		break
 	}
 	

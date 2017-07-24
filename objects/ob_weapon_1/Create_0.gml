@@ -1,6 +1,6 @@
 /// @desc Init values
 
-reloadTime = sc_timeout_new(0.4, true)
+reloadTime = sc_timeout_new(0.075, true)
 
 shoot = false
 

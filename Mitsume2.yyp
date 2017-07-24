@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "64bd9785-800d-436c-a981-f13b61a56249",
+            "Value": {
+                "id": "aeeadf90-37e5-4e03-939c-15c4222dd604",
+                "resourcePath": "scripts\\sc_gui_update\\sc_gui_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "65d4ddac-6c96-4f4f-99c9-de37e62334ed",
             "Value": {
                 "id": "37689ad0-d06f-4555-b756-43a69cdcd4e0",
@@ -1415,7 +1423,8 @@
         "00bcbbf9-ac23-40b5-a873-019a4cedb875",
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
         "35d40666-db48-453d-862f-579c52bd3ca2",
-        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133"
+        "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
+        "64bd9785-800d-436c-a981-f13b61a56249"
     ],
     "tutorial": ""
 }
