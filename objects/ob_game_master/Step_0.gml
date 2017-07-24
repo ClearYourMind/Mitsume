@@ -10,6 +10,9 @@ sc_view_follow_hero()
 
 /// room restart timeout
 if sc_timeout_is_started(restartTime)
-if sc_timeout_over(restartTime)
-	room_restart()
-
+if sc_timeout_over(restartTime) {
+	if lives>=0
+		room_restart()
+	else
+		game_end()
+}

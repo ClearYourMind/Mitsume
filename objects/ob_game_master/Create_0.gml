@@ -25,6 +25,7 @@ dTime = 0
 minFPS = 30
 
 hero = noone
+lives  = 2
 
 paused = false
 

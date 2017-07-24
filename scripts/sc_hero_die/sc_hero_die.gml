@@ -16,4 +16,6 @@ with instance_create_depth(x, y, depths.general, ob_hero_dead) {
 
 sc_gui_update()
 
+lives--
+
 instance_destroy()
