@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "15a2b51a-69a2-4a3a-a5bd-335692e01def",
+            "Value": {
+                "id": "8b032b77-b5d4-4fd3-bf77-a58a7bc78803",
+                "resourcePath": "scripts\\sc_gui_add_element\\sc_gui_add_element.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19dc900d-573c-4269-a5b5-4bf2d990ffbf",
             "Value": {
                 "id": "0ae53494-6692-45dc-be9f-a3366925e4f3",
@@ -839,6 +847,14 @@
             }
         },
         {
+            "Key": "94eaeed7-d752-4ec6-8517-75137a9b57eb",
+            "Value": {
+                "id": "1d431d9f-861b-4c51-997d-3020a85b74d2",
+                "resourcePath": "sprites\\sp_gui_coin\\sp_gui_coin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96e7027a-0afe-4ff8-a0c9-890e3e15ed57",
             "Value": {
                 "id": "12be7e7b-8772-4008-aeb6-46cb4471ac5d",
@@ -1239,6 +1255,14 @@
             }
         },
         {
+            "Key": "e7709c6a-a556-4147-ac24-39d148cbe004",
+            "Value": {
+                "id": "47604d9c-d3b9-4eb9-8526-926ae1315434",
+                "resourcePath": "sprites\\sp_gui_status\\sp_gui_status.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e846817b-9863-4792-ab9f-893fd684f5e1",
             "Value": {
                 "id": "03fc8af4-0ab6-47ba-adcf-5d6b334f606d",
@@ -1399,6 +1423,14 @@
             }
         },
         {
+            "Key": "fed24756-e6e4-41c1-a13d-3bdc7d7c2b77",
+            "Value": {
+                "id": "3970aa75-9fe1-486a-94d2-7a4c5bef33d3",
+                "resourcePath": "sprites\\sp_gui_weapon\\sp_gui_weapon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ff2a13bb-8fda-4b08-9e2a-e2a78076f267",
             "Value": {
                 "id": "76e7c501-3102-4846-8ec9-647abdf2c237",
@@ -1424,7 +1456,8 @@
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
         "35d40666-db48-453d-862f-579c52bd3ca2",
         "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
-        "64bd9785-800d-436c-a981-f13b61a56249"
+        "64bd9785-800d-436c-a981-f13b61a56249",
+        "15a2b51a-69a2-4a3a-a5bd-335692e01def"
     ],
     "tutorial": ""
 }

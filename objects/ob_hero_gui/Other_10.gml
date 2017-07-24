@@ -4,16 +4,17 @@ event_inherited()
 if not instance_exists(hero)
 	exit
 
-var n = 0
+elementCount = 0
 
 // health
 var _x = 15
 var _y = 0
+
 var elem = []
 elem[el.pos   ] = [_x, _y]
 elem[el.sprite] = sp_gui_health
 elem[el.index ] = 0
-ob_gui.element[n++] = elem
+element[n++] = elem
 
 repeat health {
 	_x+=8
@@ -39,8 +40,33 @@ elem[el.index ] = 3
 ob_gui.element[n++] = elem
 
 
+//weapon
+_x+=32
+elem = []
+elem[el.pos   ] = [_x, _y]
+elem[el.sprite] = sp_gui_frame
+elem[el.index ] = 0
+ob_gui.element[n++] = elem
+
+if instance_exists(hero.weapon) {
+	elem = []
+	elem[el.pos   ] = [_x, _y]
+	elem[el.sprite] = sp_gui_weapon
+	elem[el.index ] = hero.weapon.index
+	ob_gui.element[n++] = elem
+}
+
+
 //score
-_x+=36
+_x+=32
+
+elem = []
+elem[el.pos   ] = [_x, _y]
+elem[el.sprite] = sp_gui_coin
+elem[el.index ] = 0
+ob_gui.element[n++] = elem
+
+_x++
 var i = 0, number = 0, s = score, pow = 0
 repeat(6) {
     i++

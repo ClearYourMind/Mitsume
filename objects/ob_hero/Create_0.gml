@@ -39,6 +39,7 @@ headcollision = false
 
 maxhealth = 6
 health = maxhealth
+lives  = 2
 
 image_speed = 0.1
 //image_alpha = 0.3
