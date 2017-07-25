@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "8fa17a7d-f8f3-4ea5-8c98-5baed3914abe",
+            "Value": {
+                "id": "00721e32-31bc-4ca9-8804-c778b6bfbf28",
+                "resourcePath": "sprites\\sp_exp_shot\\sp_exp_shot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "90b8350d-29f7-4afd-b73c-9ad77c5f4468",
             "Value": {
                 "id": "57da38a7-18ca-4c9f-b282-f600fe33de8f",
@@ -1071,6 +1079,14 @@
             }
         },
         {
+            "Key": "9e125307-2e58-4211-afdc-3b65fa03b487",
+            "Value": {
+                "id": "3d0d2b82-bee4-48c2-88e1-79ffc5792453",
+                "resourcePath": "objects\\ob_explode_shot\\ob_explode_shot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9ee2a4c6-3699-44e3-b582-642a39321cfa",
             "Value": {
                 "id": "1841f481-9cc7-4530-a787-1e78aeb010b2",
@@ -1132,6 +1148,14 @@
                 "id": "7a5cf6ae-9186-456e-b099-9803ab751c71",
                 "resourcePath": "sprites\\sp_coin_2\\sp_coin_2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a7c43e3d-c151-4abb-a466-b8e6a011f401",
+            "Value": {
+                "id": "d7970792-b89d-4c24-8f43-0883992202a1",
+                "resourcePath": "objects\\ob_shot_3\\ob_shot_3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1484,6 +1508,14 @@
                 "id": "47604d9c-d3b9-4eb9-8526-926ae1315434",
                 "resourcePath": "sprites\\sp_gui_status\\sp_gui_status.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e774af18-e4d2-4019-bc1e-816e22a80043",
+            "Value": {
+                "id": "ad81f961-df92-4b36-8004-fdae7c6966d5",
+                "resourcePath": "objects\\ob_weapon_3\\ob_weapon_3.yy",
+                "resourceType": "GMObject"
             }
         },
         {

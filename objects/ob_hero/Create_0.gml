@@ -21,7 +21,7 @@ oStopFactor = 5 * power(10, -7)
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
 
-accel = 250
+accel = 350
 
 maxspeedX = 85
 maxspeedY = 400
@@ -43,6 +43,6 @@ health = maxhealth
 image_speed = 0.1
 //image_alpha = 0.3
 
-weapon = instance_create_depth(0,0, depths.shots, ob_weapon_2)
+weapon = instance_create_depth(0,0, depths.shots, ob_weapon_3)
 arrow = noone
  

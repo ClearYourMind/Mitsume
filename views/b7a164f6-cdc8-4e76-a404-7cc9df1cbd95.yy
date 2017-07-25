@@ -16,7 +16,8 @@
         "b1676940-dbdb-4d5b-856c-b8378ff6bce3",
         "29be1a24-6e8e-44fa-b14a-a1366fc7697f",
         "c1cb733e-d40e-465c-8121-6eddd8537e3f",
-        "68fc97cb-d73c-449f-a806-2d4ab60ab4e1"
+        "68fc97cb-d73c-449f-a806-2d4ab60ab4e1",
+        "8fa17a7d-f8f3-4ea5-8c98-5baed3914abe"
     ],
     "filterType": "GMSprite",
     "folderName": "explosion",

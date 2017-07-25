@@ -7,8 +7,8 @@ if shoot {
 	if sc_timeout_over(reloadTime) {
 		sc_play_sound(sn_shot, false)
 		with instance_create_depth(hero.x, hero.y-7, depth, ob_shot_2) {
-			angle = -(90 - 90*hero.forward)
-			speedX = maxspeedX * cos( degtorad(angle) )
+			angle = -90 + 90*hero.forward
+			speedX = maxspeedX * cos( degtorad(angle) ) 
 		}
 	}
 	
