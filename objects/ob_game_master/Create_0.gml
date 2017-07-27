@@ -28,9 +28,11 @@ hero = noone
 lives  = 2
 
 paused = false
+pauseTriggered = false
 
 counter = 0
 totalMaxSpeed = 15 // pix per frame
+debugstr = ""
 
 draw_set_font(fn_default)
 
@@ -42,3 +44,6 @@ view_h = camera_get_view_height(view_camera[0])
 restartTime = sc_timeout_new(4)
 
 gameStarted = false
+
+instance_deactivate_object(id)
+

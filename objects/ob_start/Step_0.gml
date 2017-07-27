@@ -31,19 +31,13 @@ if keyboard_check_pressed(vk_return) or
 
 	switch currentPos {
 	case 0:
-		instance_create_depth(0,0,0, ob_control) 
+		instance_activate_object(ob_control)
 		break
 	case 1:
-		instance_create_depth(0,0,0, ob_gamepad_control)
+		instance_activate_object(ob_gamepad_control)
+		break
 	}
-
-	alarm_set(0, 25)
+	if alarm_get(0) <= 0
+		alarm_set(0, 25)
 }
 
-debugstr = ""
-for (var i=0; i<12; i++)
-if gamepad_button_check(gpNum, i)
-	debugstr += " "+string(i)	
-	
-if debugstr != ""	
-	show_debug_message(debugstr)

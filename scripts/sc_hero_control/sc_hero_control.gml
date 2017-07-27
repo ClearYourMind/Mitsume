@@ -55,11 +55,11 @@ if abs(speedY)>0 or feetcollision == false {
 
 if canShoot {
 	if keys[k.Fire] {
-		sc_weapon_switch(true)
+		sc_weapon_firing(true)
 		sc_timeout_start(pauseTime)
 		pauseAnim = after.Shot
 	} else
-		sc_weapon_switch(false)
+		sc_weapon_firing(false)
 	
 	if keys[k.altFire] {
 		if not instance_exists(arrow)

@@ -68,12 +68,12 @@ if phase = ar.Sag {
 	} else {
 		hero.y += dY 
 	}
-	if y+dY < oY {
+	if y+dY <= oY {
 		phase = ar.Stay
 		y = oY
 		if stepped {
 			hero.speedY = speedY
-			hero.y -= 2-dY
+			hero.y -= 2
 			stepped = false
 //			feetcollision = false
 		}

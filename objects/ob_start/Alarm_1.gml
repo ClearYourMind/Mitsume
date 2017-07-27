@@ -14,7 +14,7 @@ if gamepad_is_supported() {
 
 // skip control method selection	
 if skip {
-	instance_create_depth(0,0,0, ob_control)
-	room_goto_next()
+	instance_activate_object(ob_control)
+	alarm_set(0, 5)
 }
 

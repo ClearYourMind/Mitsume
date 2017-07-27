@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "2edd3987-b25c-49fe-a924-af2dec92cfa9",
+            "Value": {
+                "id": "f1f29b77-e0bf-458c-a49d-2046f7cef269",
+                "resourcePath": "objects\\ob_pause_control\\ob_pause_control.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "30a2e172-8052-4644-b88a-20404a519c49",
             "Value": {
                 "id": "423b2609-254a-4943-9e06-ae0368deca9c",
@@ -570,7 +578,7 @@
             "Key": "558c89bc-4680-4111-a34f-ac5d4981c3d5",
             "Value": {
                 "id": "a639a67e-2a71-40f2-87df-c41c556141dd",
-                "resourcePath": "scripts\\sc_weapon_switch\\sc_weapon_switch.yy",
+                "resourcePath": "scripts\\sc_weapon_firing\\sc_weapon_firing.yy",
                 "resourceType": "GMScript"
             }
         },

@@ -1,12 +1,27 @@
-/// @desc Set delta_time, move views, timeouts 
+/// @desc Process global game events
 
-dTime = min(delta_time/1000000, 1/minFPS)
-counter++
+// set dTime (between steps)
+if not paused {
+	dTime = min(delta_time/1000000, 1/minFPS)
+	counter++
+} else
+	dTime = 0
 
+// move view to follow hero
 view_x = camera_get_view_x(view_camera[0])
 view_y = camera_get_view_y(view_camera[0])
 
 sc_view_follow_hero()
+
+
+// process pause triggering
+if keys[k.Pause] {
+	if not pauseTriggered {
+		pauseTriggered = true
+		paused = not paused
+	}
+} else
+	pauseTriggered = false
 
 /// room restart timeout
 if sc_timeout_is_started(restartTime)

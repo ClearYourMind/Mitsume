@@ -21,5 +21,5 @@ maxPos = 1
 
 gpNum = 0
 
-alarm[1] = 50
+alarm_set(1, 50)
 

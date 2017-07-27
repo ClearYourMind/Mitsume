@@ -1,7 +1,7 @@
 /// @desc Process inputs
 
 if gamepad_button_check_pressed(gpNum, gp_shoulderlb) {
-	alarm[0] = 5
+	alarm_set(0, 5)
 }
 if gamepad_button_check_released(gpNum, gp_shoulderlb) {
 	if escHold {
