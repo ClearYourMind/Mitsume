@@ -7,6 +7,7 @@ if gamepad_is_supported() {
 	for (var i=0; i<n; i++)
 	if gamepad_is_connected(i) {
 		gpNum = i
+		show_debug_message("Gamepad no."+string(i)+" is used")
 		skip = false
 		break  // gamepad found
 	}
