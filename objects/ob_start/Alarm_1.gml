@@ -1,6 +1,6 @@
 /// @desc check if gamepads are supported and available
 
-var skip = true
+gpNum = -1
 
 if gamepad_is_supported() {
 	var n = gamepad_get_device_count()
@@ -8,14 +8,15 @@ if gamepad_is_supported() {
 	if gamepad_is_connected(i) {
 		gpNum = i
 		show_debug_message("Gamepad no."+string(i)+" is used")
-		skip = false
 		break  // gamepad found
 	}
 }
 
 // skip control method selection	
-if skip {
+if gpNum = -1 {
 	instance_activate_object(ob_control)
-	alarm_set(0, 5)
+	// goto next room
+	event_perform(ev_alarm, 0)
+//	alarm_set(0, 5)
 }
 

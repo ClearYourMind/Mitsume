@@ -19,7 +19,7 @@ currentPos = 0
 cursorVisible = false
 maxPos = 1
 
-gpNum = 0
+gpNum = -1
 
 alarm_set(1, 50)
 

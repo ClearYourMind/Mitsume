@@ -41,3 +41,6 @@ if keyboard_check_pressed(vk_return) or
 		alarm_set(0, 25)
 }
 
+
+/// input debug
+
