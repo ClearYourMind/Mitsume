@@ -28,9 +28,7 @@ hero = noone
 lives  = 2
 
 paused = false
-pauseTriggered = false
 
-counter = 0
 totalMaxSpeed = 15 // pix per frame
 debugstr = ""
 

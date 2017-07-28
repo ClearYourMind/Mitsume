@@ -37,12 +37,21 @@ pauseAnim = after.None
 feetcollision = true
 headcollision = false
 
-maxhealth = 6
+maxhealth = 10
 health = maxhealth
 
 image_speed = 0.1
 //image_alpha = 0.3
 
-weapon = instance_create_depth(0,0, depths.shots, ob_weapon_3)
+weaponList[0, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_1)
+weaponList[0, 1] = true 
+weaponList[1, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_2)
+weaponList[1, 1] = true 
+weaponList[2, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_3)
+weaponList[2, 1] = true 
+
+weaponNum = 2
+weapon = weaponList[weaponNum, 0]
+
 arrow = noone
  

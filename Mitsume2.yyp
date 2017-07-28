@@ -879,14 +879,6 @@
             }
         },
         {
-            "Key": "8780fe29-8c13-409c-9182-4167b98255f5",
-            "Value": {
-                "id": "243f1103-e685-4ca5-8d12-d83b455183c9",
-                "resourcePath": "scripts\\sc_hero_gui_update\\sc_hero_gui_update.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "882eea21-0424-415a-8559-6a80f1f9d5a1",
             "Value": {
                 "id": "95df4c67-3e60-43e7-bfd6-a47aa95c8a0f",
@@ -1746,7 +1738,6 @@
         "8f5155a3-86a9-4836-9ed9-b2d106f66447",
         "b24e550b-12cb-4d3a-a568-9b19a94353e2",
         "212363f1-7588-467f-bf20-99720326b9ee",
-        "8780fe29-8c13-409c-9182-4167b98255f5",
         "558c89bc-4680-4111-a34f-ac5d4981c3d5",
         "fad470e9-4fea-458b-bfd1-957efd76be47",
         "00bcbbf9-ac23-40b5-a873-019a4cedb875",
