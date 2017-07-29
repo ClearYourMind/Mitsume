@@ -46,7 +46,7 @@ image_speed = 0.1
 weaponList[0, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_1)
 weaponList[0, 1] = true 
 weaponList[1, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_2)
-weaponList[1, 1] = true 
+weaponList[1, 1] = false 
 weaponList[2, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_3)
 weaponList[2, 1] = true 
 

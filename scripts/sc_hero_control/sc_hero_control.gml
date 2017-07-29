@@ -72,15 +72,6 @@ if canShoot {
 		}
 		if arrow.phase = ar.Stay
 			arrow.phase = ar.Recall
-	} else {
-		if instance_exists(arrow) {
-	        if (arrow.phase = ar.Appear) or (arrow.phase = ar.Recall)
-				arrow.phase = ar.Disappear
-	        if arrow.phase = ar.Hold {
-	            arrow.phase = ar.LaunchBegin
-	            sc_play_sound(sn_arrow2, false)
-	        }
-		}
 	}
 
 	// paused animations
@@ -99,7 +90,18 @@ if canShoot {
 	} else {
 		pauseAnim = after.None
 	}
+}
 
+// releasing arrow
+if not (canShoot and keys[k.altFire]) {
+	if instance_exists(arrow) {
+	    if (arrow.phase = ar.Appear) or (arrow.phase = ar.Recall)
+			arrow.phase = ar.Disappear
+	    if arrow.phase = ar.Hold {
+	        arrow.phase = ar.LaunchBegin
+	        sc_play_sound(sn_arrow2, false)
+	    }
+	}
 }
 
 // Stopping on the ground
