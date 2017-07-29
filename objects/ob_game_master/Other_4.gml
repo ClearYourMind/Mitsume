@@ -13,6 +13,7 @@ if instance_exists(ob_heroparent) {
 	//camera_set_update_script(view_camera[0], sc_view_follow_hero)
 }
 
+backLayer = layer_get_id("Tiles_2")
 
 // create GUI
 instance_create_depth(0,0, depths.gui, ob_hero_gui)

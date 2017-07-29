@@ -14,7 +14,6 @@ for (var i=0; i<array_length_1d(dirs); i++) {
 
 if dir = d.Up {
 	sc_timeout_stop(jumpTime)
-	headcollision = true
 } else
 if dir = d.Down {
 	feetcollision = true

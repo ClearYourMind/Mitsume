@@ -35,7 +35,6 @@ pauseTime = sc_timeout_new(0.2)
 pauseAnim = after.None
 
 feetcollision = true
-headcollision = false
 
 maxhealth = 10
 health = maxhealth
