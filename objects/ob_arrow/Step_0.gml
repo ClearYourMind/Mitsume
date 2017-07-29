@@ -75,11 +75,8 @@ if phase = ar.Sag {
 			hero.speedY = speedY
 			hero.y -= 2
 			stepped = false
-//			feetcollision = false
 		}
 		dY = 0
-//		speedY = 0
-//		accelY = 0
 	}
 }
 

@@ -1,9 +1,9 @@
 /// @desc Bounce
 
 // don't check d.Up when hero falls
-if speedY>0
-	var dirs = [d.Down, d.Left, d.Right]
-else
+//if speedY>0
+//	var dirs = [d.Down, d.Left, d.Right]
+//else
 	var dirs = [d.Up, d.Down, d.Left, d.Right]
 
 for (var i=0; i<array_length_1d(dirs); i++) {
