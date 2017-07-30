@@ -13,28 +13,20 @@ if instance_exists(ob_heroparent) {
 }
 
 // setup background
-backLayer = layer_get_id("Tiles_2")
-layer_depth(backLayer, depths.lBack)
+backLayer = layer_get_id("Back")
 
 var tileMap = layer_tilemap_get_id(layer_get_id("Tiles_1"))
-shadowLayer = layer_create(depths.lShadow)
-var k = 0
-var tiles = []
+var shadowMap = layer_tilemap_get_id(layer_get_id("Shadows")) 
 var _tile
-for (var j=0; j<room_height div 8 - 1; j++)
-for (var i=0; i<room_width  div 8 - 1; i++) {
-	_tile = tilemap_get_at_pixel(tileMap, i*8+4, j*8+4)
-	if _tile > 0 {
-		tiles[k] = _tile
-		k++
+for (var j=0; j<(room_height div 16) - 3; j++)
+for (var i=0; i<(room_width  div 16) - 1; i++) {
+	var _x = i*16
+	var _y = j*16
+	if (tilemap_get_at_pixel(tileMap, _x, _y)    > 0) and
+	   (tilemap_get_at_pixel(tileMap, _x, _y+16) = 0) {
+		tilemap_set_at_pixel(shadowMap, 2, _x, _y+16)
+		tilemap_set_at_pixel(shadowMap, 1, _x, _y+32)
 	}
-}
-
-
-for (var i=0; i<array_length_1d(tiles); i++) {
-	var _x = tilemap_get_x(tiles[i])
-	var _y = tilemap_get_y(tiles[i])
-	
 }
 
 // create GUI

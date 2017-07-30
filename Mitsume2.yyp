@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "33a5a0b8-3a09-4820-b840-59d9a97cacac",
+            "Value": {
+                "id": "bfc508cf-c7f9-43a1-9e04-63021f798617",
+                "resourcePath": "tilesets\\ts_shadow\\ts_shadow.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "35d40666-db48-453d-862f-579c52bd3ca2",
             "Value": {
                 "id": "304e1dbf-4fae-497b-9093-e3924f30281c",
@@ -826,7 +834,7 @@
             "Key": "743f7f26-55f2-4899-9997-4a5d49775425",
             "Value": {
                 "id": "4014ed8b-2b3d-449f-a696-ec7a23a911d3",
-                "resourcePath": "tilesets\\tileset1\\tileset1.yy",
+                "resourcePath": "tilesets\\ts_back\\ts_back.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -1346,7 +1354,7 @@
             "Key": "c630c021-4618-4b6e-a268-a82f6755c0a1",
             "Value": {
                 "id": "c28a0dd0-635f-488c-999f-a8bb95710fc2",
-                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourcePath": "tilesets\\ts_stage\\ts_stage.yy",
                 "resourceType": "GMTileSet"
             }
         },
