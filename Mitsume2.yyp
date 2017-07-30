@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "564e432d-5a14-4bf2-abed-75778eeebd76",
+            "Value": {
+                "id": "f3fff67f-94fd-4f60-8853-af744e61cece",
+                "resourcePath": "sprites\\sp_shadow\\sp_shadow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57553146-0e58-4284-bb15-5ff05d02e9e0",
             "Value": {
                 "id": "1f028deb-140e-432c-9521-799abab544ad",

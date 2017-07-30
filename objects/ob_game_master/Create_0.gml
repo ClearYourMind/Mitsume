@@ -15,12 +15,15 @@ globalvar view_xborder
 globalvar view_yborder
 
 globalvar backLayer
+globalvar shadowLayer
 
 enum depths {
 	explosions = -1,
 	shots = -1,
 	general = 0,
-	gui = -2
+	gui = -2,
+	lBack = 102,
+	lShadow = 101
 }
 
 dTime = 0
