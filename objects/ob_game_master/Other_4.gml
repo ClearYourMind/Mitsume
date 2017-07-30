@@ -19,7 +19,7 @@ var tileMap = layer_tilemap_get_id(layer_get_id("Tiles_1"))
 var shadowMap = layer_tilemap_get_id(layer_get_id("Shadows")) 
 var _tile
 for (var j=0; j<(room_height div 16) - 3; j++)
-for (var i=0; i<(room_width  div 16) - 1; i++) {
+for (var i=0; i<(room_width  div 16) + 1; i++) {
 	var _x = i*16
 	var _y = j*16
 	if (tilemap_get_at_pixel(tileMap, _x, _y)    > 0) and
