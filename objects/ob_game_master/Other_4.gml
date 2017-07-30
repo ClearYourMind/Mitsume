@@ -16,5 +16,5 @@ if instance_exists(ob_heroparent) {
 backLayer = layer_get_id("Tiles_2")
 
 // create GUI
-instance_create_depth(0,0, depths.gui, ob_hero_gui)
-with ob_gui event_perform(ev_other, ev_user0)
+instance_create_depth(0,0, depths.gui, hero.guiObject)
+sc_gui_update()

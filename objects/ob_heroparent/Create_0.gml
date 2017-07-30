@@ -1,6 +1,8 @@
 event_inherited()
 /// @desc Init values
 
+guiObject = noone
+
 animEnded = false
 
 hurt = false

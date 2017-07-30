@@ -6,7 +6,7 @@ if hero.hurt
 if shoot {
 	if sc_timeout_over(reloadTime) {
 		sc_play_sound(sn_shot, false)
-		with instance_create_depth(hero.x, hero.y-7, depth, ob_shot_1)
+		with instance_create_depth(hero.x, hero.y-7, depth, shotObject)
 			speedX = maxspeedX * hero.forward
 	}
 	

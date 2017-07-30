@@ -1,4 +1,4 @@
 /// @desc Destroy shots
 
-with ob_shot_3
+with shotObject
 	instance_destroy()
