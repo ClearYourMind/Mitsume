@@ -1,7 +1,5 @@
 /// @desc Check input
 
-counter++
-
 // start
 var device = 0
 
@@ -12,10 +10,6 @@ if gamepad_button_check_pressed(gpNum, gp_start)
 	device = 2
 
 if device != 0 {
-	sc_play_sound(sn_select3, false)
-	if alarm_get(0) <= 0
-		alarm_set(0, 25)
-
 	switch device {
 	case 1:
 		instance_activate_object(ob_control)
@@ -24,6 +18,11 @@ if device != 0 {
 		instance_activate_object(ob_gamepad_control)
 		break
 	}
+	
+//	instance_activate_object(ob_game_master)
+	sc_play_sound(sn_select3, false)
+	sc_transition_start(sc_action_start_game)
+	
 }
 
 

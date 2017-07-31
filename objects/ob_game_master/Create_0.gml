@@ -19,8 +19,7 @@ enum depths {
 	shots = -1,
 	general = 0,
 	gui = -2,
-	lBack = 102,
-	lShadow = 101
+	fadeplane = -5	
 }
 
 dTime = 0
@@ -42,9 +41,9 @@ view_yborder = camera_get_view_border_y(view_camera[0])
 view_w = camera_get_view_width (view_camera[0])
 view_h = camera_get_view_height(view_camera[0])
 
-restartTime = sc_timeout_new(4)
+restartTime = sc_timeout_new(1.5)
 
 gameStarted = false
 
-instance_deactivate_object(id)
+//instance_deactivate_object(id)
 

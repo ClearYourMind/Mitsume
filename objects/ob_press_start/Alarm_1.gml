@@ -16,7 +16,7 @@ if gamepad_is_supported() {
 if gpNum = -1 {
 	instance_activate_object(ob_control)
 	// goto next room
-	event_perform(ev_alarm, 0)
-//	alarm_set(0, 5)
+	sc_transition_start(sc_action_start_game)
+
 }
 
