@@ -1354,7 +1354,15 @@
             "Key": "bbb1ebdd-419b-46ed-b679-bb5f2cee576e",
             "Value": {
                 "id": "f0415e49-d30b-440d-9de0-9fa05d12f4e6",
-                "resourcePath": "scripts\\sc_action_goto_next\\sc_action_goto_next.yy",
+                "resourcePath": "scripts\\sc_action_goto_room\\sc_action_goto_room.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bf4c54f5-a5df-4017-a588-d99fc57599de",
+            "Value": {
+                "id": "632a2420-29ca-4edb-82d7-6e3d6bb1e813",
+                "resourcePath": "scripts\\sc_action_exit_game\\sc_action_exit_game.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1845,7 +1853,8 @@
         "20bd0b41-9c1a-4e88-b835-fad101557097",
         "bbb1ebdd-419b-46ed-b679-bb5f2cee576e",
         "562be9da-0b61-4ea6-af1e-d62306ddfe36",
-        "b483a78f-c319-482b-8149-cd5708fc1247"
+        "b483a78f-c319-482b-8149-cd5708fc1247",
+        "bf4c54f5-a5df-4017-a588-d99fc57599de"
     ],
     "tutorial": ""
 }

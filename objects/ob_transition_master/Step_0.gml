@@ -20,7 +20,7 @@ if started {
 			dAlpha = -1
 			sc_timeout_start(fadeTime)
 			if script_exists(action)
-				script_execute(action)
+				script_execute(action, arg)
 		}
 	}
 	

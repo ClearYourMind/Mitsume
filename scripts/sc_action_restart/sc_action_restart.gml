@@ -1,7 +1,4 @@
 
-if lives>=0
-	room_restart()
-else
-	game_end()
+room_restart()
 
 	
