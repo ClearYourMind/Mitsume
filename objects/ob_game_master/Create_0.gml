@@ -14,8 +14,6 @@ globalvar view_h
 globalvar view_xborder
 globalvar view_yborder
 
-globalvar backLayer
-
 enum depths {
 	explosions = -1,
 	shots = -1,

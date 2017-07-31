@@ -12,22 +12,6 @@ if instance_exists(ob_heroparent) {
 	//camera_set_update_script(view_camera[0], sc_view_follow_hero)
 }
 
-// setup background
-backLayer = layer_get_id("Back")
-
-var tileMap = layer_tilemap_get_id(layer_get_id("Tiles_1"))
-var shadowMap = layer_tilemap_get_id(layer_get_id("Shadows")) 
-var _tile
-for (var j=0; j<(room_height div 16) - 3; j++)
-for (var i=0; i<(room_width  div 16) + 1; i++) {
-	var _x = i*16
-	var _y = j*16
-	if (tilemap_get_at_pixel(tileMap, _x, _y)    > 0) and
-	   (tilemap_get_at_pixel(tileMap, _x, _y+16) = 0) {
-		tilemap_set_at_pixel(shadowMap, 2, _x, _y+16)
-		tilemap_set_at_pixel(shadowMap, 1, _x, _y+32)
-	}
-}
 
 // create GUI
 instance_create_depth(0,0, depths.gui, hero.guiObject)

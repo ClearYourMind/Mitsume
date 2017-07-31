@@ -14,11 +14,6 @@ view_y = camera_get_view_y(view_camera[0])
 
 sc_view_follow_hero()
 
-// move background
-layer_x(backLayer, view_x*0.75)
-layer_y(backLayer, view_y*0.75)
-
-
 // room restart timeout
 if sc_timeout_is_started(restartTime)
 if sc_timeout_over(restartTime) {
