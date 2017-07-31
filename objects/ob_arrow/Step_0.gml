@@ -93,7 +93,7 @@ if phase = ar.Recall {
 
 if phase = ar.Disappear {
     image_speed = 0.15
-	image_alpha = 0.75
+//	image_alpha = 0.75
     speedX = 0
 	accelX = 0
 	speedY = 0
