@@ -55,9 +55,12 @@ if abs(speedY)>0 or feetcollision == false {
 
 if canShoot {
 	if keys[k.Fire] {
-		sc_weapon_firing(true)
-		sc_timeout_start(pauseTime)
-		pauseAnim = after.Shot
+		if not (pauseAnim = after.Launch) {
+			sc_weapon_firing(true)
+			pauseTime = sc_timeout_new(afterShotTime)
+			sc_timeout_start(pauseTime)
+			pauseAnim = after.Shot
+		}
 	} else
 		sc_weapon_firing(false)
 	
@@ -67,8 +70,9 @@ if canShoot {
 		newAnim = sp_hero_arrow
 		image_index = 0
 		if arrow.phase = ar.Hold {
+			pauseTime = sc_timeout_new(afterLaunchTime)
 			sc_timeout_start(pauseTime)
-			pauseAnim = after.Spawn
+			pauseAnim = after.Launch
 		}
 		if arrow.phase = ar.Stay
 			arrow.phase = ar.Recall
@@ -83,7 +87,7 @@ if canShoot {
 				newAnim = sp_hero_jumpfire
 		}
 		if not keys[k.altFire]
-		if pauseAnim = after.Spawn {
+		if pauseAnim = after.Launch {
 			newAnim = sp_hero_arrow
 			image_index = 1
 		}

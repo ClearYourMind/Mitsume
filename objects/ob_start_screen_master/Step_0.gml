@@ -12,16 +12,18 @@ if gamepad_button_check_pressed(gpNum, gp_start)
 if device != 0 {
 	switch device {
 	case 1:
-		instance_activate_object(ob_control)
+		instance_create_depth(0,0, 0, ob_control_keyboard)
 		break
 	case 2:
-		instance_activate_object(ob_gamepad_control)
+		instance_create_depth(0,0, 0, ob_control_gamepad)
 		break
 	}
 	
 //	instance_activate_object(ob_game_master)
 	sc_play_sound(sn_select3, false)
-	sc_transition_start(sc_action_start_game)
+	sc_transition_start(sc_action_goto_room, room_next(room))
+//	sc_transition_start(sc_action_goto_room, rm_setup)
+	
 	
 }
 

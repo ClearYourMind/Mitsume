@@ -12,11 +12,12 @@ if gamepad_is_supported() {
 	}
 }
 
-// skip control method selection	
-if gpNum = -1 {
-	instance_activate_object(ob_control)
-	// goto next room
-	sc_transition_start(sc_action_start_game)
+//// skip control method selection	
+//if gpNum = -1 {
+//	instance_activate_object(ob_control)
+//	// goto next room
+//	sc_transition_start(sc_action_start_game)
 
-}
+//}
 
+alarm_set(1, 50)

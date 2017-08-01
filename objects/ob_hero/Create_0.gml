@@ -5,7 +5,7 @@ event_inherited()
 enum after {
 	None,
 	Shot,
-	Spawn
+	Launch
 }
 enum d {
 	None,
@@ -31,7 +31,9 @@ jumpTime = sc_timeout_new(0.225)
 
 recoverTime = sc_timeout_new(2) 
 
-pauseTime = sc_timeout_new(0.15)
+afterShotTime = 0.15
+afterLaunchTime = 0.3
+pauseTime = 0
 pauseAnim = after.None
 
 feetcollision = true

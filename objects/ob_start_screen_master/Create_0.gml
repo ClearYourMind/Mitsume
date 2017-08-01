@@ -1,4 +1,4 @@
-/// @desc Init systems and values
+///@desc Init systems and values
 globalvar maxChannel
 globalvar counter
 
@@ -18,4 +18,3 @@ cursorVisible = false
 gpNum = -1
 
 alarm_set(1, 50)
-

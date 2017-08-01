@@ -12,3 +12,4 @@ if gamepad_is_supported() {
 	}
 }
 
+alarm_set(1, 50)

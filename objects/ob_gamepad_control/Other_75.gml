@@ -1,3 +1,0 @@
-/// @desc Re-check gamepads
-
-event_perform(ev_other, ev_room_start)

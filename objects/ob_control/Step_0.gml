@@ -13,8 +13,3 @@ if keyboard_check_released(vk_escape) {
 	}
 }
 
-for (var i=0; i<array_length_1d(_key); i++) {
-	keys[i] = keyboard_check(_key[i])
-}
-
-
