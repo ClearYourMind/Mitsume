@@ -14,6 +14,8 @@ with instance_create_depth(x, y, depths.general, ob_hero_dead) {
 	image_xscale = -other.forward
 }
 
+health = 0
+
 sc_gui_update()
 
 lives--
