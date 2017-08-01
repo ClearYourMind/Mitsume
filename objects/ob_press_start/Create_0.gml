@@ -2,7 +2,7 @@
 globalvar maxChannel
 globalvar counter
 
-application_surface_enable(false)
+//application_surface_enable(false)
 draw_set_font(fn_default)
 draw_set_color(c_white)
 

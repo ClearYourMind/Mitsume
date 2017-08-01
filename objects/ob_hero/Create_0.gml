@@ -31,7 +31,7 @@ jumpTime = sc_timeout_new(0.225)
 
 recoverTime = sc_timeout_new(2) 
 
-pauseTime = sc_timeout_new(0.2)
+pauseTime = sc_timeout_new(0.15)
 pauseAnim = after.None
 
 feetcollision = true
