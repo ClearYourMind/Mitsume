@@ -16,5 +16,5 @@ if instance_exists(ob_heroparent) {
 // create GUI
 if instance_exists(hero) {
 	instance_create_depth(0,0, depths.gui, hero.guiObject)
-	sc_gui_update()
+	sc_gui_update(hero.guiObject)
 }

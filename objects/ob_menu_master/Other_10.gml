@@ -1,0 +1,24 @@
+/// @desc Update elements
+
+elementCount = 0
+
+switch varMode {
+case mode.start:
+	if varPos = 0 {
+		if varVisible
+			sc_gui_add_text_element("START GAME", [85, 100])
+	} else
+		sc_gui_add_text_element("START GAME", [85, 100])
+		
+	if varPos = 1 {
+		if varVisible
+			sc_gui_add_text_element("CONTROLS", [85, 112])
+	} else
+		sc_gui_add_text_element("CONTROLS", [85, 112])
+
+	break
+case mode.controls:
+	sc_gui_add_text_element("PRESS BUTTON FOR:", [65, 85])
+	if varVisible
+		sc_gui_add_text_element(varListStr[varPos], [105, 112])
+}

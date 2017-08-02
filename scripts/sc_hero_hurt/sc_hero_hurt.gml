@@ -19,4 +19,4 @@ if health > 0 {
 	sc_play_sound(sn_hurt, false)
 }
 
-sc_gui_update()
+sc_gui_update(hero.guiObject)

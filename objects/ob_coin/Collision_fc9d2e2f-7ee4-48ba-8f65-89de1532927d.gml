@@ -10,7 +10,7 @@ if speedY > 0 {
 
 	score += dropvalue
 	sc_play_sound(sn_coin3, false)
-	sc_gui_update()
+	sc_gui_update(hero.guiObject)
 
 	instance_destroy()
 }

@@ -16,4 +16,3 @@ keyAssign[k.Pause] = gp_start
 
 alarm_set(1, 50)
 
-//instance_deactivate_object(id)

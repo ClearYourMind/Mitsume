@@ -1,5 +1,7 @@
 globalvar keyAssign
 globalvar keys
+globalvar keysPressed
+globalvar keyCode
 
 enum k {
 	Left,
@@ -9,19 +11,16 @@ enum k {
 	Jump,
 	Fire,
 	altFire,
-	Pause
+	Pause = 7
 }
 
 sc_load_key_assign()
 
-keys[k.Left ] = false
-keys[k.Right] = false
-keys[k.Up   ] = false
-keys[k.Down ] = false
-keys[k.Jump ] = false
-keys[k.Fire ] = false
-keys[k.altFire] = false
-keys[k.Pause] = false
+for (var i=0; i<8; i++) {
+	keys[i] = false
+	keysPressed[i] = false
+	triggered[i] = false
+}
 
 escHold = false
 

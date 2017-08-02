@@ -1,5 +1,7 @@
 /// @desc check if gamepads are supported and available
 
+if device != 0  exit
+
 gpNum = -1
 
 if gamepad_is_supported() {
@@ -11,13 +13,5 @@ if gamepad_is_supported() {
 		break  // gamepad found
 	}
 }
-
-//// skip control method selection	
-//if gpNum = -1 {
-//	instance_activate_object(ob_control)
-//	// goto next room
-//	sc_transition_start(sc_action_start_game)
-
-//}
 
 alarm_set(1, 50)

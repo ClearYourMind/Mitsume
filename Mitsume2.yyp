@@ -210,7 +210,7 @@
             "Key": "15a2b51a-69a2-4a3a-a5bd-335692e01def",
             "Value": {
                 "id": "8b032b77-b5d4-4fd3-bf77-a58a7bc78803",
-                "resourcePath": "scripts\\sc_gui_add_element\\sc_gui_add_element.yy",
+                "resourcePath": "scripts\\sc_gui_add_sprite_element\\sc_gui_add_sprite_element.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1439,6 +1439,14 @@
             }
         },
         {
+            "Key": "c814d3c2-d35b-4a8c-b150-5029134b2bbc",
+            "Value": {
+                "id": "b3a72f32-c864-4edf-856d-1b75852c7742",
+                "resourcePath": "scripts\\sc_gui_add_text_element\\sc_gui_add_text_element.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8416248-9e5a-458a-b37e-1633e1c8406e",
             "Value": {
                 "id": "12515120-c9e1-476d-b518-a101f488e153",
@@ -1906,6 +1914,7 @@
         "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
         "64bd9785-800d-436c-a981-f13b61a56249",
         "15a2b51a-69a2-4a3a-a5bd-335692e01def",
+        "c814d3c2-d35b-4a8c-b150-5029134b2bbc",
         "20bd0b41-9c1a-4e88-b835-fad101557097",
         "bbb1ebdd-419b-46ed-b679-bb5f2cee576e",
         "562be9da-0b61-4ea6-af1e-d62306ddfe36",

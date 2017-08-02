@@ -3,6 +3,7 @@
 // controls in hero GUI
 
 if not instance_exists(hero) exit
+
 if paused {
 	if keys[k.Left] {
 		if not triggered[k.Left] {
@@ -40,7 +41,7 @@ if keys[k.Pause] {
 	if not triggered[k.Pause] {
 		triggered[k.Pause] = true
 		paused = not paused
-		sc_gui_update()
+		sc_gui_update(hero.guiObject)
 		sc_play_sound(sn_select, false)
 	}
 } else

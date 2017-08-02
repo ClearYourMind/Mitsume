@@ -1,9 +1,11 @@
-/// @desc sc_play_sound(sound, loop)
-/// @param sound to play
-/// @param loop or not
+///@desc sc_play_sound(sound, loop)
+///@arg sound to play
+///@arg loop (default - false)
 
-var _snd  = argument0;
-var _loop = argument1;
+var _snd  = argument[0]
+var _loop = false
+if argument_count>1
+	 _loop = argument[1]
 
 if audio_exists(_snd) {
     if audio_is_playing(_snd) audio_stop_sound(_snd)

@@ -16,7 +16,7 @@ with instance_create_depth(x, y, depths.general, ob_hero_dead) {
 
 health = 0
 
-sc_gui_update()
+sc_gui_update(hero.guiObject)
 
 lives--
 

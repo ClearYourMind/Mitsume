@@ -1,4 +1,5 @@
 /// @desc Update GUI
+/// @arg ob_gui
 
-with ob_gui event_perform(ev_other, ev_user0)
+with argument0 event_perform(ev_other, ev_user0)
 

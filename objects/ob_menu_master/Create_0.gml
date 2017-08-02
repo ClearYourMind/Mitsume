@@ -1,8 +1,16 @@
 event_inherited()
 /// @desc Init GUI
 
-visible_1 = true
-
 enum mode {
-	
+	start,
+	wait,
+	controls
 }
+
+varVisible = true
+varPos = 0
+varListKey = []
+varListStr = []
+varPressed = false
+
+varMode = mode.start
