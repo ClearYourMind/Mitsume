@@ -66,9 +66,9 @@ if phase = ar.Sag {
 		phase = ar.Stay
 		y = oY
 	} else {
-		hero.y += dY 
+		hero.y += vspeed 
 	}
-	if y+dY <= oY {
+	if y+vspeed <= oY {
 		phase = ar.Stay
 		y = oY
 		if stepped {
@@ -76,7 +76,7 @@ if phase = ar.Sag {
 			hero.y -= 2
 			stepped = false
 		}
-		dY = 0
+		vspeed = 0
 	}
 }
 

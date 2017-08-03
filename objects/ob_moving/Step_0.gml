@@ -18,6 +18,6 @@ speedY += grav * dTime
 if abs(speedY) > maxspeedY
 	speedY = maxspeedY * sign(speedY)
 
-dX = min(totalMaxSpeed, speedX * dTime)
-dY = min(totalMaxSpeed, speedY * dTime)
+hspeed = min(totalMaxSpeed, speedX * dTime)
+vspeed = min(totalMaxSpeed, speedY * dTime)
 

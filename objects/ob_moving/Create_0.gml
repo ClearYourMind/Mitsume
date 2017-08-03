@@ -10,10 +10,6 @@ grav = 0
 maxspeedX = 0
 maxspeedY = 0
 
-// actual movement per frame
-dX = 0 
-dY = 0
-
 // values are always positive
 // (if sprite_offset is inside bbox)
 w1 = x - bbox_left

@@ -17,10 +17,10 @@ case d.Left:
 	result = sc_check_collision_mask_wall(obj, dir)
 	break
 case d.Down:
-	if place_meeting(_x-dX, _y, obj) {
+	if place_meeting(_x-hspeed, _y, obj) {
 		_y -=  (_y+h2) - (other.y-other.h1)
 		speedY = 0
-		dY = 0
+		vspeed = 0
 		result = true
 	}
 	break

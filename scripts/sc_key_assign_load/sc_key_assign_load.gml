@@ -1,6 +1,5 @@
 ///@desc Load saved key assignments
 
-var _n
 var loaded = false
 
 if file_exists("config.ini") {

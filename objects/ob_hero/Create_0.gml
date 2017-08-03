@@ -58,3 +58,12 @@ weapon = weaponList[weaponNum, 0]
 arrow = noone
  
 guiObject = ob_hero_gui
+
+mask_index = sp_hero_collision_left
+w1 = x - bbox_left
+mask_index = sp_hero_collision_right
+w2 = bbox_right - x
+mask_index = sp_hero_collision_top
+h1 = y - bbox_top
+mask_index = sp_hero_collision_bottom
+h2 = bbox_bottom - y
