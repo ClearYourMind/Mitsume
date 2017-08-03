@@ -14,9 +14,9 @@ for (var i=0; i<array_length_1d(keyAssign); i++)
 	keys[i] = gamepad_button_check(gpNum, keyAssign[i])
 
 keys[k.Left ] = gamepad_axis_value(gpNum, gp_axislh) <= -0.5
-keys[k.Right] = gamepad_axis_value(gpNum, gp_axislh) >= 0.5
+keys[k.Right] = gamepad_axis_value(gpNum, gp_axislh) >=  0.5
 keys[k.Up   ] = gamepad_axis_value(gpNum, gp_axislv) <= -0.5
-keys[k.Down ] = gamepad_axis_value(gpNum, gp_axislv) >= 0.5
+keys[k.Down ] = gamepad_axis_value(gpNum, gp_axislv) >=  0.5
 
 for (var i=0; i<array_length_1d(keyAssign); i++) {
 	if keys[i] = true {

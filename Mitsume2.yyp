@@ -682,7 +682,7 @@
             "Key": "5ede6464-0db9-4fed-99af-e6b2d428291a",
             "Value": {
                 "id": "727635ae-b170-4185-8149-282d9f8e8eab",
-                "resourcePath": "scripts\\sc_save_key_assign\\sc_save_key_assign.yy",
+                "resourcePath": "scripts\\sc_key_assign_save\\sc_key_assign_save.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1274,7 +1274,7 @@
             "Key": "ac3d286f-9482-4dbf-861e-d2bc0475b7c5",
             "Value": {
                 "id": "e451e7af-6084-4811-929a-bad9cad08f25",
-                "resourcePath": "scripts\\sc_load_key_assign\\sc_load_key_assign.yy",
+                "resourcePath": "scripts\\sc_key_assign_load\\sc_key_assign_load.yy",
                 "resourceType": "GMScript"
             }
         },

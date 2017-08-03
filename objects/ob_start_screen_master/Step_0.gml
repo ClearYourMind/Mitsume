@@ -22,10 +22,8 @@ if device = 0 {
 			instance_create_depth(0,0, 0, ob_control_keyboard)
 			break
 		case 2:
-			with instance_create_depth(0,0, 0, ob_control_gamepad) {
+			with instance_create_depth(0,0, 0, ob_control_gamepad)
 				gpNum = other.gpNum
-			}
-			
 			break
 		}
 	}

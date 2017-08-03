@@ -23,14 +23,6 @@ if instance_exists(ob_control) {
 			}
 			if varPos = 1 {
 				varMode = mode.wait
-				if instance_exists(ob_control_gamepad) {
-					varListKey = [k.Fire, k.Jump,  k.altFire]
-					varListStr = ["FIRE", "JUMP", "EXTRA"]
-				}
-				if instance_exists(ob_control_keyboard) {
-					varListKey = [k.Left, k.Right, k.Up, k.Down, k.Fire, k.Jump, k.altFire, k.Pause]
-					varListStr = ["LEFT", "RIGHT", "UP", "DOWN", "FIRE", "JUMP", "EXTRA",   "START"]
-				}
 				sc_play_sound(sn_select4, false)
 			}
 		}
@@ -43,24 +35,22 @@ if instance_exists(ob_control) {
 		}
 		break
 	case mode.controls:
-		if varPos < array_length_1d(varListKey) {
-			if varPressed = false {
-				keyAssign[varListKey[varPos]] = noone
-				if keyCode != noone {
-					varPressed = true
-					keyAssign[varListKey[varPos]] = keyCode
-					sc_play_sound(sn_select4)
-				}
-			} else {
-				if keyCode = noone {
-					varPressed = false
-					varPos++
-				}
+		if varPressed = false {
+			keyAssign[ob_control.cfgKeyNums[varPos]] = noone
+			if keyCode != noone {
+				varPressed = true
+				keyAssign[ob_control.cfgKeyNums[varPos]] = keyCode
+				sc_play_sound(sn_select4)
 			}
-			
-		} else {
-			varMode = mode.start
-			varPos = 0
+		} else 
+		if keyCode = noone {
+			varPressed = false
+			varPos++
+			if varPos > array_length_1d(ob_control.cfgKeyNums)-1 {
+				sc_key_assign_save()
+				varMode = mode.start
+				varPos = 0
+			}
 		}
 		break
 	}

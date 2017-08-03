@@ -20,5 +20,5 @@ case mode.start:
 case mode.controls:
 	sc_gui_add_text_element("PRESS BUTTON FOR:", [65, 85])
 	if varVisible
-		sc_gui_add_text_element(varListStr[varPos], [105, 112])
+		sc_gui_add_text_element(ob_control.cfgKeyStrs[varPos], [105, 112])
 }

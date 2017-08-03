@@ -9,8 +9,6 @@ enum mode {
 
 varVisible = true
 varPos = 0
-varListKey = []
-varListStr = []
 varPressed = false
 
 varMode = mode.start

@@ -14,9 +14,9 @@ enum k {
 	Pause = 7
 }
 
-sc_load_key_assign()
+sc_key_assign_load()
 
-for (var i=0; i<8; i++) {
+for (var i=0; i<7+1; i++) {
 	keys[i] = false
 	keysPressed[i] = false
 	triggered[i] = false
