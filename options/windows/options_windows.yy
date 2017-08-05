@@ -3,7 +3,7 @@
     "modelName": "GMWindowsOptions",
     "mvc": "1.0",
     "name": "Windows",
-    "option_windows_allow_fullscreen_switching": false,
+    "option_windows_allow_fullscreen_switching": true,
     "option_windows_borderless": false,
     "option_windows_company_info": "iDunNo Inc.",
     "option_windows_copyright_info": "Original by (c) Natsume Inc. 1992",
