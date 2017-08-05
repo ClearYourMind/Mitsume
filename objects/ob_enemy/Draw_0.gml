@@ -1,15 +1,30 @@
 /// @desc Flash when hurt
 
-//image_blend = c_white
-draw_self()
+if not hurt {
+	image_blend = c_white
+	draw_self()
+}
 
 if hurt {
-	switch hurtstep {
+	switch hurtstep mod 4 {
 	case 0:
-		image_blend = $6666FF
+		image_blend = $BBBBFF
+		draw_self()
+		image_blend = $0000FF
 		break
 	case 1:
-		image_blend = $FF6666
+		image_blend = $FFBBBB
+		draw_self()
+		image_blend = $FF0000
+		break
+	case 2:
+		image_blend = $BBBBFF
+		draw_self()
+		image_blend = $0000FF
+		break
+	case 3:
+		draw_self()
+		image_blend = c_white
 		break
 	}
 	
