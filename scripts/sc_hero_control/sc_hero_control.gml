@@ -29,7 +29,7 @@ if canMove {
 } else {
 	// move hero when on air and firing
 	if not hurt
-	if not feetcollision and sc_timeout_is_started(pauseTime) {
+	if not feetcollision and pauseAnim = after.Shot {
 		if keys[k.Left] {
 		    newForward = -1
 		    accelX = accel * newForward
@@ -40,6 +40,7 @@ if canMove {
 		} 
 	}
 }
+
 if keysPressed[k.Jump] {
 	if canJump { 
 		// arrow jump
@@ -75,7 +76,7 @@ if abs(speedY)>0 or feetcollision == false {
 }
 
 if canShoot {
-	if keys[k.Fire] {
+	if keys[k.Fire] and not keys[k.altFire] {
 		if not (pauseAnim = after.Launch) {
 			sc_weapon_firing(true)
 			pauseTime = sc_timeout_new(afterShotTime)
