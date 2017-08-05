@@ -56,7 +56,7 @@ weaponNum = 2
 weapon = weaponList[weaponNum, 0]
 
 arrow = noone
- 
+arrowObject = ob_kill_arrow
 guiObject = ob_hero_gui
 
 mask_index = sp_hero_collision_left

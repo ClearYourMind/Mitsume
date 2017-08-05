@@ -88,7 +88,7 @@ if canShoot {
 	
 	if keys[k.altFire] {
 		if not instance_exists(arrow)
-			arrow = instance_create_depth(0,0, depths.shots, ob_arrow)
+			arrow = instance_create_depth(0,0, depths.shots, arrowObject)
 		newAnim = sp_hero_arrow
 		image_index = 0
 		if arrow.phase = ar.Hold {
