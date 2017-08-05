@@ -35,6 +35,7 @@ image_speed = 0
 forward = -1
 hit = 1
 stepped = false
+sprang = false
 
 oAccel = 400
 maxspeedX = 250

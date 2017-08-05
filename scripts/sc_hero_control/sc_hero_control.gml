@@ -3,10 +3,16 @@
 var newAnim = sp_hero_stand
 var newForward = forward
 
-canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
-		  and not sc_timeout_is_started(pauseTime)
-canJump = feetcollision and canMove
-canShoot = instance_exists(weapon) and not hurt
+var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
+			  and not sc_timeout_is_started(pauseTime)
+var canJump = feetcollision and canMove
+var canShoot = instance_exists(weapon) and not hurt
+var arrowJump = false
+if instance_exists(arrow) {
+//	canJump = canJump and (arrow.stepped and arrow.sprang)
+	arrowJump = arrow.stepped and arrow.sprang and canJump
+}
+
 
 // Кнопки
 if canMove {
@@ -22,6 +28,7 @@ if canMove {
 	} 
 } else {
 	// move hero when on air and firing
+	if not hurt
 	if not feetcollision and sc_timeout_is_started(pauseTime) {
 		if keys[k.Left] {
 		    newForward = -1
@@ -33,15 +40,29 @@ if canMove {
 		} 
 	}
 }
-if keys[k.Jump] {
+if keysPressed[k.Jump] {
 	if canJump { 
-	    speedY = -jumpSpeed
+		// arrow jump
+		if arrowJump {
+			speedY = -jumpSpeed*1.8
+		} else {
+			speedY = -jumpSpeed
+			sc_play_sound(sn_jump, false)
+			sc_timeout_start(jumpTime)
+		}
 		y-=2
 	    newAnim = sp_hero_jump
-		sc_timeout_start(jumpTime)
 	    canJump = false
-	    sc_play_sound(sn_jump, false)
-	}    
+	}   
+}
+if keys[k.Jump] {
+	// arrow jump
+	if arrowJump {
+		speedY = -jumpSpeed*1.8
+		y-=2
+	    newAnim = sp_hero_jump
+	    canJump = false
+	}
 	if not sc_timeout_over(jumpTime) {
 	    speedY = -jumpSpeed
 	}

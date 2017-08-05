@@ -14,7 +14,6 @@
         "f2581b8b-e2b3-4693-a590-003d6b7afbd9",
         "f50f0d47-a4a9-4267-b289-34c9d2e93ff4",
         "09bf7d3e-3027-4d92-b5e4-8a10510041ba",
-        "e8be3f1f-65e7-4908-8306-f1b83036b226",
         "806dc8f0-cf4d-45e8-b148-7e1c0e26732e",
         "9a164e3b-e6f5-46ad-85c9-df6307eea965",
         "f5e4b03e-336f-48c6-9d8b-bfb35f6d2e32",
@@ -45,7 +44,8 @@
         "b9ac0133-2523-4d17-8a9f-168b0bc5e9e2",
         "0a98f042-b5f4-4cc1-8cfe-538a88743ba3",
         "7302c8ec-9dde-493d-9b6b-56e26fac8493",
-        "69de5abe-abda-489e-9798-31bf952c6cd8"
+        "69de5abe-abda-489e-9798-31bf952c6cd8",
+        "bacd3150-a026-4b32-95db-5be3990aa034"
     ],
     "layers": [
         {
@@ -214,30 +214,6 @@
                     "rotation": 0,
                     "scaleX": 9.938203,
                     "scaleY": 5
-                },
-                {
-                    "id": "e8be3f1f-65e7-4908-8306-f1b83036b226",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_E61E190",
-                    "x": 208,
-                    "y": 336,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_E61E190",
-                    "objId": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3",
-                    "rotation": 0,
-                    "scaleX": 2,
-                    "scaleY": 4
                 },
                 {
                     "id": "806dc8f0-cf4d-45e8-b148-7e1c0e26732e",
@@ -944,8 +920,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "immortal",
-                    "x": 224,
-                    "y": 320,
+                    "x": 304,
+                    "y": 272,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -958,6 +934,30 @@
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1
+                },
+                {
+                    "id": "bacd3150-a026-4b32-95db-5be3990aa034",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_41E150D7",
+                    "x": 208,
+                    "y": 320,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_41E150D7",
+                    "objId": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3",
+                    "rotation": 0,
+                    "scaleX": 2,
+                    "scaleY": 5
                 }
             ]
         },
@@ -1763,8 +1763,8 @@
                     0,
                     2147483648,
                     2147483648,
-                    2147483648,
-                    2147483648,
+                    77,
+                    79,
                     2147483648,
                     2147483648,
                     2147483648,
@@ -1801,8 +1801,8 @@
                     2147483648,
                     2147483648,
                     2147483648,
-                    77,
-                    79,
+                    66,
+                    69,
                     2147483648,
                     2147483648,
                     2147483648,

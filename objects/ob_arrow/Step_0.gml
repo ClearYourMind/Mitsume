@@ -47,6 +47,8 @@ if phase = ar.Stay {
 	speedY = 0
 	accelX = 0
 	accelY = 0
+	sprang = false
+	vspeed = 0
 	y = oY
 	if not sc_timeout_is_started(lifeTime) and
 	   not sc_timeout_is_started(fadeTime)
@@ -58,25 +60,34 @@ if phase = ar.SagBegin {
 	accelY = -sagAccel
 	y+=1
 	phase = ar.Sag
-	sc_play_sound(sn_arrow4, false)
+	sprang = false
 }
 
 if phase = ar.Sag {
-	if stepped = false {
-		phase = ar.Stay
-		y = oY
-	} else {
-		hero.y += vspeed 
+	if vspeed<0 and stepped {
+		if not sprang {
+			sc_play_sound(sn_arrow4, false)
+			sprang = true
+		}
 	}
-	if y+vspeed <= oY {
-		phase = ar.Stay
-		y = oY
+	
+	if stepped
+		hero.y += vspeed
+	
+	if y<=oY {
 		if stepped {
 			hero.speedY = speedY
 			hero.y -= 2
 			stepped = false
 		}
+		phase = ar.Stay
+	    speedX = 0
+		speedY = 0
+		accelX = 0
+		accelY = 0
+		sprang = false
 		vspeed = 0
+		y = oY
 	}
 }
 
@@ -93,11 +104,13 @@ if phase = ar.Recall {
 
 if phase = ar.Disappear {
     image_speed = 0.15
+	flashing = true
 //	image_alpha = 0.75
     speedX = 0
 	accelX = 0
 	speedY = 0
 	accelY = 0
+	sprang = false
     if animEnded {
         instance_destroy()
         //hero.arrow = noone
