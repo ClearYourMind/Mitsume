@@ -4,3 +4,5 @@ event_inherited()
 visible_1 = true
 visible_2 = true
 pos = 0
+
+mode = md.pause

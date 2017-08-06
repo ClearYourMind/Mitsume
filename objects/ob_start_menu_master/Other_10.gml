@@ -3,7 +3,7 @@
 elementCount = 0
 
 switch varMode {
-case mode.start:
+case md.start:
 	if varPos = 0 {
 		if varVisible
 			sc_gui_add_text_element("START GAME", [85, 100])
@@ -17,7 +17,7 @@ case mode.start:
 		sc_gui_add_text_element("CONTROLS", [85, 112])
 
 	break
-case mode.controls:
+case md.controls:
 	sc_gui_add_text_element("PRESS BUTTON FOR:", [65, 85])
 	if varVisible
 		sc_gui_add_text_element(ob_control.cfgKeyStrs[varPos], [105, 112])

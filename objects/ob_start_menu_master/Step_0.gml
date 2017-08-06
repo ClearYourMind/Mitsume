@@ -5,7 +5,7 @@ varVisible = ((counter div 20) mod 2 == 0)
 // process controls
 if instance_exists(ob_control) {
 	switch varMode {
-	case mode.start:
+	case md.start:
 		if keysPressed[k.Down] {
 			if varPos < 1
 				varPos++
@@ -22,19 +22,19 @@ if instance_exists(ob_control) {
 				sc_transition_start(sc_action_goto_room, room_next(room))
 			}
 			if varPos = 1 {
-				varMode = mode.wait
+				varMode = md.wait
 				sc_play_sound(sn_select4, false)
 			}
 		}
 		break
-	case mode.wait:
+	case md.wait:
 		//wait for all buttons released
 		if keyCode = noone {
-			varMode = mode.controls
+			varMode = md.controls
 			varPos = 0
 		}
 		break
-	case mode.controls:
+	case md.controls:
 		if varPressed = false {
 			keyAssign[ob_control.cfgKeyNums[varPos]] = noone
 			if keyCode != noone {
@@ -48,7 +48,7 @@ if instance_exists(ob_control) {
 			varPos++
 			if varPos > array_length_1d(ob_control.cfgKeyNums)-1 {
 				sc_key_assign_save()
-				varMode = mode.start
+				varMode = md.start
 				varPos = 0
 			}
 		}

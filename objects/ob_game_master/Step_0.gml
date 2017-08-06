@@ -27,5 +27,4 @@ if sc_timeout_over(restartTime) {
 	else
 		// game over
 		sc_transition_start(sc_action_exit_game)
-
 }

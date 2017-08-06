@@ -55,7 +55,6 @@ if paused {
 		keys[i] = false
 	}
 	keys[k.Pause] = pb
-	
 }
 
 

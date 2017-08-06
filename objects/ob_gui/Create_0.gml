@@ -2,12 +2,22 @@
 
 element = []
 elementCount = 0
-_x = 0
-_y = 0
+oX = 0
+oY = 0
 
+// element properties
 enum el {
+	type,
 	pos,
 	sprite,
 	index,
-	text
+	text,
+	size,
+	color, 
+	alpha,
+	
+	elSprite,
+	elText,
+	elRect
 }
+

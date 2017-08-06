@@ -6,6 +6,8 @@ if not instance_exists(hero)
 
 elementCount = 0
 
+sc_gui_add_rect_element([0, 0], [view_w, 20], c_black, 0.8)
+
 // health
 var _x = 12
 var _y = 0
@@ -27,7 +29,7 @@ sc_gui_add_sprite_element(sp_gui_health, 3, [_x, _y])
 
 if not paused {
 	//weapon
-	_x=115
+	_x=105
 	sc_gui_add_sprite_element(sp_gui_frame, 0, [_x, _y])
 
 	if instance_exists(hero.weapon)
@@ -51,14 +53,14 @@ if not paused {
 
 
 	//status
-	_x+=70
+	_x+=80
 	sc_gui_add_sprite_element(sp_gui_status, 0, [_x, _y+3])
 
 	_x+=21
 	sc_gui_add_sprite_element(sp_gui_number, lives, [_x, _y])
 } else {
 // paused layout
-	_x=115
+	_x=105
 	i = 0
 	for (i=0; i<array_height_2d(hero.weaponList); i++) {
 		if hero.weaponNum = i {
@@ -75,8 +77,6 @@ if not paused {
 	if visible_2
 		sc_gui_add_sprite_element(sp_gui_status, 1, [_x, _y+3])
 	
-	
-
 }
 
 

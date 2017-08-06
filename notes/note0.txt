@@ -9,6 +9,20 @@
 Не привязаны ко времени:
 	-Скорость перемещения камеры
 
+07.08.17
+
+ob_pause_control functions move to ob_hero_gui
+make more controls processing in ob_hero_gui:
+ - switching pause
+ - navigating through weapons
+ - switching shop menu
+ - navigating through shop
+
+
+
+
+
+
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения
 курсора, пока не переведешь фокус с GM и обратно. 

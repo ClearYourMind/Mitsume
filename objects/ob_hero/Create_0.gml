@@ -51,6 +51,8 @@ weaponList[1, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_2)
 weaponList[1, 1] = true
 weaponList[2, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_3)
 weaponList[2, 1] = true 
+weaponList[3, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_4)
+weaponList[3, 1] = true 
 
 weaponNum = 0
 weapon = weaponList[weaponNum, 0]

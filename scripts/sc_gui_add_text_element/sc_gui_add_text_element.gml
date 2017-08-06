@@ -6,10 +6,9 @@
 // of ob_gui
 
 var elem = []
+elem[el.type] = el.elText
 elem[el.pos ] = argument1
 elem[el.text] = argument0
-elem[el.sprite] = noone
-elem[el.index ] = 0
 
 element[elementCount++] = elem
 
