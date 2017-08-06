@@ -6,13 +6,18 @@ if not paused {
 } else
 	dTime = 0
 	
-counter = (counter+1) mod 1000
+counter = (counter+1) mod 1024
 
 // move view to follow hero
 view_x = camera_get_view_x(view_camera[0])
 view_y = camera_get_view_y(view_camera[0])
 
 sc_view_follow_hero()
+
+// deactivate enemies out of view
+instance_deactivate_object(ob_enemy)
+instance_activate_region(view_x - view_w*0.25, view_y - view_h*0.25, 
+						 view_w*1.25, view_h*1.25, true)
 
 // room restart timeout
 if sc_timeout_is_started(restartTime)

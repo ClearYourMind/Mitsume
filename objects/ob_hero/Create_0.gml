@@ -52,11 +52,11 @@ weaponList[1, 1] = true
 weaponList[2, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_3)
 weaponList[2, 1] = true 
 
-weaponNum = 2
+weaponNum = 0
 weapon = weaponList[weaponNum, 0]
 
 arrow = noone
-arrowObject = ob_kill_arrow
+arrowObject = ob_arrow
 guiObject = ob_hero_gui
 
 mask_index = sp_hero_collision_left

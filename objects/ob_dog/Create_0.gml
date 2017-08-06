@@ -18,8 +18,8 @@ oAccel = 300
 oStopFactor = 0.001
 grav = 800
 
-xRange = 150
-yRange = 80
+xRange = 100
+yRange = 60
 strength = 5
 
 dropvalue = 20
