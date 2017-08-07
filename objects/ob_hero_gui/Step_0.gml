@@ -9,5 +9,5 @@ if keysPressed[k.Pause] {
 	//sc_gui_update(hero.guiObject)
 	sc_play_sound(sn_select, false)
 	if paused
-		instance_change(guiPaused, false)
+		instance_change(ob_hero_gui_paused, false)
 }

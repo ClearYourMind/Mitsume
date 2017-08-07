@@ -44,4 +44,6 @@ _x=219
 if visible_2
 	sc_gui_add_sprite_element(sp_gui_status, 1, [_x, _y+3])
 
-
+_x = view_w - 24
+if not visible_1
+	sc_gui_add_sprite_element(sp_menu_arrow, 1, [_x, -4])
