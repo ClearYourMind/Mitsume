@@ -3,6 +3,6 @@ event_inherited()
 
 visible_1 = true
 visible_2 = true
-pos = 0
 
-mode = md.pause
+guiNormal = ob_hero_gui
+guiPaused = ob_hero_gui_paused

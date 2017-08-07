@@ -1,4 +1,0 @@
-/// @desc
-
-pos = hero.weaponNum
-

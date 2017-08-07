@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "0e0bb8e4-89d3-476c-88f5-9217e12ec445",
+            "Value": {
+                "id": "753ecd46-a19b-4f81-80dd-e83560cfbe66",
+                "resourcePath": "objects\\ob_hero_gui_paused\\ob_hero_gui_paused.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1086995c-d247-490c-a090-23f2fb4b0f0c",
             "Value": {
                 "id": "b5fd23f5-d1c3-45df-b3df-dea7f491cfb1",
@@ -388,14 +396,6 @@
                 "id": "a0845132-aea8-488f-b425-3b8e032f2fca",
                 "resourcePath": "views\\2eb1b242-fcf3-4903-8e20-d29d6494da0d.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "2edd3987-b25c-49fe-a924-af2dec92cfa9",
-            "Value": {
-                "id": "f1f29b77-e0bf-458c-a49d-2046f7cef269",
-                "resourcePath": "objects\\ob_pause_control\\ob_pause_control.yy",
-                "resourceType": "GMObject"
             }
         },
         {
