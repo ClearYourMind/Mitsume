@@ -40,7 +40,7 @@ for (i=0; i<array_height_2d(hero.weaponList); i++) {
 	_x+=24+4
 }
 	
-_x=219
+_x=218
 if visible_2
 	sc_gui_add_sprite_element(sp_gui_status, 1, [_x, _y+3])
 
