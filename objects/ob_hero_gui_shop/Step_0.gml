@@ -18,7 +18,7 @@ if keysPressed[k.Pause] {
 
 if keysPressed[k.Down] {
 	sc_play_sound(sn_select4)
-	instance_change(ob_hero_gui_paused, true)
+	instance_change(ob_hero_gui_paused, false)
 	sc_gui_update(ob_hero_gui_paused)
 	exit
 }
@@ -35,6 +35,25 @@ if menuDx = 0 {
 	menuDx = -10
 }
 
+if keysPressed[k.Jump]
+if menuDx = 0 {
+	var _item = menu[menuPos]
+	var ok = false
+	if not _item[item.soldout] {
+		if score - _item[item.price] >= 0 {
+			score -= _item[item.price]
+			_item[item.soldout] = true
+			menu[menuPos] = _item
+			sc_play_sound(sn_select3)
+			sc_shop_item_apply(_item)
+			ok = true
+		}
+	}
+	if not ok
+		sc_play_sound(sn_error)
+}
+
+// process scrolling
 if menuDx != 0 {
 	menuX += menuDx
 	if abs(menuX) > menuInterval {
@@ -54,4 +73,5 @@ for (var i=0; i<array_length_1d(keys); i++) {
 	keysPressed[i] = false
 }
 
+visible_1 = ((counter div 10) mod 2) == 1
 sc_gui_update(self)
