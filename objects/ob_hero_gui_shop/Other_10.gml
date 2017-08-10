@@ -21,7 +21,13 @@ for (var i=-2; i<=2; i++) {
 			sc_gui_add_sprite_element(sp_gui_frame_sq, 0, [_x, -32])
 	} else
 		sc_gui_add_sprite_element(sp_gui_frame_sq, 0, [_x, -32])
-		
+	
+	if not _item[item.soldout]
+		sc_gui_add_sprite_element(sp_gui_shop, _item[item.sprite], [_x, -32])
+	else
+		sc_gui_add_sprite_element(sp_gui_shop, 7, [_x, -32])
+	
+	
 	_s = _item[item.name]
 	sc_gui_add_text_element(_s , [_x-string_width(_s)*0.5 , -56])	
 	

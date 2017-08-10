@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "0b56cf48-ee8d-4e03-a995-051549b9cb67",
+            "Value": {
+                "id": "d0e80555-6a35-492b-ae23-104d834eccaf",
+                "resourcePath": "sprites\\sp_tothem_fire\\sp_tothem_fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0bac4f29-8685-463d-aa3a-7a5e453d21bd",
             "Value": {
                 "id": "19a809e3-5eac-4234-9f82-e8087df0504e",
@@ -412,6 +420,14 @@
                 "id": "423b2609-254a-4943-9e06-ae0368deca9c",
                 "resourcePath": "sounds\\sn_select4\\sn_select4.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "32ce0875-81ba-4f04-b747-7ec5fa2f2fa8",
+            "Value": {
+                "id": "1a40814b-457a-47b8-ac42-be0d8f666c99",
+                "resourcePath": "sprites\\sp_tothem_idle\\sp_tothem_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1163,6 +1179,14 @@
             "Value": {
                 "id": "58f2f8b7-f08e-416d-891f-6c24ae86f2a5",
                 "resourcePath": "sprites\\sp_hero_jumpfire\\sp_hero_jumpfire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9a16230f-554a-47ff-9a77-c2576e508294",
+            "Value": {
+                "id": "1105cd32-7faf-437b-890c-1dfa79f2f3fe",
+                "resourcePath": "sprites\\sp_gui_shop\\sp_gui_shop.yy",
                 "resourceType": "GMSprite"
             }
         },
