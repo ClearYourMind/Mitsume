@@ -27,8 +27,8 @@ if dy < 0
 if view_x < 0 view_x = 0   
 if view_y < 0 view_y = 0   
 
-if view_x + view_w > room_width
-   view_x = room_width - view_w
+if view_x + view_w > room_width*0.9
+   view_x = room_width*0.9 - view_w
 if view_y + view_h > room_height
    view_y = room_height - view_h
    

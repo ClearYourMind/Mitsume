@@ -21,3 +21,11 @@ if hurt {
 	}
 }
 
+if stamina < staminaMax {
+	stamina += staminaRegenSpeed * dTime
+} else {
+	stamina = staminaMax
+	staminaDepleted = false
+}
+
+debugstr = " STAMINA = "+string(stamina)

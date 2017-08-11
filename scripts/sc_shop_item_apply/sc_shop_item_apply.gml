@@ -11,19 +11,25 @@ case itemtype.exitshop:
 	instance_change(ob_hero_gui, false)
 	break
 case itemtype.weapon1:
-	weaponNum = 1
-	hero.weaponList[weaponNum, 1] = true
-	hero.weapon = hero.weaponList[weaponNum, 0]
+	with hero {
+		weaponNum = 1
+		weaponList[weaponNum, 1] = true
+		weapon = weaponList[weaponNum, 0]
+	}
 	break
 case itemtype.weapon2:
-	weaponNum = 2
-	hero.weaponList[weaponNum, 1] = true
-	hero.weapon = hero.weaponList[weaponNum, 0]
+	with hero {
+		weaponNum = 2
+		weaponList[weaponNum, 1] = true
+		weapon = weaponList[weaponNum, 0]
+	}
 	break
 case itemtype.weapon3:
-	weaponNum = 3
-	hero.weaponList[weaponNum, 1] = true
-	hero.weapon = hero.weaponList[weaponNum, 0]
+	with hero {
+		weaponNum = 3
+		weaponList[weaponNum, 1] = true
+		weapon = weaponList[weaponNum, 0]
+	}
 	break
 case itemtype.killarrow:
 	hero.arrowObject = ob_kill_arrow

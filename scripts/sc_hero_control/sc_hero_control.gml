@@ -6,7 +6,7 @@ var newForward = forward
 var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 			  and not sc_timeout_is_started(pauseTime)
 var canJump = feetcollision and canMove
-var canShoot = instance_exists(weapon) and not hurt
+var canShoot = instance_exists(weapon) and not hurt and not staminaDepleted
 var arrowJump = false
 if instance_exists(arrow) {
 //	canJump = canJump and (arrow.stepped and arrow.sprang)
@@ -14,7 +14,6 @@ if instance_exists(arrow) {
 }
 
 
-// Кнопки
 if canMove {
 	if keys[k.Left] {
 	    newForward = -1
@@ -41,8 +40,10 @@ if canMove {
 	}
 }
 
-if keysPressed[k.Jump] {
+if keysPressed[k.Jump] or wantJump {
+	wantJump = true
 	if canJump { 
+		wantJump = false
 		// arrow jump
 		if arrowJump {
 			speedY = -jumpSpeed*1.8
@@ -69,6 +70,7 @@ if keys[k.Jump] {
 	}
 } else {
 	sc_timeout_stop(jumpTime)
+	wantJump = false
 }  
    
 if abs(speedY)>0 or feetcollision == false {
@@ -99,24 +101,25 @@ if canShoot {
 		if arrow.phase = ar.Stay
 			arrow.phase = ar.Recall
 	}
-
-	// paused animations
-	if not sc_timeout_over(pauseTime) {
-		if pauseAnim = after.Shot {
-			if feetcollision
-				newAnim = sp_hero_fire
-			else
-				newAnim = sp_hero_jumpfire
-		}
-		if not keys[k.altFire]
-		if pauseAnim = after.Launch {
-			newAnim = sp_hero_arrow
-			image_index = 1
-		}
-	} else {
-		pauseAnim = after.None
-	}
 }
+
+// paused animations
+if not sc_timeout_over(pauseTime) {
+	if pauseAnim = after.Shot {
+		if feetcollision
+			newAnim = sp_hero_fire
+		else
+			newAnim = sp_hero_jumpfire
+	}
+	if not keys[k.altFire]
+	if pauseAnim = after.Launch {
+		newAnim = sp_hero_arrow
+		image_index = 1
+	}
+} else {
+	pauseAnim = after.None
+}
+
 
 // releasing arrow
 if not (canShoot and keys[k.altFire]) {

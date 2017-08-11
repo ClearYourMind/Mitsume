@@ -29,6 +29,10 @@ maxspeedY = 400
 jumpSpeed = 185
 jumpTime = sc_timeout_new(0.225) 
 
+// wantJump added to prevent eating away pressed jump button
+// while pauseAnim timer
+wantJump = false 
+
 recoverTime = sc_timeout_new(2) 
 
 afterShotTime = 0.15
@@ -57,6 +61,11 @@ weaponList[3, 1] = false
 
 weaponNum = 0
 weapon = weaponList[weaponNum, 0]
+
+staminaMax = 30
+stamina = staminaMax
+staminaRegenSpeed = 60  // per second
+staminaDepleted = false
 
 arrow = noone
 arrowObject = ob_arrow
