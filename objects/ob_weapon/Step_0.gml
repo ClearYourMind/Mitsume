@@ -14,5 +14,3 @@ if canShoot {
 	if hero.stamina < staminaReq 
 		hero.staminaDepleted = true
 }
-
-

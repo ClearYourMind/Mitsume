@@ -1,7 +1,7 @@
 /// @description  show info
 
 draw_set_color(c_black)
-draw_rectangle(0,0,200,300, false)
+draw_rectangle(0,0,200,100, false)
 
 draw_set_color(c_white)
 draw_text(15, 4, string(fps_real))

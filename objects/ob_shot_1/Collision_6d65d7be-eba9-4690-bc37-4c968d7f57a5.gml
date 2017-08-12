@@ -1,3 +1,3 @@
 /// @desc
-if other.speedY > 0
+//if other.speedY > 0
 	instance_destroy()

@@ -1,6 +1,6 @@
 event_inherited()
 /// @desc Check collision ahead, Timers
-var result = [false, false] // reverse values for speedX, speedY
+var result = [false, false] 
 
 if place_meeting(x+hspeed, y+vspeed, ob_wall) {
 	if place_meeting(x+hspeed, y, ob_wall) {

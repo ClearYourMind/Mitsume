@@ -1,6 +1,6 @@
 /// @desc Raise value
 
-if speedY > 0 {
+//if speedY > 0 {
     speedY = -maxspeedY * 0.75
     speedX = 0
     dropvalue += dropvalue * 0.01 * 15//%
@@ -8,6 +8,6 @@ if speedY > 0 {
 	
 	sc_play_sound(sn_coin2, false)
 	initiated = false
-}
+//}
 
 

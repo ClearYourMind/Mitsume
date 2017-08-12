@@ -8,23 +8,24 @@ if not hurt {
 if hurt {
 	switch hurtstep mod 4 {
 	case 0:
-		image_blend = $BBBBFF
+		image_blend = $0044FF
 		draw_self()
-		image_blend = $0000FF
+//		image_blend = $0000FF
 		break
 	case 1:
-		image_blend = $FFBBBB
+		image_blend = $FF7777
 		draw_self()
-		image_blend = $FF0000
+//		image_blend = $FF0000
 		break
 	case 2:
-		image_blend = $BBBBFF
+		image_blend = $FF7777
 		draw_self()
-		image_blend = $0000FF
+//		image_blend = $FF0000
 		break
 	case 3:
+		image_blend = $0044FF
 		draw_self()
-		image_blend = c_white
+//		image_blend = $0000FF
 		break
 	}
 	
@@ -35,6 +36,7 @@ if hurt {
     image_yscale = 1.05   
     gpu_set_blendmode(bm_add)
 		draw_self()
+//		image_alpha = 1
     x = ox; y = oy
     image_xscale = 1 * forward  
     image_yscale = 1
