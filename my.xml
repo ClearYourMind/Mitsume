@@ -1,53 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ActiveConfig="default" Platform="Windows" Runtime="VM" Device="Default">
-	<Desktop x="-4" y="-4" width="1920" height="1017" id="19" title="Mitsume2 - GameMaker Studio 2" windowState="Maximized">
+	<Desktop x="-8" y="-8" width="1920" height="1017" id="19" title="Mitsume2 - GameMaker Studio 2*" windowState="Maximized">
 		<Workspaces>
-			<Workspace active="True" chain="True" title="Workspace 1" localise_title="Workspace_TabTitle" localise_arguments="[&#xD;&#xA;    &quot;1&quot;&#xD;&#xA;]" workspace_offset="[1116, 779]" workspace_scale="1">
+			<Workspace active="True" chain="True" title="Workspace 1" localise_title="" workspace_offset="[1840.5, 41541]" workspace_scale="1">
 				<Module Command="open_object_editor">
-					<ObjectEditor objectId="09e1e43a-7e23-4646-b5d3-e8c93c4745da" objectName="ob_init" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" activeWindow="parent">
-						<WorkspaceChain left="1161dpi_px" top="1553dpi_px" />
+					<ObjectEditor objectId="7dd34ba5-fe34-4f5b-b1d1-8228d5c5fa41" objectName="ob_shot_1" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="46796dpi_px" />
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectId="3765de80-82f4-48cc-ac59-4644fd6c01d9" objectName="ob_start_screen_master" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" activeWindow="parent">
+						<WorkspaceChain left="1411dpi_px" top="46041dpi_px" />
 						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
-							<Script column="0" file="${project_dir}\objects\ob_init\Create_0.gml" resource="09e1e43a-7e23-4646-b5d3-e8c93c4745da" subResource="ac85babe-d67a-43a8-964e-10e6b1c7c6fb" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_start_screen_master\Create_0.gml" resource="3765de80-82f4-48cc-ac59-4644fd6c01d9" subResource="3d78065d-40ab-4278-9610-7164a7bf13b9" overridden_title="False" view_readonly="False" />
 						</DocumentWindow>
 					</ObjectEditor>
 				</Module>
 				<Module Command="open_object_editor">
-					<ObjectEditor objectId="f232b414-5418-4384-9c91-3b7cc9e00912" objectName="ob_control" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" activeWindow="parent">
-						<WorkspaceChain left="1161dpi_px" top="794dpi_px" />
+					<ObjectEditor objectId="a8d8364b-ecf0-40d4-8aa9-28911467a537" objectName="ob_weapon" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="45286dpi_px" />
 						<DocumentWindow columns="1" fullscreen="False" activeTab="2" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
-							<Script column="0" file="${project_dir}\objects\ob_control\Alarm_0.gml" resource="f232b414-5418-4384-9c91-3b7cc9e00912" subResource="ad730588-8911-4df8-90fb-870771ea5507" overridden_title="False" view_readonly="False" />
-							<Script column="0" file="${project_dir}\objects\ob_control\Draw_64.gml" resource="f232b414-5418-4384-9c91-3b7cc9e00912" subResource="44cfa6be-b147-4c70-a001-a6cd2daae666" overridden_title="False" view_readonly="False" />
-							<Script column="0" file="${project_dir}\objects\ob_control\Create_0.gml" resource="f232b414-5418-4384-9c91-3b7cc9e00912" subResource="3b672b03-d990-47ab-8517-96c80012c794" overridden_title="False" view_readonly="False" />
-							<Script column="0" file="${project_dir}\objects\ob_control\Other_4.gml" resource="f232b414-5418-4384-9c91-3b7cc9e00912" subResource="4373726f-d18d-4b2f-8cac-ac48ce7c3cb2" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon\Other_10.gml" resource="a8d8364b-ecf0-40d4-8aa9-28911467a537" subResource="484265dc-3fd7-470c-9e4c-dfc78746c0c9" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon\Other_11.gml" resource="a8d8364b-ecf0-40d4-8aa9-28911467a537" subResource="8b37af65-b6a8-4a40-b139-4102d7b07fae" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon\Step_0.gml" resource="a8d8364b-ecf0-40d4-8aa9-28911467a537" subResource="ed25e8cc-9a24-4b31-867c-910ea7512d0e" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon\Create_0.gml" resource="a8d8364b-ecf0-40d4-8aa9-28911467a537" subResource="1565ac14-3ac4-491f-95b2-d3d4eee56b4d" overridden_title="False" view_readonly="False" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectId="e774af18-e4d2-4019-bc1e-816e22a80043" objectName="ob_weapon_3" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="43776dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\ob_weapon_3\Create_0.gml" resource="e774af18-e4d2-4019-bc1e-816e22a80043" subResource="68e0b07e-fdbc-455b-b117-4905372efd44" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon_3\Step_0.gml" resource="e774af18-e4d2-4019-bc1e-816e22a80043" subResource="ca2f97d6-417d-45ee-b84f-7e631432f3cb" overridden_title="False" view_readonly="False" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectId="a9ca82eb-f1af-4427-8f95-9aff4931276f" objectName="ob_weapon_4" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="44531dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\ob_weapon_4\Create_0.gml" resource="a9ca82eb-f1af-4427-8f95-9aff4931276f" subResource="9300c43f-7a7b-4d10-8cf5-d41d66288f36" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon_4\Step_0.gml" resource="a9ca82eb-f1af-4427-8f95-9aff4931276f" subResource="6334116d-1542-431f-adde-a03c97f73258" overridden_title="False" view_readonly="False" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectId="9da3e35f-0b0f-412c-9cd8-061d090465f2" objectName="ob_weapon_2" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="43021dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\ob_weapon_2\Create_0.gml" resource="9da3e35f-0b0f-412c-9cd8-061d090465f2" subResource="77b284df-1d9f-42ca-bd96-482d7698fcf9" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon_2\Step_0.gml" resource="9da3e35f-0b0f-412c-9cd8-061d090465f2" subResource="2e89d559-16f6-4afc-92f9-e223fc6f1d4e" overridden_title="False" view_readonly="False" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectId="40e88fc5-ca17-46a8-8dab-f35662fe13f3" objectName="ob_hero" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="41511dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\ob_hero\Create_0.gml" resource="40e88fc5-ca17-46a8-8dab-f35662fe13f3" subResource="8f231fb1-1351-4471-b91f-e9473f786e7c" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_hero\Step_0.gml" resource="40e88fc5-ca17-46a8-8dab-f35662fe13f3" subResource="05e557ff-3007-47d0-8ab3-ea63ef9ffbaf" overridden_title="False" view_readonly="False" />
+							<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px">
+								<Script column="0" file="${project_dir}\scripts\sc_hero_control\sc_hero_control.gml" resource="1a275287-7250-40c4-8b44-c218c55ce201" subResource="00000000-0000-0000-0000-000000000000" overridden_title="False" view_readonly="False" />
+							</DocumentWindow>
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectId="02edaf41-d808-4165-9bd7-f545814630e9" objectName="ob_weapon_1" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+						<WorkspaceChain left="1411dpi_px" top="42260dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="706dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\ob_weapon_1\Create_0.gml" resource="02edaf41-d808-4165-9bd7-f545814630e9" subResource="f0985c37-9431-4a21-9ff6-e5b29d7ede3c" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_weapon_1\Step_0.gml" resource="02edaf41-d808-4165-9bd7-f545814630e9" subResource="7462db26-cab9-4312-9687-acac5d49a8f4" overridden_title="False" view_readonly="False" />
 						</DocumentWindow>
 					</ObjectEditor>
 				</Module>
 			</Workspace>
-			<Workspace active="False" chain="False" title="rm_init" localise_title="" user_edited_title="True" workspace_offset="[0, 0]" workspace_scale="1">
+			<Workspace active="False" chain="False" title="rm_start" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
 				<Module Command="open_room_editor" WorkspaceOwner="true">
-					<Room id="a8032826-9a0c-42f0-b74c-1ab13830a961">
+					<Room id="1a4050fd-bcc2-41ec-a3e4-e93840825c0d">
 						<RoomEditArea>
-							<PanArea zoom="2.64" pan="[-41.30123, -13.37645]" />
+							<PanArea zoom="3.408654" pan="[-117.0832, -16.29337]" />
 							<Properties />
 							<Selected>
-								<Layer GUID="55749326-aab5-4eab-a6e7-f0daab4e2428" />
+								<Layer GUID="71c5b0ff-0ad2-4738-ae4f-61e90f98aa0b" />
 							</Selected>
 						</RoomEditArea>
 					</Room>
 				</Module>
 			</Workspace>
 		</Workspaces>
-		<Dock state="Expanded" type="eLeft" restore_size="342.2478dpi_px" active_tab="1">
+		<Dock state="Expanded" type="eLeft" restore_size="258.9441dpi_px" active_tab="0">
 			<DockTab title="Resources" localise_title="ResourceTree_Title" cell_sizes="[735]" layout_id="dock_tab_1" layout_guid="39b6ae4b-c71f-4d7a-b974-734ab257a63e">
 				<Module Command="open_resource_tree">
 					<ResourceWindow left="0px" right="" top="0px" bottom="" width="400px" height="600px" flags="CloseButton, ResizeButton" title="Resources" localise_title="ResourceTree_Title" active_view="Default" />
 				</Module>
 			</DockTab>
-			<DockTab title="Room Editor" localise_title="RoomEditor_DockTab" cell_sizes="[484,515]" layout_id="room_editor_tab" layout_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" />
+			<DockTab title="Room Editor" localise_title="RoomEditor_DockTab" cell_sizes="[27,960]" layout_id="room_editor_tab" layout_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" />
 			<DockTab title="Properties - rm_init" localise_title="RoomEditor_RoomProperties" localise_arguments="[&quot;rm_init&quot;]" cell_sizes="[1000]" layout_id="dock_tab_3" layout_guid="4d04901c-20cd-4f75-9f41-48a57281cd05" />
 		</Dock>
 		<Dock state="Hidden" type="eRight" restore_size="326.3799dpi_px" active_tab="0" />
-		<Dock state="Expanded" type="eBottom" restore_size="191.8dpi_px" active_tab="5">
+		<Dock state="Expanded" type="eBottom" restore_size="130.9559dpi_px" active_tab="0">
 			<DockTab title="Output" localise_title="OutputPanel_Output" cell_sizes="[1000]" layout_id="dock_tab_1" layout_guid="fe255923-b993-4303-a2ac-27a9c6cd8769">
 				<Module Command="open_output_panel">
 					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Output" localise_title="OutputPanel_Title" />
@@ -73,24 +126,19 @@
 					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Compile Errors" localise_title="CompileErrors" />
 				</Module>
 			</DockTab>
-			<DockTab title="Syntax Errors" localise_title="SyntaxErrors" cell_sizes="[1000]" layout_id="dock_tab_6" layout_guid="b5c837d5-1050-4cc6-9438-9f57082cf8d1">
-				<Module Command="show_syntax_errors">
-					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Syntax Errors" localise_title="SyntaxErrors" />
-				</Module>
-			</DockTab>
 		</Dock>
 	</Desktop>
 	<Modules>
 		<YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
 			<RoomEditor>
-				<LayerProperties left="20dpi_px" right="" top="" bottom="350dpi_px" width="260dpi_px" height="330dpi_px" flags="Default" title="Instances Properties - rm_init" localise_title="RoomEditor_LayerProperties" dock_type="eLeft" dock_tab_index="1" dock_list_index="0" dock_proportion="0.9691629" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
-				<Layers left="340dpi_px" right="" top="" bottom="270dpi_px" width="320dpi_px" height="250dpi_px" flags="CloseButton, MinimizeButton, ResizeButton" title="Layers - rm_init" localise_title="RoomEditor_Layers" dock_type="eLeft" dock_tab_index="1" dock_list_index="1" dock_proportion="1.030837" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
-				<RoomProperties left="192px" right="" top="167px" bottom="" width="300dpi_px" height="240dpi_px" flags="Default" title="Properties - rm_init" localise_title="RoomEditor_RoomProperties" dock_type="eLeft" dock_tab_index="2" dock_list_index="0" dock_proportion="1" dock_tab_name="Properties - rm_init" dock_tab_localise_name="RoomEditor_RoomProperties" dock_tab_localise_arguments="[&#xD;&#xA;    &quot;rm_init&quot;&#xD;&#xA;]" dock_tab_id="dock_tab_3" dock_tab_guid="4d04901c-20cd-4f75-9f41-48a57281cd05" desktop="19" />
+				<LayerProperties left="20dpi_px" right="" top="" bottom="350dpi_px" width="260dpi_px" height="330dpi_px" flags="Default" title="Instances Properties - rm_start" localise_title="RoomEditor_LayerProperties" dock_type="eLeft" dock_tab_index="1" dock_list_index="0" dock_proportion="0.05452563" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
+				<Layers left="340dpi_px" right="" top="" bottom="270dpi_px" width="320dpi_px" height="250dpi_px" flags="CloseButton, MinimizeButton, ResizeButton" title="Layers - rm_start" localise_title="RoomEditor_Layers" dock_type="eLeft" dock_tab_index="1" dock_list_index="1" dock_proportion="1.920082" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
+				<RoomProperties left="192px" right="" top="167px" bottom="" width="300dpi_px" height="240dpi_px" flags="Default" title="Properties - rm_start" localise_title="RoomEditor_RoomProperties" dock_type="eLeft" dock_tab_index="2" dock_list_index="0" dock_proportion="1" dock_tab_name="Properties - rm_init" dock_tab_localise_name="RoomEditor_RoomProperties" dock_tab_localise_arguments="[&#xD;&#xA;    &quot;rm_init&quot;&#xD;&#xA;]" dock_tab_id="dock_tab_3" dock_tab_guid="4d04901c-20cd-4f75-9f41-48a57281cd05" desktop="19" />
 			</RoomEditor>
 		</YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
 		<YoYoStudio.Plugins.CorePlugins.RoomEditorTools.RoomEditor_TileEditing>
 			<RoomEditor_TileEditing>
-				<TileSet left="" right="370dpi_px" top="125dpi_px" bottom="" width="450dpi_px" height="400dpi_px" flags="Default" title="Tiles - rm_init" localise_title="RoomEditor_TileWindow" dock_type="eRight" dock_tab_index="0" dock_list_index="0" dock_proportion="1" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="237e09aa-439c-4e92-98a3-9d6de0bfc5d1" desktop="19" />
+				<TileSet left="" right="370dpi_px" top="125dpi_px" bottom="" width="450dpi_px" height="400dpi_px" flags="Default" title="Tiles - rm_start" localise_title="RoomEditor_TileWindow" dock_type="eRight" dock_tab_index="0" dock_list_index="0" dock_proportion="1" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="237e09aa-439c-4e92-98a3-9d6de0bfc5d1" desktop="19" />
 			</RoomEditor_TileEditing>
 		</YoYoStudio.Plugins.CorePlugins.RoomEditorTools.RoomEditor_TileEditing>
 	</Modules>

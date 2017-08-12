@@ -1,13 +1,12 @@
 event_inherited()
-/// @desc Process timeout
+/// @desc Shooting
 
-if shoot {
-	if reloaded {
-		reloaded = false
-		sc_play_sound(sn_shot, false)
-		with instance_create_depth(hero.x, hero.y-7, depth, shotObject)
-			speedX = maxspeedX * hero.forward
+if canShoot {
+	reloaded = false
+	sc_play_sound(sn_fire, false)
+	with instance_create_depth(hero.x, hero.y-7, depth, shotObject) {
+		accelX = accelX * hero.forward
+		speedX = maxspeedX*0.1 * hero.forward
 	}
-	
 }
 

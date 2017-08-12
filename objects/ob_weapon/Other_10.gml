@@ -2,6 +2,6 @@
 
 if not shoot {
 	shoot = true
-	sc_timeout_start(reloadTime, true)
+	sc_timeout_start(reloadTime)
 	reloaded = true
 }

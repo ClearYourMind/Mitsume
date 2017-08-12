@@ -6,10 +6,9 @@ var newForward = forward
 var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 			  and not sc_timeout_is_started(pauseTime)
 var canJump = feetcollision and canMove
-var canShoot = instance_exists(weapon) and not hurt and not staminaDepleted
+var canShoot = instance_exists(weapon) and not hurt
 var arrowJump = false
 if instance_exists(arrow) {
-//	canJump = canJump and (arrow.stepped and arrow.sprang)
 	arrowJump = arrow.stepped and arrow.sprang and canJump
 }
 
@@ -101,7 +100,9 @@ if canShoot {
 		if arrow.phase = ar.Stay
 			arrow.phase = ar.Recall
 	}
-}
+} else
+	sc_weapon_firing(false)
+
 
 // paused animations
 if not sc_timeout_over(pauseTime) {

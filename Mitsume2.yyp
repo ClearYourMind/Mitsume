@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "2eb91ed8-81e3-49bf-b961-a6390ed7f577",
+            "Value": {
+                "id": "0e1811a3-fbee-40d7-a753-60b3799a8f59",
+                "resourcePath": "sprites\\sp_shot_4\\sp_shot_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "304629ad-06ae-4dcb-a687-8ae9c7c5bbae",
             "Value": {
                 "id": "64900f8b-2840-4173-93ec-46ee9af94983",
@@ -628,6 +636,14 @@
                 "id": "49a7425c-2a82-4525-b05d-818649804e93",
                 "resourcePath": "views\\4f6d8924-8f2e-4c0b-afaf-d0a2998ce9d8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "514bfdb4-751f-4717-b0bc-ecde8add3866",
+            "Value": {
+                "id": "58368e16-49d1-4fb2-ad8d-ed55969e1343",
+                "resourcePath": "objects\\ob_shot_4\\ob_shot_4.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -948,6 +964,14 @@
                 "id": "89e1a3ac-46bd-4d61-bbc0-274f2710dfe9",
                 "resourcePath": "views\\7b84b5a9-13ef-4a12-afbe-1cbeda311ad2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7c1a8b95-beeb-4c6f-916b-57e9652e7e8a",
+            "Value": {
+                "id": "0db1fce8-9bee-4cc6-84cb-a9eeed91fae5",
+                "resourcePath": "sprites\\sp_exp_shot_2\\sp_exp_shot_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1283,6 +1307,14 @@
             "Value": {
                 "id": "ec9d6149-199a-4958-aaf9-b9328fc94515",
                 "resourcePath": "objects\\ob_hero_gui\\ob_hero_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a6a73db6-a6a3-4e3a-b747-db8baf6f8f23",
+            "Value": {
+                "id": "445463f2-0be4-47a7-a72f-65b8704087c3",
+                "resourcePath": "objects\\ob_explode_shot_2\\ob_explode_shot_2.yy",
                 "resourceType": "GMObject"
             }
         },

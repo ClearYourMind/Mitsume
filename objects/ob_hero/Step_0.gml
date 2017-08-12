@@ -22,10 +22,13 @@ if hurt {
 }
 
 if stamina < staminaMax {
-	stamina += staminaRegenSpeed * dTime
+	if staminaDepleted or not (pauseAnim = after.Shot)
+		stamina += staminaRegenSpeed * dTime
+	
 } else {
 	stamina = staminaMax
 	staminaDepleted = false
 }
 
-debugstr = " STAMINA = "+string(stamina)
+debugstr +="\n"
+debugstr += " STAMINA = "+string(stamina)

@@ -37,7 +37,7 @@ recoverTime = sc_timeout_new(2)
 
 afterShotTime = 0.15
 afterLaunchTime = 0.3
-pauseTime = 0
+pauseTime = noone
 pauseAnim = after.None
 
 feetcollision = true
