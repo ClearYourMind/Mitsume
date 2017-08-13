@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "08d7b9a5-2ea8-4188-97e4-3a8998958a8f",
+            "Value": {
+                "id": "9448c5c6-a446-4a52-854e-f71504e18c3e",
+                "resourcePath": "scripts\\sc_gui_set_tickerline\\sc_gui_set_tickerline.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "097b921c-0cef-41ef-a092-1c491bb9bdfd",
             "Value": {
                 "id": "1c3ce138-fc73-43aa-8ede-70ae1c301e65",
@@ -644,6 +652,14 @@
                 "id": "58368e16-49d1-4fb2-ad8d-ed55969e1343",
                 "resourcePath": "objects\\ob_shot_4\\ob_shot_4.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "520be717-d96f-4cd9-ba33-59d4cc0b8240",
+            "Value": {
+                "id": "d904fe4a-341b-4fa1-930b-54297b655e89",
+                "resourcePath": "scripts\\sc_gui_add_tickerline\\sc_gui_add_tickerline.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2045,6 +2061,8 @@
         "15a2b51a-69a2-4a3a-a5bd-335692e01def",
         "854307af-f552-49cb-bf5a-fb2c853ffcbb",
         "c814d3c2-d35b-4a8c-b150-5029134b2bbc",
+        "08d7b9a5-2ea8-4188-97e4-3a8998958a8f",
+        "520be717-d96f-4cd9-ba33-59d4cc0b8240",
         "20bd0b41-9c1a-4e88-b835-fad101557097",
         "bbb1ebdd-419b-46ed-b679-bb5f2cee576e",
         "562be9da-0b61-4ea6-af1e-d62306ddfe36",

@@ -1,9 +1,8 @@
+event_inherited()
 /// @desc Update elements
 
 if not instance_exists(hero)
 	exit
-
-elementCount = 0
 
 sc_gui_add_rect_element([0, 0], [view_w, 20], c_black, 0.8)
 
@@ -29,7 +28,7 @@ sc_gui_add_sprite_element(sp_gui_health, 3, [_x, _y])
 
 
 //weapon
-_x=105
+_x=115
 sc_gui_add_sprite_element(sp_gui_frame, 0, [_x, _y])
 
 if instance_exists(hero.weapon)
@@ -37,7 +36,7 @@ if instance_exists(hero.weapon)
 
 
 //score
-_x+=32
+_x+=42
 sc_gui_add_sprite_element(sp_gui_coin, 0, [_x, _y])
 
 _x+=2
@@ -53,7 +52,7 @@ repeat(numCount) {
 
 
 //status
-_x+=80
+_x+=100
 sc_gui_add_sprite_element(sp_gui_status, 0, [_x, _y+3])
 
 _x+=21

@@ -1,8 +1,8 @@
 event_inherited()
 /// @desc Update elements
 
-sc_gui_add_rect_element([0, -64], [view_w, 64], 0, 0.8)
-
+sc_gui_add_rect_element([0, -88], [view_w, 88], 0, 0.8)
+sc_gui_add_tickerline([16, -80])
 var pos = menuPos
 var _x = 0 
 var _item = []

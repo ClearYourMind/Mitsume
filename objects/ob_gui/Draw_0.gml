@@ -15,7 +15,7 @@ for (var i=0; i<elementCount; i++) {
 		if elem[el.text] != "" {
 			draw_set_colour(elem[el.color])
 			draw_set_alpha (elem[el.alpha])
-			draw_text(oX + elemPos[0], oY + elemPos[1], elem[el.text])
+			draw_text_ext(oX + elemPos[0], oY + elemPos[1], elem[el.text], 8, view_w*0.9)
 		}
 		break
 	case el.elRect:

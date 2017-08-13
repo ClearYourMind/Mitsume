@@ -1,3 +1,4 @@
+event_perform_object(ob_gui, ev_step, ev_step_normal)
 /// @desc 
 
 oX = view_x
@@ -64,6 +65,8 @@ if menuDx != 0 {
 			menuPos -= menuCount
 		if menuPos < 0
 			menuPos += menuCount
+		var _item = menu[menuPos]
+		sc_gui_set_tickerline(_item[item.desc])
 	}
 }
 

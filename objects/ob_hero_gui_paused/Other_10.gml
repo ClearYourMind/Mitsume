@@ -1,9 +1,8 @@
+event_inherited()
 /// @desc Update elements
 
 if not instance_exists(hero)
 	exit
-
-elementCount = 0
 
 sc_gui_add_rect_element([0, 0], [view_w, 20], c_black, 0.8)
 
@@ -27,7 +26,7 @@ sc_gui_add_sprite_element(sp_gui_health, 3, [_x, _y])
 
 
 // paused layout
-_x=105
+_x=115
 i = 0
 for (i=0; i<array_height_2d(hero.weaponList); i++) {
 	if hero.weaponNum = i {
@@ -40,7 +39,7 @@ for (i=0; i<array_height_2d(hero.weaponList); i++) {
 	_x+=24+4
 }
 	
-_x=218
+_x=258
 if visible_2
 	sc_gui_add_sprite_element(sp_gui_status, 1, [_x, _y+3])
 

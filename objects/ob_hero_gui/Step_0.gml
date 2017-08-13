@@ -1,7 +1,10 @@
+event_inherited()
 /// @desc Process flashing and inputs
 
 oX = view_x
 oY = view_y+view_h-20
+
+if not instance_exists(hero) exit
 
 // process inputs
 if keysPressed[k.Pause] {

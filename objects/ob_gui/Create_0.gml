@@ -5,6 +5,19 @@ elementCount = 0
 oX = 0
 oY = 0
 
+enum l {
+	text,
+	length,
+	pos,
+	currenttext,
+	currentlength,
+	period,
+	visible
+}
+
+tickerLine = noone
+
+
 // element properties
 enum el {
 	type,
