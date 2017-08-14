@@ -1991,6 +1991,14 @@
             }
         },
         {
+            "Key": "f9c7b248-fe6a-497e-bb02-7f8db8b268f0",
+            "Value": {
+                "id": "692a7e54-6ee0-4137-8d60-7ca66c8c1d6a",
+                "resourcePath": "views\\f9c7b248-fe6a-497e-bb02-7f8db8b268f0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fad470e9-4fea-458b-bfd1-957efd76be47",
             "Value": {
                 "id": "13367f55-770c-41f1-8ddf-33d25f2ebdf7",
