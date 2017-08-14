@@ -12,7 +12,8 @@ enum l {
 	currenttext,
 	currentlength,
 	period,
-	visible
+	visible,
+	width,
 }
 
 tickerLine = noone

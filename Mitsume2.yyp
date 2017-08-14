@@ -1487,6 +1487,14 @@
             }
         },
         {
+            "Key": "b72540be-f771-47cb-a5c3-6227775b656a",
+            "Value": {
+                "id": "de40bc05-b6e1-4963-90aa-11459d1695ad",
+                "resourcePath": "objects\\ob_gui_demo\\ob_gui_demo.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b75f4b39-8a50-41d2-b274-677fbcadfd0e",
             "Value": {
                 "id": "4cd6453d-5514-4e18-bc0e-2c02c626ea75",

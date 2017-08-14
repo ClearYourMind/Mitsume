@@ -66,7 +66,7 @@ if menuDx != 0 {
 		if menuPos < 0
 			menuPos += menuCount
 		var _item = menu[menuPos]
-		sc_gui_set_tickerline(_item[item.desc])
+		sc_gui_set_tickerline(_item[item.desc], view_w * 0.9)
 	}
 }
 
