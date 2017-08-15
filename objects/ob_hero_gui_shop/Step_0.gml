@@ -25,13 +25,13 @@ if keysPressed[k.Down] {
 }
 
 if keysPressed[k.Left] 
-if menuDx = 0 {
+if menuDx = 0 and not chosen {
 	sc_play_sound(sn_select2)
 	menuDx = 10
 }
 
 if keysPressed[k.Right]
-if menuDx = 0 {
+if menuDx = 0 and not chosen {
 	sc_play_sound(sn_select2)
 	menuDx = -10
 }
@@ -42,22 +42,42 @@ if menuDx = 0 {
 	var ok = false
 	if not _item[item.soldout] {
 		if score - _item[item.price] >= 0 {
-			score -= _item[item.price]
-			_item[item.soldout] = true
-			menu[menuPos] = _item
-			sc_play_sound(sn_select3)
-			sc_shop_item_apply(_item)
 			ok = true
+			if not chosen {
+				chosen = true
+				sc_play_sound(sn_select4)
+				sc_gui_set_tickerline("Are you sure to spend "+string(_item[item.price]) +
+									  " on the " + _item[item.name]+ " ? \n " +
+									  "(JUMP to buy, FIRE to reject)")
+			} else {
+				chosen = false
+				score -= _item[item.price]
+				_item[item.soldout] = true
+				menu[menuPos] = _item
+				sc_play_sound(sn_select3)
+				sc_shop_item_apply(_item)
+				sc_gui_set_tickerline("Good choice")
+			}
 		}
 	}
-	if not ok
+	if not ok {
 		sc_play_sound(sn_error)
+		sc_gui_set_tickerline("You cannot buy it. Try something else")
+	}
+}
+
+if keysPressed[k.Fire]
+if menuDx =0 and chosen {
+	chosen = false
+	sc_play_sound(sn_select4)
+	sc_gui_set_tickerline("As you wish")
 }
 
 // process scrolling
 if menuDx != 0 {
 	menuX += menuDx
 	if abs(menuX) > menuInterval {
+		// menu stopped at the item
 		menuPos -= sign(menuDx)
 		menuX = 0
 		menuDx = 0
@@ -66,7 +86,15 @@ if menuDx != 0 {
 		if menuPos < 0
 			menuPos += menuCount
 		var _item = menu[menuPos]
-		sc_gui_set_tickerline(_item[item.desc], view_w * 0.9)
+		var _s = ""
+		if _item[item.soldout]
+			_s = "This item is sold out. Come again and see if it appeared"
+		else {
+			_s = _item[item.desc]	
+			if not (_item[item.type] = itemtype.exitshop)
+				_s += "\n (JUMP to buy)"
+		}
+		sc_gui_set_tickerline(_s, view_w * 0.9)
 	}
 }
 

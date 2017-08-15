@@ -63,7 +63,7 @@ weapon = weaponList[weaponNum, 0]
 
 staminaMax = 30
 stamina = staminaMax
-staminaRegenSpeed = 60  // per second
+staminaRegenSpeed = staminaMax * 1/(0.5 /* sec*/)
 staminaDepleted = false
 
 arrow = noone

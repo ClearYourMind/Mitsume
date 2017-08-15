@@ -1242,7 +1242,7 @@
             "Key": "9a16230f-554a-47ff-9a77-c2576e508294",
             "Value": {
                 "id": "1105cd32-7faf-437b-890c-1dfa79f2f3fe",
-                "resourcePath": "sprites\\sp_gui_shop\\sp_gui_shop.yy",
+                "resourcePath": "sprites\\sp_gui_shop1\\sp_gui_shop1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1764,6 +1764,14 @@
                 "id": "218011ff-e3a6-4230-b5ae-cfea6078eb57",
                 "resourcePath": "objects\\ob_background_master\\ob_background_master.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "da1a8506-7cae-4d6c-ae62-fb79fffbbed8",
+            "Value": {
+                "id": "96dfad88-6e08-4e9c-8240-42d59ac51257",
+                "resourcePath": "sprites\\sp_gui_shop\\sp_gui_shop.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

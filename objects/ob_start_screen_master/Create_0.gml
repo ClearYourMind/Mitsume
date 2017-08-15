@@ -15,8 +15,6 @@ audio_set_master_gain(0, 0.15)
 
 counter = 0
 
-cursorVisible = false
-
 device = 0
 gpNum = -1
 gpButtons = [gp_start, gp_padd, gp_padl, gp_padr, gp_padu, gp_select,

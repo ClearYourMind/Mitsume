@@ -11,4 +11,6 @@ tickerLine[l.currentlength] = 0
 tickerLine[l.currenttext] = ""
 tickerLine[l.period] = 2
 tickerLine[l.visible] = true
-tickerLine[l.width] = argument[1]
+tickerLine[l.width] = view_w * 0.9
+if argument_count > 1
+	tickerLine[l.width] = argument[1]

@@ -27,7 +27,7 @@ minFPS = 30
 
 hero = noone
 lives  = 2
-score = 0
+score = 4000
 
 paused = false
 
@@ -44,6 +44,3 @@ view_h = camera_get_view_height(view_camera[0])
 restartTime = sc_timeout_new(1.5)
 
 gameStarted = false
-
-//instance_deactivate_object(id)
-

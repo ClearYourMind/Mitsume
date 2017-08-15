@@ -9,6 +9,7 @@ menuX = 0
 menuInterval = view_w * 0.275
 
 menu = []
+chosen = false
 
 enum item {
 	name,
@@ -29,6 +30,8 @@ enum itemtype {
 	life
 }
 
+sc_gui_set_tickerline("Welcome to my humble shop. Please buy something", view_w * 0.9)
+
 // init menu items
 var n = 0
 var _item = []
@@ -45,8 +48,8 @@ menu[n++] = _item
 menu[n] = []
 var _item = []
 _item[item.name]    = "RADIO"
-_item[item.desc]    = "Here is nothing yet, come again and see if anything appeared"
-_item[item.sprite ] = 3
+_item[item.desc]    = "This is an item you may wish to buy"
+_item[item.sprite ] = 2
 _item[item.price  ] = 1000
 _item[item.soldout] = hero.weaponList[1, 1]
 _item[item.type] = itemtype.weapon1
@@ -55,8 +58,8 @@ menu[n++] = _item
 menu[n] = []
 var _item = []
 _item[item.name]    = "RAPID"
-_item[item.desc]    = "Here is nothing yet, come again and see if anything appeared"
-_item[item.sprite ] = 4
+_item[item.desc]    = "This is an item you may wish to buy"
+_item[item.sprite ] = 3
 _item[item.price  ] = 1000
 _item[item.soldout] = hero.weaponList[2, 1]
 _item[item.type] = itemtype.weapon2
@@ -65,8 +68,8 @@ menu[n++] = _item
 menu[n] = []
 var _item = []
 _item[item.name]    = "BLOW"
-_item[item.desc]    = "Here is nothing yet, come again and see if anything appeared"
-_item[item.sprite ] = 5
+_item[item.desc]    = "This is an item you may wish to buy"
+_item[item.sprite ] = 4
 _item[item.price  ] = 1000
 _item[item.soldout] = hero.weaponList[3, 1]
 _item[item.type] = itemtype.weapon3
@@ -74,9 +77,9 @@ menu[n++] = _item
 
 menu[n] = []
 var _item = []
-_item[item.name]    = "STRIKE"
-_item[item.desc]    = "Here is nothing yet, come again and see if anything appeared"
-_item[item.sprite ] = 6
+_item[item.name]    = "CONDOR"
+_item[item.desc]    = "This is an item you may wish to buy"
+_item[item.sprite ] = 5
 _item[item.price  ] = 1000
 _item[item.soldout] = (hero.arrowObject == ob_kill_arrow)
 _item[item.type] = itemtype.killarrow
@@ -85,8 +88,8 @@ menu[n++] = _item
 menu[n] = []
 var _item = []
 _item[item.name]    = "1UP"
-_item[item.desc]    = "Here is nothing yet, come again and see if anything appeared"
-_item[item.sprite ] = 0
+_item[item.desc]    = "This is an item you may wish to buy"
+_item[item.sprite ] = 7
 _item[item.price  ] = 5000
 _item[item.soldout] = false
 _item[item.type] = itemtype.life
@@ -96,7 +99,7 @@ menu[n++] = _item
 menu[n] = []
 var _item = []
 _item[item.name]    = "HEALTH"
-_item[item.desc]    = "Here is nothing yet, come again and see if anything appeared"
+_item[item.desc]    = "This is an item you may wish to buy"
 _item[item.sprite ] = 1
 _item[item.price  ] = 200
 _item[item.soldout] = (health == hero.maxhealth)
