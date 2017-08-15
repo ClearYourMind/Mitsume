@@ -24,7 +24,12 @@ touches a wall with HEAD + FEET, or LEFT + RIGHT. ("squeeze" positions).
     Make it work  for lifts+walls and arrow+walls
 
 
-
+11.08.17
+	Add spawner with parent ob_enemy for demonstrating weapons
+	Add picture for LIFE and item descriptions in shop
+	More texts in shop when you're going to buy something, just bought, messages on error,
+Greeting message.
+	
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

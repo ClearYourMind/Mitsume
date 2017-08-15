@@ -14,6 +14,6 @@ for (var i=0; i<array_length_1d(dirs); i++) {
 if dir = d.Down 
 	feetcollision = true
 
-if (dir = d.Right) or (dir = d.Left)
+if (dir = d.Right) or (dir = d.Left) {
 	sidecollision = true
-
+}

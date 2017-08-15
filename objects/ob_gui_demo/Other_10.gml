@@ -7,7 +7,7 @@ if enabled {
 	sc_gui_add_tickerline(pos)
 }
 
-switch mode {
-case demo.controls:
-	break
-}
+//switch mode {
+//case demo.controls:
+//	break
+//}

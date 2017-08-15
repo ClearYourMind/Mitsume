@@ -61,7 +61,7 @@ if mode == 0 {   // idle
 		if sidecollision and feetcollision {
 			speedY = -maxspeedY * jumpPower
 			y-=2
-			feetcollision = false
+			//feetcollision = false
 			timeout = timeout*0.25 - dTime
 		}
 	}
@@ -72,16 +72,17 @@ if mode == 1 {   // attack
 		// jump over obstacle
 		speedY = -maxspeedY * jumpPower
 		y-=2
-		feetcollision = false
+		//feetcollision = false
 	}
 	if abs(xDist) > 45 {
 		phase= 0 
     } else {
 		if phase = 0
-        if feetcollision and abs(speedX) >= maxspeedX*0.75 {
+        if feetcollision and abs(speedX) >= maxspeedX*0.5 and sign(speedX) = sign(xDist) {
 			// jump
 			speedY = -maxspeedY * jumpPower
 			y-=2
+			speedX *= 1.5
 			feetcollision = false
 			phase = 1
 	        sprite_index = sp_dog_walk
@@ -113,9 +114,11 @@ if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
 			  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
 	if found
 	if sign(xDist) != forward {
-		forward = sign(xDist)
-		newMode = true
-		mode = 1
+		if feetcollision {
+			forward = sign(xDist)
+			newMode = true
+			mode = 1
+		}
 	}
 }
 

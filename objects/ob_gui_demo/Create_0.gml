@@ -5,10 +5,10 @@ sprite_index = noone
 
 enum demo {
 	none    = 0,
+	controls0,
 	controls1,
 	controls2,
 	controls3,
-	controls4,
 	arrowjump,
 	killingarrow,
 	doginfo,

@@ -11,7 +11,7 @@ draw_set_color(c_white)
 maxChannel = 2
 
 audio_channel_num(maxChannel)
-audio_set_master_gain(0, 0.1)
+audio_set_master_gain(0, 0.15)
 
 counter = 0
 

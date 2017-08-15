@@ -44,7 +44,6 @@ feetcollision = true
 
 maxhealth = 10
 health = maxhealth
-score = 10000
 
 image_speed = 0.1
 //image_alpha = 0.3
