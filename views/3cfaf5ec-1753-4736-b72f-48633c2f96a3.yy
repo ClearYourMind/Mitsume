@@ -9,7 +9,8 @@
         "88542452-2e55-4296-acf4-ceed444c1b0b",
         "88749dad-0ccf-459c-80ca-7bb7d39f5c7e",
         "96e7027a-0afe-4ff8-a0c9-890e3e15ed57",
-        "8a9a04e5-00cc-4c83-91d0-8e9435d87610"
+        "8a9a04e5-00cc-4c83-91d0-8e9435d87610",
+        "048cedb9-c8a4-43d2-8651-ed91dca76d60"
     ],
     "filterType": "GMObject",
     "folderName": "build",

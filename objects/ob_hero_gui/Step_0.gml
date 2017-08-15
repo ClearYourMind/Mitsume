@@ -7,7 +7,8 @@ oY = view_y+view_h-20
 if not instance_exists(hero) exit
 
 // process inputs
-if keysPressed[k.Pause] {
+if keysPressed[k.Pause]
+if not ob_transition_master.started {
 	paused = not paused
 	//sc_gui_update(hero.guiObject)
 	sc_play_sound(sn_select, false)

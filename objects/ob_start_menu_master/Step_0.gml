@@ -3,7 +3,8 @@
 varVisible = ((counter div 20) mod 2 == 0)
 
 // process controls
-if instance_exists(ob_control) {
+if instance_exists(ob_control) 
+if not ob_transition_master.started {
 	switch varMode {
 	case md.start:
 		if keysPressed[k.Down] {
@@ -24,7 +25,6 @@ if instance_exists(ob_control) {
 			if varPos = 1 {
 				varMode = md.wait
 				sc_play_sound(sn_select4, false)
-				show_debug_message("go to \"wait\" mode")
 			} 
 		}
 		break
@@ -33,7 +33,6 @@ if instance_exists(ob_control) {
 		if keyCode = noone {
 			varMode = md.controls
 			varPos = 0
-			show_debug_message("go to \"controls\" mode")
 		}
 		break
 	case md.controls:
@@ -52,7 +51,6 @@ if instance_exists(ob_control) {
 				sc_key_assign_save()
 				varMode = md.start
 				varPos = 0
-				show_debug_message("go to \"start\" mode")
 			}
 		}
 		break

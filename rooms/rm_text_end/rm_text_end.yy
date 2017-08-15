@@ -1,20 +1,20 @@
 {
-    "id": "cfc2d0e8-ee39-4b94-9563-f81c016bef44",
+    "id": "fb6c5a8f-fa98-447b-b473-582049ec9cda",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "rm_text_testroom",
+    "name": "rm_text_end",
     "IsDnD": false,
     "creationCodeFile": "",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "9de0ce38-57c6-4b97-9164-b158040a4481"
+        "2970ddc9-7b77-4fc4-bc46-6481b5caa1dd"
     ],
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "id": "ac150bc8-125a-470f-9de1-869eaeab446f",
+            "id": "3f4e5490-5c94-45b1-abd8-79a42488b159",
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "depth": 0,
@@ -36,24 +36,24 @@
             "visible": true,
             "instances": [
                 {
-                    "id": "9de0ce38-57c6-4b97-9164-b158040a4481",
+                    "id": "2970ddc9-7b77-4fc4-bc46-6481b5caa1dd",
                     "modelName": "GMRInstance",
                     "mvc": "1.0",
                     "ignore": false,
                     "inheritItemSettings": false,
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
-                    "name": "inst_4EAFE7DD",
+                    "name": "inst_2F2D3F3",
                     "x": 8,
                     "y": 8,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
                     },
-                    "creationCodeFile": "InstanceCreationCode_inst_4EAFE7DD.gml",
+                    "creationCodeFile": "InstanceCreationCode_inst_2F2D3F3.gml",
                     "creationCodeType": ".gml",
                     "inheritCode": false,
-                    "name_with_no_file_rename": "inst_4EAFE7DD",
+                    "name_with_no_file_rename": "inst_2F2D3F3",
                     "objId": "d378d1ce-1cdb-425c-9d1f-74ab9ad0390b",
                     "rotation": 0,
                     "scaleX": 1,
@@ -63,7 +63,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "id": "5dafa511-139b-41f8-bbc7-65e0bbe38d77",
+            "id": "a4371acb-c05e-486c-9599-d626416b5d11",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
             "depth": 100,
@@ -101,7 +101,7 @@
     ],
     "parentId": "00000000-0000-0000-0000-000000000000",
     "physicsSettings": {
-        "id": "3f95ce9f-8c06-407e-a49e-01b154a60026",
+        "id": "daea2518-15e7-41c1-8320-e2e8f9e725fa",
         "modelName": "GMRoomPhysicsSettings",
         "mvc": "1.0",
         "PhysicsWorld": false,
@@ -111,16 +111,16 @@
         "inheritPhysicsSettings": false
     },
     "roomSettings": {
-        "id": "273a9c22-4813-481d-ae5c-bc06009c236d",
+        "id": "05abe6a4-314f-4ea1-a6cc-8c2629d062d8",
         "modelName": "GMRoomSettings",
         "mvc": "1.0",
-        "Height": 192,
-        "Width": 256,
+        "Height": 180,
+        "Width": 300,
         "inheritRoomSettings": false,
         "persistent": false
     },
     "viewSettings": {
-        "id": "e91fbd6e-7def-4c43-94fc-599897493861",
+        "id": "2fd34f50-d71a-4b40-8e99-54dd8653a22c",
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0",
         "clearDisplayBuffer": true,
@@ -130,27 +130,27 @@
     },
     "views": [
         {
-            "id": "13cc865f-6a50-4503-9842-30d9519df182",
+            "id": "c1c864b6-c321-4c5f-bce9-e3c1376455b3",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 100,
-            "hport": 768,
+            "hport": 720,
             "hspeed": -1,
-            "hview": 192,
+            "hview": 180,
             "inherit": false,
             "objId": "00000000-0000-0000-0000-000000000000",
             "vborder": 100,
             "visible": true,
             "vspeed": -1,
-            "wport": 1024,
-            "wview": 256,
+            "wport": 1280,
+            "wview": 300,
             "xport": 0,
             "xview": 0,
             "yport": 0,
             "yview": 0
         },
         {
-            "id": "e947cf33-8ee3-43f1-a0ea-d7aaf48b33e8",
+            "id": "2c240dc3-6b93-4485-8521-f02580d66f76",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
@@ -170,7 +170,7 @@
             "yview": 0
         },
         {
-            "id": "ab451e37-82fc-4f7e-9c99-906aaf444a84",
+            "id": "eb549478-cbdb-408f-af8e-f4d12608c92a",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
@@ -190,7 +190,7 @@
             "yview": 0
         },
         {
-            "id": "76dfd5d6-4d45-42b0-a8f6-5131967a6015",
+            "id": "da430fe9-8605-4e2d-8781-9fb3bb9be973",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
@@ -210,7 +210,7 @@
             "yview": 0
         },
         {
-            "id": "ce79fe18-ea8c-43f6-9ac3-669ee50156a3",
+            "id": "dc1ba854-b222-43d0-a329-7a80ecfe695b",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
@@ -230,7 +230,7 @@
             "yview": 0
         },
         {
-            "id": "5104978f-3547-4688-b6e8-c33d401779e4",
+            "id": "f4d55e8a-0ce8-45e8-a945-b0256ace067f",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
@@ -250,7 +250,7 @@
             "yview": 0
         },
         {
-            "id": "8b677bb8-82b9-4dda-a27a-1e387fdb0e50",
+            "id": "879985c3-174b-429f-bb60-cec027d31612",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,
@@ -270,7 +270,7 @@
             "yview": 0
         },
         {
-            "id": "91937ead-afb6-4aed-93fc-a9f3b16b6343",
+            "id": "7e26f7f9-31fd-4277-8a2e-8a90fde9cb8b",
             "modelName": "GMRView",
             "mvc": "1.0",
             "hborder": 32,

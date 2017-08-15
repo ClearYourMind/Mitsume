@@ -1,4 +1,4 @@
 /// @desc 
 
-draw_text(85, 100, caption)
+draw_text((view_w - string_width(caption))*0.5, view_h*0.5, caption)
 

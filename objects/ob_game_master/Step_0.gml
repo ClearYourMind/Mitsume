@@ -16,13 +16,12 @@ sc_view_follow_hero()
 
 // deactivate enemies out of view
 instance_deactivate_object(ob_enemy)
-instance_activate_region(view_x - view_w*0.25, view_y - view_h*0.25, 
-						 view_w*1.5, view_h*1.5, true)
 // deactivate spawners
 instance_deactivate_object(ob_spawner)
-instance_activate_region(view_x - view_w*0.25, view_y - view_h*0.25, 
-						 view_w*1.5, view_h*1.5, true)
-
+// deactivate lifts
+instance_deactivate_object(ob_lift)
+instance_activate_region(view_x - view_w*0.25, view_y - view_h*0.5, 
+						 view_w*1.5, view_h*2, true)
 
 
 // room restart timeout

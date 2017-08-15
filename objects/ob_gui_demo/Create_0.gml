@@ -9,10 +9,11 @@ enum demo {
 	controls1,
 	controls2,
 	controls3,
+	stamina1,
+	stamina2,
 	arrowjump,
 	killingarrow,
-	doginfo,
-	lastvalue = 8
+	lastvalue = 9
 }
 
 mode = demo.none

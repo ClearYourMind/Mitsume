@@ -40,6 +40,11 @@ if keysPressed[k.Jump]
 if menuDx = 0 {
 	var _item = menu[menuPos]
 	var ok = false
+	if _item[item.type] = itemtype.exitshop {
+		sc_play_sound(sn_select3)
+		sc_shop_item_apply(_item)
+		ok = true
+	} else
 	if not _item[item.soldout] {
 		if score - _item[item.price] >= 0 {
 			ok = true
