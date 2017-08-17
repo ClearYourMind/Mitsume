@@ -19,6 +19,10 @@ lifeTime = sc_timeout_new(10)
 fadeTime = sc_timeout_new(5)
 
 flashing = false
+flare = instance_create_depth(x, y, depths.explosions, ob_flares)
+flare.object = id
+flare.sparkleSpawnPeriod = 0.1
+turnBack = false  // used if not killing and launched
 
 // appearing values
 angle = 0

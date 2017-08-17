@@ -15,11 +15,21 @@ if phase = ar.Appear {
 	if not audio_is_playing(sn_arrow)
 		sc_play_sound(sn_arrow, false)
 	flashing = true
+	if not instance_exists(flare) {
+		flare = instance_create_depth(x, y, depths.explosions, ob_flares)
+		flare.object = id
+	}
+	
+} else 
+if instance_exists(flare) {
+	flare.spawn = false
 }
 
 
 if phase = ar.Hold {
 	flashing = false
+	if instance_exists(flare)
+		flare.spawn = false
     forward = hero.forward  
 	image_xscale = 1
     x = hero.x - 6*forward
@@ -36,12 +46,27 @@ if phase = ar.LaunchBegin {
 	accelX = -oAccel * forward
 	image_angle = 0
 	phase = ar.Launch	
+	if object_index = ob_arrow {
+		turnBack = true
+		image_speed = 1
+		if not instance_exists(flare) {
+			flare = instance_create_depth(x, y, depths.explosions, ob_flares)
+			flare.object = id
+		}
+		instance_change(ob_kill_arrow, false)
+	}
 }
 
 if phase = ar.Launch {
 	forward = sign(speedX)
 	image_xscale = forward
 	oY = y
+	if abs(speedX)<5 and turnBack {
+		image_speed = 0
+		image_index = 0
+		instance_change(ob_arrow, false)
+		turnBack = false
+	}
 }
 
 if phase = ar.Stay {
@@ -107,6 +132,8 @@ if phase = ar.Recall {
 if phase = ar.Disappear {
     image_speed = 0.15
 	flashing = true
+	if instance_exists(flare)
+		flare.spawn = false
 //	image_alpha = 0.75
     speedX = 0
 	accelX = 0

@@ -20,7 +20,13 @@ if sc_timeout_over(flareLifetime) {
 	spawn = false
 }
 
+if instance_exists(object) {
+	x = object.x
+	y = object.y
+}
 
+
+// process sparkles
 if not ds_exists(sparkle, ds_type_list)
 	exit
 
@@ -56,4 +62,3 @@ if ds_list_size(sparkle)=0 and not spawn {
 	instance_destroy()
 }
 
-//sparkleImIndex = (sparkleImIndex + sparkleImSpeed) mod 4
