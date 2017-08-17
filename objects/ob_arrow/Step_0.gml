@@ -14,10 +14,12 @@ if phase = ar.Appear {
 		phase = ar.Hold
 	if not audio_is_playing(sn_arrow)
 		sc_play_sound(sn_arrow, false)
+	flashing = true
 }
 
 
 if phase = ar.Hold {
+	flashing = false
     forward = hero.forward  
 	image_xscale = 1
     x = hero.x - 6*forward

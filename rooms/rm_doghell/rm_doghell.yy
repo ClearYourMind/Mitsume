@@ -76,7 +76,8 @@
         "368cc5f0-cac8-49d0-b37a-ddb980253a19",
         "38f5f4a4-d412-4bad-af6b-0a4198c966ac",
         "8ac5af71-3427-46d1-905a-54f7a0c09649",
-        "e8529ee8-30fd-4b7d-83fc-e7d1ffe01d08"
+        "e8529ee8-30fd-4b7d-83fc-e7d1ffe01d08",
+        "246c848c-dae9-4246-811d-d767128e99d8"
     ],
     "layers": [
         {
@@ -1733,6 +1734,30 @@
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 13
+                },
+                {
+                    "id": "246c848c-dae9-4246-811d-d767128e99d8",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_2AD9A862",
+                    "x": 128,
+                    "y": 224,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_2AD9A862",
+                    "objId": "de7fe8ca-50d7-4bf4-96db-3f0739839ede",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
                 }
             ]
         },
@@ -2990,7 +3015,7 @@
                     36,
                     38,
                     36,
-                    38,
+                    37,
                     77,
                     78,
                     79,

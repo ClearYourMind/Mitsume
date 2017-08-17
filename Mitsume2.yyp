@@ -1799,6 +1799,14 @@
             }
         },
         {
+            "Key": "de7fe8ca-50d7-4bf4-96db-3f0739839ede",
+            "Value": {
+                "id": "7dea7e83-2cb4-42dc-a971-dbdb6a3d9097",
+                "resourcePath": "objects\\ob_flares\\ob_flares.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3",
             "Value": {
                 "id": "345e87d3-ca51-4451-8ac7-c22498005b73",
