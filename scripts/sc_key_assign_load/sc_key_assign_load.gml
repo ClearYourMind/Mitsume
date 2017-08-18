@@ -11,7 +11,7 @@ if file_exists("config.ini") {
 				"control-"+object_get_name(object_index), 
 				cfgKeyStrs[i], defaultKey[i]
 				)
-		//loaded = true
+		loaded = true
 					        
 	}
 	ini_close()
