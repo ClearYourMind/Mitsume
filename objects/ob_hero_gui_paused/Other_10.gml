@@ -10,6 +10,8 @@ sc_gui_add_rect_element([0, 0], [view_w, 20], c_black, 0.8)
 var _x = 12
 var _y = 0
 
+sc_gui_add_sprite_element(sp_gui_image , 1, [_x, _y])
+_x+=6
 sc_gui_add_sprite_element(sp_gui_health, 0, [_x, _y])
 
 repeat health {
@@ -23,6 +25,7 @@ repeat (hero.maxhealth - health) {
 
 _x+=8
 sc_gui_add_sprite_element(sp_gui_health, 3, [_x, _y])
+
 
 
 // paused layout

@@ -6,3 +6,5 @@ shotObject = noone
 shoot = false
 canShoot = false
 reloaded = true
+
+initiated = false

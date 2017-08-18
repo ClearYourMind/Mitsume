@@ -10,6 +10,8 @@ sc_gui_add_rect_element([0, 0], [view_w, 20], c_black, 0.8)
 var _x = 12
 var _y = 0
 
+sc_gui_add_sprite_element(sp_gui_image , 1, [_x, _y])
+_x+=6
 sc_gui_add_sprite_element(sp_gui_health, 0, [_x, _y])
 
 repeat health {
@@ -26,7 +28,6 @@ sc_gui_add_sprite_element(sp_gui_health, 3, [_x, _y])
 
 
 
-
 //weapon
 _x=115
 sc_gui_add_sprite_element(sp_gui_frame, 0, [_x, _y])
@@ -37,7 +38,7 @@ if instance_exists(hero.weapon)
 
 //score
 _x+=42
-sc_gui_add_sprite_element(sp_gui_coin, 0, [_x, _y])
+sc_gui_add_sprite_element(sp_gui_image, 0, [_x, _y])
 
 _x+=2
 var i = 0, number = 0, s = score, pow = 0

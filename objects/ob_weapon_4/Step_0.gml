@@ -1,3 +1,6 @@
+if not initiated {
+	staminaReq = hero.staminaMax
+}
 event_inherited()
 /// @desc Shooting
 

@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "4100b5b4-4172-4827-bf8d-727df27de026",
+            "Value": {
+                "id": "7b2486fd-69b1-4c94-90a0-0b378abe08ae",
+                "resourcePath": "scripts\\sc_hero_level_up\\sc_hero_level_up.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "42011826-50a5-4492-babf-c89fdd513d27",
             "Value": {
                 "id": "f4af687b-f4b5-4de0-8e62-518a974b4c9f",
@@ -1202,7 +1210,7 @@
             "Key": "94eaeed7-d752-4ec6-8517-75137a9b57eb",
             "Value": {
                 "id": "1d431d9f-861b-4c51-997d-3020a85b74d2",
-                "resourcePath": "sprites\\sp_gui_coin\\sp_gui_coin.yy",
+                "resourcePath": "sprites\\sp_gui_image\\sp_gui_image.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2116,6 +2124,7 @@
         "212363f1-7588-467f-bf20-99720326b9ee",
         "558c89bc-4680-4111-a34f-ac5d4981c3d5",
         "d2ec6858-b50f-4227-b207-85cc55bacb98",
+        "4100b5b4-4172-4827-bf8d-727df27de026",
         "fad470e9-4fea-458b-bfd1-957efd76be47",
         "00bcbbf9-ac23-40b5-a873-019a4cedb875",
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",

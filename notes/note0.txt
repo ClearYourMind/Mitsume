@@ -17,19 +17,28 @@ make more controls processing in ob_hero_gui:
  - navigating through weapons
  - switching shop menu
  - navigating through shop
-
+	[ DONE! ]
+	
 08.08.17
     Collision check for hero should return multiple directions to catch fatal positions when hero
 touches a wall with HEAD + FEET, or LEFT + RIGHT. ("squeeze" positions).
     Make it work  for lifts+walls and arrow+walls
-
+	[		]
 
 11.08.17
 	Add spawner with parent ob_enemy for demonstrating weapons
 	Add picture for LIFE and item descriptions in shop
 	More texts in shop when you're going to buy something, just bought, messages on error,
 Greeting message.
-	
+	[ DONE! ]
+
+18.08.17
+	A Big Bug revealed that when paused collisions are still triggered. It's bad when colliding 
+for ex. ob_coin and ob_killing_arrow. 
+	[		]
+	ob_finish and ob_start should activate and deactivate hero. Otherwise in transitions between
+levels will be shown hero's GUI
+	[		]
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

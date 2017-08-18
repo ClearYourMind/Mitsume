@@ -1,10 +1,11 @@
 event_inherited()
 /// @desc Update elements
 
-sc_gui_add_rect_element([0, -96], [view_w, 96], 0, 0.8)
-sc_gui_add_tickerline([16, -88])
+sc_gui_add_rect_element([0, -104], [view_w, 103], 0, 0.8)
+sc_gui_add_tickerline([16, -96])
 var pos = menuPos
 var _x = 0 
+var _y = -40
 var _item = []
 var _s = ""
 for (var i=-2; i<=2; i++) {
@@ -18,25 +19,42 @@ for (var i=-2; i<=2; i++) {
 	
 	if pos = menuPos {
 		if visible_1
-			sc_gui_add_sprite_element(sp_gui_frame_sq, 0, [_x, -32])
+			sc_gui_add_sprite_element(sp_gui_frame_sq, 0, [_x, _y])
 	} else
-		sc_gui_add_sprite_element(sp_gui_frame_sq, 0, [_x, -32])
+		sc_gui_add_sprite_element(sp_gui_frame_sq, 0, [_x, _y])
 	
 	_s = _item[item.name]
-	sc_gui_add_text_element(_s , [_x-string_width(_s)*0.5 , -56])	
+	sc_gui_add_text_element(_s , [_x-string_width(_s)*0.5 , _y-24])	
 	
-	if not _item[item.soldout]
-		sc_gui_add_sprite_element(sp_gui_shop, _item[item.sprite], [_x, -32])
-	else
-		sc_gui_add_sprite_element(sp_gui_shop, 6, [_x, -32])
+	// item sprite
+	if not _item[item.soldout] {
+		sc_gui_add_sprite_element(sp_gui_shop, _item[item.sprite], [_x, _y])
+		// level gauge
+		if _item[item.level] > 0 {
+			var _xx = _x-24
+			sc_gui_add_sprite_element(sp_gui_health, 0, [_xx, _y+12])
+			repeat _item[item.level] {
+				_xx+=8
+				sc_gui_add_sprite_element(sp_gui_health, 1, [_xx, _y+12])
+			}
+			repeat (4 - _item[item.level]) {      
+				_xx+=8
+				sc_gui_add_sprite_element(sp_gui_health, 2, [_xx, _y+12])
+			}
+			_xx+=8
+			sc_gui_add_sprite_element(sp_gui_health, 3, [_xx, _y+12])
+		}
+	} else
+		sc_gui_add_sprite_element(sp_gui_shop, 7, [_x, _y])
 	
+	// item price
 	if not (_item[item.type] = itemtype.exitshop) {
 		if not _item[item.soldout]
 			_s = string(_item[item.price])
 		else
 			_s = "SOLD OUT"
 	}
-	sc_gui_add_text_element(_s, [_x - string_width(_s)*0.5, -14])
+	sc_gui_add_text_element(_s, [_x - string_width(_s)*0.5, _y+30])
 	
 }
 

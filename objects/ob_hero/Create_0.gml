@@ -42,8 +42,9 @@ pauseAnim = after.None
 
 feetcollision = true
 
-maxhealth = 10
+maxhealth = 6
 health = maxhealth
+healthUsed = 0
 
 image_speed = 0.1
 

@@ -2,7 +2,7 @@
     "id": "94eaeed7-d752-4ec6-8517-75137a9b57eb",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sp_gui_coin",
+    "name": "sp_gui_image",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -32,6 +32,28 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "813c07d3-8b03-452c-8692-0c778e894694",
+                    "LayerId": "6b2920dd-3545-4d57-893c-0e0c62f38283"
+                }
+            ]
+        },
+        {
+            "id": "99c234cf-a8a1-40ed-9e9d-9cba8b1a8204",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "94eaeed7-d752-4ec6-8517-75137a9b57eb",
+            "compositeImage": {
+                "id": "43254211-17e1-4423-9ea6-ab9e4bc140de",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "99c234cf-a8a1-40ed-9e9d-9cba8b1a8204",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "635dbadb-cc70-41f9-a82b-e9c93b20f541",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "99c234cf-a8a1-40ed-9e9d-9cba8b1a8204",
                     "LayerId": "6b2920dd-3545-4d57-893c-0e0c62f38283"
                 }
             ]

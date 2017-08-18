@@ -39,5 +39,11 @@ case itemtype.life:
 	break
 case itemtype.medkit:
 	health = hero.maxhealth
+	hero.healthUsed++
 	break
+case itemtype.strength:
+	hero.level++
+	sc_hero_level_up()
+	break
+	
 }

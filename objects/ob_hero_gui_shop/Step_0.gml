@@ -82,7 +82,7 @@ if menuDx =0 and chosen {
 if menuDx != 0 {
 	menuX += menuDx
 	if abs(menuX) > menuInterval {
-		// menu stopped at the item
+		// scrolling finished
 		menuPos -= sign(menuDx)
 		menuX = 0
 		menuDx = 0
