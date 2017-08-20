@@ -10,7 +10,6 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "2cc301c8-5936-4b7f-8957-f3bce117bdde",
-        "d8f9c078-bdbc-4837-8dcd-d9a0e328c2c3",
         "f2581b8b-e2b3-4693-a590-003d6b7afbd9",
         "f50f0d47-a4a9-4267-b289-34c9d2e93ff4",
         "09bf7d3e-3027-4d92-b5e4-8a10510041ba",
@@ -44,7 +43,9 @@
         "43ed80c9-d25b-4705-ab4a-17bf0fc3daa4",
         "4e65a752-41f2-462a-b9b6-a6617a10da9f",
         "f9419186-59b5-409c-960c-aff9577a4efa",
-        "cd7bfc4d-f49d-4b49-a6cd-da2579088699"
+        "cd7bfc4d-f49d-4b49-a6cd-da2579088699",
+        "a4c450d0-bac1-4842-8d47-9a3ee5a77395",
+        "d8ca3394-cb6d-458a-a911-3f1052078991"
     ],
     "layers": [
         {
@@ -116,30 +117,6 @@
                     "objId": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3",
                     "rotation": 0,
                     "scaleX": 17,
-                    "scaleY": 1
-                },
-                {
-                    "id": "d8f9c078-bdbc-4837-8dcd-d9a0e328c2c3",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_1BD57929",
-                    "x": 80,
-                    "y": 384,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "InstanceCreationCode_inst_1BD57929.gml",
-                    "creationCodeType": ".gml",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_1BD57929",
-                    "objId": "40e88fc5-ca17-46a8-8dab-f35662fe13f3",
-                    "rotation": 0,
-                    "scaleX": 1,
                     "scaleY": 1
                 },
                 {
@@ -933,6 +910,54 @@
                     "rotation": 0,
                     "scaleX": 2,
                     "scaleY": 4
+                },
+                {
+                    "id": "a4c450d0-bac1-4842-8d47-9a3ee5a77395",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_7EC81D1",
+                    "x": 80,
+                    "y": 384,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_7EC81D1",
+                    "objId": "ed4d2571-71f3-440c-a4d8-c1cbf818a691",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "d8ca3394-cb6d-458a-a911-3f1052078991",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_13F56CAF",
+                    "x": 544,
+                    "y": 32,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_13F56CAF",
+                    "objId": "048cedb9-c8a4-43d2-8651-ed91dca76d60",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
                 }
             ]
         },

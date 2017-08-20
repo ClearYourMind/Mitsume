@@ -1,5 +1,8 @@
 /// @desc Hurt enemy
 
+if paused
+	exit
+
 if not hurt {
 	strength -= other.hit
 	hurtstep = 0

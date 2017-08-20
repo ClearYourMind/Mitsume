@@ -35,7 +35,7 @@ Greeting message.
 18.08.17
 	A Big Bug revealed that when paused collisions are still triggered. It's bad when colliding 
 for ex. ob_coin and ob_killing_arrow. 
-	[		]
+	[ DONE! ]
 	ob_finish and ob_start should activate and deactivate hero. Otherwise in transitions between
 levels will be shown hero's GUI
 	[		]
