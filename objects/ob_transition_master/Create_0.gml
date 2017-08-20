@@ -13,3 +13,5 @@ dh = display_get_gui_height()
 
 action = noone
 arg = 0
+
+performing = false

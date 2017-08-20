@@ -15,13 +15,18 @@ if started {
 			image_alpha = 0
 			action = noone
 		} else {
-		// reverse
-			image_alpha = 1
-			dAlpha = -1
-			sc_timeout_start(fadeTime)
-			if script_exists(action) {
-				script_execute(action, arg)
-				show_debug_message("Transition action : " + script_get_name(action) + " performed")
+			if not performing
+				performing = true
+			else {
+			// reverse
+				performing = false
+				image_alpha = 1
+				dAlpha = -1
+				sc_timeout_start(fadeTime)
+				if script_exists(action) {
+					script_execute(action, arg)
+					show_debug_message("Transition action : " + script_get_name(action) + " performed")
+				}
 			}
 		}
 	}

@@ -1,4 +1,4 @@
 /// @desc Kill yourself
 
-sc_hero_die()
+//sc_hero_die()
 
