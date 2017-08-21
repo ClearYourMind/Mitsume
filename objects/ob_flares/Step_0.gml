@@ -1,7 +1,7 @@
 /// @desc Process flares
 
 if not initiated {
-	if not flareLifetime = -1 {
+	if not (flareLifetime = -1) {
 		flareLifetime = sc_timeout_new(flareLifetime)	
 		sc_timeout_start(flareLifetime)
 	}
@@ -21,9 +21,10 @@ if sc_timeout_over(flareLifetime) {
 }
 
 if instance_exists(object) {
-	x = object.x
-	y = object.y
-}
+	x = object.x + xOffset
+	y = object.y + yOffset
+} else
+	spawn = false
 
 
 // process sparkles

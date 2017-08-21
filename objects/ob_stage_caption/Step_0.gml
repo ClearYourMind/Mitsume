@@ -10,5 +10,4 @@ if ob_transition_master.performing
 if heroExists {
 	instance_activate_object(hero)
 	instance_activate_object(hero.guiObject)
-
 }

@@ -15,7 +15,8 @@ spawn = true
 object = noone
 w1 = 8
 w2 = 8
-
+xOffset = 0
+yOffset = 0
 enum sh {
 	lifetime,
 	phase,
