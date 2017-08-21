@@ -1,6 +1,9 @@
 event_inherited()
 /// @desc Process timeout
 
+if not instance_exists(hero)
+	exit
+
 if canShoot {
 
 	sc_timeout_stop(resetTime)

@@ -9,8 +9,6 @@ if sc_timeout_over(timeOut) {
 if ob_transition_master.performing
 if heroExists {
 	instance_activate_object(hero)
-	for (var i=0; i<array_height_2d(hero.weaponList); i++)
-		instance_activate_object(hero.weaponList[i, 0])
 	instance_activate_object(hero.guiObject)
 
 }

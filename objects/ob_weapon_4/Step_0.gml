@@ -1,3 +1,6 @@
+if not instance_exists(hero)
+	exit
+	
 if not initiated {
 	staminaReq = hero.staminaMax
 }

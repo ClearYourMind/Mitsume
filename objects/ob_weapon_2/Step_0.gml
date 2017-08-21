@@ -1,6 +1,9 @@
 event_inherited()
 /// @desc Process timeout
 
+if not instance_exists(hero)
+	exit
+
 if canShoot {
 	reloaded = false
 	sc_play_sound(sn_shot, false)

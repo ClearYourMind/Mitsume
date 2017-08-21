@@ -6,6 +6,10 @@ if not initiated {
 	initiated = true
 }
 
+if not instance_exists(hero)
+	exit
+	
+
 if hero.hurt// or hero.staminaDepleted
 	shoot = false
 	
