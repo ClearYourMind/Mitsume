@@ -35,5 +35,7 @@ if stamina < staminaMax {
 	staminaDepleted = false
 }
 
-debugstr +="\n"
-debugstr += " STAMINA = "+string(stamina)
+animEnded = false
+
+//debugstr +="\n"
+//debugstr += " STAMINA = "+string(stamina)

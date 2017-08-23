@@ -14,7 +14,6 @@ if health > 0 {
 	y -= vspeed + 2
 	sprite_index = sp_hero_hurt
 	image_index = 0
-	animEnded = false
 	health--
 	sc_play_sound(sn_hurt, false)
 }
