@@ -38,7 +38,7 @@ for ex. ob_coin and ob_killing_arrow.
 	[ DONE! ]
 	ob_finish and ob_start should activate and deactivate hero. Otherwise in transitions between
 levels will be shown hero's GUI
-	[		]
+	[ DONE! ]
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

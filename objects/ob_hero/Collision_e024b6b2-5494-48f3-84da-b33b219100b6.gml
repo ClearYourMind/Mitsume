@@ -3,7 +3,7 @@
 var result = false
 if arrow.phase = ar.Launch or arrow.phase = ar.Stay or arrow.phase = ar.Sag
 if speedY>0 {
-	result = sc_hero_check_collision_mask(other, d.Down)
+	result = sc_hero_check_collision_mask(other.id, d.Down)
 }
 
 if result {

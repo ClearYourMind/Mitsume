@@ -16,4 +16,4 @@ if keyboard_check_pressed(vk_add) {
 //	show_debug_message("SECRET KEY USED! mode = "+string(mode))
 }
 
-sc_gui_update(self)
+sc_gui_update(id)

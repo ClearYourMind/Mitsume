@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "7bbba99c-3b9d-4d1f-ae9a-3a9c99ae2ef3",
+            "Value": {
+                "id": "e28aff55-56d7-499b-8a72-8c1ef442676c",
+                "resourcePath": "sprites\\sp_smoke\\sp_smoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c1a8b95-beeb-4c6f-916b-57e9652e7e8a",
             "Value": {
                 "id": "0db1fce8-9bee-4cc6-84cb-a9eeed91fae5",

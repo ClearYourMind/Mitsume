@@ -28,7 +28,7 @@ turnBack = false  // used if not killing and launched
 angle = 0
 radius = 300
 angleSpeed = pi*4  // in radians
-imageSpeed = 360*5
+imageSpeed = -360*5
 dRad = 300
 
 sagSpeed = 135

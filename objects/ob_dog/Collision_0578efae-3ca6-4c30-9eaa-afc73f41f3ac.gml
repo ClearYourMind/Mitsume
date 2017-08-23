@@ -7,7 +7,7 @@ else
 
 for (var i=0; i<array_length_1d(dirs); i++) {
 	var dir = dirs[i]
-	if sc_dog_check_collision_mask(other, dir)
+	if sc_dog_check_collision_mask(other.id, dir)
 		break
 }
 

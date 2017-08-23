@@ -3,7 +3,7 @@
 var result = false
 
 if speedY>0 {
-	var result = sc_dog_check_collision_mask(other, d.Down)
+	var result = sc_dog_check_collision_mask(other.id, d.Down)
 }
 
 if result {

@@ -8,6 +8,7 @@ if sc_timeout_over(timeOut) {
 // Activate hero before performing transition action
 if ob_transition_master.performing
 if heroExists {
-	instance_activate_object(hero)
-	instance_activate_object(hero.guiObject)
+	instance_activate_object(ob_heroparent)
+	//instance_activate_object(ob_heroparent.guiObject)
 }
+
