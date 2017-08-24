@@ -41,8 +41,10 @@ if mode == 1 {
         if sc_timeout_over(timeout) {
             piece++
             if piece <= maxpiece {
-	            with instance_create_depth(x,view_y-16*piece, depths.general, ob_tothem)
+	            with instance_create_depth(x,view_y-16, depths.general, ob_tothem) {
 	                base = other.id
+					speedY = maxspeedY
+				}
             } else
 				phase = 2
         }    
