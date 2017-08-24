@@ -1,0 +1,3 @@
+/// @desc 
+
+animEnded = true
