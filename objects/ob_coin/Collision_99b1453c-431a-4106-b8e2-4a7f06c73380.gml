@@ -1,4 +1,4 @@
 /// @desc Raise value
 
-if not (hero.arrow.phase = ar.Appear) and not (hero.arrow.phase = ar.Recall)
+if not (other.phase = ar.Appear or other.phase = ar.Recall or other.phase = ar.Recoil)
 	event_perform(ev_collision, ob_shot)

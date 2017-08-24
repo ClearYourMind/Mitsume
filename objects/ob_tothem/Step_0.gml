@@ -7,6 +7,9 @@ if base.killed {
     deploy = false
 } 
 
+vulnerable = (base.phase == 2)
+
+
 if hurt = true and not (phase = th.fire) {
 	phase = th.fire
     sprite_index = sp_tothem_fire  

@@ -5,12 +5,13 @@ enum ar {
 	Appear    = 0,
 	Hold      = 1,
 	LaunchBegin = 2,
-	Launch    = 3 ,
+	Launch    = 3,
 	Stay      = 4,
 	SagBegin  = 5,
 	Sag       = 6,
 	Disappear = 7,
-	Recall    = 8
+	Recall    = 8,
+	Recoil    = 9
 }
 
 phase = ar.Appear
@@ -19,6 +20,8 @@ lifeTime = sc_timeout_new(10)
 fadeTime = sc_timeout_new(5)
 
 flashing = false
+isVisible = true
+
 flare = instance_create_depth(x, y, depths.explosions, ob_flares)
 flare.object = id
 flare.sparkleSpawnPeriod = 0.1

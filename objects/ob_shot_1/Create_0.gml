@@ -4,5 +4,6 @@ event_inherited()
 forward = 1
 
 maxspeedX =200
+maxspeedY =600
 hit = 1
 

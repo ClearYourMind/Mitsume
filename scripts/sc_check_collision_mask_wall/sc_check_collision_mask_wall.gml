@@ -7,37 +7,42 @@
 var _x = x
 var _y = y
 var obj = argument0
+var _other = noone
 var dir = argument1
 var result = false
 
 switch dir {
 case d.Up:
-	if place_meeting(_x-hspeed, _y, obj) {
-		_y -=  (_y-h1) - other.bbox_bottom - 1
+	_other = instance_place(_x-hspeed, _y, obj)
+	if instance_exists(_other) {
+		_y -=  (_y-h1) - _other.bbox_bottom - 1
 		speedY = 0
 		vspeed = 0
 		result = true
 	}
 	break
 case d.Down:
-	if place_meeting(_x-hspeed, _y, obj) {
-		_y -=  (_y+h2) - other.bbox_top //+ 0.5
+	_other = instance_place(_x-hspeed, _y, obj)
+	if instance_exists(_other) {
+		_y -=  (_y+h2) - _other.bbox_top //+ 0.5
 		speedY = 0
 		vspeed = 0
 		result = true
 	}
 	break
 case d.Right:
-	if place_meeting(_x, _y-vspeed, obj) {
-		_x -=  (_x+w2) - other.bbox_left + 0.51// 0.91
+	_other = instance_place(_x, _y-vspeed, obj)
+	if instance_exists(_other) {
+		_x -=  (_x+w2) - _other.bbox_left + 0.51// 0.91
 		speedX = 0
 		hspeed = 0
 		result = true
 	}
 	break
 case d.Left:
-	if place_meeting(_x, _y-vspeed, obj) {
-		_x -= (_x-w1) - other.bbox_right - 0.51
+	_other = instance_place(_x, _y-vspeed, obj)
+	if instance_exists(_other) {
+		_x -= (_x-w1) - _other.bbox_right - 0.51
 		speedX = 0
 		hspeed = 0
 		result = true

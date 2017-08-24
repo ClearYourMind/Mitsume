@@ -3,6 +3,7 @@ event_inherited()
 
 hurt = false
 hurtstep = 0
+vulnerable = true
 
 strength = 1
 dropvalue = 0

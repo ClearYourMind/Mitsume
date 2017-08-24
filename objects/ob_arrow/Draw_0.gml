@@ -1,17 +1,15 @@
 /// @desc Draw disappearing arrow
 
-if flashing {
-	if image_alpha = 1
-		image_alpha = 0
-	else
-		image_alpha = 1
-} else
-	image_alpha = 1
+if flashing
+	isVisible = not isVisible
+else
+	isVisible = true
 
-if phase = ar.Disappear {
-	gpu_set_blendmode(bm_add)
-	draw_self()
-	gpu_set_blendmode(bm_normal)
-} else
-	draw_self()
-
+if isVisible {
+	if phase = ar.Disappear {
+		gpu_set_blendmode(bm_add)
+		draw_self()
+		gpu_set_blendmode(bm_normal)
+	} else
+		draw_self()
+}
