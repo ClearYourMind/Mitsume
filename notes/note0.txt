@@ -40,6 +40,9 @@ for ex. ob_coin and ob_killing_arrow.
 levels will be shown hero's GUI
 	[ DONE! ]
 
+
+
+
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения
 курсора, пока не переведешь фокус с GM и обратно. 
