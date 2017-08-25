@@ -27,17 +27,18 @@ if phase == 0 {
         if animEnded {
 			shoot = false
 			animEnded = false
+			sc_timeout_start(shotTime)
 		}
     }
-	if not shoot
-	if not hurt {
-        if hits > 0 {
-            hits--
-            shoot = true
-            image_index=0
-        } else
-            sprite_index = sp_skeleton_idle
-    }
+	if not shoot 
+	if hits > 0 and not hurt {
+		if sc_timeout_over(shotTime) {
+		    hits--
+		    shoot = true
+		    image_index=0
+		}
+	} else
+	    sprite_index = sp_skeleton_idle
   
 	image_xscale = forward
 	

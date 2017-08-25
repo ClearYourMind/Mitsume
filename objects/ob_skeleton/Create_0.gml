@@ -12,7 +12,8 @@ hits = 0
 
 xRange = 100
 yRange = 40
-detonateRange = 64
+detonateRange = 48
+shotTime = sc_timeout_new(0.1)
 
 shoot = false
 animEnded = false
