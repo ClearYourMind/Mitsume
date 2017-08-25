@@ -40,8 +40,11 @@ for ex. ob_coin and ob_killing_arrow.
 levels will be shown hero's GUI
 	[ DONE! ]
 
-
-
+25.08.17
+	ob_skeleton being attacked starts seeing player on any distance but less than view width.
+	[		]
+	5 upgrade gradations of STRENGTH. Add upgrade gradations to CONDOR. 
+	[		]
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

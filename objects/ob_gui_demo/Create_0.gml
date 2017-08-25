@@ -4,16 +4,8 @@ event_inherited()
 sprite_index = noone
 
 enum demo {
-	none    = 0,
-	controls0,
-	controls1,
-	controls2,
-	controls3,
-	stamina1,
-	stamina2,
-	arrowjump,
-	killingarrow,
-	lastvalue = 9
+	none      = 0,
+	lastvalue = 11
 }
 
 mode = demo.none

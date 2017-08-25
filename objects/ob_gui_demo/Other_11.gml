@@ -1,45 +1,58 @@
 /// @desc Init mode
 
+var _w = view_w * 0.85
+
 switch mode {
-case demo.none:
+case 0:
 	caption = "DEMO mode initiated"
-	pos = [32, 32]
-	sc_gui_set_tickerline(caption, view_w * 0.75)
+	pos = [45, 32]
+	sc_gui_set_tickerline(caption, _w)
 	break
 
-case demo.controls0:
-	caption = "* Control device you are using is detected after first key pressed ..."
-//	pos = [16, view_h-40]
-	pos = [view_w*0.35, view_h*0.5]
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 1:
+	caption = "* Mob added: tothem column."
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.controls1:
-	caption = "... You can fully customize control keys layout for keyboard ..."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 2:
+	caption = "It shoots ordinary shots..."
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.controls2:
-	caption = "... D-Pad as well as Analog Stick are used for movements on gamepad ..."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 3:
+	caption = "...invulnerable when forming..."
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.controls3:
-	caption = "... changes you made are saved automatically."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 4:
+	caption =  "...even Condor, that now kills\n"
+	caption += "while being launched, cannot \n"
+	caption += "hurt it!"
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.stamina1:
-	caption = "* Added stamina depletion ..."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 5:
+	caption = "* You can upgrade hero's \n"
+	caption += "characteristics in Shop, buying\n"
+	caption += "item STRENGTH."
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.stamina2:
-	caption = "... now you cannot shoot an infinite rain of shots."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 6:
+	caption = "* HEALTH now has limited number of uses."
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.arrowjump:
-	caption = "* You can make a higher jump with the Condor."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 7:
+	caption = "* Mob added: skeleton."
+	sc_gui_set_tickerline(caption, _w)
 	break
-case demo.killingarrow:
-	caption = "* Added Supercondor."
-	sc_gui_set_tickerline(caption, view_w * 0.65)
+case 8:
+	caption = "It shoots pointed shots..."
+	sc_gui_set_tickerline(caption, _w)
+	break
+case 9:
+	caption =  "...shot count equals to the\n"
+	caption += "number of your hits..."
+	sc_gui_set_tickerline(caption, _w)
+	break
+case 10:
+	caption = "...explodes when you are too close."
+	sc_gui_set_tickerline(caption, _w)
 	break
 
 }
