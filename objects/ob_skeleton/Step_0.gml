@@ -11,10 +11,22 @@ var found = false
 
 // реакция на игрока
 if phase == 0 {
+	// поблизости
 	if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
 		found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
 				  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
 	}
+	// по урону
+	if hurt { 
+		if (abs(xDist) < view_w * 0.5)
+			found = true
+		else {
+			// don't react
+			shoot = false
+			hits = 0
+		}
+	}
+	
 	if found
 		forward = sign(xDist)
 

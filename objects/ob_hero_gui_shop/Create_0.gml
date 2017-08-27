@@ -111,11 +111,11 @@ menu[n++] = _item
 menu[n] = []
 var _item = []
 _item[item.name]    = "STRENGTH"
-_item[item.desc]    = "Makes you more powerful. Rises you to level "+string(hero.level)
+_item[item.desc]    = "Makes you more powerful. Rises you to level "+string(hero.level + 1)
 _item[item.sprite ] = 9
 _item[item.price  ] = 2000
 _item[item.level  ] = hero.level
-_item[item.soldout] = (hero.level == 4)
+_item[item.soldout] = (hero.level == 5)
 _item[item.type] = itemtype.strength
 menu[n++] = _item
 

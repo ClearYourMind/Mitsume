@@ -1,12 +1,14 @@
 /// @desc Level up
 
-maxhealth++
-health = maxhealth
+if maxhealth<8 {
+	maxhealth++
+	health = maxhealth
+}
 
-staminaMax *= 1.25
-staminaRegenSpeed *= 1.25
+staminaMax *= 1.2
+staminaRegenSpeed *= 1.2
 
-with ob_weapon {
-	reloadTime = reloadTime / (1+((hero.level-1) * 0.125))
+with ob_weapon { 
+	reloadTime = reloadTime / (1+((hero.level-1) * 0.12))
 	initiated = false
 }
