@@ -1,6 +1,5 @@
 26.06.17
-
-Сделать возможность выбора между wide и classic view перед началом игры. Желательно сохранять
+	Сделать возможность выбора между wide и classic view перед началом игры. Желательно сохранять
 выбранную настройку. 
 
 Либо сохранять пропорции сцены, добавляя черные полосы по бокам
@@ -10,7 +9,6 @@
 	-Скорость перемещения камеры
 
 07.08.17
-
 ob_pause_control functions move to ob_hero_gui
 make more controls processing in ob_hero_gui:
  - switching pause
@@ -36,6 +34,7 @@ Greeting message.
 	A Big Bug revealed that when paused collisions are still triggered. It's bad when colliding 
 for ex. ob_coin and ob_killing_arrow. 
 	[ DONE! ]
+	
 	ob_finish and ob_start should activate and deactivate hero. Otherwise in transitions between
 levels will be shown hero's GUI
 	[ DONE! ]
@@ -44,8 +43,11 @@ levels will be shown hero's GUI
 	ob_skeleton being attacked starts seeing player on any distance but less than view width.
 If distance is more than view_w ob_skeleton doesn't react.
 	[ DONE! ]
+	
 	5 upgrade gradations of STRENGTH. Add upgrade gradations to CONDOR. 
 	[ DONE! ]
+
+
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

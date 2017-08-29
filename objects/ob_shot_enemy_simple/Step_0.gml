@@ -6,5 +6,3 @@ if not initiated {
 	initiated = true
 }
 
-
-
