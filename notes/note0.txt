@@ -47,7 +47,9 @@ If distance is more than view_w ob_skeleton doesn't react.
 	5 upgrade gradations of STRENGTH. Add upgrade gradations to CONDOR. 
 	[ DONE! ]
 
-
+29.08.17
+	ob_arrow causes a crash when placed in room via editor
+	[		]
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

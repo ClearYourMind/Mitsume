@@ -1,6 +1,12 @@
 event_inherited()
 /// @desc Process phases
 
+if isThrough {
+	stepped = false
+	if sc_timeout_over(throughTime)
+		isThrough = false
+}
+
 if not instance_exists(hero)
 	phase = ar.Disappear
 
@@ -39,14 +45,8 @@ if phase = ar.Hold {
 if phase = ar.LaunchBegin {
 	if object_index = ob_arrow {
 		instance_change(ob_kill_arrow, true)
-//		event_perform(ev_create, 0)
 	    forward = hero.forward  
 		turnBack = true
-		//image_speed = 1
-		//if not instance_exists(flare) {
-		//	flare = instance_create_depth(x, y, depths.explosions, ob_flares)
-		//	flare.object = id
-		//}
 	}
 	speedX = maxspeedX * forward
 	accelX = -oAccel * forward

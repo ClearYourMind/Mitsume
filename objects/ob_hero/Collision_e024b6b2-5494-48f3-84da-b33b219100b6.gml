@@ -1,12 +1,23 @@
 /// @desc Stop arrow
 
-var result = false
+
+if headcollision and not arrow.isThrough {
+	arrow.isThrough = true
+	sc_timeout_start(arrow.throughTime)
+	arrow.stepped = false
+	feetcollision = false
+} 
+
+if arrow.isThrough
+	exit
+
+var resultDown = false
 if arrow.phase = ar.Launch or arrow.phase = ar.Stay or arrow.phase = ar.Sag
 if speedY>0 {
-	result = sc_hero_check_collision_mask(other.id, d.Down)
+	resultDown = sc_hero_check_collision_mask(other.id, d.Down)
 }
 
-if result {
+if resultDown {
 	y += 1.5
 	feetcollision = true	
 	arrow.stepped = true
@@ -16,5 +27,5 @@ if result {
 	if arrow.phase = ar.Launch {
 		arrow.phase = ar.Stay
 	}
-}
+} 
 

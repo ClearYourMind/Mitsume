@@ -5,8 +5,19 @@ sc_hero_control()
 
 event_inherited()
 
+if feetcollision
+	debugstr += " FEET"
+if headcollision
+	debugstr += " HEAD"
+if leftcollision
+	debugstr += " LEFT"
+if rightcollision
+	debugstr += " RIGHT"
+
 feetcollision = false
 headcollision = false
+leftcollision = false
+rightcollision = false
 
 /// Check status
 if health<=0

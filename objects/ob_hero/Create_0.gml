@@ -41,6 +41,9 @@ pauseTime = noone
 pauseAnim = after.None
 
 feetcollision = true
+headcollision = false
+leftcollision = false
+rightcollision = false
 
 maxhealth = 6
 health = maxhealth

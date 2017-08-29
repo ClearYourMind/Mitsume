@@ -7,5 +7,5 @@ if speedY>=0 {
 
 if result {
 	y+=1.5
-	feetcollision = true	
+	feetcollision = true
 }

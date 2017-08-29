@@ -21,6 +21,9 @@ fadeTime = sc_timeout_new(5)
 
 flashing = false
 isVisible = true
+isThrough = false
+throughTime = sc_timeout_new(1)
+
 
 flare = instance_create_depth(x, y, depths.explosions, ob_flares)
 flare.object = id
