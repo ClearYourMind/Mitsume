@@ -1,22 +1,7 @@
 event_inherited()
 /// @desc Check collision ahead, Timers
-var result = [false, false] 
 
-if place_meeting(x+hspeed, y+vspeed, ob_wall) {
-	if place_meeting(x+hspeed, y, ob_wall) {
-		result[0] = true
-		hspeed = 0 
-	}
-	if place_meeting(x, y+vspeed, ob_wall) {
-		result[1] = true
-		vspeed = 0 
-	}
-	if result[0] = false and result[1] = false {
-		result = [true,  true]
-		hspeed = 0
-		vspeed = 0
-	}
-}
+var result = sc_check_collision(ob_wall)
 
 if result[0] {
 	speedX = -speedX
@@ -38,8 +23,9 @@ if result[1] {
 			speedY = 40
 }
 
-
 // timers processing
+#region
+
 if sc_timeout_over(lifeTime) {
 	if not flashing {
 		flashing = true
@@ -48,3 +34,5 @@ if sc_timeout_over(lifeTime) {
 	} else
 		instance_destroy()
 }
+
+#endregion

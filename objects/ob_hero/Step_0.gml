@@ -10,7 +10,7 @@ if feetcollision
 if headcollision
 	debugstr += " HEAD"
 if leftcollision
-	debugstr += " LEFT"
+	debugstr += "; LEFT"
 if rightcollision
 	debugstr += " RIGHT"
 

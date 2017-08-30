@@ -6,7 +6,7 @@ frontLayer  = layer_get_id("Tiles_1")
 
 var tileMap = layer_tilemap_get_id(frontLayer)
 if shadowLayer != -1 {
-	shadowMap = layer_tilemap_get_id(shadowLayer)
+	var shadowMap = layer_tilemap_get_id(shadowLayer)
 	shW = tilemap_get_tile_width (shadowMap)
 	shH = tilemap_get_tile_height(shadowMap)
 

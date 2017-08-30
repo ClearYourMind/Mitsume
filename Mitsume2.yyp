@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "15fc53c5-912c-46a3-a0e7-b5c7288f0414",
+            "Value": {
+                "id": "c81d74e0-3dcd-4e1b-be85-9727496027c0",
+                "resourcePath": "objects\\ob_motion_wall\\ob_motion_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "188299a5-bb44-4f1c-9a23-b9d8a93cc182",
             "Value": {
                 "id": "6010e5fa-3dda-4206-9583-82cb23ad0338",
@@ -1479,6 +1487,14 @@
             }
         },
         {
+            "Key": "acfec4b2-dfc0-4f7e-bd38-e3fc238c064e",
+            "Value": {
+                "id": "b1f559b0-8858-44dd-bd08-fc5abaa62526",
+                "resourcePath": "scripts\\sc_check_collision\\sc_check_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "aee17dc9-c43a-4174-8147-764cb172bbff",
             "Value": {
                 "id": "c3fcc28f-2b23-417d-b831-241efd195ccc",
@@ -2109,12 +2125,21 @@
                 "resourcePath": "sounds\\sn_water2\\sn_water2.yy",
                 "resourceType": "GMSound"
             }
+        },
+        {
+            "Key": "ff70bfb7-4471-444e-98de-5c4b988a7a2d",
+            "Value": {
+                "id": "e53335eb-656f-45e9-b5aa-9b18b3572cdd",
+                "resourcePath": "sprites\\sp_build_motion_wall\\sp_build_motion_wall.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
         "76a31bce-1689-49c4-93ce-f71216c24499",
         "29d1ece2-c397-42b1-8c9f-8c0d62ca932f",
         "0c4d5984-1425-42f0-8bb3-aeb558b008d0",
+        "acfec4b2-dfc0-4f7e-bd38-e3fc238c064e",
         "456afe7a-6c77-4b70-8983-2f874f9f4a6e",
         "7724c1fa-af1d-4919-b845-70e6da6829cf",
         "48e0b616-d9fe-4717-aba8-c6c2be41e23c",

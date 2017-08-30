@@ -9,7 +9,8 @@
         "63ffdc27-b302-4152-86dd-79585df02295",
         "cb464bf0-baa8-45c0-b13b-daf68ab3c5ba",
         "702144d2-59d1-4fbc-99cd-9723370d0b18",
-        "ac4475db-35b9-42bf-abc5-7673295a4f80"
+        "ac4475db-35b9-42bf-abc5-7673295a4f80",
+        "ff70bfb7-4471-444e-98de-5c4b988a7a2d"
     ],
     "filterType": "GMSprite",
     "folderName": "build",
