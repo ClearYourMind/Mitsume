@@ -5,23 +5,19 @@ sc_hero_control()
 
 event_inherited()
 
-if feetcollision
-	debugstr += " FEET"
-if headcollision
-	debugstr += " HEAD"
-if leftcollision
-	debugstr += "; LEFT"
-if rightcollision
-	debugstr += " RIGHT"
-
-feetcollision = false
-headcollision = false
-leftcollision = false
-rightcollision = false
 
 /// Check status
-if health<=0
+// squeeze
+if (feetcollision and headcollision) or
+   (leftcollision and rightcollision) {
 	sc_hero_die()
+	exit
+}
+
+if health<=0 {
+	sc_hero_die()
+	exit
+}
 
 if hurt {
 	sprite_index = sp_hero_hurt
@@ -46,7 +42,12 @@ if stamina < staminaMax {
 	staminaDepleted = false
 }
 
-animEnded = false
-
 //debugstr +="\n"
 //debugstr += " STAMINA = "+string(stamina)
+
+feetcollision = false
+headcollision = false
+leftcollision = false
+rightcollision = false
+
+animEnded = false
