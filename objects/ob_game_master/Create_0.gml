@@ -15,11 +15,12 @@ globalvar view_xborder
 globalvar view_yborder
 
 enum depths {
-	explosions = -2,
-	shots = -1,
-	general = 0,
-	gui = -3,
-	fadeplane = -5	
+	general   = 0,
+	hero      = -1,
+	shots     = -5,
+	explosions = -10,
+	gui       = -15,
+	fadeplane = -20
 }
 
 dTime = 0

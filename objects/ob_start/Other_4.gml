@@ -2,7 +2,7 @@
 
 if not instance_exists(hero) {
 	show_debug_message(" - No hero, creating new instance")
-	hero = instance_create_depth(x, y, depths.general, ob_hero)
+	hero = instance_create_depth(x, y, depths.hero, ob_hero)
 }
 else {
 	hero.x = x
