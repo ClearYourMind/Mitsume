@@ -48,9 +48,10 @@ rightcollision = false
 maxhealth = 6
 health = maxhealth
 healthUsed = 0
+// for little jump after hurt before stand up
+leapDone = false
 
-image_speed = 0.1
-
+image_speed = 1
 
 // weapons config
 weaponList[0, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_1)

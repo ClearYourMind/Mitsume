@@ -1479,14 +1479,6 @@
             }
         },
         {
-            "Key": "aca3634f-0800-4218-984a-c2bcf705fee7",
-            "Value": {
-                "id": "6171a600-0f6e-4119-a975-8f7edef75798",
-                "resourcePath": "sprites\\sp_hero2_move\\sp_hero2_move.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "acfec4b2-dfc0-4f7e-bd38-e3fc238c064e",
             "Value": {
                 "id": "b1f559b0-8858-44dd-bd08-fc5abaa62526",
@@ -1811,14 +1803,6 @@
             "Value": {
                 "id": "96dfad88-6e08-4e9c-8240-42d59ac51257",
                 "resourcePath": "sprites\\sp_gui_shop\\sp_gui_shop.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "dcd72c68-dc02-4194-a59b-850e8bdac284",
-            "Value": {
-                "id": "d300601a-89bf-43cf-a905-d89ed90143d0",
-                "resourcePath": "sprites\\sp_hero2_stand\\sp_hero2_stand.yy",
                 "resourceType": "GMSprite"
             }
         },

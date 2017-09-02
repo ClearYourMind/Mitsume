@@ -9,7 +9,6 @@ if canShoot {
 	sc_play_sound(sn_shot, false)
 	with instance_create_depth(hero.x, hero.y-7, depth, shotObject) {
 		speedX = maxspeedX * hero.forward
-		image_speed = other.image_speed
 		image_index = other.image_index
 	}
 }

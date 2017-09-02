@@ -13,7 +13,6 @@ if canShoot {
 	with instance_create_depth(hero.x, hero.y-7, depth, ob_shot_3) {
 		speedX = maxspeedX * cos( degtorad(other.angle) ) * hero.forward
 		speedY = maxspeedX * sin( degtorad(other.angle) )
-		image_speed = other.image_speed
 		image_index = other.image_index
 	}
 	angle += dAngle

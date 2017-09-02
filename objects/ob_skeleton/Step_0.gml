@@ -18,10 +18,10 @@ if phase == 0 {
 	}
 	// по урону
 	if hurt { 
-		if (abs(xDist) < view_w * 0.5)
+		if (abs(xDist) < view_w * 0.8)
 			found = true
 		else {
-			// don't react
+			// don't react - too far
 			shoot = false
 			hits = 0
 		}
@@ -33,11 +33,14 @@ if phase == 0 {
 	// реакция на игрока
     if shoot {
         sprite_index = sp_skeleton_attack
-        if (image_index >= 2) and (image_index < 2 + image_speed)
-        with instance_create_depth(x, y, depths.shots, ob_shot_enemy_targeted) 
-           forward = other.forward
+        if (image_index >= 2) and not shotDone {
+	        with instance_create_depth(x, y, depths.shots, ob_shot_enemy_targeted) 
+				forward = other.forward
+			shotDone = true
+		}
         if animEnded {
 			shoot = false
+			shotDone = false
 			animEnded = false
 			sc_timeout_start(shotTime)
 		}
@@ -59,6 +62,7 @@ if phase == 0 {
 	    sprite_index = sp_skeleton_explode
 	    image_index = 0
 	    phase = 1  // exploding
+		animEnded = false
 	}    
 }
 

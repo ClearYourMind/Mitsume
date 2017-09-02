@@ -2,6 +2,7 @@ event_inherited()
 /// @desc Init values
 
 image_speed = 0
+
 mode = 0
 phase = 0
 timeout = 0

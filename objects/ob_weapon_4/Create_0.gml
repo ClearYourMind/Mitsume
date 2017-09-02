@@ -7,5 +7,4 @@ shotObject = ob_shot_4
 reloadTime = 0.8
 staminaReq = 30
 
-image_speed = 0.15
 

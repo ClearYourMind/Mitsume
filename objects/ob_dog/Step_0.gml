@@ -22,14 +22,14 @@ if newMode {
 	            timeout = random(3)+1
 	            forward = irandom(1)*2 - 1
 	            sprite_index = sp_dog_idle
-	            image_speed = 0.1
+	            image_speed = 1
 				accelX = 0
 	            break
 	        case 1:        // walk
 	            timeout = random(1)+0.3
 	            forward = irandom(1)*2 - 1
 	            sprite_index = sp_dog_walk
-	            image_speed = 0.05
+	            image_speed = 0.5
 	            maxspeedX = speed1
 				accelX = oAccel * forward
 	            break
@@ -38,7 +38,7 @@ if newMode {
 	}
 	if mode = 1 {   // start attack
         sprite_index = sp_dog_walk
-		image_speed = 0.1
+		image_speed = 1
 		accelX = oAccel * forward
         maxspeedX = speed2
 		phase = 0

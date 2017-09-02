@@ -131,7 +131,7 @@ if phase = ar.Recall {
 }
 
 if phase = ar.Disappear {
-    image_speed = 0.15
+    image_speed = 1
 	flashing = true
 	if instance_exists(flare)
 		flare.spawn = false

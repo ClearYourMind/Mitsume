@@ -12,5 +12,4 @@ angle = 0
 dAngle = -5
 aRange = 15
 
-image_speed = 0.2
 

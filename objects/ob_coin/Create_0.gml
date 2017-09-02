@@ -13,7 +13,6 @@ speedY = -maxspeedY * 0.75
 
 grav = 500
 
-image_speed = 0.1
 floorcollision = false
 
 initiated = false

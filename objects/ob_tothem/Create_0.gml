@@ -14,6 +14,7 @@ forward = -1
 base = noone
 
 deploy = false
+shotDone = false
 
 enum th {
 	idle,

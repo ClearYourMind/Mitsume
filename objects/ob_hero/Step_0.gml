@@ -22,12 +22,14 @@ if health<=0 {
 if hurt {
 	sprite_index = sp_hero_hurt
 	// jump before hero stand up
-	if image_index >= 4 and image_index <= 4+image_speed {
+	if image_index >= 4 and not leapDone {
 		speedY = -maxspeedX 
 		y -= vspeed + 2
+		leapDone = true
 	}
 		
 	if animEnded {
+		leapDone = false
 		hurt = false
 		recover = true
 		sc_timeout_start(recoverTime)

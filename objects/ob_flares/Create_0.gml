@@ -1,6 +1,6 @@
 /// @desc Init values
 
-image_speed = 0.15
+//image_speed = 0.15
 
 sparkle = ds_list_create()
 sparkleSpeed = 10 // only Y and upwards

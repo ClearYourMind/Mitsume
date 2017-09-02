@@ -13,7 +13,6 @@ if canShoot {
 	with instance_create_depth(hero.x + 5*hero.forward, hero.y-5, depth, shotObject) {
 		accelX = accelX * hero.forward
 		speedX = maxspeedX*0.075 * hero.forward
-		image_speed = other.image_speed
 		image_index = other.image_index
 	}
 }
