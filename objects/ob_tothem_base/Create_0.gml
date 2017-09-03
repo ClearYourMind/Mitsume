@@ -10,3 +10,6 @@ yRange = 30
 forward = -1
 killed = false
 
+xDist = 0
+yDist = 0
+found = false

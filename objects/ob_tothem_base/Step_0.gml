@@ -1,19 +1,10 @@
 
 /// AI
-if not instance_exists(hero)
-	exit
 
-var xDist = hero.x - x
-var yDist = hero.y - y
-
-var found = false
+sc_enemy_watching()
 
 // реакция на игрока
 if mode == 0 {
-	if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
-		found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
-				  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
-	}
 	if found 
 		mode = 1
 }   
@@ -29,7 +20,6 @@ if mode == 1 {
 	            _y = y - 16*maxpiece
 	            if collision_point(_x, _y, ob_wall, false, true)
 	                break
-	//            instance_create(_x, _y, ob_mark)
 	        }
 	        if maxpiece == 0
 	            maxpiece = 5    // если определение высоты неудачно
@@ -51,10 +41,6 @@ if mode == 1 {
     }
     if phase == 2 {
     // смотрит по сторонам
-		if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
-			found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
-					  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
-		}
 		if found 
 			forward = sign(xDist)
 

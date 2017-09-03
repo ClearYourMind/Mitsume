@@ -1,14 +1,9 @@
+event_inherited()
 /// @desc process AI
 
+sc_enemy_watching()
+
 /// AI
-if not instance_exists(hero) {
-	event_inherited()
-	exit
-}
-
-var xDist = hero.x - x
-var yDist = hero.y - y
-
 var jumpPower = 0.6
 
 // start modes
@@ -107,18 +102,12 @@ if feetcollision {
     stopFactor = 1
 
 // check range ahead  
-found = false
-if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
-	
-	found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
-			  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
-	if found
-	if sign(xDist) != forward {
-		if feetcollision {
-			forward = sign(xDist)
-			newMode = true
-			mode = 1
-		}
+if found
+if sign(xDist) != forward {
+	if feetcollision {
+		forward = sign(xDist)
+		newMode = true
+		mode = 1
 	}
 }
 
@@ -142,6 +131,3 @@ image_xscale = forward
 feetcollision = false
 sidecollision = false
 
-
-
-event_inherited()

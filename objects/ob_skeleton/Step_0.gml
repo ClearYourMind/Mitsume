@@ -1,21 +1,10 @@
 event_inherited();
 ///@desc process AI
 
-if not instance_exists(hero)
-	exit
-
-var xDist = hero.x - x
-var yDist = hero.y - y
-
-var found = false
+sc_enemy_watching()
 
 // реакция на игрока
 if phase == 0 {
-	// поблизости
-	if (abs(xDist) <= xRange) and (abs(yDist) <= yRange) {
-		found = ( collision_line(x, y-20 , hero.x, hero.y , hero, false, true) and not
-				  collision_line(x, y-20 , hero.x, hero.y , ob_wall, false, true) )
-	}
 	// по урону
 	if hurt { 
 		if (abs(xDist) < view_w * 0.8)

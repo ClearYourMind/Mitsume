@@ -1,5 +1,7 @@
 event_inherited()
 /// @desc Init values
+if not instance_exists(hero)
+	exit
 
 maxspeedX = 100
 maxspeedY = 100
