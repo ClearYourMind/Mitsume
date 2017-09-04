@@ -23,7 +23,7 @@ if phase == 0 {
     if shoot {
         sprite_index = sp_skeleton_attack
         if (image_index >= 2) and not shotDone {
-	        with instance_create_depth(x, y, depths.shots, ob_shot_enemy_targeted) 
+	        with instance_create_depth(x, y+10, depths.shots, ob_shot_enemy_targeted) 
 				forward = other.forward
 			shotDone = true
 		}

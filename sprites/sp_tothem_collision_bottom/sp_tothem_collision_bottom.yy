@@ -56,6 +56,7 @@
     "origin": 9,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
+    "premultiplyAlpha": false,
     "sepmasks": false,
     "swatchColours": null,
     "swfPrecision": 2.525,
@@ -63,5 +64,5 @@
     "type": 0,
     "width": 16,
     "xorig": 8,
-    "yorig": 12
+    "yorig": 4
 }

@@ -1,7 +1,10 @@
 event_inherited()
 /// @desc Check collision ahead, Timers
 
-var result = sc_check_collision(ob_wall)
+var result1 = sc_check_collision(ob_wall)
+var result2 = sc_check_collision(ob_motion_wall)
+var result = [result1[0] or result2[0], result1[1] or result2[1]]
+
 
 if result[0] {
 	speedX = -speedX

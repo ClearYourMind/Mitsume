@@ -25,7 +25,7 @@ if phase = th.idle {
 
 if phase = th.fire {
 	if image_index >= 4 and not shotDone {
-		with instance_create_depth(x, y, depths.shots, ob_shot_enemy_simple)
+		with instance_create_depth(x, y+10, depths.shots, ob_shot_enemy_simple)
 			forward = other.forward
 		shotDone = true
 	}

@@ -20,8 +20,8 @@ make more controls processing in ob_hero_gui:
 08.08.17
     Collision check for hero should return multiple directions to catch fatal positions when hero
 touches a wall with HEAD + FEET, or LEFT + RIGHT. ("squeeze" positions).
-    Make it work  for lifts+walls and arrow+walls
-	[		]
+    Make it work for lifts+walls and arrow+walls
+	[ DONE! ]
 
 11.08.17
 	Add spawner with parent ob_enemy for demonstrating weapons
