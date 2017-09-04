@@ -19,7 +19,7 @@ initiated = false
 flashing = false
 
 lifeTime = sc_timeout_new(10)
-fadeTime = 5
+fadeTime = 2
 sc_timeout_start(lifeTime)
 
 sc_play_sound(sn_coin, false)

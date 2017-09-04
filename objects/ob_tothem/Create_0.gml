@@ -16,10 +16,5 @@ base = noone
 deploy = false
 shotDone = false
 
-enum th {
-	idle,
-	fire,
-}
-
-phase = th.idle
+phase = 0
 
