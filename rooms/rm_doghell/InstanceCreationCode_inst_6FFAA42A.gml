@@ -1,2 +1,2 @@
-enemyObject = ob_dog
+enemyObject = ob_bat
 spawnPeriod = 7

@@ -1,1 +1,1 @@
-enemyObject = ob_dog
+enemyObject = ob_bat

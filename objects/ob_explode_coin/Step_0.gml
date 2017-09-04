@@ -1,7 +1,7 @@
 /// @desc Process move
 
-if xspread >= 8*scale
-	xspread = 8*scale
+if xspread >= digitSize*scale
+	xspread = digitSize*scale
 else
 	xspread += dx * dTime
 

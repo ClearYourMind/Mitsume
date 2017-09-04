@@ -8,7 +8,7 @@ oAccelY = 225
 
 forward = 1
 initForward = 1
-range = 0//view_w * 0.5
+range = view_w * 0.25
 
 strength = 4
 dropvalue = 20

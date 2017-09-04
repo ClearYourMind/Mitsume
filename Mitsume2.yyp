@@ -1511,6 +1511,14 @@
             }
         },
         {
+            "Key": "b07a8c64-2c54-4492-82e0-c2bb542dd455",
+            "Value": {
+                "id": "0f1f9e9c-2cef-4657-8c66-368fec62c0c4",
+                "resourcePath": "sprites\\sp_gui_number_small\\sp_gui_number_small.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b1676940-dbdb-4d5b-856c-b8378ff6bce3",
             "Value": {
                 "id": "e356a159-deb8-4246-8a4b-096611743320",

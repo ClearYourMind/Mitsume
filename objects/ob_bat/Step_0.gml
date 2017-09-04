@@ -21,13 +21,14 @@ case 1:
 	
 	forward = sign(xDist)
 	if (forward != initForward) and (abs(xDist) > range) {
-		forward = initForward
 		phase = 2
 	}
 	image_xscale = forward
 	break
 case 2:
 // missed player
+	forward = sign(speedX)
+	image_xscale = forward
 	break
 }
 
