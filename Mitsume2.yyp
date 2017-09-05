@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "52ab2ca2-0bb1-477f-aaa3-5f16cad2965a",
+            "Value": {
+                "id": "894e7196-bb22-4dd1-a5e1-25edd6c6a9d3",
+                "resourcePath": "objects\\ob_motion_wall_cycled\\ob_motion_wall_cycled.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "52c68774-0c21-48f7-9e32-691f0d2b15c3",
             "Value": {
                 "id": "6883f87d-286b-4d3d-88a1-a7c5e7193024",

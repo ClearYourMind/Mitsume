@@ -1,6 +1,8 @@
 /// @desc Check collision without mask switching
 /// @arg object to check
 
+// result = [bool, bool]
+
 // of ob_moving
 if not object_is_ancestor(object_index, ob_moving)
 	exit
