@@ -15,8 +15,8 @@ globalvar view_xborder
 globalvar view_yborder
 
 enum depths {
+	walls     = 1,
 	general   = 0,
-	hero      = -1,
 	shots     = -5,
 	explosions = -10,
 	gui       = -15,
@@ -34,8 +34,6 @@ paused = false
 
 totalMaxSpeed = 15 // pix per frame
 debugstr = ""
-
-draw_set_font(fn_default)
 
 view_xborder = camera_get_view_border_x(view_camera[0])
 view_yborder = camera_get_view_border_y(view_camera[0])

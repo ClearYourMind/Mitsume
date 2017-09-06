@@ -51,6 +51,14 @@ If distance is more than view_w ob_skeleton doesn't react.
 	ob_arrow causes a crash when placed in room via editor
 	[		]
 
+07.09.17
+	why hero dies when pushed off from platform by ob_motion_wall from the left???
+	[		]
+	
+	
+	
+	
+
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения
 курсора, пока не переведешь фокус с GM и обратно. 
