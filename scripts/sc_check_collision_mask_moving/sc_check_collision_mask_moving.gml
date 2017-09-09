@@ -12,6 +12,7 @@ var dir = argument1
 var result = false
 
 _other = instance_place(_x, _y, obj)
+
 switch dir {
 case d.Up:
 //	_other = instance_place(_x-hspeed, _y, obj)

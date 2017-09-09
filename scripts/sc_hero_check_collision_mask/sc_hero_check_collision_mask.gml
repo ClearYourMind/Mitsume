@@ -24,6 +24,7 @@ case d.Left:
 	break
 case d.Right:
 	mask_index = sp_hero_collision_right
+	break
 }
 
 w1 = round(x - bbox_left)
