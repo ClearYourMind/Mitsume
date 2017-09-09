@@ -8,16 +8,19 @@ for (var i=0; i<array_length_1d(dirs); i++) {
 		break
 }
 
-if dir = d.Up {
+switch dir {
+case d.Up:
 	sc_timeout_stop(jumpTime)
 	headcollision = true
-} else
-if dir = d.Down {
+	break 
+case d.Down:
 	feetcollision = true
-}
-if dir = d.Left
+	break
+case d.Left:
 	leftcollision = true
-if dir = d.Right
+	break
+case d.Right:
 	rightcollision = true
-
+	break
+}
 
