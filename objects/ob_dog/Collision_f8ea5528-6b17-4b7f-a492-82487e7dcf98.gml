@@ -2,6 +2,5 @@
 
 event_perform(ev_collision, ob_wall)
 
-if feetcollision {
+if feetcollision
 	x += other.hspeed
-}

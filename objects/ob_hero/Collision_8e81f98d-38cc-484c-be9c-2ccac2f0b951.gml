@@ -6,6 +6,6 @@ if speedY>=0 {
 }
 
 if result {
-	y+=1.5
+	y+=1.1
 	feetcollision = true
 }

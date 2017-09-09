@@ -26,6 +26,10 @@ case d.Right:
 	mask_index = sp_hero_collision_right
 }
 
+w1 = round(x - bbox_left)
+w2 = round(bbox_right  - x)
+h1 = round(y - bbox_top)
+h2 = round(bbox_bottom - y)
 
 if object_is_ancestor(obj.object_index, ob_moving) {
 	result = sc_check_collision_mask_moving(obj, dir)
