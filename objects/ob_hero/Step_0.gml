@@ -9,7 +9,7 @@ event_inherited()
 /// Check status
 // squeeze
 //if (feetcollision and headcollision) or
-if (leftcollision and rightcollision) {
+if  (leftcollision and rightcollision) {
 	sc_hero_die()
 	exit
 }

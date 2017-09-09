@@ -1,23 +1,28 @@
 /// @desc Bounce
 
 var dirs = [d.Up, d.Down, d.Left, d.Right]
+var res_dir = d.None
 
 for (var i=0; i<array_length_1d(dirs); i++) {
-	var dir = dirs[i]
-	if sc_hero_check_collision_mask(other.id, dir)
+	if sc_hero_check_collision_mask(other.id, dirs[i]) {
+		res_dir = dirs[i]
 		break
+	}
 }
 
-if dir = d.Up {
+switch res_dir {
+case d.Up:
 	sc_timeout_stop(jumpTime)
 	headcollision = true
-} else
-if dir = d.Down {
+	break 
+case d.Down:
 	feetcollision = true
-}
-if dir = d.Left
+	break
+case d.Left:
 	leftcollision = true
-if dir = d.Right
+	break
+case d.Right:
 	rightcollision = true
-
+	break
+}
 
