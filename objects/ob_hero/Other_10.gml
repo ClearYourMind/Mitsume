@@ -2,8 +2,8 @@
 
 if maxhealth<8 {
 	maxhealth++
-	health = maxhealth
 }
+health = maxhealth
 
 staminaMax *= 1.2
 staminaRegenSpeed *= 1.2

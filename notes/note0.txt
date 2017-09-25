@@ -53,7 +53,7 @@ If distance is more than view_w ob_skeleton doesn't react.
 
 07.09.17
 	why hero dies when pushed off from platform by ob_motion_wall from the left???
-	[		]
+	[ DONE! ]
 	
 	
 	
