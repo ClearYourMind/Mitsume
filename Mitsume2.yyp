@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "1bb8175d-82af-4447-b671-01c5a829be30",
+            "Value": {
+                "id": "5dbabc68-bf4e-476f-a6c2-cc7694dbd7fa",
+                "resourcePath": "sprites\\sp_godal_collision_top\\sp_godal_collision_top.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1bbade44-3b24-49e4-abf2-7b2a276a7044",
             "Value": {
                 "id": "f79ce1aa-76f1-4088-bbd8-ca2b3b9547e1",
@@ -372,6 +380,14 @@
                 "id": "13fe486a-40d7-4139-b63c-9a12b8186430",
                 "resourcePath": "views\\283cce92-3065-4d5f-a83d-223b0b66bb5e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "28412eac-2e78-48b0-b004-b7fffbbb997e",
+            "Value": {
+                "id": "badc3ba5-379a-4926-a5aa-197ebebfbb5d",
+                "resourcePath": "sprites\\sp_godal_fire\\sp_godal_fire.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -623,6 +639,14 @@
             }
         },
         {
+            "Key": "49034f98-be50-44ea-b604-68c354af3540",
+            "Value": {
+                "id": "e3178785-2da7-4a47-8804-7e7fb1177a58",
+                "resourcePath": "sprites\\sp_godal_stand\\sp_godal_stand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4932145c-601d-4b3c-8fc3-d47d539cafc0",
             "Value": {
                 "id": "07ba5a9c-3cf5-45d6-9bf1-ade6f0c0a06d",
@@ -636,6 +660,14 @@
                 "id": "19fe3b0d-8aa3-4afb-824d-fd5c7b2dfe26",
                 "resourcePath": "sounds\\sn_scratch\\sn_scratch.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "49408fb0-536f-4eb0-b739-99c22985de42",
+            "Value": {
+                "id": "e94285ae-73b6-4021-89b6-b91b5a80b501",
+                "resourcePath": "views\\49408fb0-536f-4eb0-b739-99c22985de42.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -935,6 +967,14 @@
             }
         },
         {
+            "Key": "7182a083-f7e1-4b6d-9f8b-ed2cda8245e3",
+            "Value": {
+                "id": "33382a5b-c66d-41db-9fb8-af33f81bd96b",
+                "resourcePath": "sprites\\sp_godal_collision_bottom\\sp_godal_collision_bottom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72acc369-3ca2-48bc-95d1-f670041aa7a1",
             "Value": {
                 "id": "09e6c99f-f483-48bf-8862-4959d4b92054",
@@ -1231,6 +1271,14 @@
             }
         },
         {
+            "Key": "9254bf7d-6344-42b4-9902-b8129a954a03",
+            "Value": {
+                "id": "6110f699-ea55-46c4-bbd9-dc2280d27f17",
+                "resourcePath": "sprites\\sp_godal_dead\\sp_godal_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "94eaeed7-d752-4ec6-8517-75137a9b57eb",
             "Value": {
                 "id": "1d431d9f-861b-4c51-997d-3020a85b74d2",
@@ -1367,6 +1415,14 @@
             }
         },
         {
+            "Key": "a0d186b8-89b9-4567-b7ff-f7e415a7a6fc",
+            "Value": {
+                "id": "a584d144-a16d-44ef-b72f-d80628a361d1",
+                "resourcePath": "sprites\\sp_godal_hitjump\\sp_godal_hitjump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1941677-5168-42a3-a668-c207b8fee852",
             "Value": {
                 "id": "ec3f2846-e335-4305-80b5-0222d1d04384",
@@ -1379,6 +1435,14 @@
             "Value": {
                 "id": "588df01c-b35c-4ff4-9b3d-d957857bbbac",
                 "resourcePath": "sprites\\sp_hero_dead\\sp_hero_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a34fc9c6-f347-44c4-a5cf-98c70ff3daff",
+            "Value": {
+                "id": "f7289b19-a7f7-47ef-91ea-563e6730bfbf",
+                "resourcePath": "sprites\\sp_godal_altfire\\sp_godal_altfire.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1623,6 +1687,14 @@
             }
         },
         {
+            "Key": "bdc31ce4-8e3a-455b-8a69-4153a049055a",
+            "Value": {
+                "id": "8608f640-6619-4bd6-b9a0-1f1e7a066111",
+                "resourcePath": "sprites\\sp_godal_move\\sp_godal_move.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bed14b88-07c8-4590-8989-9beccf752016",
             "Value": {
                 "id": "0e87c7cd-01b6-4086-991a-349a69780f3d",
@@ -1703,6 +1775,14 @@
             }
         },
         {
+            "Key": "cbfe449e-e3e8-4f87-818f-a8203c6f2776",
+            "Value": {
+                "id": "68d27fa5-c5ff-45bd-a012-96a6a0ad5eea",
+                "resourcePath": "sprites\\sp_godal_sword\\sp_godal_sword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "9d2703e7-9360-4e77-bb3f-5d4b196cf195",
@@ -1715,6 +1795,14 @@
             "Value": {
                 "id": "47d9bf90-93dd-403b-9cd6-b39b86eab689",
                 "resourcePath": "sprites\\sp_skeleton_attack\\sp_skeleton_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ce82e469-598f-4346-9ec7-145040825e3c",
+            "Value": {
+                "id": "148c00d9-a71b-44b4-90d5-d771458f891f",
+                "resourcePath": "sprites\\sp_godal_collision_right\\sp_godal_collision_right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1823,6 +1911,14 @@
             }
         },
         {
+            "Key": "d949e919-6e04-4196-9625-f6b95793e24a",
+            "Value": {
+                "id": "ec2b493e-31a9-434d-bac1-1129dbec51b5",
+                "resourcePath": "sprites\\sp_godal_hurt\\sp_godal_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d9f139d0-9a40-4dba-9d12-24b9b487a5c2",
             "Value": {
                 "id": "65ca15c3-3d17-4185-bf63-61b9b6f13d72",
@@ -1835,6 +1931,14 @@
             "Value": {
                 "id": "96dfad88-6e08-4e9c-8240-42d59ac51257",
                 "resourcePath": "sprites\\sp_gui_shop\\sp_gui_shop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dc69d693-4da2-428e-a7ca-51d2ab04ba29",
+            "Value": {
+                "id": "67e98597-d043-45a8-b68e-9822f69f9d3d",
+                "resourcePath": "sprites\\sp_godal_collision_left\\sp_godal_collision_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2052,6 +2156,14 @@
                 "id": "cd414ddc-9e90-4498-8bbb-8e8da1add766",
                 "resourcePath": "objects\\ob_dog\\ob_dog.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f7cbc8fb-91d1-413a-9ca9-bfd814978bb3",
+            "Value": {
+                "id": "13974d05-1e21-4a41-a524-2e78f40e5f13",
+                "resourcePath": "sprites\\sp_godal_jump\\sp_godal_jump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
