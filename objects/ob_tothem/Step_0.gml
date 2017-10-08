@@ -2,15 +2,20 @@ event_inherited()
 
 ///@desc Process phases
 
-forward = base.forward
 if base.killed {
-    deploy = false
-} 
+	sprite_index = sp_tothem_idle
+	image_speed = 0
+	image_index = 0
+	image_blend = c_white;
+	speedX = random(maxspeedX)-maxspeedX*0.5
+	instance_change(ob_tothem_dead, false)
+	exit
+}
 
-vulnerable = (base.phase == 2)
+forward = base.forward
+vulnerable = base.vulnerable;
 
-
-if hurt = true and not (phase = 1) {
+if hurt and not (phase = 1) {
 	phase = 1
     sprite_index = sp_tothem_fire  
     image_index = 0 

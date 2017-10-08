@@ -1,8 +1,8 @@
 event_inherited()
 /// @desc Init
 
-maxspeedX = 75
-maxspeedY = 175
+maxspeedX = 50
+maxspeedY = 80
 oAccelX = 75
 oAccelY = 225
 

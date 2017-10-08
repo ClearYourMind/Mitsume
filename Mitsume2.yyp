@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "137e1602-d7db-418b-bdbc-2acce6f74737",
+            "Value": {
+                "id": "8648c9fd-1e85-4998-b4ea-8eb1e2198292",
+                "resourcePath": "objects\\ob_tothem_dead\\ob_tothem_dead.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "14e25ab9-cafc-4c3d-a59d-10601f6d1275",
             "Value": {
                 "id": "b12d024d-6d42-43d1-a2f8-b0079989606c",
@@ -1876,6 +1884,14 @@
                 "id": "27a56f91-fbcd-4285-8fe2-6ad9f8abdfa2",
                 "resourcePath": "objects\\ob_coin\\ob_coin.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e475e950-cbfb-434e-b308-29a988d16493",
+            "Value": {
+                "id": "132312b9-432f-49d4-8695-b0b439d068d5",
+                "resourcePath": "views\\e475e950-cbfb-434e-b308-29a988d16493.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

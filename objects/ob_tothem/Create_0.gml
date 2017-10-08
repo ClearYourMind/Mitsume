@@ -5,9 +5,10 @@ image_speed = 0
 animEnded = false
 
 maxspeedY = 400
-grav = 800
+maxspeedX = 20;
+grav = 150
 
-strength = 5
+strength = 1  // not used
 dropvalue = 20
 
 forward = -1
