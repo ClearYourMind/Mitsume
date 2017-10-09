@@ -1,20 +1,23 @@
+event_inherited()
 
-/// AI
+///@desc AI
 
 sc_enemy_watching()
 
 // реакция на игрока
 if mode == 0 {
-	if found 
+	if found {
 		mode = 1
+		forward = sign(xDist)
+	}
 }   
 
 // строит тотем
-var _x = x+8
-var _y = 0
 if mode == 1 { 
     if phase == 0 {
 		#region	/// Check height before building
+		var _x = x+8
+		var _y = 0
         if maxpiece == 0 { // если не задано
 	        repeat (100) { // смотрит вверх
 	            maxpiece++
@@ -34,17 +37,17 @@ if mode == 1 {
 		#region /// Create falling tothem heads
         if sc_timeout_over(timeout) {
             if piece <= maxpiece-1 {
-				pieces[piece] = instance_create_depth(x,view_y-16, depths.general, ob_tothem);
+				pieces[piece] = instance_create_depth(x,view_y-16, depths.general, ob_tothem)
 	            with pieces[piece] {
 	                base = other.id
 					speedY = maxspeedY
 				}
 	            piece++
             } else {
-				maxhurtpiece = floor(maxpiece / 2);
-				if maxhurtpiece < 4
-					maxhurtpiece = maxpiece;
-				strength = maxhurtpiece * 3;
+				halfpiece = floor(maxpiece / 2)
+				if halfpiece < 4
+					halfpiece = maxpiece
+				strength = halfpiece * 3
 				piece = 0
 				vulnerable = true
 				phase = 2
@@ -54,24 +57,28 @@ if mode == 1 {
     }
     if phase == 2 {
 		#region /// Processing completed tothem
-		if found 
-			forward = sign(xDist)
-		
 		if strength<=0 {
-			killed = true
-			exit;
+			instance_destroy()
+			exit
 		}
 		
-		// process hurt
+		// walk and hit against walls
+		_x = x + 8 * forward;
+		speedX = maxspeedX*forward;
+		if (not (collision_point(_x, y+16, ob_wall, false, false) or 
+		         collision_point(_x, y+16, ob_motion_wall, false, false)) ) or
+		   (collision_line(_x, y - (maxpiece-1)*16, _x, y, ob_wall, false, false) or
+		    collision_line(_x, y - (maxpiece-1)*16, _x, y, ob_motion_wall, false, false)) {
+			forward = -forward
+			speedX = 0
+		}
+
 		if hurt {
-			if not pieces[piece].hurt {
-				var _count = floor(maxpiece / maxhurtpiece)
-				for (var i=0; i<_count; i++)
-					pieces[(piece+maxhurtpiece*i) mod maxpiece].hurt = true
-			} else {
-				piece = (piece+1) mod maxpiece;
+			if not pieces[maxpiece - piece - 1].hurt {
+				piece = (piece+1) mod maxpiece
 				hurt = false
 			}
+			speedX = 0
 		}
 		#endregion
     }

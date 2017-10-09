@@ -2,18 +2,20 @@ event_inherited()
 
 ///@desc Process phases
 
-if base.killed {
+if instance_exists(base) {
+	forward = base.forward
+	vulnerable = base.vulnerable
+	x = base.x
+} else {
+	// create ob_tothem_dead
 	sprite_index = sp_tothem_idle
 	image_speed = 0
 	image_index = 0
-	image_blend = c_white;
+	image_blend = c_white
 	speedX = random(maxspeedX)-maxspeedX*0.5
 	instance_change(ob_tothem_dead, false)
 	exit
 }
-
-forward = base.forward
-vulnerable = base.vulnerable;
 
 if hurt and not (phase = 1) {
 	phase = 1
@@ -25,7 +27,8 @@ if hurt and not (phase = 1) {
 
 if phase = 0 {
 	image_speed = 0
-	image_index = base.image_index
+	if instance_exists(base)
+		image_index = base.image_index
 }
 
 if phase = 1 {

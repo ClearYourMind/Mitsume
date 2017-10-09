@@ -8,10 +8,11 @@ with base
 if vulnerable {
 	if not hurt {
 		strength -= _shotObject.hit
-		hurt = true
-		sc_play_sound(sn_hit, false)
+		sc_tothem_hurt()
 	}
 }
+
+sc_play_sound(sn_hit, false)
 
 /*
 Head tells Base about Hurt. Then Base choose Head to set Hurt for.
