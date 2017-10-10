@@ -8,7 +8,9 @@ maxspeedY = 300
 minspeedY = 165
 
 oSpeedX = random(maxspeedX*2)-maxspeedX
-speedX = oSpeedX
+forward = sign(oSpeedX)
+oSpeedX = abs(oSpeedX)
+speedX = oSpeedX * forward
 speedY = -maxspeedY * 0.75
 
 grav = 500

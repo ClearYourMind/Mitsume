@@ -11,15 +11,20 @@ var result = [result1[0] or result2[0], result1[1] or result2[1]]
 
 
 if result[0] {
-	speedX = -speedX
-	oSpeedX = speedX
+	forward = -forward
+	speedX = oSpeedX * forward
 }
 
 if result[1] {
 	// hit against floor
 	if speedY > 0 {
+		if instance_exists(hero)
+		if hero.hasMagnet {
+			forward = sign(hero.x - x)
+			speedX = oSpeedX * forward * 1.5
+		} else
+			speedX = oSpeedX * forward
 		speedY = -speedY
-		speedX = oSpeedX
 		if abs(speedY) > minspeedY
 			speedY *= 0.9
 		else
@@ -30,8 +35,8 @@ if result[1] {
 			speedY = 40
 }
 
-// timers processing
-#region
+
+#region /// Processing timers
 
 if sc_timeout_over(lifeTime) {
 	if not flashing {

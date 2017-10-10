@@ -45,5 +45,7 @@ case itemtype.strength:
 	hero.level++
 	sc_hero_level_up()
 	break
-	
+case itemtype.magnet:
+	hero.hasMagnet = true;
+	break
 }

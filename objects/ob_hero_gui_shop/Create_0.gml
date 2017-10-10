@@ -6,6 +6,7 @@ menuPos = 0
 menuDx = 0
 menuX = 0
 menuInterval = view_w * 0.275
+menuCount = 0
 
 menu = []
 chosen = false
@@ -29,6 +30,7 @@ enum itemtype {
 	killarrow,
 	life,
 	strength,
+	magnet,
 }
 
 sc_gui_set_tickerline("Welcome to my humble shop. Please buy something", view_w * 0.9)
@@ -117,6 +119,16 @@ _item[item.price  ] = 2000
 _item[item.level  ] = hero.level
 _item[item.soldout] = (hero.level == 5)
 _item[item.type] = itemtype.strength
+menu[n++] = _item
+
+menu[n] = []
+var _item = []
+_item[item.name]    = "MAGNET"
+_item[item.desc]    = "Attracts coins using your telepathy"
+_item[item.sprite ] = 10
+_item[item.price  ] = 1000
+_item[item.soldout] = hero.hasMagnet
+_item[item.type] = itemtype.magnet
 menu[n++] = _item
 
 menuCount = n

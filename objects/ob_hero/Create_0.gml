@@ -74,3 +74,5 @@ staminaDepleted = false
 arrow = noone
 arrowObject = ob_arrow
 guiObject = ob_hero_gui
+
+hasMagnet = false;
