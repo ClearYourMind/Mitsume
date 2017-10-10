@@ -5,9 +5,12 @@ if not initiated {
 		flareLifetime = sc_timeout_new(flareLifetime)	
 		sc_timeout_start(flareLifetime)
 	}
+	if (w1 = 0) and (w2 = 0)
 	if instance_exists(object) {
 		w1 = object.w1
 		w2 = object.w2
+		h1 = object.h1
+		h2 = object.h2
 	}
 	sparkleSpawnTime = sc_timeout_new(sparkleSpawnPeriod, true)
 	sc_timeout_start(sparkleSpawnTime)
@@ -37,7 +40,7 @@ if sc_timeout_over(sparkleSpawnTime) {
 	_star[sh.lifetime] = sc_timeout_new(sparkleLifetime)
 	sc_timeout_start(_star[sh.lifetime])
 	_star[sh.x] = x + random(w1+w2)-w1
-	_star[sh.y] = y + random(6)-3
+	_star[sh.y] = y + random(h1+h2)-h1
 	_star[sh.phase] = 0
 	ds_list_add(sparkle, _star)
 }

@@ -1,0 +1,2 @@
+dropvalue = 1000
+

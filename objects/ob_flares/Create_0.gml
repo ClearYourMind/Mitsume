@@ -13,8 +13,10 @@ initiated = false
 spawn = true
 
 object = noone
-w1 = 8
-w2 = 8
+w1 = 0
+w2 = 0
+h1 = 3
+h2 = 3
 xOffset = 0
 yOffset = 0
 enum sh {

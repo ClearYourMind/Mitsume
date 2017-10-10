@@ -55,8 +55,9 @@ If distance is more than view_w ob_skeleton doesn't react.
 	why hero dies when pushed off from platform by ob_motion_wall from the left???
 	[ DONE! ]
 	
-	
-	
+10.10.17
+	Оптимизировать активацию/деактивацию в ob_game_object
+	[		]
 	
 
 Заметки об IDE:
@@ -80,5 +81,5 @@ If distance is more than view_w ob_skeleton doesn't react.
 	[ ]
 	Постоянно сбрасывается настройка подсветки кода для Globals 
 	[FIXED!]
-	Ctrl+Home не работает вообще
+	Ctrl+Home Ctrl+End не работает вообще
 	[ ]
