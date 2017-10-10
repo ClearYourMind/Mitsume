@@ -2,7 +2,7 @@
 <Project ActiveConfig="default" Platform="Windows" Runtime="VM" Device="Default">
 	<Desktop x="-8" y="-8" width="1920" height="1017" id="19" title="Mitsume2 - GameMaker Studio 2" windowState="Maximized">
 		<Workspaces>
-			<Workspace active="True" chain="True" title="Workspace 1" localise_title="" workspace_offset="[2308, 63616]" workspace_scale="1">
+			<Workspace active="True" chain="True" title="Workspace 1" localise_title="" workspace_offset="[3313, 63624]" workspace_scale="1">
 				<Module Command="DocumentWindow_RestoreLayout" WorkspaceOwner="true">
 					<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px">
 						<Script column="0" file="${project_dir}\notes\note0.txt" resource="65d4ddac-6c96-4f4f-99c9-de37e62334ed" subResource="00000000-0000-0000-0000-000000000000" overridden_title="False" view_readonly="False" />
@@ -10,52 +10,28 @@
 					</DocumentWindow>
 				</Module>
 				<Module Command="open_object_editor">
-					<ObjectEditor objectId="b72540be-f771-47cb-a5c3-6227775b656a" objectName="ob_gui_demo" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
+					<ObjectEditor objectId="b75f4b39-8a50-41d2-b274-677fbcadfd0e" objectName="ob_hero_gui_shop" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" activeWindow="physics">
 						<WorkspaceChain left="2106dpi_px" top="63656dpi_px" />
-						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="900dpi_px" h="700dpi_px" linkIndex="-1">
-							<Script column="0" file="${project_dir}\objects\ob_gui_demo\Other_11.gml" resource="b72540be-f771-47cb-a5c3-6227775b656a" subResource="14c6bb24-e5bf-4ac4-ba48-b0478f6e0339" overridden_title="False" view_readonly="False" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="900dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\ob_hero_gui_shop\Create_0.gml" resource="b75f4b39-8a50-41d2-b274-677fbcadfd0e" subResource="704f4c79-e053-4dbf-8051-225e36706b1e" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_hero_gui_shop\Step_0.gml" resource="b75f4b39-8a50-41d2-b274-677fbcadfd0e" subResource="80cd629c-a27e-45a8-beb2-2f226e5dba06" overridden_title="False" view_readonly="False" />
+							<Script column="0" file="${project_dir}\objects\ob_hero_gui_shop\Other_10.gml" resource="b75f4b39-8a50-41d2-b274-677fbcadfd0e" subResource="eba93e6f-1e83-4633-9668-4c18c9be020e" overridden_title="False" view_readonly="False" />
+							<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="900dpi_px" h="600dpi_px">
+								<Script column="0" file="${project_dir}\scripts\sc_gui_add_tickerline\sc_gui_add_tickerline.gml" resource="520be717-d96f-4cd9-ba33-59d4cc0b8240" subResource="00000000-0000-0000-0000-000000000000" overridden_title="False" view_readonly="False" />
+								<Script column="0" file="${project_dir}\scripts\sc_gui_set_tickerline\sc_gui_set_tickerline.gml" resource="08d7b9a5-2ea8-4188-97e4-3a8998958a8f" subResource="00000000-0000-0000-0000-000000000000" overridden_title="False" view_readonly="False" />
+							</DocumentWindow>
 						</DocumentWindow>
 					</ObjectEditor>
-				</Module>
-			</Workspace>
-			<Workspace active="False" chain="False" title="rm_start" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
-				<Module Command="open_room_editor" WorkspaceOwner="true">
-					<Room id="1a4050fd-bcc2-41ec-a3e4-e93840825c0d">
-						<RoomEditArea>
-							<PanArea zoom="1" pan="[0, 0]" />
-							<Properties />
-							<Selected>
-								<Layer GUID="71c5b0ff-0ad2-4738-ae4f-61e90f98aa0b" />
-								<Item GUID="c0fefad5-07ab-4e82-95e7-aba20b6ad1fd" />
-							</Selected>
-						</RoomEditArea>
-					</Room>
-				</Module>
-			</Workspace>
-			<Workspace active="False" chain="False" title="rm_room1" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
-				<Module Command="open_room_editor" WorkspaceOwner="true">
-					<Room id="a8032826-9a0c-42f0-b74c-1ab13830a961">
-						<RoomEditArea>
-							<PanArea zoom="1.75" pan="[-105.9044, 25.0456]" />
-							<Properties />
-							<Selected>
-								<Layer GUID="ec50b2f6-77ba-4c5e-b21c-b6ea135ada6d" />
-							</Selected>
-						</RoomEditArea>
-					</Room>
 				</Module>
 			</Workspace>
 		</Workspaces>
 		<Dock state="Expanded" type="eLeft" restore_size="302.2036dpi_px" active_tab="0">
 			<DockTab title="Resources" localise_title="ResourceTree_Title" cell_sizes="[735]" layout_id="dock_tab_1" layout_guid="39b6ae4b-c71f-4d7a-b974-734ab257a63e">
 				<Module Command="open_resource_tree">
-					<ResourceWindow left="0px" right="" top="0px" bottom="" width="400px" height="600px" flags="CloseButton, ResizeButton" title="Resources" localise_title="ResourceTree_Title" active_view="Default" />
+					<ResourceWindow left="0px" right="" top="0px" bottom="" width="400px" height="600px" flags="CloseButton, ResizeButton" title="Resources" localise_title="ResourceTree_Title" active_view="Default" Scale="85" />
 				</Module>
 			</DockTab>
-			<DockTab title="Room Editor" localise_title="RoomEditor_DockTab" cell_sizes="[363,636]" layout_id="room_editor_tab" layout_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" />
-			<DockTab title="Properties - rm_init" localise_title="RoomEditor_RoomProperties" localise_arguments="[&quot;rm_init&quot;]" cell_sizes="[1000]" layout_id="dock_tab_3" layout_guid="4d04901c-20cd-4f75-9f41-48a57281cd05" />
 		</Dock>
-		<Dock state="Hidden" type="eRight" restore_size="326.4dpi_px" active_tab="0" />
 		<Dock state="Expanded" type="eBottom" restore_size="130.9559dpi_px" active_tab="0">
 			<DockTab title="Output" localise_title="OutputPanel_Output" cell_sizes="[1000]" layout_id="dock_tab_1" layout_guid="fe255923-b993-4303-a2ac-27a9c6cd8769">
 				<Module Command="open_output_panel">
@@ -87,15 +63,19 @@
 	<Modules>
 		<YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
 			<RoomEditor>
-				<LayerProperties left="20dpi_px" right="" top="" bottom="350dpi_px" width="260dpi_px" height="330dpi_px" flags="Default" title="Back Properties - rm_room1" localise_title="RoomEditor_LayerProperties" dock_type="eLeft" dock_tab_index="1" dock_list_index="0" dock_proportion="0.7268723" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
-				<Layers left="340dpi_px" right="" top="" bottom="270dpi_px" width="320dpi_px" height="250dpi_px" flags="CloseButton, MinimizeButton, ResizeButton" title="Layers - rm_room1" localise_title="RoomEditor_Layers" dock_type="eLeft" dock_tab_index="1" dock_list_index="1" dock_proportion="1.273128" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
-				<RoomProperties left="192px" right="" top="167px" bottom="" width="300dpi_px" height="240dpi_px" flags="Default" title="Properties - rm_room1" localise_title="RoomEditor_RoomProperties" dock_type="eLeft" dock_tab_index="2" dock_list_index="0" dock_proportion="1" dock_tab_name="Properties - rm_init" dock_tab_localise_name="RoomEditor_RoomProperties" dock_tab_localise_arguments="[&#xD;&#xA;    &quot;rm_init&quot;&#xD;&#xA;]" dock_tab_id="dock_tab_3" dock_tab_guid="4d04901c-20cd-4f75-9f41-48a57281cd05" desktop="19" />
+				<LayerProperties left="20dpi_px" right="" top="" bottom="350dpi_px" width="260dpi_px" height="330dpi_px" flags="Default" title="Instances Layer Properties - rm_start" localise_title="RoomEditor_LayerProperties" dock_type="eLeft" dock_tab_index="1" dock_list_index="0" dock_proportion="0.7268723" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
+				<Layers left="340dpi_px" right="" top="" bottom="270dpi_px" width="320dpi_px" height="250dpi_px" flags="CloseButton, MinimizeButton, ResizeButton" title="Layers - rm_start" localise_title="RoomEditor_Layers" dock_type="eLeft" dock_tab_index="1" dock_list_index="1" dock_proportion="1.273128" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2e77f598-10b2-43a7-9aac-aa88b4a57596" desktop="19" />
+				<RoomProperties left="192px" right="" top="167px" bottom="" width="300dpi_px" height="240dpi_px" flags="Default" title="Properties - rm_start" localise_title="RoomEditor_RoomProperties" dock_type="eLeft" dock_tab_index="2" dock_list_index="0" dock_proportion="1" dock_tab_name="Properties - rm_init" dock_tab_localise_name="RoomEditor_RoomProperties" dock_tab_localise_arguments="[&#xD;&#xA;    &quot;rm_init&quot;&#xD;&#xA;]" dock_tab_id="dock_tab_3" dock_tab_guid="4d04901c-20cd-4f75-9f41-48a57281cd05" desktop="19" />
 			</RoomEditor>
 		</YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
 		<YoYoStudio.Plugins.CorePlugins.RoomEditorTools.RoomEditor_TileEditing>
 			<RoomEditor_TileEditing>
-				<TileSet left="" right="370dpi_px" top="125dpi_px" bottom="" width="450dpi_px" height="400dpi_px" flags="Default" title="Tiles - rm_room1" localise_title="RoomEditor_TileWindow" dock_type="eRight" dock_tab_index="0" dock_list_index="0" dock_proportion="1" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="237e09aa-439c-4e92-98a3-9d6de0bfc5d1" desktop="19" />
+				<TileSet left="" right="370dpi_px" top="125dpi_px" bottom="" width="450dpi_px" height="400dpi_px" flags="Default" title="Tiles - rm_start" localise_title="RoomEditor_TileWindow" dock_type="eRight" dock_tab_index="0" dock_list_index="0" dock_proportion="1" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="237e09aa-439c-4e92-98a3-9d6de0bfc5d1" desktop="19" />
 			</RoomEditor_TileEditing>
 		</YoYoStudio.Plugins.CorePlugins.RoomEditorTools.RoomEditor_TileEditing>
 	</Modules>
+	<FoldRegions>
+		<FoldState docId="db991aef-f587-4374-b511-29c3b96e426d" foldedRegions="0,1,2" />
+		<FoldState docId="43371713-e6b9-477c-848a-ad62942fcc82" foldedRegions="0" />
+	</FoldRegions>
 </Project>

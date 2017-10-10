@@ -5,12 +5,15 @@ elementCount = 0
 oX = 0
 oY = 0
 
+// tickerline properties
 enum l {
-	text,
-	length,
+	textlines,
+	//length,
+	linecount,
 	pos,
 	currenttext,
 	currentlength,
+	currentline,
 	period,
 	visible,
 	width,

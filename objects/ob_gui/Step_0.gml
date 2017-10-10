@@ -3,9 +3,17 @@
 if is_array(tickerLine) 
 if tickerLine[l.visible] {
 	if counter mod tickerLine[l.period] = 0 {
-		if tickerLine[l.currentlength] < tickerLine[l.length]
+		var lines = tickerLine[l.textlines]
+		if tickerLine[l.currentlength] < string_length(lines[tickerLine[l.currentline]])
 			tickerLine[l.currentlength]++
+		else
+		if tickerLine[l.currentline] < tickerLine[l.linecount] - 1 {
+			tickerLine[l.currentlength] = 0
+			tickerLine[l.currentline]++
+		}
+		tickerLine[l.currenttext] =
+			string_copy(lines[tickerLine[l.currentline]], 1, tickerLine[l.currentlength])
+		
 		show_debug_message(" tickerLine = " + string(tickerLine[l.currentlength]))
 	}
-	tickerLine[l.currenttext] = string_copy(tickerLine[l.text], 1, tickerLine[l.currentlength])
 }
