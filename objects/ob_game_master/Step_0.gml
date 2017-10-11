@@ -14,16 +14,6 @@ view_y = camera_get_view_y(view_camera[0])
 
 sc_view_follow_hero()
 
-// deactivate enemies out of view
-instance_deactivate_object(ob_enemy)
-// deactivate spawners
-instance_deactivate_object(ob_spawner)
-// deactivate lifts
-instance_deactivate_object(ob_lift)
-instance_activate_region(view_x - view_w*0.25, view_y - view_h*0.5, 
-						 view_w*1.5, view_h*2, true)
-
-
 // room restart timeout
 if sc_timeout_is_started(restartTime)
 if sc_timeout_over(restartTime) {

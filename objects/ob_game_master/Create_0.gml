@@ -14,6 +14,8 @@ globalvar view_h
 globalvar view_xborder
 globalvar view_yborder
 
+globalvar deactivateTime
+
 enum depths {
 	walls     = 1,
 	general   = 0,
@@ -39,6 +41,8 @@ view_xborder = camera_get_view_border_x(view_camera[0])
 view_yborder = camera_get_view_border_y(view_camera[0])
 view_w = camera_get_view_width (view_camera[0])
 view_h = camera_get_view_height(view_camera[0])
+
+deactivateTime = 20
 
 restartTime = sc_timeout_new(1.5)
 
