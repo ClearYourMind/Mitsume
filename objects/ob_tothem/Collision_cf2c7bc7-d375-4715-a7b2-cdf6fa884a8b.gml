@@ -18,6 +18,6 @@ with other
 	event_perform(ev_collision, ob_enemy)
 
 /*
-Head tells Base about Hurt. Then Base choose Head to set Hurt for.
-Hurt for Base sets to false when chosen Head ceased being Hurt.
+Head tells Base about Hurt. Then Base chooses Head to set Hurt for.
+Hurt for Base is set to false when chosen Head ceased being Hurt.
 */
