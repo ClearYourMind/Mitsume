@@ -1,7 +1,10 @@
 event_inherited()
 /// @desc Init
 
-maxspeedX = 50
+speed1 = 50  // normal
+speed2 = 125 // recoil
+
+maxspeedX = speed1
 maxspeedY = 80
 oAccelX = 75
 oAccelY = 225

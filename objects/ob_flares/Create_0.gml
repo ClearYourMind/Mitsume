@@ -24,4 +24,3 @@ enum sh {
 	phase,
     x, y,
 }
-

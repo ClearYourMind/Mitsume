@@ -42,8 +42,9 @@ view_yborder = camera_get_view_border_y(view_camera[0])
 view_w = camera_get_view_width (view_camera[0])
 view_h = camera_get_view_height(view_camera[0])
 
-deactivateTime = 20
+deactivateTime = 10
 
 restartTime = sc_timeout_new(1.5)
 
 gameStarted = false
+debug = false

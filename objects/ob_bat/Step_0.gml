@@ -33,9 +33,10 @@ case 2:
 }
 
 if hurt {
-	speedX += (50 * -xDist)
-		
-}
+	maxspeedX = speed2
+	speedX = (maxspeedX * -xDist)
+} else
+	maxspeedX = speed1
 
 
 
