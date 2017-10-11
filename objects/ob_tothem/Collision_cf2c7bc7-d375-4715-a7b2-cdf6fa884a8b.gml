@@ -2,17 +2,20 @@
 
 if paused
 	exit
-
+	
 var _shotObject = other.id;
 with base
 if vulnerable {
 	if not hurt {
 		strength -= _shotObject.hit
 		sc_tothem_hurt()
+		
+		sc_play_sound(sn_hit)
 	}
 }
 
-sc_play_sound(sn_hit, false)
+with other
+	event_perform(ev_collision, ob_enemy)
 
 /*
 Head tells Base about Hurt. Then Base choose Head to set Hurt for.

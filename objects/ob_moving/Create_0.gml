@@ -10,6 +10,8 @@ grav = 0
 maxspeedX = 0
 maxspeedY = 0
 
+forward = 1
+
 // values are always positive
 // (if sprite_offset is inside bbox)
 w1 = x - bbox_left

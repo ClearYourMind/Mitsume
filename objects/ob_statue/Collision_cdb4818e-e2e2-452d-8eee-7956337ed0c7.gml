@@ -1,6 +1,7 @@
-/// @desc Hurt enemy
+/// @desc
 
 event_perform_object(ob_cmpHurtable, ev_collision, ob_shot)
 
-if strength<=0
-	instance_destroy()
+with other
+	event_perform(ev_collision, ob_enemy)
+

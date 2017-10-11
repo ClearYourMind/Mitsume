@@ -1,3 +1,4 @@
-/// @desc Hurt enemy (ob_shot)
+/// @desc
 
 event_perform_object(ob_cmpHurtable, ev_collision, ob_kill_arrow)
+

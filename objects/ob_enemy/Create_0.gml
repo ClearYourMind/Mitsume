@@ -1,9 +1,8 @@
 event_inherited()
 /// @desc Init values
 
-hurt = false
-hurtstep = 0
-vulnerable = true
+/// Extracted Component code
+event_perform_object(ob_cmpHurtable, ev_create, 0)
 
 strength = 1
 dropvalue = 0
@@ -13,3 +12,5 @@ xDist = 0
 yDist = 0
 
 found = false
+
+instance_deactivate_object(id)

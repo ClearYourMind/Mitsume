@@ -1479,6 +1479,14 @@
             }
         },
         {
+            "Key": "a72ceb03-8add-4bad-a9ed-9028668cd2dd",
+            "Value": {
+                "id": "d1092e2c-f61e-40d5-838b-59aaf3d537c8",
+                "resourcePath": "views\\a72ceb03-8add-4bad-a9ed-9028668cd2dd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a7406546-5803-4d5a-9d39-9da7d1091523",
             "Value": {
                 "id": "7a5cf6ae-9186-456e-b099-9803ab751c71",
@@ -1612,6 +1620,14 @@
                 "id": "0f2accb0-c9a2-4490-9061-8ac836d76c44",
                 "resourcePath": "scripts\\sc_hero_hurt\\sc_hero_hurt.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b400095a-5288-4e8d-ac42-31107abaee5b",
+            "Value": {
+                "id": "66672577-34d0-4518-ae4d-0c36c681edba",
+                "resourcePath": "objects\\ob_cmpHurtable\\ob_cmpHurtable.yy",
+                "resourceType": "GMObject"
             }
         },
         {

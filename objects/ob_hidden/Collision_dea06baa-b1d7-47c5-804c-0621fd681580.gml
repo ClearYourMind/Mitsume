@@ -1,15 +1,17 @@
 /// @desc
 
-strength -= other.hit
-with other instance_destroy()
+event_perform_object(ob_cmpHurtable, ev_collision, ob_shot)
 
-with instance_create_depth(x, y, depths.explosions, ob_flares) {
-	sparkleSpawnPeriod = 0.1
-	flareLifetime = 0.5
-	object = other.id
+with other	
+	event_perform(ev_collision, ob_enemy)
+
+if not instance_exists(flare) {
+	flare = instance_create_depth(x, y, depths.explosions, ob_flares)
+	with flare {
+		sparkleSpawnPeriod = 0.1
+		flareLifetime = 0.5
+		object = other.id
+	}
 }
-sc_play_sound(sn_hit)
-
 if strength<=0
 	instance_destroy()
-	

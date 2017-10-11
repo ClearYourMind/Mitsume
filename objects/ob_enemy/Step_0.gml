@@ -1,16 +1,7 @@
 event_inherited()
-/// @desc Check status & process hurt
+/// Extracted Component code
+event_perform_object(ob_cmpHurtable, ev_step, ev_step_normal)
 
-if strength<=0
-	instance_destroy()
+/// @desc Process hurt
 
-if hurt {
-	if hurtstep < 7 {
-		hurtstep++
-	} else {
-		hurt = false
-		hurtstep = 0
-		image_blend = c_white
-	}
-}
 

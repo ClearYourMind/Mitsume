@@ -15,7 +15,7 @@
         "15fc53c5-912c-46a3-a0e7-b5c7288f0414"
     ],
     "filterType": "GMObject",
-    "folderName": "parents",
+    "folderName": "_parents",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

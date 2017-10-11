@@ -1,4 +1,7 @@
 event_inherited()
+
+event_perform_object(ob_cmpHurtable, ev_create, 0)
+
 /// @desc Init
 
 image_speed = 0
@@ -8,7 +11,7 @@ maxspeedY = 400
 maxspeedX = 20;
 grav = 150
 
-strength = 1  // not used
+dropitem = ob_coin
 dropvalue = 20
 
 forward = -1
