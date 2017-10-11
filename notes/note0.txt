@@ -57,14 +57,14 @@ If distance is more than view_w ob_skeleton doesn't react.
 	
 10.10.17
 	Оптимизировать активацию/деактивацию в ob_game_object
-	[		]
+	[ DONE! ]
 	
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения
 курсора, пока не переведешь фокус с GM и обратно. 
 	[FIXED!]
-	Список autocompletion исчезает как только начинаешь вводить первыую букву после точки.
+	Список autocompletion исчезает как только начинаешь вводить первую букву после точки.
 После ввода второй - список выпадает снова.
 	[ ]
 	Duplicated object doesn't copy async system event
