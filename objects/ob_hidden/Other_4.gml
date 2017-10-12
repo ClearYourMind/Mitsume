@@ -1,4 +1,3 @@
 /// @desc
 
-event_perform(ev_alarm, 0)
-
+event_perform(ev_step, ev_step_normal)

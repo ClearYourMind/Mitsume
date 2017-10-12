@@ -5,5 +5,4 @@ if is_array(hiddenInstances) {
 	if instance_exists(hiddenInstances[i])
 		instance_deactivate_object(hiddenInstances[i])
 
-	alarm_set(0, deactivateTime)
 }
