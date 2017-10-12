@@ -1,2 +1,2 @@
 enemyObject = ob_dog
-spawnPeriod = 4
+spawnPeriod *= 0.5
