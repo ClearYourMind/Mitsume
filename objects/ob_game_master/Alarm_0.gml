@@ -4,7 +4,6 @@
 instance_deactivate_object(ob_enemy)
 instance_deactivate_object(ob_spawner)
 instance_deactivate_object(ob_lift)
-instance_deactivate_object(ob_flares)
 
 var deactivateBoundaryX = view_w * 0.5
 var deactivateBoundaryY = view_h * 0.5
