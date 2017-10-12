@@ -5,17 +5,19 @@ if not initiated {
 		flareLifetime = sc_timeout_new(flareLifetime)	
 		sc_timeout_start(flareLifetime)
 	}
-	if (w1 = 0) and (w2 = 0)
-	if instance_exists(object) {
-		w1 = object.w1
-		w2 = object.w2
-		h1 = object.h1
-		h2 = object.h2
+	if (w1 = 0) and (w2 = 0) {
+		if instance_exists(object) {
+			w1 = object.w1
+			w2 = object.w2
+			h1 = object.h1
+			h2 = object.h2
+		} else {
+			w1 = 8; w2 = 8	
+		}
 	}
 	sparkleSpawnTime = sc_timeout_new(sparkleSpawnPeriod, true)
 	sc_timeout_start(sparkleSpawnTime)
 	initiated = true
-	
 }
 
 if is_array(flareLifetime)
@@ -27,12 +29,15 @@ if instance_exists(object) {
 	x = object.x + xOffset
 	y = object.y + yOffset
 } else
-	spawn = false
+	if not is_array(flareLifetime)
+		spawn = false
 
 
 // process sparkles
-if not ds_exists(sparkle, ds_type_list)
+if not ds_exists(sparkle, ds_type_list) {
+	instance_destroy()
 	exit
+}
 
 var _star = []
 if spawn

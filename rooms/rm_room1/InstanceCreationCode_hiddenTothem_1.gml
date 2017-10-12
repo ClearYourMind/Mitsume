@@ -1,0 +1,1 @@
+maxpiece = 4
