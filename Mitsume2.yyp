@@ -530,7 +530,7 @@
             "Key": "3dc2fd26-6b06-4f32-ac4b-e56e8bbfdcd0",
             "Value": {
                 "id": "4bcefad4-9f9a-49ad-9131-a21d808f303a",
-                "resourcePath": "objects\\ob_hidden\\ob_hidden.yy",
+                "resourcePath": "objects\\ob_hidden_destroyable\\ob_hidden_destroyable.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1980,6 +1980,14 @@
                 "id": "8908dc35-a361-4fe1-a78b-e3a50c672349",
                 "resourcePath": "sprites\\sp_no_sprite\\sp_no_sprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e611f390-16fb-43eb-ae43-e9025a88d632",
+            "Value": {
+                "id": "0326c6b4-f268-4e4b-a9de-7f04d5971bcf",
+                "resourcePath": "objects\\ob_hidden\\ob_hidden.yy",
+                "resourceType": "GMObject"
             }
         },
         {
