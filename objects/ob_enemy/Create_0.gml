@@ -13,4 +13,3 @@ yDist = 0
 
 found = false
 
-deactivate = true

@@ -59,6 +59,20 @@ If distance is more than view_w ob_skeleton doesn't react.
 	Оптимизировать активацию/деактивацию в ob_game_object
 	[ DONE! ]
 	
+13.10.17
+	В GameMaker'e утечки памяти странно сказываются на поведении игры, на отрисовке сцены
+в частности. Проблемы обнаруживаются при совместном использовании
+instance_deactivate_object(ob_..) и instance_deactivate_object(id), а также 
+instance_copy(false) если в Create объекта создается ds_...
+
+13.10.17
+	Игрок может спокойно проходить сквозь ob_tothem??? Два тотема должны нормально отталкиваться
+друг от друга
+	[		]
+
+
+
+
 
 Заметки об IDE:
 	После смены языка Win+Space не работает Backspace, Enter, Delete и кнопки перемещения

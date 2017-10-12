@@ -6,3 +6,5 @@ if is_array(hiddenInstances) {
 		instance_deactivate_object(hiddenInstances[i])
 
 }
+
+alarm_set(0, deactivateTime)
