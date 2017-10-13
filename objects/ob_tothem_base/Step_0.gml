@@ -63,15 +63,15 @@ if mode == 1 {
 		}
 		
 		// walk and hit against walls
-		_x = x + 8 * forward;
-		speedX = maxspeedX*forward;
+		_x = x + 10 * forward;
 		if (not (collision_point(_x, y+16, ob_wall, false, false) or 
 		         collision_point(_x, y+16, ob_motion_wall, false, false)) ) or
 		   (collision_line(_x, y - (maxpiece-1)*16, _x, y, ob_wall, false, false) or
-		    collision_line(_x, y - (maxpiece-1)*16, _x, y, ob_motion_wall, false, false)) {
+		    collision_line(_x, y - (maxpiece-1)*16, _x, y, ob_motion_wall, false, false)) or
+			collision_point(_x, y+15, ob_tothem_base, false, true) {
 			forward = -forward
-			speedX = 0
 		}
+		speedX = maxspeedX*forward;
 
 		if hurt {
 			if not pieces[maxpiece - piece - 1].hurt {
