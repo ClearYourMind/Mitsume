@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "52eb2c40-5d87-4fd9-a251-db3124f4ca61",
+            "Value": {
+                "id": "e34b17ae-5432-4f3e-b6d6-ea1c96dd11b6",
+                "resourcePath": "objects\\ob_motion_wall_falling\\ob_motion_wall_falling.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "53048fc1-4ebf-4220-b7e3-206f0c627327",
             "Value": {
                 "id": "35bf970a-69c5-4e7e-8eef-1f459f6cf68c",

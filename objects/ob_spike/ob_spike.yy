@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "ob_spike",
     "eventList": [
-        
+        {
+            "id": "b2ef2316-c05f-4c3c-bbef-d67caed1128c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "7a187bdf-c19e-44a1-9956-d08ca4f4d3f1"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
