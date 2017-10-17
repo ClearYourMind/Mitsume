@@ -3,7 +3,7 @@
 depth = depths.walls
 
 forward = -1
-xRange = 96
-yRange = 32
+xRange = 112
+yRange = 48
 
-suckSpeed = 50
+flowSpeed = 40

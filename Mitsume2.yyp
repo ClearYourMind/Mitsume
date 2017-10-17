@@ -778,7 +778,7 @@
             "Key": "52eb2c40-5d87-4fd9-a251-db3124f4ca61",
             "Value": {
                 "id": "e34b17ae-5432-4f3e-b6d6-ea1c96dd11b6",
-                "resourcePath": "objects\\ob_motion_wall_falling\\ob_motion_wall_falling.yy",
+                "resourcePath": "objects\\ob_motion_group_falling\\ob_motion_group_falling.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "9c4e0710-4130-4544-ad75-42323ceb5be3",
+            "Value": {
+                "id": "6403f073-1991-4a89-869c-328018d1dfa5",
+                "resourcePath": "views\\9c4e0710-4130-4544-ad75-42323ceb5be3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9cc43447-a03c-4453-b75e-895357a9ce25",
             "Value": {
                 "id": "6818a60e-ac37-4a9f-841b-53a005fb3adb",
@@ -1875,6 +1883,14 @@
             "Value": {
                 "id": "a39c93db-daa1-4d8d-a01c-8cf7eb810c4e",
                 "resourcePath": "objects\\ob_gui\\ob_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d09a78fe-60a4-48cb-9f52-0834b0ed1dbd",
+            "Value": {
+                "id": "0f3a504e-d849-4610-84be-6223173a9d67",
+                "resourcePath": "objects\\ob_motion_group\\ob_motion_group.yy",
                 "resourceType": "GMObject"
             }
         },

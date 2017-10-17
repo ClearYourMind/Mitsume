@@ -1,5 +1,5 @@
 event_inherited()
-/// @desc Fall, Rise, Move childs and motionLayer
+/// @desc Fall and Rise
 
 if collisionResult[1] {
 	y -= vspeed
@@ -30,13 +30,4 @@ if sc_timeout_is_started(waitTime) and sc_timeout_over(waitTime) {
 		break
 	}
 }
-
-/// Move childs
-for (var i=0; i<array_length_1d(childObjects); i++)
-if instance_exists(childObjects[i])
-	childObjects[i].y = childObjects[i]._oY + (y - _oY)
-	
-/// Move motionLayer
-
-layer_y(motionLayer, y - _oY)
 

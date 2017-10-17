@@ -8,9 +8,3 @@ grav = oGrav
 
 phase = 0 // 0 - falling; 1 - rising
 waitTime = sc_timeout_new(0.5)
-
-motionLayer = noone
-childObjects = []
-
-_oX = x
-_oY = y

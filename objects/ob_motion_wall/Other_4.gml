@@ -4,8 +4,8 @@ var motionLayer  = layer_get_id("MotionTiles")
 var tileMap = layer_tilemap_get_id(motionLayer)
 tileSet = tilemap_get_tileset(tileMap)
 
-tileCountX =  (w2+1) div 16
-tileCountY =  (h2+1) div 16
+tileCountX = (w2+1) div 16
+tileCountY = (h2+1) div 16
 
 for (var j=0; j < tileCountY; j++)
 for (var i=0; i < tileCountX; i++) {
