@@ -1,7 +1,7 @@
 /// @desc Get tiles under object
 
-var frontLayer  = layer_get_id("MotionTiles")
-var tileMap = layer_tilemap_get_id(frontLayer)
+var motionLayer  = layer_get_id("MotionTiles")
+var tileMap = layer_tilemap_get_id(motionLayer)
 tileSet = tilemap_get_tileset(tileMap)
 
 tileCountX =  (w2+1) div 16
