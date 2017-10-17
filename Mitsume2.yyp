@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "9dc0742e-c8f0-4b65-9d2a-01b8910ad346",
+            "Value": {
+                "id": "93aab5eb-c902-4ebe-822e-66e729e9b9b9",
+                "resourcePath": "rooms\\rm_text_stage3\\rm_text_stage3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9dd4dbfd-9e57-4f16-8a89-7b2957c4f9ea",
             "Value": {
                 "id": "4e7bc1ef-23dc-4512-a197-435e2a255ba1",
@@ -2172,6 +2180,14 @@
                 "id": "cd414ddc-9e90-4498-8bbb-8e8da1add766",
                 "resourcePath": "objects\\ob_dog\\ob_dog.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f738343a-cc07-4e78-9000-dfe8095f19ce",
+            "Value": {
+                "id": "b8ab48f4-68bb-4797-96b8-289140db5389",
+                "resourcePath": "rooms\\rm_stage3\\rm_stage3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

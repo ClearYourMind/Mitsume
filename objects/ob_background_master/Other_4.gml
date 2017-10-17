@@ -1,4 +1,4 @@
-/// @desc setup background
+/// @desc setup shadows and parallax
 
 backLayer   = layer_get_id("Back")
 shadowLayer = layer_get_id("Shadows")
