@@ -2,7 +2,8 @@
 
 if sc_timeout_is_started(spawnTime)
 if sc_timeout_over(spawnTime) {
-	sc_spawner_spawn()
+	if spawnAllowed
+		sc_spawner_spawn()
 	
 	if spawnLoop {
 		spawnTime = sc_timeout_new(spawnPeriod + random(spawnPeriodSpread * 2)-spawnPeriodSpread)
@@ -11,3 +12,9 @@ if sc_timeout_over(spawnTime) {
 
 }
 
+/// Check spawner is outside
+spawnAllowed = (
+	point_in_rectangle(x   , y, view_x, view_y, view_x+view_w, view_y+view_h) or
+	point_in_rectangle(x+w2, y, view_x, view_y, view_x+view_w, view_y+view_h) or
+	point_in_rectangle(x-w1, y, view_x, view_y, view_x+view_w, view_y+view_h)
+) or spawnOutside

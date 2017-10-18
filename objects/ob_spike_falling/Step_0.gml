@@ -21,5 +21,9 @@ case 1:
 	collisionResult = [_wall[0] or _mwall[0], _wall[1] or _mwall[1]]
 	if collisionResult[1]
 		instance_destroy()
-	
 }
+
+/// check if outside
+
+if not point_in_rectangle(x, y, view_x, view_y, view_x+view_w, view_y+view_h)
+	instance_destroy(id, false)

@@ -4,6 +4,9 @@ event_inherited()
 spreadByWidth = true
 spreadByHeight = true
 spawnNumber = 1
+spawnOutside = true
+
+spawnAllowed = true
 
 w1 = x - bbox_left
 w2 = bbox_right - x
