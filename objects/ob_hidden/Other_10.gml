@@ -1,4 +1,5 @@
-/// @desc
+/// @desc Triggered action
+
 var _flare = instance_create_depth(x, y, depths.explosions, ob_flares)
 
 with _flare {
@@ -28,3 +29,4 @@ if is_array(hiddenInstances)
 		}
 	
 	}
+

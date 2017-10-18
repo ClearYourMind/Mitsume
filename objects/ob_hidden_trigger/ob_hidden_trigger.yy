@@ -5,13 +5,23 @@
     "name": "ob_hidden_trigger",
     "eventList": [
         {
-            "id": "596b9a7b-b420-488e-8f0b-1636966be1c2",
+            "id": "9fed9a15-2173-43fe-9326-03bb82d8e84d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "4591971c-c7f0-4c43-8d1b-ef9c83ed46f4",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 4,
+            "eventtype": 0,
+            "m_owner": "6eec186b-0ef5-48aa-88cd-d4468f403be0"
+        },
+        {
+            "id": "003fb0f6-b950-44ee-ae75-1e85fdd9d600",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "6eec186b-0ef5-48aa-88cd-d4468f403be0"
         }
     ],

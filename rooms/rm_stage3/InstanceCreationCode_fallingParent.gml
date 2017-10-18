@@ -17,4 +17,3 @@ childObjects[i++] = fallingChild_15
 childObjects[i++] = fallingChild_16
 childObjects[i++] = fallingChild_17
 childObjects[i  ] = fallingChild_18
-

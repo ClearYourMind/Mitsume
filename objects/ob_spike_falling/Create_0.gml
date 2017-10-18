@@ -3,7 +3,7 @@ event_inherited()
 image_speed = 0
 
 maxspeedY = 200
-oGrav = 400
+oGrav = 250 + random(150)
 grav = 0
 
 fallTime = sc_timeout_new(0.75)

@@ -13,5 +13,6 @@ if not instance_exists(flare) {
 		object = other.id
 	}
 }
+
 if strength<=0
 	instance_destroy()

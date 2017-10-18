@@ -3,15 +3,15 @@ event_inherited()
 
 switch phase {
 case 0:
+	if (counter mod 3 == 0) {
+		x = oX + random(2) - 1
+		image_index = irandom(3)
+	}
 	if sc_timeout_over(fallTime) {
 		phase = 1
 		image_index = 0
 		grav = oGrav
 		x = oX
-	}
-	if (counter mod 4 == 0) {
-		x = oX + random(2) - 1
-		image_index = irandom(3)
 	}
 	break
 case 1:

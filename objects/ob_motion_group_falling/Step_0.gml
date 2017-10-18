@@ -2,7 +2,7 @@ event_inherited()
 /// @desc Fall and Rise
 
 if collisionResult[1] {
-	y -= vspeed
+	//y -= vspeed
 	switch phase {
 	case 0:
 		grav = 0
