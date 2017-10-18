@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "02539e66-1817-4b7d-895f-0a7a828a5475",
+            "Value": {
+                "id": "4e986746-ba00-4b64-8c11-a56b1eb03081",
+                "resourcePath": "sprites\\sp_build_spawnarea\\sp_build_spawnarea.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02952556-3aba-43e4-bc49-d3f1acb0f292",
             "Value": {
                 "id": "b52dc172-7328-4156-a66e-58b7eedc219d",
@@ -84,6 +92,14 @@
                 "id": "77ec6c27-98b2-436e-b73a-7b3c392c3445",
                 "resourcePath": "sprites\\sp_hero_stand\\sp_hero_stand.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "05916735-c11b-4816-8bd7-479f78218751",
+            "Value": {
+                "id": "a8e58909-c84c-4b2d-9c98-113f0128d86e",
+                "resourcePath": "objects\\ob_spike_falling\\ob_spike_falling.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -719,6 +735,14 @@
             }
         },
         {
+            "Key": "50fce493-34db-4b98-bc9d-0c279e37cb53",
+            "Value": {
+                "id": "7545de87-6fd2-4daf-b0f7-ff6fe4736166",
+                "resourcePath": "sprites\\sp_spike_falling\\sp_spike_falling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5134204b-552d-4c07-bb54-d181bcff0e36",
             "Value": {
                 "id": "7d6fc4a9-6785-4474-b829-1b243d53c397",
@@ -1007,6 +1031,14 @@
             }
         },
         {
+            "Key": "6e03464d-7fb1-47be-a363-798ee2185972",
+            "Value": {
+                "id": "8b52d5d8-eae3-4077-93a3-d4d6d2a9180a",
+                "resourcePath": "scripts\\sc_spawner_spawn\\sc_spawner_spawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6eec186b-0ef5-48aa-88cd-d4468f403be0",
             "Value": {
                 "id": "1e2de272-f547-4a75-82f3-689e6e3b2651",
@@ -1076,6 +1108,14 @@
                 "id": "b8aaa97e-3523-4d60-99f0-d0ddddf6213f",
                 "resourcePath": "scripts\\sc_check_collision_mask_moving\\sc_check_collision_mask_moving.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "78e146a1-a574-4934-be2d-91adb298cf7c",
+            "Value": {
+                "id": "b539bc40-b626-4eeb-a2d5-f295dbc9d152",
+                "resourcePath": "objects\\ob_spawn_area\\ob_spawn_area.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2352,6 +2392,7 @@
         "48e0b616-d9fe-4717-aba8-c6c2be41e23c",
         "4ab3c4d4-69e1-43b9-b0b3-fbe48cc845c6",
         "5134204b-552d-4c07-bb54-d181bcff0e36",
+        "6e03464d-7fb1-47be-a363-798ee2185972",
         "c814d3c2-d35b-4a8c-b150-5029134b2bbc",
         "15a2b51a-69a2-4a3a-a5bd-335692e01def",
         "854307af-f552-49cb-bf5a-fb2c853ffcbb",

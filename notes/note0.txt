@@ -72,6 +72,17 @@ instance_copy(false) если в Create объекта создается ds_...
 
 18.10.17
 	Игрок умирает когда сходит с motionWall, упираясь в wall!
+	[		]
+	
+	Выделить ob_cmpColliding с collisionResult[] из ob_motion_wall
+	[		]
+	
+	Сделать маленький взрыв
+	[		]
+
+	Попробовать двигать отдельный layer с instanc'ами как и motionLayer
+	[		]
+
 
 
 
