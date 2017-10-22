@@ -2,6 +2,7 @@
 
 hiddenObject = noone
 hiddenInstances = 0 // array
+visibleActivation = true
 
 w1 = x - bbox_left
 w2 = bbox_right - x

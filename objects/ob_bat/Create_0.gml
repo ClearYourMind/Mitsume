@@ -16,5 +16,5 @@ range = view_w * 0.25
 strength = 4
 dropvalue = 20
 dropitem = ob_coin
-
+deathExplosion = ob_explode_small
 phase = 0
