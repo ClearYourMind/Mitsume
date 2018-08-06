@@ -1,5 +1,13 @@
-/// @desc Process tickerLine
+/// @desc 
 
+oX = view_x
+oY = view_y+view_h-20
+
+with ob_shake_master
+	other.oY += amount-1
+
+
+//Process tickerLine
 if is_array(tickerLine) 
 if tickerLine[l.visible] {
 	if counter mod tickerLine[l.period] = 0 {

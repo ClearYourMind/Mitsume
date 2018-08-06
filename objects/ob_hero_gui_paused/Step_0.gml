@@ -1,7 +1,8 @@
 ///@desc Process flashing and inputs
 
-oX = view_x
-oY = view_y+view_h-20
+//oX = view_x
+//oY = view_y+view_h-20
+event_inherited()
 
 if not instance_exists(hero) exit
 

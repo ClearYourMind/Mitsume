@@ -9,5 +9,7 @@ if shakeStarted {
 		amplitude *= fadeoff
 		shakeStarted = amplitude > 1
 	}
+} else {
+	amount = 0 
 }
 

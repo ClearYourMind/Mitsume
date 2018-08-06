@@ -1,9 +1,6 @@
 event_perform_object(ob_gui, ev_step, ev_step_normal)
 /// @desc 
 
-oX = view_x
-oY = view_y+view_h-20
-
 if not instance_exists(hero) exit
 
 
