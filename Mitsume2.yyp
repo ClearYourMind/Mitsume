@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "72bebb37-c66d-4fe3-939b-916bdc9f079a",
+            "Value": {
+                "id": "660113be-c6eb-4789-871e-b0bd661541f6",
+                "resourcePath": "views\\72bebb37-c66d-4fe3-939b-916bdc9f079a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "743f7f26-55f2-4899-9997-4a5d49775425",
             "Value": {
                 "id": "4014ed8b-2b3d-449f-a696-ec7a23a911d3",
@@ -1567,10 +1575,26 @@
             }
         },
         {
+            "Key": "9f712786-6ed8-41ee-b101-6fe57badf7d3",
+            "Value": {
+                "id": "7819637e-e036-4752-b8ec-50992c6c15fc",
+                "resourcePath": "sprites\\sp_hero2_collision_top\\sp_hero2_collision_top.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a04c01bd-b5ac-4844-9bad-0602ce1548e4",
             "Value": {
                 "id": "f37e6965-bc8f-4483-9ced-2788628cf1f9",
                 "resourcePath": "sprites\\sp_hero_jump\\sp_hero_jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a0b68736-9dc7-4e36-a328-9b1f671045b1",
+            "Value": {
+                "id": "1dd53671-5879-4be7-b95f-9644afd604a8",
+                "resourcePath": "sprites\\sp_hero2_collision_left\\sp_hero2_collision_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1903,6 +1927,14 @@
             }
         },
         {
+            "Key": "c04256de-99cf-4767-ba6b-384e6f9a75a5",
+            "Value": {
+                "id": "47441ed7-e344-47f7-9656-486b2b7f7b34",
+                "resourcePath": "scripts\\sc_hero2_hurt\\sc_hero2_hurt.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c1cb733e-d40e-465c-8121-6eddd8537e3f",
             "Value": {
                 "id": "35f5adff-1e5b-4030-92ea-aa2cc544d562",
@@ -1971,6 +2003,22 @@
             "Value": {
                 "id": "16c4830a-6561-4f72-b72d-e6843dea1357",
                 "resourcePath": "sprites\\sp_hero2_die\\sp_hero2_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cb986378-3654-4613-9e88-ec9646b9cb28",
+            "Value": {
+                "id": "6dee836a-c42e-4432-ad9a-9e640f35140a",
+                "resourcePath": "objects\\ob_hero2\\ob_hero2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cc3f6a37-05f2-4ba9-80ad-b91cac06deb4",
+            "Value": {
+                "id": "f7a3e0ee-b667-4a03-8943-cdeb00daefd7",
+                "resourcePath": "sprites\\sp_hero2_collision_right\\sp_hero2_collision_right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2055,6 +2103,14 @@
             }
         },
         {
+            "Key": "d3024cda-e2e3-4b66-ad1b-be73ba057685",
+            "Value": {
+                "id": "92147840-9bf9-455b-a37d-3d3eba28986a",
+                "resourcePath": "sprites\\sp_hero2_collision_bottom\\sp_hero2_collision_bottom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d34ba316-77c2-4e09-8924-eb5379dd23aa",
             "Value": {
                 "id": "a5dffe89-756c-4854-8ff4-eb9580a51bf6",
@@ -2116,6 +2172,14 @@
                 "id": "96dfad88-6e08-4e9c-8240-42d59ac51257",
                 "resourcePath": "sprites\\sp_gui_shop\\sp_gui_shop.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dc73f0b9-2299-4622-9503-599fa8487a02",
+            "Value": {
+                "id": "9d6ea8cf-acdb-490b-8766-7d10c1511d6b",
+                "resourcePath": "scripts\\sc_hero2_check_collision_mask\\sc_hero2_check_collision_mask.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2343,6 +2407,14 @@
             }
         },
         {
+            "Key": "f47e0dc8-a59c-4acb-8cf2-bb77c95ac46b",
+            "Value": {
+                "id": "dbe311c2-3fe2-4bee-9df9-3bfe92baa495",
+                "resourcePath": "scripts\\sc_hero2_control\\sc_hero2_control.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f484fb02-4d9d-4693-8960-f0005f1bbdf8",
             "Value": {
                 "id": "b546096c-b898-4815-b583-69f3c12ed3af",
@@ -2508,7 +2580,10 @@
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
         "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
         "6e03464d-7fb1-47be-a363-798ee2185972",
-        "3bfdf48e-f4a9-479a-b8ce-41f3a2568867"
+        "3bfdf48e-f4a9-479a-b8ce-41f3a2568867",
+        "f47e0dc8-a59c-4acb-8cf2-bb77c95ac46b",
+        "dc73f0b9-2299-4622-9503-599fa8487a02",
+        "c04256de-99cf-4767-ba6b-384e6f9a75a5"
     ],
     "tutorial": ""
 }
