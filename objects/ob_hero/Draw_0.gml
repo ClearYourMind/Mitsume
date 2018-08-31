@@ -1,14 +1,7 @@
 /// @desc Draw debug info
 
-if recover {
-	if image_alpha = 0 
-		image_alpha = 1
-	else
-		image_alpha = 0
-} else 
-	image_alpha = 1
-
-draw_self()
+if not recover or (recover and counter mod 2)
+	draw_self()
 
 exit
 

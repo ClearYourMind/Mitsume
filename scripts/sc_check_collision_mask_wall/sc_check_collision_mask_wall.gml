@@ -15,7 +15,7 @@ var result = false
 _other = instance_place(_x, _y, obj)
 switch dir {
 case d.Up:
-	//_other = instance_place(_x-hspeed, _y, obj)
+//	_other = instance_place(_x-hspeed, _y, obj)
 	if instance_exists(_other) {
 		_y -=  (_y-h1) - _other.bbox_bottom - 1
 		speedY = 0
@@ -24,7 +24,7 @@ case d.Up:
 	}
 	break
 case d.Down:
-	//_other = instance_place(_x-hspeed, _y, obj)
+//	_other = instance_place(_x-hspeed, _y, obj)
 	if instance_exists(_other) {
 		_y -=  (_y+h2) - _other.bbox_top //+ 0.5
 		speedY = 0
@@ -33,7 +33,7 @@ case d.Down:
 	}
 	break
 case d.Right:
-	//_other = instance_place(_x, _y-vspeed, obj)
+//	_other = instance_place(_x, _y-vspeed, obj)
 	if instance_exists(_other) {
 		_x -=  (_x+w2) - _other.bbox_left + 0.51// 0.91
 		speedX = 0
@@ -42,7 +42,7 @@ case d.Right:
 	}
 	break
 case d.Left:
-	//_other = instance_place(_x, _y-vspeed, obj)
+//	_other = instance_place(_x, _y-vspeed, obj)
 	if instance_exists(_other) {
 		_x -= (_x-w1) - _other.bbox_right - 0.51
 		speedX = 0
