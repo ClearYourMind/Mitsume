@@ -6,6 +6,8 @@ var newForward = forward
 var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 			  and not sc_timeout_is_started(pauseTime)
 var canJump = feetcollision and canMove
+//canMove = canMove and not keys[k.Down]
+
 var canShoot = instance_exists(weapon) and not hurt
 var arrowJump = false
 if instance_exists(arrow) {
@@ -42,38 +44,45 @@ if canMove {
 if keysPressed[k.Jump] or wantJump {
 	wantJump = true
 	if canJump { 
-		wantJump = false
-		// arrow jump
-		if arrowJump {
-			speedY = -jumpSpeed*1.8
-		} else {
+		jumpCharged = keys[k.Down]
+		if jumpCharged {
+			newAnim = sp_hero2_jump
+			image_index = 2
+		} else { 
+			wantJump = false
+			// do jump
 			speedY = -jumpSpeed
-			sc_play_sound(sn_jump, false)
+			y -= 2
 			sc_timeout_start(jumpTime)
+			sc_play_sound(sn_jump, false)
+			canJump = false
 		}
-		y-=2
-	    newAnim = sp_hero2_jump
-	    canJump = false
-	}   
-}
-if keys[k.Jump] {
-	// arrow jump
-	if arrowJump {
-		speedY = -jumpSpeed*1.8
-		y-=2
-	    newAnim = sp_hero2_jump
-	    canJump = false
 	}
+}
+if jumpCharged {
+	if not (keys[k.Jump] and keys[k.Down]) {
+		if canJump {
+			jumpCharged = false
+			speedY = -jumpSpeedCharged
+			y -= 2
+			sc_play_sound(sn_arrow4, false)
+			wantJump = false
+		}
+	}
+} else if keys[k.Jump] {
 	if not sc_timeout_over(jumpTime) {
 	    speedY = -jumpSpeed
 	}
 } else {
 	sc_timeout_stop(jumpTime)
 	wantJump = false
-}  
+}
+
+
    
 if abs(speedY)>0 or feetcollision == false {
-    newAnim = sp_hero2_jump
+    newAnim = sp_hero2_jump;
+	if speedY < 0 image_index = 0 else image_index = 1
 }
 
 if canShoot {

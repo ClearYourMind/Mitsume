@@ -13,8 +13,10 @@ accel = 350
 maxspeedX = 85
 maxspeedY = 400
 
-jumpSpeed = 185
-jumpTime = sc_timeout_new(0.225) 
+jumpSpeed = 190
+jumpSpeedCharged = 400
+jumpTime = sc_timeout_new(0.25) 
+jumpCharged = false
 
 // wantJump added to prevent eating away pressed jump button
 // while pauseAnim timer
@@ -29,7 +31,7 @@ pauseAnim = after.None
 
 feetcollision = true
 
-maxhealth = 6
+maxhealth = 10
 health = maxhealth
 healthUsed = 0
 
