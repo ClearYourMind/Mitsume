@@ -3,7 +3,7 @@
 if not recover or (recover and counter mod 2)
 	draw_self()
 
-//exit
+exit
 
 draw_set_colour(c_red)
 draw_set_alpha(0.75)

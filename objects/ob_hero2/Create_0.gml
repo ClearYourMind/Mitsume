@@ -32,8 +32,6 @@ feetcollision = true
 maxhealth = 6
 health = maxhealth
 healthUsed = 0
-// for little jump after hurt before stand up
-leapDone = false
 
 image_speed = 1
 
