@@ -19,6 +19,6 @@ for (var i=0; i<4; i++) {
 	draw_rectangle(x-w1, y-h1, x+w2, y+h2, false)
 }
 image_xscale = forward
-mask_index = sp_hero2_stand
+mask_index = mainMask
 draw_set_alpha(1)
 draw_set_colour(c_white)

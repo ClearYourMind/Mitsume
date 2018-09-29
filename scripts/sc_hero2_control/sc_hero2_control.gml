@@ -2,6 +2,8 @@
 
 var newAnim = sp_hero2_stand
 var newForward = forward
+var newIndex = image_index
+mainMask = sp_hero2_stand
 
 var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 			  and not sc_timeout_is_started(pauseTime)
@@ -9,23 +11,25 @@ var canJump = feetcollision and canMove
 //canMove = canMove and not keys[k.Down]
 
 var canShoot = instance_exists(weapon) and not hurt
-var arrowJump = false
-if instance_exists(arrow) {
-	arrowJump = arrow.stepped and arrow.sprang and canJump
-}
 
 
 if canMove {
-	if keys[k.Left] {
-	    newForward = -1
-	    accelX = accel * newForward
-	    newAnim = sp_hero2_move
-	} 
-	if keys[k.Right] {
-	    newForward = 1
-	    accelX = accel * newForward
-	    newAnim = sp_hero2_move
-	} 
+	if keys[k.Down] {
+		newAnim = sp_hero2_jump
+		newIndex = 2
+		mainMask = sp_hero2_jump
+	} else {
+		if keys[k.Left] {
+		    newForward = -1
+		    accelX = accel * newForward
+		    newAnim = sp_hero2_move
+		} 
+		if keys[k.Right] {
+		    newForward = 1
+		    accelX = accel * newForward
+		    newAnim = sp_hero2_move
+		} 
+	}
 } else {
 	// move hero when on air and firing
 	if not hurt
@@ -41,15 +45,13 @@ if canMove {
 	}
 }
 
+
 if keysPressed[k.Jump] or wantJump {
 	wantJump = true
+	jumpCharged = keys[k.Down]
 	if canJump { 
-		jumpCharged = keys[k.Down]
-		if jumpCharged {
-			newAnim = sp_hero2_jump
-			image_index = 2
-		} else { 
-			wantJump = false
+		wantJump = false
+		if not jumpCharged {
 			// do jump
 			speedY = -jumpSpeed
 			y -= 2
@@ -68,6 +70,11 @@ if jumpCharged {
 			sc_play_sound(sn_arrow4, false)
 			wantJump = false
 		}
+	} else
+	if keys[k.Jump] {
+		newAnim = sp_hero2_jump
+		newIndex = 2
+		mainMask = sp_hero2_jump
 	}
 } else if keys[k.Jump] {
 	if not sc_timeout_over(jumpTime) {
@@ -81,8 +88,8 @@ if jumpCharged {
 
    
 if abs(speedY)>0 or feetcollision == false {
-    newAnim = sp_hero2_jump;
-	if speedY < 0 image_index = 0 else image_index = 1
+    newAnim = sp_hero2_jump
+	newIndex = speedY<0 ? 0 : 1
 }
 
 if canShoot {
@@ -100,7 +107,7 @@ if canShoot {
 		if not instance_exists(arrow)
 			arrow = instance_create_depth(0,0, depths.shots, arrowObject)
 		newAnim = sp_hero_arrow
-		image_index = 0
+		newIndex = 0
 		if arrow.phase = ar.Hold {
 			pauseTime = sc_timeout_new(afterLaunchTime)
 			sc_timeout_start(pauseTime)
@@ -124,7 +131,7 @@ if not sc_timeout_over(pauseTime) {
 	if not keys[k.altFire]
 	if pauseAnim = after.Launch {
 		newAnim = sp_hero_arrow
-		image_index = 1
+		newIndex = 1
 	}
 } else {
 	pauseAnim = after.None
@@ -165,9 +172,10 @@ if not feetcollision and pauseAnim = after.Shot {
 if not hurt {
 	if sprite_index != newAnim {
 		sprite_index = newAnim
-		mask_index = sp_hero2_stand
-		image_index = 0
+		mask_index = mainMask
 	}
+	if newIndex <> image_index
+		image_index = newIndex
 	forward = newForward
 }
 

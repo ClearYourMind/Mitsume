@@ -4,7 +4,7 @@
 if not paused {
 	dTime = min(delta_time/1000000, 1/minFPS)
 } else
-	dTime = 0
+	dTime = 0.001
 	
 counter = (counter+1) mod 1000
 

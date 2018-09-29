@@ -38,7 +38,7 @@ if object_is_ancestor(obj.object_index, ob_moving) {
 	result = sc_check_collision_mask_wall(obj, dir)
 
 image_xscale = forward
-mask_index = sp_hero2_stand
+mask_index = mainMask
 
 return result
 

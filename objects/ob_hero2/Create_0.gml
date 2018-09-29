@@ -11,12 +11,13 @@ oStopFactor = 5 * power(10, -7)
 accel = 350
 
 maxspeedX = 85
-maxspeedY = 400
+maxspeedY = 425
 
 jumpSpeed = 190
-jumpSpeedCharged = 400
-jumpTime = sc_timeout_new(0.25) 
+jumpSpeedCharged = 425
+jumpTime = sc_timeout_new(0.2) 
 jumpCharged = false
+mainMask = sp_hero2_stand
 
 // wantJump added to prevent eating away pressed jump button
 // while pauseAnim timer

@@ -1,6 +1,6 @@
 /// @desc Control & Check status
 
-mask_index = sp_hero2_stand
+mask_index = mainMask
 sc_hero2_control()
 
 event_inherited()
