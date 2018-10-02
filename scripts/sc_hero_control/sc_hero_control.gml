@@ -8,8 +8,8 @@ var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 var canJump = feetcollision and canMove
 var canShoot = instance_exists(weapon) and not hurt
 var arrowJump = false
-if instance_exists(arrow) {
-	arrowJump = arrow.stepped and arrow.sprang and canJump
+if instance_exists(ob_arrow) {
+	arrowJump = ob_arrow.stepped and ob_arrow.sprang and canJump
 }
 
 
@@ -88,17 +88,17 @@ if canShoot {
 		sc_weapon_firing(false)
 	
 	if keys[k.altFire] {
-		if not instance_exists(arrow)
-			arrow = instance_create_depth(0,0, depths.shots, arrowObject)
+		if not instance_exists(ob_arrow)
+			instance_create_depth(0,0, depths.shots, arrowObject)
 		newAnim = sp_hero_arrow
 		image_index = 0
-		if arrow.phase = ar.Hold {
+		if ob_arrow.phase = ar.Hold {
 			pauseTime = sc_timeout_new(afterLaunchTime)
 			sc_timeout_start(pauseTime)
 			pauseAnim = after.Launch
 		}
-		if arrow.phase = ar.Stay
-			arrow.phase = ar.Recall
+		if ob_arrow.phase = ar.Stay
+			ob_arrow.phase = ar.Recall
 	}
 } else
 	sc_weapon_firing(false)
@@ -124,11 +124,11 @@ if not sc_timeout_over(pauseTime) {
 
 // releasing arrow
 if not (canShoot and keys[k.altFire]) {
-	if instance_exists(arrow) {
-	    if (arrow.phase = ar.Appear) or (arrow.phase = ar.Recall)
-			arrow.phase = ar.Disappear
-	    if arrow.phase = ar.Hold {
-	        arrow.phase = ar.LaunchBegin
+	if instance_exists(ob_arrow) {
+	    if (ob_arrow.phase = ar.Appear) or (ob_arrow.phase = ar.Recall)
+			ob_arrow.phase = ar.Disappear
+	    if ob_arrow.phase = ar.Hold {
+	        ob_arrow.phase = ar.LaunchBegin
 	        sc_play_sound(sn_arrow2, false)
 	    }
 	}

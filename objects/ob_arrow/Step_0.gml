@@ -9,7 +9,7 @@ if isThrough {
 
 if not instance_exists(hero)
 	phase = ar.Disappear
-
+	
 if phase = ar.Appear {
     x = hero.x + cos(angle)* radius
     y = hero.y + sin(angle)* radius  

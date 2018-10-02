@@ -14,8 +14,6 @@ enum ar {
 	Recoil    = 9
 }
 
-phase = ar.Appear
-
 lifeTime = sc_timeout_new(10)
 fadeTime = sc_timeout_new(5)
 
@@ -50,6 +48,6 @@ sprang = false
 oAccel = 400
 maxspeedX = 250
 maxspeedY = 180
-oY = 0
+oY = y
 
 animEnded = false

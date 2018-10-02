@@ -49,7 +49,7 @@ If distance is more than view_w ob_skeleton doesn't react.
 
 29.08.17
 	ob_arrow causes a crash when placed in room via editor
-	[		]
+	[ DONE! ]
 
 07.09.17
 	why hero dies when pushed off from platform by ob_motion_wall from the left???
