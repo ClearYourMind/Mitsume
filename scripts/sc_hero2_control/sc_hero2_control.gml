@@ -10,7 +10,7 @@ var canMove = not (keys[k.Fire] or keys[k.altFire]) and not hurt
 var canJump = feetcollision and canMove
 //canMove = canMove and not keys[k.Down]
 
-var canShoot = instance_exists(weapon) and not hurt
+var canShoot = not (hurt or pauseAnim = after.Shot)
 
 
 if canMove {
@@ -56,7 +56,7 @@ if keysPressed[k.Jump] or wantJump {
 			speedY = -jumpSpeed
 			y -= 2
 			sc_timeout_start(jumpTime)
-			sc_play_sound(sn_jump, false)
+			sc_play_sound(sn_arrow4, false)
 			canJump = false
 		}
 	}
@@ -94,31 +94,11 @@ if abs(speedY)>0 or feetcollision == false {
 
 if canShoot {
 	if keys[k.Fire] and not keys[k.altFire] {
-		if not (pauseAnim = after.Launch) {
-			sc_weapon_firing(true)
-			pauseTime = sc_timeout_new(afterShotTime)
-			sc_timeout_start(pauseTime)
-			pauseAnim = after.Shot
-		}
-	} else
-		sc_weapon_firing(false)
-	
-	if keys[k.altFire] {
-		if not instance_exists(arrow)
-			arrow = instance_create_depth(0,0, depths.shots, arrowObject)
-		newAnim = sp_hero_arrow
-		newIndex = 0
-		if arrow.phase = ar.Hold {
-			pauseTime = sc_timeout_new(afterLaunchTime)
-			sc_timeout_start(pauseTime)
-			pauseAnim = after.Launch
-		}
-		if arrow.phase = ar.Stay
-			arrow.phase = ar.Recall
-	}
-} else
-	sc_weapon_firing(false)
-
+		pauseTime = sc_timeout_new(afterShotTime)
+		sc_timeout_start(pauseTime)
+		pauseAnim = after.Shot
+	} 
+}
 
 // paused animations
 if not sc_timeout_over(pauseTime) {
@@ -128,27 +108,10 @@ if not sc_timeout_over(pauseTime) {
 		else
 			newAnim = sp_hero2_jumpfire
 	}
-	if not keys[k.altFire]
-	if pauseAnim = after.Launch {
-		newAnim = sp_hero_arrow
-		newIndex = 1
-	}
 } else {
 	pauseAnim = after.None
 }
 
-
-// releasing arrow
-if not (canShoot and keys[k.altFire]) {
-	if instance_exists(arrow) {
-	    if (arrow.phase = ar.Appear) or (arrow.phase = ar.Recall)
-			arrow.phase = ar.Disappear
-	    if arrow.phase = ar.Hold {
-	        arrow.phase = ar.LaunchBegin
-	        sc_play_sound(sn_arrow2, false)
-	    }
-	}
-}
 
 // Stopping on the ground
 if (not (keys[k.Left] or keys[k.Right]) or not canMove) and feetcollision {
