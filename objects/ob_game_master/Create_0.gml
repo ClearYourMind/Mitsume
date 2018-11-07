@@ -17,6 +17,7 @@ globalvar view_yborder
 globalvar deactivateTime
 
 enum depths {
+	backs     = 10,
 	walls     = 1,
 	general   = 0,
 	shots     = -5,

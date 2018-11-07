@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "0d522db7-0e3b-4199-bf7d-6c6df05115b7",
+            "Value": {
+                "id": "eed89799-2527-48ae-868a-4c2f5179afa6",
+                "resourcePath": "sprites\\sp_tiles_fire\\sp_tiles_fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e0bb8e4-89d3-476c-88f5-9217e12ec445",
             "Value": {
                 "id": "753ecd46-a19b-4f81-80dd-e83560cfbe66",
@@ -463,6 +471,14 @@
             }
         },
         {
+            "Key": "2c438646-d7cb-4b42-bc60-e6551037fcbf",
+            "Value": {
+                "id": "4b2a1735-31e6-471b-ad9e-2ecfa5c129d3",
+                "resourcePath": "objects\\ob_firetown\\ob_firetown.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2e4d0825-65c5-4d74-800f-40afc9cfb8bd",
             "Value": {
                 "id": "b23069fa-b576-46ed-a7f3-c3ab10f96479",
@@ -492,6 +508,14 @@
                 "id": "423b2609-254a-4943-9e06-ae0368deca9c",
                 "resourcePath": "sounds\\sn_select4\\sn_select4.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "327dbd2a-e00b-4698-b9ec-f884befef3f0",
+            "Value": {
+                "id": "4beb59ce-f46f-42d9-9194-b3f95964e911",
+                "resourcePath": "tilesets\\ts_fire\\ts_fire.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -556,6 +580,14 @@
                 "id": "f4021008-6afe-486e-b8e9-99d83f960720",
                 "resourcePath": "sprites\\sp_hero2_swing\\sp_hero2_swing.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "39ba6cc7-bf7e-464f-8e62-fbcc0be5ac5a",
+            "Value": {
+                "id": "bcd657c3-bb04-4d8b-920f-b93e517f5e8c",
+                "resourcePath": "views\\39ba6cc7-bf7e-464f-8e62-fbcc0be5ac5a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -807,6 +839,14 @@
             }
         },
         {
+            "Key": "527824a3-2ffb-4151-9c10-55ab5b2a994a",
+            "Value": {
+                "id": "de150ee6-7ed0-458e-ae93-738bf5dfd8b7",
+                "resourcePath": "objects\\ob_skyclouds\\ob_skyclouds.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "52ab2ca2-0bb1-477f-aaa3-5f16cad2965a",
             "Value": {
                 "id": "894e7196-bb22-4dd1-a5e1-25edd6c6a9d3",
@@ -1020,6 +1060,14 @@
                 "id": "3fe29354-66d9-422e-9163-1598803d3060",
                 "resourcePath": "views\\69925709-a852-468e-9e68-e0f5bedfbde2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6a05d3b7-527d-45e8-97a5-00926cbe8492",
+            "Value": {
+                "id": "24eb35e7-46a6-42a5-9810-ce2a31498d6d",
+                "resourcePath": "tilesets\\ts_firetown\\ts_firetown.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
