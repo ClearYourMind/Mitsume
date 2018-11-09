@@ -29,10 +29,11 @@ if xx = 0 {
 	tilemap_set_at_pixel(fireCityMap, t, room_width - 8, y+16)
 	
 	//city
-	r = irandom(7)+21
-	if r < 24 r = 21
-	t = tilemap_get_at_pixel(cityMap, room_width-16, y+24)  // previous tile
-	if t < 24 r = t + 1
-	tilemap_set_at_pixel(cityMap, r, room_width - 8, y+24)
+	r = irandom(5)
+	if r<=4 t = r + 24 else t = 21
+	// check previous tile
+	var tt = tilemap_get_at_pixel(cityMap, room_width-16, y+24)
+	if tt < 24 t = tt + 1
+	tilemap_set_at_pixel(cityMap, t, room_width-8, y+24)
 	
 }
