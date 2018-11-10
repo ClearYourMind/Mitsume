@@ -6,7 +6,7 @@ if not paused {
 } else
 	dTime = 0.001
 	
-counter = (counter+1) mod 1000
+counter = (counter+1) mod 100000
 
 // move view to follow hero
 view_x = camera_get_view_x(view_camera[0])

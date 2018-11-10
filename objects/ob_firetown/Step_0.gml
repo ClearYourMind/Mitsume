@@ -2,7 +2,9 @@
 var xx, _x;
 var r, t;
 
-x = (x+1) mod 100000
+moveSpeed = cos(counter*0.01)
+
+x = (x+moveSpeed) mod 100000
 layer_x(fireLayer, -(x*speedFactor) mod 32)
 
 xx = (x*speedFactor) mod 8

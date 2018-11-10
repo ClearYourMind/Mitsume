@@ -154,7 +154,7 @@
             "Key": "09e1e43a-7e23-4646-b5d3-e8c93c4745da",
             "Value": {
                 "id": "e9b9126a-9483-4ef7-9ca3-07d09bcd5577",
-                "resourcePath": "objects\\ob_game_master\\ob_game_master.yy",
+                "resourcePath": "objects\\ob_game_master_platform\\ob_game_master_platform.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -780,6 +780,14 @@
                 "id": "7f365242-a4d7-4063-a93d-0eed87927d67",
                 "resourcePath": "views\\4c0d4315-0046-4c2f-9419-09bd49abc2f9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4de3ea8c-4dc4-48db-a4cc-a7ff76c7d4a8",
+            "Value": {
+                "id": "98717c13-ab51-4b97-bad9-c4a9a25fa40a",
+                "resourcePath": "objects\\ob_game_master_scroll\\ob_game_master_scroll.yy",
+                "resourceType": "GMObject"
             }
         },
         {

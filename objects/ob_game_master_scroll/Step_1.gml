@@ -1,0 +1,3 @@
+/// @desc Reset values
+
+debugstr = ""

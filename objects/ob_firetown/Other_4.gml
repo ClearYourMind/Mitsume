@@ -28,12 +28,14 @@ _y = y+24
 r = irandom(7)+21
 tilemap_set_at_pixel(cityMap, r, 0, _y)
 
+var tt;
 for (var i=1; i<room_width div 8; i++) {
 	_x = i*8
-	r = irandom(7)+21
-	if r < 24 r = 21
-	t = tilemap_get_at_pixel(cityMap, _x-8, _y)  // previous tile
-	if t < 24 r = t + 1
-	tilemap_set_at_pixel(cityMap, r, _x, _y)
+	r = irandom(5)
+	if r<=4 t = r + 24 else t = 21
+	// check previous tile
+	tt = tilemap_get_at_pixel(cityMap, _x-8, _y)
+	if tt < 24 t = tt + 1
+	tilemap_set_at_pixel(cityMap, t, _x, _y)
 }
 
