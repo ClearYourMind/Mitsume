@@ -218,7 +218,7 @@
             "Key": "0d522db7-0e3b-4199-bf7d-6c6df05115b7",
             "Value": {
                 "id": "eed89799-2527-48ae-868a-4c2f5179afa6",
-                "resourcePath": "sprites\\sp_tiles_fire\\sp_tiles_fire.yy",
+                "resourcePath": "sprites\\sp_tiles_fire_back\\sp_tiles_fire_back.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1684,14 +1684,6 @@
                 "id": "ec3f2846-e335-4305-80b5-0222d1d04384",
                 "resourcePath": "views\\a1941677-5168-42a3-a668-c207b8fee852.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "a1e6f2e0-89d6-4f25-884c-7346a99801ad",
-            "Value": {
-                "id": "e9f4937c-9500-4632-944d-3a2ca6a99369",
-                "resourcePath": "sprites\\sp_houses2\\sp_houses2.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

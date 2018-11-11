@@ -21,16 +21,16 @@ for (var i=0; i<tilemap_get_width(fireCityMap); i++) {
 }
 
 // city
-r = irandom(7)+21
+r = irandom(7)+13
 tilemap_set(cityMap, r, 0, 13)
 
 var tt;
 for (var i=1; i<tilemap_get_width(cityMap); i++) {
 	r = irandom(5)
-	if r<=4 t = r + 24 else t = 21
+	if r<=4 t = r + 16 else t = 13
 	// check previous tile
 	tt = tilemap_get(cityMap, i-1, 13)
-	if tt < 24 t = tt + 1
+	if tt < 16 t = tt + 1
 	tilemap_set(cityMap, t, i, 13)
 }
 
