@@ -1,9 +1,7 @@
 /// @desc
 fireLayer = noone
-fireCityLayer = noone
-cityLayer = noone
 
-fireCityMap = noone
+cityLayer = noone
 cityMap = noone
 
 speedFactor = 0.2
