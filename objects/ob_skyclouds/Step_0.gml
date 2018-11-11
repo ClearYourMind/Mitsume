@@ -1,6 +1,6 @@
 /// @desc
 
-moveSpeed = cos(counter*0.01)
+moveSpeed = sin(counter*0.005)*5
 
 x = (x+moveSpeed) mod 100000
 

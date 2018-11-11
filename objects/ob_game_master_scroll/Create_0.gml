@@ -14,17 +14,7 @@ globalvar view_h
 globalvar view_xborder
 globalvar view_yborder
 
-globalvar deactivateTime
-
-enum depths {
-	backs     = 10,
-	walls     = 1,
-	general   = 0,
-	shots     = -5,
-	explosions = -10,
-	gui       = -15,
-	fadeplane = -20
-}
+globalvar deactivateTime;
 
 dTime = 0
 minFPS = 30
@@ -42,6 +32,8 @@ view_xborder = camera_get_view_border_x(view_camera[0])
 view_yborder = camera_get_view_border_y(view_camera[0])
 view_w = camera_get_view_width (view_camera[0])
 view_h = camera_get_view_height(view_camera[0])
+view_x = camera_get_view_x(view_camera[0])
+view_y = camera_get_view_y(view_camera[0])
 
 deactivateTime = 20
 
