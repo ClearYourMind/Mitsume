@@ -5,16 +5,6 @@
     "name": "ob_skyclouds",
     "eventList": [
         {
-            "id": "eebe1313-84c9-4ff8-8262-ad939f276abe",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "527824a3-2ffb-4151-9c10-55ab5b2a994a"
-        },
-        {
             "id": "88d37c07-75ff-455d-8df7-6c903d3cd874",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -37,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "0cac88dd-5c58-4b8f-bbde-0ffe987eea87",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

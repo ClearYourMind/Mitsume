@@ -1,10 +1,9 @@
-/// @desc
+/// @desc generate background
 fireLayer   = layer_get_id("Tiles_Fire")
 
 cityLayer = layer_get_id("Tiles_City")
 cityMap = layer_tilemap_get_id(cityLayer)
 
-// generate background
 var t = 0, r = 0
 
 // fire city

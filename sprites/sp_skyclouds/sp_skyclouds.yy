@@ -4,7 +4,7 @@
     "mvc": "1.12",
     "name": "sp_skyclouds",
     "For3D": false,
-    "HTile": false,
+    "HTile": true,
     "VTile": false,
     "bbox_bottom": 31,
     "bbox_left": 0,

@@ -1,11 +1,9 @@
 /// @desc
+event_inherited()
 
 var _x, r, t, tt;
 var tileShift = false
 
-moveSpeed = sin(counter*0.005)*5
-
-x = (x+moveSpeed) mod 100000
 layer_x(fireLayer, (x*speedFactor) mod 32 - 24)
 
 _cityXOffset = cityXOffset
@@ -36,5 +34,4 @@ if tileShift {
 		tilemap_set(cityMap, tt[0], 0, 12)
 		tilemap_set(cityMap, tt[1], 0, 13)
 	}
-	
 }
