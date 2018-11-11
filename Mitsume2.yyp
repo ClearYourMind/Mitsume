@@ -218,7 +218,7 @@
             "Key": "0cac88dd-5c58-4b8f-bbde-0ffe987eea87",
             "Value": {
                 "id": "dfe502dc-8835-45d4-b1c1-4302e828d7ad",
-                "resourcePath": "objects\\ob_scroll_back_parent\\ob_scroll_back_parent.yy",
+                "resourcePath": "objects\\ob_scroll_layer\\ob_scroll_layer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1036,14 +1036,6 @@
                 "id": "08871b71-562b-4d61-b994-bf446d503d24",
                 "resourcePath": "sprites\\sp_explode9\\sp_explode9.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "684cc732-fd92-4a0c-99cf-ebb7a7dd8a45",
-            "Value": {
-                "id": "3bbfd567-376b-4054-97f8-c1bf4f4e4309",
-                "resourcePath": "objects\\ob_houses\\ob_houses.yy",
-                "resourceType": "GMObject"
             }
         },
         {
