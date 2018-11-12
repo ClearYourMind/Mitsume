@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "01e3170d-de7c-4db1-8f28-d191542b3615",
+            "Value": {
+                "id": "91befa40-5332-444e-8118-adf1bcfae3db",
+                "resourcePath": "objects\\ob_road\\ob_road.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02539e66-1817-4b7d-895f-0a7a828a5475",
             "Value": {
                 "id": "4e986746-ba00-4b64-8c11-a56b1eb03081",
