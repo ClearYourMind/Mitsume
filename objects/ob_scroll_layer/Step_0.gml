@@ -1,6 +1,6 @@
 /// @desc
 
-moveSpeed = 1.5 //cos(counter*0.005)*3
+moveSpeed = cos(counter*0.001)*4
 x = (x+moveSpeed) mod 100000
 
 var _x, _w, r, tt;
