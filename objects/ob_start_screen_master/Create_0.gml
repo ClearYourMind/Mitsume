@@ -4,14 +4,14 @@ globalvar counter
 
 globalvar gpButtons
 
-//application_surface_enable(false)
+application_surface_enable(false)
 draw_set_font(fn_default)
 draw_set_color(c_white)
 
 maxChannel = 2
 
 audio_channel_num(maxChannel)
-audio_set_master_gain(0, 0.75)
+audio_set_master_gain(0, 0.5)
 
 counter = 0
 
