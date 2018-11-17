@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "149972c4-64bf-4a2e-b8dc-eb71142db0a1",
+            "Value": {
+                "id": "5c3863c8-3842-49eb-a46a-bf24a3679af0",
+                "resourcePath": "views\\149972c4-64bf-4a2e-b8dc-eb71142db0a1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "14e25ab9-cafc-4c3d-a59d-10601f6d1275",
             "Value": {
                 "id": "b12d024d-6d42-43d1-a2f8-b0079989606c",
@@ -551,6 +559,14 @@
             }
         },
         {
+            "Key": "32b74919-808b-40f2-93eb-cba42c6f5d96",
+            "Value": {
+                "id": "24b4dff3-1d2b-4226-b820-64e9059d1be0",
+                "resourcePath": "views\\32b74919-808b-40f2-93eb-cba42c6f5d96.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "32ce0875-81ba-4f04-b747-7ec5fa2f2fa8",
             "Value": {
                 "id": "1a40814b-457a-47b8-ac42-be0d8f666c99",
@@ -619,6 +635,14 @@
             "Value": {
                 "id": "bcd657c3-bb04-4d8b-920f-b93e517f5e8c",
                 "resourcePath": "views\\39ba6cc7-bf7e-464f-8e62-fbcc0be5ac5a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3b8cba60-c48b-47df-87b1-13b5fbff5a8f",
+            "Value": {
+                "id": "69f4b475-5db2-4c25-b1f1-86383d9ea591",
+                "resourcePath": "views\\3b8cba60-c48b-47df-87b1-13b5fbff5a8f.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -708,6 +732,14 @@
                 "id": "7b2486fd-69b1-4c94-90a0-0b378abe08ae",
                 "resourcePath": "scripts\\sc_hero_level_up\\sc_hero_level_up.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "419b7aef-bd90-4e43-9825-552355d04ca9",
+            "Value": {
+                "id": "f551e189-aa2b-4f7e-9fe9-0b0558d6e292",
+                "resourcePath": "views\\419b7aef-bd90-4e43-9825-552355d04ca9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
