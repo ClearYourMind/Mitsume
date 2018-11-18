@@ -1,7 +1,6 @@
 /// @desc
 
-moveSpeed = cos(counter*0.001)*4
-x = (x+moveSpeed) mod 100000
+x = (x + scrollSpeed * dTime) mod 100000
 
 var _x, _w, r, tt;
 
@@ -9,7 +8,7 @@ var _tShift = false
 if tileShift {
 	_xOffset = xOffset
 	xOffset = (x*speedFactor) mod elementW
-	_tShift = sign(moveSpeed)*(xOffset-_xOffset) < 0
+	_tShift = sign(scrollSpeed)*(xOffset-_xOffset) < 0
 	layer_x(layerId, xOffset)
 } else {
 	layer_x(layerId, (x*speedFactor) mod elementW - elementW)
@@ -18,7 +17,7 @@ if tileShift {
 var i,j;
 if _tShift {
 	//_w = view_w div elementW + 2
-	if moveSpeed<0 {
+	if scrollSpeed<0 {
 		for (j=0; j<tilesYCount; j++)
 			tt[j] = tilemap_get(layerMap, 0, tilesY+j)
 		for (i=0; i<tilesXCount-1; i++)
