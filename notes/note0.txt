@@ -95,6 +95,12 @@ instance_copy(false) если в Create объекта создается ds_...
 	(!) Нельзя задавать depth в коде! Объект перестает принадлежать layer'у
 	[SOLVED!]
 
+18.11.18
+	A good bug. If you get killed while paused, after room restart, game will be still paused.
+	Bug found when I used slowmo effect while paused
+	[		]
+
+
 
 
 Заметки об IDE:

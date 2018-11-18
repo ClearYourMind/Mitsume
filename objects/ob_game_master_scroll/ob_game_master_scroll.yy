@@ -5,16 +5,6 @@
     "name": "ob_game_master_scroll",
     "eventList": [
         {
-            "id": "2f189328-d4b1-4986-b826-0ae16205e596",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "4de3ea8c-4dc4-48db-a4cc-a7ff76c7d4a8"
-        },
-        {
             "id": "9bf63139-a328-4679-a844-ef8ce5f41dfb",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -12,7 +12,7 @@
         "fba8bf50-287b-4dbf-9482-d40cec46e1b7",
         "b537d502-5663-4843-85f0-24670ce82dc7",
         "3499170a-f1da-4c09-aa6f-e2b94dc3cb8e",
-        "2a850d5d-9e0e-472b-89e1-3fb4a465479d"
+        "6abce7fd-3715-4258-b8c2-a835394852a2"
     ],
     "filterType": "GMObject",
     "folderName": "hero",
