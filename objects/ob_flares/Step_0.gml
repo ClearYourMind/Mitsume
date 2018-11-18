@@ -52,7 +52,8 @@ if sc_timeout_over(sparkleSpawnTime) {
 
 for (var i=0; i<ds_list_size(sparkle); i++) {
 	_star = sparkle[| i]
-		_star[sh.y] -= sparkleSpeed * dTime
+	_star[sh.x] += sparkleSpeedX * dTime
+	_star[sh.y] += sparkleSpeedY * dTime
 		
 	if sc_timeout_over(_star[sh.lifetime]) {
 		if _star[sh.phase] = 0 {

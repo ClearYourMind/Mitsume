@@ -3,7 +3,8 @@
 //image_speed = 0.15
 
 sparkle = ds_list_create()
-sparkleSpeed = 10 // only Y and upwards
+sparkleSpeedX = 0 
+sparkleSpeedY = -10 
 
 flareLifetime = -1
 sparkleLifetime = 0.25
