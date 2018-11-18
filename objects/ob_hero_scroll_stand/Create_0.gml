@@ -3,11 +3,12 @@ event_inherited()
 
 image_xscale = -1
 yy = y
+forward = 1
 
 flare = instance_create_depth(x, y, depths.explosions, ob_flares)
 flare.object = id
 flare.xOffset = -12
-flare.yOffset = 18
+flare.yOffset = 16
 flare.w1 = 8
 flare.w2 = 8
 flare.h1 = 4

@@ -69,7 +69,7 @@ staminaRegenSpeed = staminaMax * (1/ 0.5/* sec*/)
 staminaDepleted = false
 
 //arrow = noone
-arrowObject = ob_kill_arrow
+arrowObject = ob_arrow
 guiObject = ob_hero_gui
 
 hasMagnet = false;
