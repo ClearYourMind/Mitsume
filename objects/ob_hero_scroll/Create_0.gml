@@ -2,7 +2,9 @@ event_inherited()
 
 /// @desc Init values
 
-grav = 800  // weight
+oGrav = 800  // weight
+grav = 0
+
 oStopFactor = 5 * power(10, -7)
 
 // 0 -> accel  for 1 sec

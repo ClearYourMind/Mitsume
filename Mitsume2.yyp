@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "39af98b4-fd44-4473-894d-7ca63fecf8ec",
+            "Value": {
+                "id": "8281b2a4-be77-4260-ba05-e801e91ef673",
+                "resourcePath": "sprites\\sp_hero_condor_fire\\sp_hero_condor_fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "39ba6cc7-bf7e-464f-8e62-fbcc0be5ac5a",
             "Value": {
                 "id": "bcd657c3-bb04-4d8b-920f-b93e517f5e8c",
@@ -2596,14 +2604,6 @@
                 "id": "a81db53b-c65c-4648-bd88-e64085499583",
                 "resourcePath": "objects\\ob_lift\\ob_lift.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ec29438e-ad7e-4ffa-bbd2-73be7e414b08",
-            "Value": {
-                "id": "0969fb89-c03f-4440-85a8-8a5d26d752e5",
-                "resourcePath": "scripts\\sc_hero_scroll_control\\sc_hero_scroll_control.yy",
-                "resourceType": "GMScript"
             }
         },
         {
