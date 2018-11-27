@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "0b40e398-b216-4c3b-a1c0-cb90da216b12",
+            "Value": {
+                "id": "01155929-b437-48e0-a7c9-eabce6ac8fee",
+                "resourcePath": "objects\\ob_hero_dead_lay\\ob_hero_dead_lay.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0b56cf48-ee8d-4e03-a995-051549b9cb67",
             "Value": {
                 "id": "d0e80555-6a35-492b-ae23-104d834eccaf",
@@ -2063,6 +2071,14 @@
             }
         },
         {
+            "Key": "b64d4965-f10d-4f58-8b52-5b69a16d3886",
+            "Value": {
+                "id": "38bb1e2d-0436-41fa-a5c2-e664aaf10656",
+                "resourcePath": "scripts\\sc_hero_die_lay\\sc_hero_die_lay.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b6525b7c-582c-4942-982d-21046fc46158",
             "Value": {
                 "id": "d4a3b5ef-0919-4a03-8559-c0952faa385d",
@@ -2591,6 +2607,14 @@
             }
         },
         {
+            "Key": "eb21e584-c0d7-473a-99d8-d383ae55b6dc",
+            "Value": {
+                "id": "33f24c2c-25a4-40d3-96a4-3c6e532421a9",
+                "resourcePath": "sprites\\sp_hero_dead_lay\\sp_hero_dead_lay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eb76405b-75bb-48f8-be0f-315e9c8e6d30",
             "Value": {
                 "id": "8dbaa55d-ff39-4ae0-968e-8eb16fa9231d",
@@ -2859,6 +2883,7 @@
         "989de5cc-2b0f-4415-bef7-5fff78c852f0",
         "1a275287-7250-40c4-8b44-c218c55ce201",
         "8f5155a3-86a9-4836-9ed9-b2d106f66447",
+        "b64d4965-f10d-4f58-8b52-5b69a16d3886",
         "b24e550b-12cb-4d3a-a568-9b19a94353e2",
         "212363f1-7588-467f-bf20-99720326b9ee",
         "558c89bc-4680-4111-a34f-ac5d4981c3d5",

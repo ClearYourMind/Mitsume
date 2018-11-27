@@ -15,7 +15,7 @@ if  (leftcollision and rightcollision) {
 }
 
 if health<=0 {
-	sc_hero_die()
+	sc_hero_die_lay()
 	exit
 }
 

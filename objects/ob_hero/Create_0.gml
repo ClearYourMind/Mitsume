@@ -42,8 +42,11 @@ pauseAnim = after.None
 
 feetcollision = true
 
-maxhealth = 6
+maxhealth = 1
 health = maxhealth
+
+lives = 10
+
 healthUsed = 0
 // for little jump after hurt before stand up
 leapDone = false
