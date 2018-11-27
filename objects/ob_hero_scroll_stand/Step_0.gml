@@ -57,7 +57,7 @@ if not sc_timeout_over(pauseTime) {
 if sprite_index != newAnim {
 	sprite_index = newAnim
 	mask_index = sp_hero_condor_stand
-	image_index = 0
+//	image_index = 0
 }
 
 #endregion

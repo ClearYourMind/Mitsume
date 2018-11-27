@@ -4,4 +4,4 @@
 event_inherited();
 
 globalvar scrollSpeed;
-scrollSpeed = 150
+scrollSpeed = -150
