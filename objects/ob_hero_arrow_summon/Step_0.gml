@@ -19,8 +19,10 @@ if keys[k.altFire] {
 		instance_create_depth(0,0, depths.shots, arrowObject)
 	if ob_arrow.phase = ar.Stay
 		ob_arrow.phase = ar.Recall
-	if ob_arrow.phase = ar.Hold 
-		image_index = 3	
+	if ob_arrow.phase = ar.Hold {
+		sprite_index = sp_hero_arrow_hold
+		image_index = 0
+	}
 }
 
 // releasing arrow

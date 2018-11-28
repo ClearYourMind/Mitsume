@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "170bcac3-7838-497e-b6c5-18267f591e94",
+            "Value": {
+                "id": "78e8adf5-eb88-4134-aed2-63282a6a526d",
+                "resourcePath": "sprites\\sp_hero_arrow_hold\\sp_hero_arrow_hold.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "175ce129-d06d-4946-a66e-8d0ed9c79aee",
             "Value": {
                 "id": "4c851ccd-3406-4688-8ef6-1acaf569e8c7",

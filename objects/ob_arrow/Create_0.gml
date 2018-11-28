@@ -45,8 +45,8 @@ hit = 1
 stepped = false
 sprang = false
 
-oAccel = 400
-maxspeedX = 250
+oAccel = 225
+maxspeedX = 185
 maxspeedY = 180
 oY = y
 
