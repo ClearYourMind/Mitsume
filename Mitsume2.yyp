@@ -511,14 +511,6 @@
             }
         },
         {
-            "Key": "2a4ddc43-dbf1-4f6d-b053-989337bc6708",
-            "Value": {
-                "id": "4c6d6db4-b986-4e44-936c-a4724d8ec6c9",
-                "resourcePath": "sprites\\sp_hero_arrow\\sp_hero_arrow.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2b2d5a1b-8e31-41f4-ada2-0fbab8b5331a",
             "Value": {
                 "id": "6778e267-bcfc-4ee0-a446-60631d62dcd4",

@@ -1,3 +1,4 @@
 /// @desc Hurt
 
-sc_hero_hurt()
+if not recover 
+	sc_hero_hurt()
