@@ -17,6 +17,7 @@ if not feetcollision {
 } else
 	stopFactor = oStopFactor
 
+image_xscale = forward
 
 feetcollision = false
 headcollision = false

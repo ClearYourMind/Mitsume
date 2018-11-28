@@ -5,7 +5,6 @@ sc_hero_control()
 
 event_inherited()
 
-
 /// Check status
 // squeeze
 //if (feetcollision and headcollision) or

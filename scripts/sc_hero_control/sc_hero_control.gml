@@ -3,7 +3,7 @@
 var newAnim = sp_hero_stand
 var newForward = forward
 
-var canMove = not (keys[k.Fire] or keys[k.altFire])
+var canMove = not keys[k.Fire]
 			  and not sc_timeout_is_started(pauseTime)
 var canJump = feetcollision and canMove
 var canShoot = instance_exists(weapon)
@@ -87,17 +87,10 @@ if canShoot {
 		sc_weapon_firing(false)
 	
 	if keys[k.altFire] {
-		if not instance_exists(ob_arrow)
-			instance_create_depth(0,0, depths.shots, arrowObject)
-		newAnim = sp_hero_arrow
-		image_index = 0.8
-		if ob_arrow.phase = ar.Hold {
-			pauseTime = sc_timeout_new(afterLaunchTime)
-			sc_timeout_start(pauseTime)
-			pauseAnim = after.Launch
-		}
-		if ob_arrow.phase = ar.Stay
-			ob_arrow.phase = ar.Recall
+		accelX = 0
+		accelY = 0
+		instance_change(ob_hero_arrow_summon, false)
+		exit
 	}
 } else
 	sc_weapon_firing(false)
@@ -111,26 +104,8 @@ if not sc_timeout_over(pauseTime) {
 		else
 			newAnim = sp_hero_jumpfire
 	}
-	if not keys[k.altFire]
-	if pauseAnim = after.Launch {
-		newAnim = sp_hero_arrow
-		//image_index = 1
-	}
 } else {
 	pauseAnim = after.None
-}
-
-
-// releasing arrow
-if not (canShoot and keys[k.altFire]) {
-	if instance_exists(ob_arrow) {
-	    if (ob_arrow.phase = ar.Appear) or (ob_arrow.phase = ar.Recall)
-			ob_arrow.phase = ar.Disappear
-	    if ob_arrow.phase = ar.Hold {
-	        ob_arrow.phase = ar.LaunchBegin
-	        sc_play_sound(sn_arrow2, false)
-	    }
-	}
 }
 
 // Stopping on the ground
@@ -159,5 +134,4 @@ if sprite_index != newAnim {
 	image_index = 0
 }
 forward = newForward
-
 image_xscale = forward
