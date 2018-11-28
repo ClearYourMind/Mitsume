@@ -30,7 +30,7 @@ dTime = 0
 minFPS = 30
 
 hero = noone
-lives  = 2
+lives  = 10
 score = 00000
 
 paused = false

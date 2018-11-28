@@ -42,20 +42,16 @@ pauseAnim = after.None
 
 feetcollision = true
 
-maxhealth = 1
+maxhealth = 6
 health = maxhealth
 
-lives = 10
-
 healthUsed = 0
-// for little jump after hurt before stand up
-leapDone = false
 
 image_speed = 1
 
 // weapons config
 weaponList[0, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_1)
-weaponList[0, 1] = true 
+weaponList[0, 1] = true
 weaponList[1, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_2)
 weaponList[1, 1] = false
 weaponList[2, 0] = instance_create_depth(0,0, depths.shots, ob_weapon_3)
