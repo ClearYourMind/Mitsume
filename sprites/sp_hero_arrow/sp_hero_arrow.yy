@@ -38,23 +38,89 @@
             ]
         },
         {
-            "id": "785d11ee-6388-4a7b-8218-4c6801ed6656",
+            "id": "6e71c540-0d0d-4686-a6a7-269d741f10a8",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "2a4ddc43-dbf1-4f6d-b053-989337bc6708",
             "compositeImage": {
-                "id": "aabb2142-22e8-42f3-b764-d62459bd306b",
+                "id": "cd3ce120-e39b-48b4-adbd-31dba1470dda",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "785d11ee-6388-4a7b-8218-4c6801ed6656",
+                "FrameId": "6e71c540-0d0d-4686-a6a7-269d741f10a8",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "7e62d621-52e9-400a-a289-cc62cb163cda",
+                    "id": "7d90b657-e864-44fa-af6d-51a65683d61c",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "785d11ee-6388-4a7b-8218-4c6801ed6656",
+                    "FrameId": "6e71c540-0d0d-4686-a6a7-269d741f10a8",
+                    "LayerId": "9aded221-df1e-4d0c-9835-8d89578766c7"
+                }
+            ]
+        },
+        {
+            "id": "83d9d143-65a3-4f9d-9caf-51dab6cd0320",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "2a4ddc43-dbf1-4f6d-b053-989337bc6708",
+            "compositeImage": {
+                "id": "033dd6a2-ce18-4c66-9957-2dee49835e1e",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "83d9d143-65a3-4f9d-9caf-51dab6cd0320",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "291ba53c-33fd-4d2b-bde7-17b794d17335",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "83d9d143-65a3-4f9d-9caf-51dab6cd0320",
+                    "LayerId": "9aded221-df1e-4d0c-9835-8d89578766c7"
+                }
+            ]
+        },
+        {
+            "id": "9a31b57b-c4d0-4aff-ac2c-e7b5b2450c85",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "2a4ddc43-dbf1-4f6d-b053-989337bc6708",
+            "compositeImage": {
+                "id": "e4d54cc2-e053-4c05-9318-9c271f804e0d",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "9a31b57b-c4d0-4aff-ac2c-e7b5b2450c85",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "45b37ae9-6d42-4f6f-9963-de1e1bd40f6a",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "9a31b57b-c4d0-4aff-ac2c-e7b5b2450c85",
+                    "LayerId": "9aded221-df1e-4d0c-9835-8d89578766c7"
+                }
+            ]
+        },
+        {
+            "id": "69645c95-9aec-4e03-9c2f-d5da937e117a",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "2a4ddc43-dbf1-4f6d-b053-989337bc6708",
+            "compositeImage": {
+                "id": "59694ad3-ac5e-41a6-a5f3-4319e463ea3e",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "69645c95-9aec-4e03-9c2f-d5da937e117a",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "ec24165e-0ac5-4ed3-865d-e06309acee2e",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "69645c95-9aec-4e03-9c2f-d5da937e117a",
                     "LayerId": "9aded221-df1e-4d0c-9835-8d89578766c7"
                 }
             ]
@@ -78,8 +144,8 @@
     ],
     "origin": 4,
     "originLocked": false,
-    "playbackSpeed": 1,
-    "playbackSpeedType": 1,
+    "playbackSpeed": 8,
+    "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
     "swatchColours": null,

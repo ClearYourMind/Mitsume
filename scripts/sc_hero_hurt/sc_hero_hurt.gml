@@ -11,11 +11,10 @@ if not (recover or hurt) {
 		speedX = -maxspeedX * forward * 0.75
 		speedY = -maxspeedX * 2
 		y -= vspeed + 2
-		sprite_index = sp_hero_hurt
-		image_index = 0
 		health--
-		sc_play_sound(sn_hurt, false)
 		sc_gui_update(hero.guiObject)
+		instance_change(ob_hero_hurt, false)
+		sc_play_sound(sn_hurt, false)
 	} else {
 		sc_hero_die_lay()
 	}

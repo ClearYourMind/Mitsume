@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "18cfb981-8cf9-4ccd-b103-5ce9e1a48661",
+            "Value": {
+                "id": "4c65fd6f-17f1-4b3b-b253-ddd94f4d5d5f",
+                "resourcePath": "objects\\ob_hero_hurt\\ob_hero_hurt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19dc900d-573c-4269-a5b5-4bf2d990ffbf",
             "Value": {
                 "id": "0ae53494-6692-45dc-be9f-a3366925e4f3",
@@ -387,6 +395,14 @@
             "Value": {
                 "id": "49dbd2a2-28bf-46b1-a159-bdecf76b5a76",
                 "resourcePath": "sprites\\sp_coin_3\\sp_coin_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1eecdf16-37eb-4e3a-9410-8f70b354162c",
+            "Value": {
+                "id": "60f099f6-9eeb-4db0-bdbd-088b618143f1",
+                "resourcePath": "sprites\\sp_hero_arrow_call\\sp_hero_arrow_call.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1852,6 +1868,14 @@
                 "id": "d27cd9c6-e142-4cea-9fb9-4d2fdaf4c106",
                 "resourcePath": "rooms\\rm_doghell\\rm_doghell.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a5570951-1490-4e92-8723-cc253937a26a",
+            "Value": {
+                "id": "3b9efb1a-079d-4667-b167-71d7d4f8b49c",
+                "resourcePath": "sprites\\sp_hero_arrow_throw\\sp_hero_arrow_throw.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

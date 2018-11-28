@@ -14,16 +14,6 @@ if  (leftcollision and rightcollision) {
 	exit
 }
 
-if hurt {
-	sprite_index = sp_hero_hurt
-		
-	if animEnded {
-		hurt = false
-		recover = true
-		sc_timeout_start(recoverTime)
-	}
-}
-
 if stamina < staminaMax {
 	if staminaDepleted or not (pauseAnim = after.Shot)
 		stamina += staminaRegenSpeed * dTime

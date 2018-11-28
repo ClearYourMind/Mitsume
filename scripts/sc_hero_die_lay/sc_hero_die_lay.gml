@@ -16,7 +16,7 @@ with instance_create_depth(x, y	- other.vspeed - 2, depths.general, ob_hero_dead
 	oStopFactor = other.oStopFactor
 }
 
-//health = 0
+health = 0
 
 sc_gui_update(hero.guiObject)
 
