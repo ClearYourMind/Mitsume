@@ -33,6 +33,7 @@ if phase = ar.Hold {
 		flare.spawn = false
     forward = hero.forward  
 	image_xscale = 1
+	image_yscale = hero.forward
     x = hero.x - 6*forward
     y = hero.y 
     image_angle = 90 - 45*forward
@@ -51,6 +52,7 @@ if phase = ar.LaunchBegin {
 	speedX = maxspeedX * forward
 	accelX = -oAccel * forward
 	image_angle = 0
+	image_yscale = 1
 	phase = ar.Launch	
 }
 

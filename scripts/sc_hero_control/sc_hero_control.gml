@@ -1,6 +1,6 @@
 /// @desc ob_hero control implementation
 
-var newAnim = sp_hero_stand
+var newAnim = idleAnim
 var newForward = forward
 
 var canMove = not keys[k.Fire]
@@ -130,6 +130,10 @@ if sprite_index != newAnim {
 	sprite_index = newAnim
 	mask_index = sp_hero_stand
 	image_index = 0
+	sc_timeout_start(idleTime)
 }
+if sc_timeout_over(idleTime)
+	idle = true
+
 forward = newForward
 image_xscale = forward

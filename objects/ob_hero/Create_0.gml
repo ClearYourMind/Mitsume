@@ -71,4 +71,8 @@ staminaDepleted = false
 arrowObject = ob_arrow
 guiObject = ob_hero_gui
 
-hasMagnet = false;
+hasMagnet = false
+
+idleAnim = sp_hero_stand
+idleTime = sc_timeout_new(5, true)
+idle = false
