@@ -15,3 +15,5 @@ if feetcollision {
 	if image_index>2.8
 		image_index = 2.8
 }
+
+feetcollision = false

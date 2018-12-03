@@ -19,9 +19,4 @@ if not feetcollision {
 
 image_xscale = forward
 
-feetcollision = false
-headcollision = false
-leftcollision = false
-rightcollision = false
-
-animEnded = false
+event_perform_object(ob_heroparent, ev_step, ev_step_normal)

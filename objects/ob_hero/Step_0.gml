@@ -3,7 +3,7 @@
 mask_index = sp_hero_stand
 sc_hero_control()
 
-event_inherited()
+event_perform_object(ob_moving, ev_step, ev_step_normal)
 
 /// Check status
 // squeeze
@@ -24,9 +24,4 @@ if stamina < staminaMax {
 //debugstr +="\n"
 //debugstr += " STAMINA = "+string(stamina)
 
-feetcollision = false
-headcollision = false
-leftcollision = false
-rightcollision = false
-
-animEnded = false
+event_perform_object(ob_heroparent, ev_step, ev_step_normal)

@@ -1,6 +1,6 @@
 /// @desc
 
-event_perform_object(ob_heroparent, ev_step, ev_step_normal)
+event_perform_object(ob_moving, ev_step, ev_step_normal)
 
 var newForward = forward
 
@@ -50,9 +50,4 @@ if not feetcollision {
 forward = newForward
 image_xscale = forward
 
-feetcollision = false
-headcollision = false
-leftcollision = false
-rightcollision = false
-
-animEnded = false
+event_perform_object(ob_heroparent, ev_step, ev_step_normal)
