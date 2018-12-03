@@ -5,16 +5,7 @@ sc_hero_control()
 
 event_perform_object(ob_moving, ev_step, ev_step_normal)
 
-/// Check status
-// squeeze
-//if (feetcollision and headcollision) or
-if  (leftcollision and rightcollision) {
-	sc_hero_die()
-	exit
-}
-
 if stamina < staminaMax {
-	if staminaDepleted or not (pauseAnim = after.Shot)
 		stamina += staminaRegenSpeed * dTime
 } else {
 	stamina = staminaMax

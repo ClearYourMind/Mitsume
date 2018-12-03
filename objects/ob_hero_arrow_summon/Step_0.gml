@@ -41,7 +41,8 @@ if not keys[k.altFire] {
 	instance_change(ob_hero, false)
 }
 
-
+accelX = 0
+accelY = 0
 if not feetcollision {
 	stopFactor = 1
 } else

@@ -8,6 +8,7 @@
         "0e0bb8e4-89d3-476c-88f5-9217e12ec445",
         "b75f4b39-8a50-41d2-b274-677fbcadfd0e",
         "40e88fc5-ca17-46a8-8dab-f35662fe13f3",
+        "b23aa22e-f645-45f3-8bb6-6393484e2f29",
         "18cfb981-8cf9-4ccd-b103-5ce9e1a48661",
         "fba8bf50-287b-4dbf-9482-d40cec46e1b7",
         "0b40e398-b216-4c3b-a1c0-cb90da216b12",
@@ -16,7 +17,8 @@
         "b537d502-5663-4843-85f0-24670ce82dc7",
         "3499170a-f1da-4c09-aa6f-e2b94dc3cb8e",
         "cb986378-3654-4613-9e88-ec9646b9cb28",
-        "6abce7fd-3715-4258-b8c2-a835394852a2"
+        "6abce7fd-3715-4258-b8c2-a835394852a2",
+        "5ac1ac7d-3eb1-4116-ba64-496a9f6c8f49"
     ],
     "filterType": "GMObject",
     "folderName": "hero",

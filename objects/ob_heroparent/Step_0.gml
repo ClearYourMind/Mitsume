@@ -1,5 +1,11 @@
 //event_inherited()
-/// @desc Recover timeout
+/// @desc Check status
+
+// squeeze
+if  (leftcollision and rightcollision) {
+	sc_hero_die()
+	exit
+}
 
 if recover
 if sc_timeout_over(recoverTime)
