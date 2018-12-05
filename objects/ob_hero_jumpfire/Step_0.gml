@@ -25,8 +25,7 @@ if feetcollision
 	instance_change(ob_hero_fire, false)
 
 if sc_timeout_over(pauseTime) {
-	sprite_index = sp_hero_jump
-	instance_change(ob_hero, false) // ob_hero_jump
+	instance_change(ob_hero_jump, false)
 }
 
 // recover stamina

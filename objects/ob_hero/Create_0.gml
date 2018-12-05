@@ -27,7 +27,7 @@ maxspeedX = 85
 maxspeedY = 400
 
 jumpSpeed = 185
-jumpTime = sc_timeout_new(0.225) 
+jumpTime = sc_timeout_new(0.17) 
 
 // wantJump added to prevent eating away pressed jump button
 // while pauseAnim timer

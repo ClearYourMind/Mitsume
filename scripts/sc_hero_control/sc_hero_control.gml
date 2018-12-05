@@ -3,11 +3,9 @@
 var newAnim = idleAnim
 var newForward = forward
 
-var canJump = feetcollision
-var canShoot = instance_exists(weapon)
 var arrowJump = false
 if instance_exists(ob_arrow) {
-	arrowJump = ob_arrow.stepped and ob_arrow.sprang and canJump
+	arrowJump = ob_arrow.stepped and ob_arrow.sprang and feetcollision
 }
 
 if keys[k.Left] {
@@ -23,7 +21,7 @@ if keys[k.Right] {
 
 if keysPressed[k.Jump] or wantJump {
 	wantJump = true
-	if canJump { 
+	if feetcollision { 
 		wantJump = false
 		// arrow jump
 		if arrowJump {
@@ -34,8 +32,8 @@ if keysPressed[k.Jump] or wantJump {
 			sc_timeout_start(jumpTime)
 		}
 		y-=2
-	    newAnim = sp_hero_jump
-	    canJump = false
+		instance_change(ob_hero_jump, false)
+		exit
 	}   
 }
 if keys[k.Jump] {
@@ -43,51 +41,34 @@ if keys[k.Jump] {
 	if arrowJump {
 		speedY = -jumpSpeed*1.8
 		y-=2
-	    newAnim = sp_hero_jump
-	    canJump = false
+		instance_change(ob_hero_jump, false)
+		exit
 	}
-	if not sc_timeout_over(jumpTime) {
-	    speedY = -jumpSpeed
-	}
-} else {
-	sc_timeout_stop(jumpTime)
-	wantJump = false
 }  
    
-if abs(speedY)>0 or feetcollision == false {
-    newAnim = sp_hero_jump
+if feetcollision == false {
+	instance_change(ob_hero_jump, false)
+	exit
 }
 
-if canShoot {
-	if keys[k.Fire] and not keys[k.altFire] {
-		if feetcollision
-			instance_change(ob_hero_fire, false)
-		else
-			instance_change(ob_hero_jumpfire, false)
-		exit
-	} //else
-		//sc_weapon_firing(false)
+if instance_exists(weapon) 
+if keys[k.Fire] and not keys[k.altFire] {
+	if feetcollision
+		instance_change(ob_hero_fire, false)
+	else
+		instance_change(ob_hero_jumpfire, false)
+	exit
+}
 	
-	if keys[k.altFire] {
-		instance_change(ob_hero_arrow_summon, false)
-		exit
-	}
-} //else
-	//sc_weapon_firing(false)
-
+if keys[k.altFire] {
+	instance_change(ob_hero_arrow_summon, false)
+	exit
+}
 
 // Stopping on the ground
 if not (keys[k.Left] or keys[k.Right]) and feetcollision {
     accelX = 0
 	stopFactor = oStopFactor
-}
-
-// Stopping on air
-if not (keys[k.Left] or keys[k.Right]) {
-	accelX = 0
-}
-if not feetcollision {
-	stopFactor = 1
 }
 
 if sprite_index != newAnim {

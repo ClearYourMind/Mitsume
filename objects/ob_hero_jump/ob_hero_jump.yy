@@ -1,18 +1,18 @@
 {
-    "id": "5ac1ac7d-3eb1-4116-ba64-496a9f6c8f49",
+    "id": "22e0b199-34d7-4f17-9a58-8484dec501f7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ob_hero_jumpfire",
+    "name": "ob_hero_jump",
     "eventList": [
         {
-            "id": "d16920f4-6583-4beb-be66-c976083204ae",
+            "id": "723de1f8-e327-41d5-a7d6-3c74499daca2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "5ac1ac7d-3eb1-4116-ba64-496a9f6c8f49"
+            "m_owner": "22e0b199-34d7-4f17-9a58-8484dec501f7"
         }
     ],
     "maskSpriteId": "051f390c-3793-494d-975e-1ac0d0269ae8",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "99367288-4b58-4813-99a2-8cff2186bb6b",
+    "spriteId": "a04c01bd-b5ac-4844-9bad-0602ce1548e4",
     "visible": true
 }

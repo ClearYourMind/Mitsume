@@ -3,7 +3,7 @@
         "Value": 4278190080
     },
     "option_gameguid": "2c4572a7-0798-4cd5-bc3a-46c1cdafb627",
-    "option_lastchanged": "03 December 2018 0:16:06",
+    "option_lastchanged": "05 December 2018 14:55:00",
     "option_game_speed": 60
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{
     "targets": 461609314234257646

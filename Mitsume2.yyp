@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "22e0b199-34d7-4f17-9a58-8484dec501f7",
+            "Value": {
+                "id": "c7c4026c-cdf2-408a-b4f5-e3d9f8af2283",
+                "resourcePath": "objects\\ob_hero_jump\\ob_hero_jump.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "23bb75fe-eb7b-4095-a71d-2b25f1c5d7ca",
             "Value": {
                 "id": "9c9acec5-3a9a-461a-ba37-cb45712e8878",

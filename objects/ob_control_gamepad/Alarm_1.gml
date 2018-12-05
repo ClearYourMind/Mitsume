@@ -1,6 +1,6 @@
 /// @desc Re-check gamepads
 
-gbNum = -1
+gpNum = -1
 
 if gamepad_is_supported() {
 	var gpCount = gamepad_get_device_count()

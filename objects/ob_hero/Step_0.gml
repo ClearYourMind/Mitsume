@@ -6,7 +6,7 @@ sc_hero_control()
 event_perform_object(ob_moving, ev_step, ev_step_normal)
 
 if stamina < staminaMax {
-		stamina += staminaRegenSpeed * dTime
+	stamina += staminaRegenSpeed * dTime
 } else {
 	stamina = staminaMax
 	staminaDepleted = false
