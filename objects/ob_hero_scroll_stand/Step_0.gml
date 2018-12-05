@@ -1,5 +1,5 @@
 /// @desc
-event_inherited()
+event_perform_object(ob_moving, ev_step, ev_step_normal)
 
 #region // control
 var canMoveUp =   y +(speedY+accelY)*dTime > 50
