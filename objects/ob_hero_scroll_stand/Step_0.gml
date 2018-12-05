@@ -64,10 +64,12 @@ if sprite_index != newAnim {
 
 
 // process stamina
-if stamina < staminaMax {
-	if staminaDepleted or not (pauseAnim = after.Shot)
-		stamina += staminaRegenSpeed * dTime
+if hero.stamina < hero.staminaMax {
+	if hero.staminaDepleted or not (pauseAnim = after.Shot)
+		hero.stamina += hero.staminaRegenSpeed * dTime
 } else {
-	stamina = staminaMax
-	staminaDepleted = false
+	hero.stamina = hero.staminaMax
+	hero.staminaDepleted = false
 }
+
+event_perform_object(ob_heroparent, ev_step, ev_step_normal)

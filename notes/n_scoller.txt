@@ -9,4 +9,7 @@
 скрипт для всех режимов.
 	[ DONE ]
 
-
+05.12.18
+	ob_hero_scroll is an abstract hero object. Contains all info about hero. Other ob_hero_scroll_.. objects
+represents just look and behavior.
+	
