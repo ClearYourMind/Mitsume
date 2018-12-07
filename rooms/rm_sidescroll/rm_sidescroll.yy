@@ -37,7 +37,7 @@
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_CF26F6D","id": "f93f5927-3b9c-4d15-9d05-48f5f9e9a822","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_CF26F6D","objId": "e015f3ca-681d-4ca0-a1be-4a1bbf3272c3","properties": null,"rotation": 0,"scaleX": 36,"scaleY": 0.5,"mvc": "1.0","x": 16,"y": 168},
-{"name": "inst_262C5209","id": "0e86f3b1-e335-4ccb-8290-70736242973c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_262C5209","objId": "ed4d2571-71f3-440c-a4d8-c1cbf818a691","properties": [{"id": "8fcefe3b-222d-4c61-b90a-c96671d68714","modelName": "GMOverriddenProperty","objectId": "ed4d2571-71f3-440c-a4d8-c1cbf818a691","propertyId": "56b679f5-be54-41ff-ab07-72c5a1ef320a","mvc": "1.0","value": "ob_hero_abstract"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 288,"y": 128}
+{"name": "inst_262C5209","id": "0e86f3b1-e335-4ccb-8290-70736242973c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_262C5209","objId": "ed4d2571-71f3-440c-a4d8-c1cbf818a691","properties": [{"id": "8fcefe3b-222d-4c61-b90a-c96671d68714","modelName": "GMOverriddenProperty","objectId": "ed4d2571-71f3-440c-a4d8-c1cbf818a691","propertyId": "56b679f5-be54-41ff-ab07-72c5a1ef320a","mvc": "1.0","value": "ob_hero_abstract"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 288,"y": 112}
             ],
             "layers": [
 
@@ -57,7 +57,7 @@
             "grid_x": 8,
             "grid_y": 8,
             "hierarchyFrozen": true,
-            "hierarchyVisible": false,
+            "hierarchyVisible": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -82,7 +82,7 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
-            "visible": false
+            "visible": true
         },
         {
             "name": "City",
@@ -105,7 +105,7 @@
                     "grid_x": 16,
                     "grid_y": 16,
                     "hierarchyFrozen": true,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -152,7 +152,7 @@
                     },
                     "tilesetId": "06780b58-04db-4b6f-a74c-e44941ca794b",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -164,7 +164,7 @@
                     "grid_x": 16,
                     "grid_y": 16,
                     "hierarchyFrozen": true,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -211,7 +211,7 @@
                     },
                     "tilesetId": "06780b58-04db-4b6f-a74c-e44941ca794b",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -223,7 +223,7 @@
                     "grid_x": 16,
                     "grid_y": 16,
                     "hierarchyFrozen": true,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -270,7 +270,7 @@
                     },
                     "tilesetId": "06780b58-04db-4b6f-a74c-e44941ca794b",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -282,7 +282,7 @@
                     "grid_x": 16,
                     "grid_y": 16,
                     "hierarchyFrozen": true,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -329,7 +329,7 @@
                     },
                     "tilesetId": "06780b58-04db-4b6f-a74c-e44941ca794b",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -341,7 +341,7 @@
                     "grid_x": 16,
                     "grid_y": 16,
                     "hierarchyFrozen": true,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -388,7 +388,7 @@
                     },
                     "tilesetId": "06780b58-04db-4b6f-a74c-e44941ca794b",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -400,7 +400,7 @@
                     "grid_x": 16,
                     "grid_y": 16,
                     "hierarchyFrozen": true,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -447,7 +447,7 @@
                     },
                     "tilesetId": "6a05d3b7-527d-45e8-97a5-00926cbe8492",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },

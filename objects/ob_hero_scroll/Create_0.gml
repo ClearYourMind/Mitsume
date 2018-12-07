@@ -5,7 +5,7 @@ event_inherited()
 oGrav = 800  // weight
 grav = 0
 
-oStopFactor = 5 * power(10, -7)
+oStopFactor = power(10, -1)
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
@@ -32,3 +32,8 @@ pauseAnim = after.None
 feetcollision = true
 
 image_speed = 1
+
+canMoveDown = false
+canMoveUp = false
+canMoveLeft = false
+canMoveRight = false
