@@ -73,7 +73,7 @@ if not (keys[k.Left] or keys[k.Right]) and feetcollision {
 
 if sprite_index != newAnim {
 	sprite_index = newAnim
-	mask_index = sp_hero_stand
+	mask_index = sp_hero_stand1
 	image_index = 0
 	sc_timeout_start(idleTime)
 }
