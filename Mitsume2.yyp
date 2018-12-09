@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "06170711-4335-48fe-afaa-0a6829935dc6",
+            "Value": {
+                "id": "e1a32eb0-b6f7-46eb-93e1-f8bb5dac61aa",
+                "resourcePath": "sprites\\sp_hero_condor_stand_l\\sp_hero_condor_stand_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06780b58-04db-4b6f-a74c-e44941ca794b",
             "Value": {
                 "id": "4514e3c9-7f81-4c12-9dc3-d481de38bc06",
@@ -706,7 +714,7 @@
             "Key": "39af98b4-fd44-4473-894d-7ca63fecf8ec",
             "Value": {
                 "id": "8281b2a4-be77-4260-ba05-e801e91ef673",
-                "resourcePath": "sprites\\sp_hero_condor_fire\\sp_hero_condor_fire.yy",
+                "resourcePath": "sprites\\sp_hero_condor_fire_l\\sp_hero_condor_fire_l.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1100,6 +1108,14 @@
                 "id": "db32e5d0-5c0b-4262-ba4e-276c6d5ff2f9",
                 "resourcePath": "sounds\\sn_destroy\\sn_destroy.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "564c057c-3efc-4bf2-8dfb-4a189846099b",
+            "Value": {
+                "id": "fab4d153-4ed1-4c86-8cfa-f291d9d6cc50",
+                "resourcePath": "sprites\\sp_hero_condor_fire_r\\sp_hero_condor_fire_r.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1634,7 +1650,7 @@
             "Key": "8a015fbe-f6a4-4261-ae9c-d56c5b2b1ad0",
             "Value": {
                 "id": "2bb68a8c-7cbe-49f1-abc2-9e8d81dbf688",
-                "resourcePath": "sprites\\sp_hero_condor_stand\\sp_hero_condor_stand.yy",
+                "resourcePath": "sprites\\sp_hero_condor_stand_r\\sp_hero_condor_stand_r.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1860,6 +1876,14 @@
                 "id": "ed84c82e-bbd3-4074-b7ea-8735f1630eda",
                 "resourcePath": "sounds\\sn_hit3\\sn_hit3.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "9cf60b05-515a-40fa-9ff2-9952b5ad6b39",
+            "Value": {
+                "id": "aa7d6635-8ad1-4c3a-8bc8-97fa4ee9185b",
+                "resourcePath": "objects\\ob_hero_scroll_fire\\ob_hero_scroll_fire.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -24,13 +24,11 @@ wantJump = false
 
 recoverTime = sc_timeout_new(2) 
 
-afterShotTime = 0.25
+afterShotTime = 0.15
 afterLaunchTime = 0.3
 pauseTime = noone
-pauseAnim = after.None
 
 feetcollision = true
-
 image_speed = 1
 
 canMoveDown = false

@@ -2,7 +2,6 @@
 event_inherited()
 
 image_xscale = 1
-mask_index = sp_hero_condor_stand
 forward = -1
 grav = 0
 oGrav = 800

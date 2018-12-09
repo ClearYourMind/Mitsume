@@ -2,7 +2,7 @@
     "id": "39af98b4-fd44-4473-894d-7ca63fecf8ec",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sp_hero_condor_fire",
+    "name": "sp_hero_condor_fire_l",
     "For3D": false,
     "HTile": false,
     "VTile": false,
