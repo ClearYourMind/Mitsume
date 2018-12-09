@@ -6,8 +6,8 @@ event_inherited()
 
 canMoveUp    = y + (speedY+accelY)*dTime > view_h * 0.5
 canMoveDown  = y + (speedY+accelY)*dTime < view_h * 0.6
-canMoveLeft  = x + (speedX+accelX)*dTime > view_w * 0.4
-canMoveRight = x + (speedX+accelX)*dTime < view_w * 0.8
+canMoveLeft  = x + (speedX+accelX)*dTime > view_w * 0.25
+canMoveRight = x + (speedX+accelX)*dTime < view_w * 0.75
 
 // idle horizontal
 if not (keys[k.Left] or keys[k.Right]) or // key released

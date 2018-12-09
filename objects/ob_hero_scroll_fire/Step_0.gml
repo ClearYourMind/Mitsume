@@ -11,12 +11,6 @@ if keys[k.Down]
 if canMoveDown {
 	accelY = accelHi
 }
-//if keys[k.Left] {
-//	forward = -1
-//}
-//if keys[k.Right] {
-//	forward = 1	
-//}
 
 if keys[k.Fire] {
 	sc_weapon_firing(true)
@@ -33,6 +27,13 @@ if forward
 else
 	sprite_index = sp_hero_condor_fire_l
 
+// move arrow
+with ob_arrow_scroll {
+	x = other.x + 8  + other.hspeed
+	y = other.y + 20 + other.vspeed
+	image_angle = 14
+}
+ 
 // process stamina
 if hero.stamina < hero.staminaMax {
 	if hero.staminaDepleted 
@@ -42,17 +43,8 @@ if hero.stamina < hero.staminaMax {
 	hero.staminaDepleted = false
 }
 
-//// idle horizontal
+// idle horizontal
 accelX=0
 stopFactor = oStopFactor
-
-//// idle vertical movement
-//accelY=accelLo * sign(accelY)
-//if (abs(speedY)>maxspeedYLo) {
-//	if (sign(speedY) = sign(accelY)) {
-//		accelY = accelLo * -sign(accelY)
-//	}
-//	speedY -= (accelHi * sign(speedY)) * dTime
-//}
 
 event_perform_object(ob_heroparent, ev_step, ev_step_normal)
