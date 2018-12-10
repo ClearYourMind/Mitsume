@@ -17,9 +17,6 @@ flare.h2 = 4
 flare.sparkleSpawnPeriod = 0.1
 flare.sparkleSpeedX = scrollSpeed
 
-maxspeedY = 125
-maxspeedYLo = maxspeedY * 0.25
-
 accelLo = 75
 accelHi = 350
 accelY = accelLo

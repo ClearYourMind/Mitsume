@@ -23,6 +23,20 @@ if keys[k.Right] {
 		accelX = accelHi
 }
 
+if keysPressed[k.Jump] or wantJump {
+	wantJump = false 
+	speedY = -jumpSpeed
+	forward = 1
+	maxspeedY = maxspeedYFall
+	grav = oGrav
+	ob_arrow_scroll.image_angle = 0
+	sc_play_sound(sn_jump, false)
+	sc_timeout_start(jumpTime)
+	y-=2
+	instance_change(ob_hero_scroll_jump, false)
+	exit
+}
+
 if keys[k.Fire]
 	instance_change(ob_hero_scroll_fire, false)
 

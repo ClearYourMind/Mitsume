@@ -13,7 +13,11 @@ oStopFactor = power(10, -1)
 accel = 350
 
 maxspeedX = 85
-maxspeedY = 400
+maxspeedYFall = 400
+maxspeedYMove = 125
+maxspeedYIdle = 32
+maxspeedY = maxspeedYMove
+
 
 jumpSpeed = 185
 jumpTime = sc_timeout_new(0.17) 

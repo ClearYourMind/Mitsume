@@ -2,7 +2,6 @@
 
 // Inherit the parent event
 event_perform_object(ob_moving, ev_step, ev_step_normal)
-event_inherited()
 
 canMoveUp    = y + (speedY+accelY)*dTime > view_h * 0.5
 canMoveDown  = y + (speedY+accelY)*dTime < view_h * 0.6
@@ -24,7 +23,7 @@ if not (keys[k.Up] or keys[k.Down]) or
 	(keys[k.Down] and not canMoveDown)) {
 //	debugstr = string(speedY)+", "+string(accelY)
 	accelY=accelLo * sign(accelY)
-	if (abs(speedY)>maxspeedYLo) {
+	if (abs(speedY)>maxspeedYIdle) {
 		if (sign(speedY) = sign(accelY)) {
 			accelY = accelLo * -sign(accelY)
 		}

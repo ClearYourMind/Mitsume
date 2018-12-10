@@ -8,7 +8,8 @@
         "3e5e2df8-78ae-48ac-8ada-40a5bdc8c792",
         "9762c6e8-6d43-4555-8819-0ff149567250",
         "9cf60b05-515a-40fa-9ff2-9952b5ad6b39",
-        "3822494d-a3e4-4212-a8e6-56f1900bba2a"
+        "3822494d-a3e4-4212-a8e6-56f1900bba2a",
+        "bcee06e1-8f3a-40f9-854c-1b38737e0cf9"
     ],
     "filterType": "GMObject",
     "folderName": "hero_scroll",

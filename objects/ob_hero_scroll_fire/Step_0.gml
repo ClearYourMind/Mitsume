@@ -12,6 +12,9 @@ if canMoveDown {
 	accelY = accelHi
 }
 
+if keys[k.Jump]
+	wantJump = true
+	
 if keys[k.Fire] {
 	sc_weapon_firing(true)
 	pauseTime = sc_timeout_new(afterShotTime)
