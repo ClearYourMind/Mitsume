@@ -26,7 +26,7 @@ if keys[k.Right] {
 if keysPressed[k.Jump] or wantJump {
 	wantJump = false 
 	speedY = -jumpSpeed
-	forward = 1
+	accelY = 0
 	maxspeedY = maxspeedYFall
 	grav = oGrav
 	ob_arrow_scroll.image_angle = 0

@@ -6,6 +6,6 @@ if sc_hero_check_collision_mask(other.id, d.Down) {
 	speedY = maxspeedYIdle*2.5
 	maxspeedY = maxspeedYMove
 	accelY = accelLo
-	instance_change(ob_hero_scroll_stand, false)	
+	instance_change(ob_hero_scroll_fire, false)	
 }
 	

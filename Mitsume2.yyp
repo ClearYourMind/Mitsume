@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "22cefe34-cf6d-4fb2-a39f-7de41e1b91c8",
+            "Value": {
+                "id": "b885148d-a1e5-43ae-be76-66cf368eb868",
+                "resourcePath": "objects\\ob_hero_scroll_jumpfire\\ob_hero_scroll_jumpfire.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "22e0b199-34d7-4f17-9a58-8484dec501f7",
             "Value": {
                 "id": "c7c4026c-cdf2-408a-b4f5-e3d9f8af2283",
