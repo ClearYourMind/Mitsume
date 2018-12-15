@@ -37,6 +37,25 @@ with ob_arrow_scroll {
 	image_angle = 14
 }
  
+// idle horizontal
+accelX=0
+stopFactor = oStopFactor
+
+// idle vertical movement
+if not (keys[k.Up] or keys[k.Down]) or
+	((keys[k.Up] and not canMoveUp) or
+	(keys[k.Down] and not canMoveDown)) {
+//	debugstr = string(speedY)+", "+string(accelY)
+	accelY=accelLo * sign(accelY)
+	if (abs(speedY)>maxspeedYIdle) {
+		if (sign(speedY) = sign(accelY)) {
+			accelY = accelLo * -sign(accelY)
+		}
+		speedY -= (accelHi * sign(speedY)) * dTime
+//		debugstr += " STOPPING"
+	}
+} 
+
 // process stamina
 if hero.stamina < hero.staminaMax {
 	if hero.staminaDepleted 
@@ -45,9 +64,5 @@ if hero.stamina < hero.staminaMax {
 	hero.stamina = hero.staminaMax
 	hero.staminaDepleted = false
 }
-
-// idle horizontal
-accelX=0
-stopFactor = oStopFactor
 
 event_perform_object(ob_heroparent, ev_step, ev_step_normal)

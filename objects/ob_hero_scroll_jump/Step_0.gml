@@ -1,7 +1,7 @@
 /// @desc
 
 //event_inherited()
-event_perform_object(ob_moving, ev_step, ev_step_normal)
+//event_perform_object(ob_moving, ev_step, ev_step_normal)
 
 canMoveLeft  = x + (speedX+accelX)*dTime > view_w * 0.25
 canMoveRight = x + (speedX+accelX)*dTime < view_w * 0.75
@@ -29,13 +29,9 @@ if keys[k.Fire] {
 }
 
 // Stopping on air
+stopFactor = 1
 if not (keys[k.Left] or keys[k.Right]) 
 	accelX = 0
-if not (canMoveRight and canMoveLeft) {
-	accelX = 0
-	stopFactor = oStopFactor
-} else
-	stopFactor = 1
 
 // move arrow
 with ob_arrow_scroll {
@@ -50,5 +46,7 @@ if hero.stamina < hero.staminaMax {
 	hero.staminaDepleted = false
 }
 
+// stopping at the edges
+event_perform_object(ob_hero_scroll, ev_step, ev_step_normal)
 
 event_perform_object(ob_heroparent, ev_step, ev_step_normal)
