@@ -18,8 +18,7 @@
         "0b40e398-b216-4c3b-a1c0-cb90da216b12",
         "b537d502-5663-4843-85f0-24670ce82dc7",
         "3499170a-f1da-4c09-aa6f-e2b94dc3cb8e",
-        "cb986378-3654-4613-9e88-ec9646b9cb28",
-        "6abce7fd-3715-4258-b8c2-a835394852a2"
+        "cb986378-3654-4613-9e88-ec9646b9cb28"
     ],
     "filterType": "GMObject",
     "folderName": "hero",

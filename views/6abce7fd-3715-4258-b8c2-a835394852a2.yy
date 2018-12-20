@@ -13,7 +13,7 @@
         "3822494d-a3e4-4212-a8e6-56f1900bba2a"
     ],
     "filterType": "GMObject",
-    "folderName": "hero_scroll",
+    "folderName": "scroll hero",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

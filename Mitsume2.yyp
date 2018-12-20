@@ -575,18 +575,18 @@
             }
         },
         {
+            "Key": "2a9e7ec6-57b6-4521-88ce-d35c6a468baa",
+            "Value": {
+                "id": "dbf80a94-0dc8-4f91-8ca0-bc335e79d267",
+                "resourcePath": "views\\2a9e7ec6-57b6-4521-88ce-d35c6a468baa.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2b2d5a1b-8e31-41f4-ada2-0fbab8b5331a",
             "Value": {
                 "id": "6778e267-bcfc-4ee0-a446-60631d62dcd4",
                 "resourcePath": "objects\\ob_smoke\\ob_smoke.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "2c438646-d7cb-4b42-bc60-e6551037fcbf",
-            "Value": {
-                "id": "4b2a1735-31e6-471b-ad9e-2ecfa5c129d3",
-                "resourcePath": "objects\\ob_firetown\\ob_firetown.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1359,14 +1359,6 @@
             }
         },
         {
-            "Key": "6ee6b0aa-bae8-494c-ae54-34e620a03e05",
-            "Value": {
-                "id": "44427595-6f42-416a-96af-b3af900d77a4",
-                "resourcePath": "sprites\\sp_firetop\\sp_firetop.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "6eec186b-0ef5-48aa-88cd-d4468f403be0",
             "Value": {
                 "id": "1e2de272-f547-4a75-82f3-689e6e3b2651",
@@ -1580,14 +1572,6 @@
                 "id": "917f3950-8e02-4f0a-b55f-350b96513a6c",
                 "resourcePath": "views\\83867ac2-70fb-4e4c-a88d-7ec534c4c5c8.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "839c7015-161a-42c1-95f1-ebd9273d70ec",
-            "Value": {
-                "id": "42090f80-2d05-4340-808d-4237932eb50e",
-                "resourcePath": "sprites\\sp_houses1\\sp_houses1.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -2495,14 +2479,6 @@
             }
         },
         {
-            "Key": "ce460eba-4cd4-49b5-a772-31b99cdfa366",
-            "Value": {
-                "id": "0af22d32-f6b9-470b-898b-e69402733b18",
-                "resourcePath": "sprites\\sp_firebottom\\sp_firebottom.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "cee3bd55-dbee-4f7e-b7f2-a739a829c524",
             "Value": {
                 "id": "91737747-33b0-47db-8bed-bb763ea91343",
@@ -2619,14 +2595,6 @@
             "Value": {
                 "id": "e3481410-1f6e-48ae-8d74-daeb8c78d18f",
                 "resourcePath": "sprites\\sp_coin_6\\sp_coin_6.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d67d78f2-be99-439e-8291-ee99c9f495e1",
-            "Value": {
-                "id": "b114f1d6-273a-42fa-9305-0457e3f31700",
-                "resourcePath": "sprites\\sp_town_back\\sp_town_back.yy",
                 "resourceType": "GMSprite"
             }
         },
