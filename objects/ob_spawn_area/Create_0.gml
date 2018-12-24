@@ -1,9 +1,5 @@
-event_inherited()
 /// @desc
 
-spreadByWidth = true
-spreadByHeight = true
-spawnNumber = 1
 spawnOutside = true
 
 spawnAllowed = true

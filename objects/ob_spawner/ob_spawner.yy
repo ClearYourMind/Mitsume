@@ -5,16 +5,6 @@
     "name": "ob_spawner",
     "eventList": [
         {
-            "id": "8f6f3ee3-b2ff-4e15-b482-e48cf4a3d417",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "188299a5-bb44-4f1c-9a23-b9d8a93cc182"
-        },
-        {
             "id": "38060737-786b-41a1-b2b3-b826c526e3fa",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -46,6 +36,7 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -60,6 +51,64 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "f26c8ee3-6d01-4bbc-8ac2-e59b6f8eb2b1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "enemyObject",
+            "varType": 5
+        },
+        {
+            "id": "c357d761-c02c-44e8-b8f2-82569d146841",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "spawnPeriod",
+            "varType": 0
+        },
+        {
+            "id": "b51cbb23-be8e-4825-a6ae-6252c0e9b46c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "spawnPeriodSpread",
+            "varType": 0
+        },
+        {
+            "id": "3f599bf0-ff95-432e-a545-5a8afb1efb23",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "spawnLoop",
+            "varType": 3
+        }
+    ],
     "solid": false,
     "spriteId": "08bf9190-0f69-4388-9ac8-82fb94570c69",
     "visible": false
