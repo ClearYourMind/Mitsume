@@ -3,15 +3,18 @@
 // Inherit the parent event
 event_inherited();
 
-maxspeedX = abs(scrollSpeed*2)
+maxspeedX = abs(scrollSpeed) + 100
 maxspeedY = 400
 oAccel = 300
-oStopFactor = 0.001
+accelX = oAccel
+stopFactorHi = 0.001
+stopFactorLo = 0.8
 grav = 800
 
 jumpPower = 0.8
 newMode = true
 forward = 1
+xDist = 0
 
 strength = 1
 
