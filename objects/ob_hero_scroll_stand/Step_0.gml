@@ -1,10 +1,7 @@
 /// @desc
-//event_inherited()
-//event_perform_object(ob_moving, ev_step, ev_step_normal)
 
 
 #region // control
-//var newAnim = sp_hero_condor_stand
 
 if keys[k.Up]
 	accelY = -accelHi
@@ -30,7 +27,9 @@ if keysPressed[k.Jump] or wantJump {
 
 if keys[k.Fire]
 	instance_change(ob_hero_scroll_fire, false)
-
+else
+	sc_weapon_firing(false)
+	
 #endregion
 
 if forward
@@ -42,7 +41,7 @@ else
 stopFactor = 1
 if not (keys[k.Left] or keys[k.Right]) {
 	accelX = 0
-	stopFactor = oStopFactor
+	stopFactor = stopFactorLo
 }
 
 // idle vertical movement

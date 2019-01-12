@@ -7,7 +7,7 @@
     "option_windows_borderless": false,
     "option_windows_company_info": "iDunNo Inc.",
     "option_windows_copy_exe_to_dest": false,
-    "option_windows_copyright_info": "Original by (c) Natsume Inc. 1992",
+    "option_windows_copyright_info": "Original by (c) TOMY 1992",
     "option_windows_description_info": "Three-Eyed One Remake by PsychoDelph",
     "option_windows_display_cursor": true,
     "option_windows_display_name": "Mitsume Ga Tooru Remake by PsychoDelph",

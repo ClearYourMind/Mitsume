@@ -32,7 +32,7 @@ else
 
 // idle horizontal
 accelX=0
-stopFactor = oStopFactor
+stopFactor = stopFactorLo
 
 // idle vertical movement
 if not (keys[k.Up] or keys[k.Down]) or

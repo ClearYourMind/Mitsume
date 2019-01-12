@@ -1607,6 +1607,14 @@
             }
         },
         {
+            "Key": "7e63fa59-d160-49b1-bd56-08758c08e506",
+            "Value": {
+                "id": "1b4599f9-5378-412d-89bf-9bcf36e5a3d0",
+                "resourcePath": "objects\\ob_arrow_scroll_hurt\\ob_arrow_scroll_hurt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "827c5868-472d-4a6a-94e3-6dbe1e3fff16",
             "Value": {
                 "id": "49d81b8c-be54-4a07-88a3-3494e02d5eeb",
@@ -2191,14 +2199,6 @@
             }
         },
         {
-            "Key": "adcf98dc-69d4-4718-ab59-85cac7e58328",
-            "Value": {
-                "id": "526864c6-2516-4b03-a38b-e8a44eec06c0",
-                "resourcePath": "objects\\ob_enemy_scroll\\ob_enemy_scroll.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "aee17dc9-c43a-4174-8147-764cb172bbff",
             "Value": {
                 "id": "c3fcc28f-2b23-417d-b831-241efd195ccc",
@@ -2500,6 +2500,14 @@
                 "id": "74d05e85-c05e-40ee-b991-09c3c8d29d5f",
                 "resourcePath": "sprites\\sp_bike\\sp_bike.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c8a5ee0d-0d58-4e0c-9833-c59f357fbd35",
+            "Value": {
+                "id": "33063db9-b637-41ab-a12b-da6266588890",
+                "resourcePath": "objects\\ob_moving_scroll\\ob_moving_scroll.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2900,6 +2908,14 @@
                 "id": "8b9dfe66-cd8f-4b1b-8689-71d524a9a153",
                 "resourcePath": "views\\ec445200-5408-4264-850f-9d611a039b13.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ecbfd60f-be11-4cf7-97d3-58831f5f6131",
+            "Value": {
+                "id": "5e67f1d3-a9d4-4709-82c0-eeb17d1b1283",
+                "resourcePath": "objects\\ob_hero_scroll_hurt\\ob_hero_scroll_hurt.yy",
+                "resourceType": "GMObject"
             }
         },
         {

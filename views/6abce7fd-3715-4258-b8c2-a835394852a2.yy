@@ -10,9 +10,11 @@
         "9cf60b05-515a-40fa-9ff2-9952b5ad6b39",
         "bcee06e1-8f3a-40f9-854c-1b38737e0cf9",
         "22cefe34-cf6d-4fb2-a39f-7de41e1b91c8",
+        "ecbfd60f-be11-4cf7-97d3-58831f5f6131",
         "3822494d-a3e4-4212-a8e6-56f1900bba2a",
         "b2b4a99b-93b4-440a-88ef-2c7c07dfa201",
-        "50d87880-70c3-408e-9bae-132fad3418d7"
+        "50d87880-70c3-408e-9bae-132fad3418d7",
+        "7e63fa59-d160-49b1-bd56-08758c08e506"
     ],
     "filterType": "GMObject",
     "folderName": "scroll hero",

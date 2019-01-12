@@ -26,7 +26,8 @@ if keys[k.Jump] {
 if keys[k.Fire] {
 	sc_timeout_stop(jumpTime)
 	instance_change(ob_hero_scroll_jumpfire, false)
-}
+} else
+	sc_weapon_firing(false)
 
 // Stopping on air
 stopFactor = 1

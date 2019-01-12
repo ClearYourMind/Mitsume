@@ -1,8 +1,7 @@
 /// @desc
 
 // Inherit the parent event
-
 event_inherited();
 
-hspeed = min(totalMaxSpeed, hspeed + scrollSpeed * dTime)
+event_perform(ev_other, ev_user0)
 

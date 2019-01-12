@@ -2,15 +2,17 @@
 
 canMoveUp    = y + (speedY+accelY)*dTime > view_h * 0.33
 canMoveDown  = y + (speedY+accelY)*dTime < view_h * 0.6
-canMoveLeft  = x + (speedX+accelX)*dTime > view_w * 0.25
-canMoveRight = x + (speedX+accelX)*dTime < view_w * 0.75
+canMoveLeft  = x + (speedX+accelX)*dTime > view_w * 0.1
+canMoveRight = x + (speedX+accelX)*dTime < view_w * 0.9
 
 // stop horizontal
-if (accelX > 0 and not canMoveRight) or
-   (accelX < 0 and not canMoveLeft) {
-	accelX=0
-	stopFactor = oStopFactor
+if not canMoveRight {
+	accelX = -accelHi	
+} else
+if not canMoveLeft {
+	accelX = accelHi
 }
+
 
 // stop vertical
 if (accelY > 0 and not canMoveDown) or

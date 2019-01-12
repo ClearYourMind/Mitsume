@@ -5,7 +5,9 @@ event_inherited()
 oGrav = 800  // weight
 grav = 0
 
-oStopFactor = power(10, -1)
+stopFactorLo = 0.1
+stopFactorHi = 5 * power(10, -7)
+
 
 // 0 -> accel  for 1 sec
 // maxspeed is reached at time = maxspeed/accel
@@ -26,7 +28,7 @@ jumpTime = sc_timeout_new(0.17)
 // while pauseAnim timer
 wantJump = false 
 
-recoverTime = sc_timeout_new(2) 
+recoverTime = sc_timeout_new(3) 
 
 afterShotTime = 0.15
 afterLaunchTime = 0.3
