@@ -30,13 +30,6 @@ if forward
 else
 	sprite_index = sp_hero_condor_fire_l
 
-// move arrow
-with ob_arrow_scroll {
-	x = other.x + 8  + other.hspeed
-	y = other.y + 20 + other.vspeed
-	image_angle = 14
-}
- 
 // idle horizontal
 accelX=0
 stopFactor = oStopFactor

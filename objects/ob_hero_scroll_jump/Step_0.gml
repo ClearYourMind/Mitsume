@@ -33,11 +33,6 @@ stopFactor = 1
 if not (keys[k.Left] or keys[k.Right]) 
 	accelX = 0
 
-// move arrow
-with ob_arrow_scroll {
-	x = other.x + 8  + other.hspeed
-}
-
 // process stamina
 if hero.stamina < hero.staminaMax {
 	hero.stamina += hero.staminaRegenSpeed * dTime
