@@ -13,10 +13,16 @@ if not canMoveLeft {
 	accelX = accelHi
 }
 
-
 // stop vertical
 if (accelY > 0 and not canMoveDown) or
    (accelY < 0 and not canMoveUp)
 	accelY = accelLo * -sign(accelY)
+
+
+if (not canMoveRight) or (not canMoveLeft) {
+	// reset recoverTime
+	if recover
+		sc_timeout_start(recoverTime)
+}
 
 event_perform_object(ob_moving, ev_step, ev_step_normal)

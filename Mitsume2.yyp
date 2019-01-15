@@ -1351,6 +1351,14 @@
             }
         },
         {
+            "Key": "699f3eb6-0af3-4415-9ad1-588e5ad7947a",
+            "Value": {
+                "id": "58e204ed-a844-4cef-8e48-5cc42f33a040",
+                "resourcePath": "objects\\ob_arrow_scroll_dead\\ob_arrow_scroll_dead.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6a05d3b7-527d-45e8-97a5-00926cbe8492",
             "Value": {
                 "id": "24eb35e7-46a6-42a5-9810-ce2a31498d6d",
@@ -1939,6 +1947,14 @@
             "Value": {
                 "id": "c67633d1-3bf6-4e57-9a73-dcf7f1b89770",
                 "resourcePath": "objects\\ob_explode_coin\\ob_explode_coin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9c171aad-2fc0-4ec1-a17a-feabe8df5dd4",
+            "Value": {
+                "id": "6fac5368-6cd0-491c-9791-d00b0bbe38c0",
+                "resourcePath": "objects\\ob_hero_scroll_dead\\ob_hero_scroll_dead.yy",
                 "resourceType": "GMObject"
             }
         },

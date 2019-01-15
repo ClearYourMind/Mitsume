@@ -17,6 +17,3 @@ y -= 2
 health--
 image_index = 0
 
-with ob_arrow_scroll
-	instance_change(ob_arrow_scroll_hurt, false)
-
