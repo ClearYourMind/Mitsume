@@ -8,6 +8,8 @@ if instance_exists(ob_arrow) {
 	    ob_arrow.phase = ar.LaunchBegin
 }
 	
+ssc_weapon_firing(false)
+
 forward = sign(other.x - x)
 if forward = 0 forward = 1
 if health > 1 {

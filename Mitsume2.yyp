@@ -879,14 +879,6 @@
             }
         },
         {
-            "Key": "4100b5b4-4172-4827-bf8d-727df27de026",
-            "Value": {
-                "id": "7b2486fd-69b1-4c94-90a0-0b378abe08ae",
-                "resourcePath": "scripts\\sc_hero_level_up\\sc_hero_level_up.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "419b7aef-bd90-4e43-9825-552355d04ca9",
             "Value": {
                 "id": "f551e189-aa2b-4f7e-9fe9-0b0558d6e292",
@@ -3192,7 +3184,6 @@
         "212363f1-7588-467f-bf20-99720326b9ee",
         "558c89bc-4680-4111-a34f-ac5d4981c3d5",
         "d2ec6858-b50f-4227-b207-85cc55bacb98",
-        "4100b5b4-4172-4827-bf8d-727df27de026",
         "f47e0dc8-a59c-4acb-8cf2-bb77c95ac46b",
         "dc73f0b9-2299-4622-9503-599fa8487a02",
         "c04256de-99cf-4767-ba6b-384e6f9a75a5",

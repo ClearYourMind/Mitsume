@@ -1,5 +1,7 @@
 /// @desc before hurt
 
+sc_weapon_firing(false)
+
 hurt = true
 grav = oGrav
 

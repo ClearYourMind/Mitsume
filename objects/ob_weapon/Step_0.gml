@@ -9,10 +9,6 @@ if not initiated {
 if not instance_exists(hero)
 	exit
 	
-
-if hero.hurt// or hero.staminaDepleted
-	shoot = false
-	
 if not reloaded
 if sc_timeout_over(reloadTimeout)
 	reloaded = true

@@ -2,6 +2,8 @@
 /// @arg item
 
 // of ob_hero_gui_shop
+if not instance_exists(hero)
+	exit
 
 var _item = argument0
 
@@ -43,7 +45,8 @@ case itemtype.medkit:
 	break
 case itemtype.strength:
 	hero.level++
-	sc_hero_level_up()
+	with hero
+		event_perform(ev_other, ev_user0)
 	break
 case itemtype.magnet:
 	hero.hasMagnet = true;
