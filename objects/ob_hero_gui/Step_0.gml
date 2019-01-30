@@ -1,7 +1,7 @@
 event_inherited()
 /// @desc Process flashing and inputs
 
-if not instance_exists(hero) exit
+if not instance_exists(ob_heroparent) exit
 
 // process inputs
 if keysPressed[k.Pause]

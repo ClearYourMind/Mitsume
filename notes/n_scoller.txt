@@ -22,3 +22,6 @@ represents just look and behavior.
 	
 24.12.18
 	В платформере сделать ob_hero_abstract как стартовый объект для hero. Должен нормально подойти вместо ob_hero.
+
+30.01.18
+	Parent objects for scroll enemies (ob_dog_scroll for ex.) shouldn't be created directly.

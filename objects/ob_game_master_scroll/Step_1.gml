@@ -1,3 +1,0 @@
-/// @desc Reset values
-
-debugstr = ""

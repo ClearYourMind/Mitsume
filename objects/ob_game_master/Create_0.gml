@@ -31,7 +31,7 @@ minFPS = 30
 
 hero = noone
 lives  = 10
-score = 10000
+score = 00000
 
 paused = false
 
@@ -48,4 +48,4 @@ deactivateTime = 20
 restartTime = sc_timeout_new(1.5)
 
 gameStarted = false
-debug = false
+debug = true

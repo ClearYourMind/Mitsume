@@ -1,10 +1,10 @@
 /// @desc Process global game events
 
 // set dTime (between steps)
-if not paused {
+if not paused
 	dTime = min(delta_time/1000000, 1/minFPS)
-} else
-	dTime = 0.001
+else
+	dTime = 0
 	
 counter = (counter+1) mod 100000
 
