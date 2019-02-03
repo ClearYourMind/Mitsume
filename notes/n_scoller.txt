@@ -23,5 +23,11 @@ represents just look and behavior.
 24.12.18
 	В платформере сделать ob_hero_abstract как стартовый объект для hero. Должен нормально подойти вместо ob_hero.
 
-30.01.18
+30.01.19
 	Parent objects for scroll enemies (ob_dog_scroll for ex.) shouldn't be created directly.
+
+04.02.19
+	What about ob_hero_abstract deactivation in ob_hero_scroll_dead user0 event? Why is that there?
+	Player still collects coins after death on position before death.
+	Every time room restarts after death new ob_weapons are created. This causes weird wave weapon behaviour.
+	

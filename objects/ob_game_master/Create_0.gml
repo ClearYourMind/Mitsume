@@ -31,7 +31,7 @@ minFPS = 30
 
 hero = noone
 lives  = 10
-score = 00000
+score = 9000
 
 paused = false
 
