@@ -11,6 +11,14 @@ if keys[k.Down]
 if canMoveDown {
 	accelY = accelHi
 }
+if keys[k.Left] {
+	forward = -1
+	accelX = -accelHi
+}
+if keys[k.Right] {
+	forward = 1
+	accelX = accelHi
+}
 
 if keys[k.Jump]
 	wantJump = true
@@ -31,8 +39,15 @@ else
 	sprite_index = sp_hero_condor_fire_l
 
 // idle horizontal
-accelX=0
-stopFactor = stopFactorLo
+//accelX=0
+//stopFactor = stopFactorLo
+
+// stopping on air
+stopFactor = 1
+if not (keys[k.Left] or keys[k.Right]) {
+	accelX = 0
+	stopFactor = stopFactorLo
+}
 
 // idle vertical movement
 if not (keys[k.Up] or keys[k.Down]) or
