@@ -7,4 +7,4 @@ speedY = 0
 vspeed = 0
 hspeed = 0
 
-instance_change(ob_arrow_scroll_stand, false)
+instance_change(ob_kill_arrow_scroll_stand, false)

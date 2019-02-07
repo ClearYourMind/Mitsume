@@ -21,7 +21,7 @@ if keysPressed[k.Jump] or wantJump {
 	event_perform_object(ob_hero_scroll_jump, ev_other, ev_user0);
 	instance_change(ob_hero_scroll_jump, false)
 	with ob_arrow_scroll
-		instance_change(ob_arrow_scroll_jump, false)
+		event_perform(ev_other, ev_user1) // before jump
 	exit
 }
 
