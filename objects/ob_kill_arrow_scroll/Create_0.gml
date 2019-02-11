@@ -3,4 +3,4 @@
 // Inherit the parent event
 event_inherited();
 
-hit = 3
+hit = 1
