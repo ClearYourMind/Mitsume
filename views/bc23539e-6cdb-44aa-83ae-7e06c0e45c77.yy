@@ -8,7 +8,8 @@
         "564e432d-5a14-4bf2-abed-75778eeebd76",
         "9304f160-8499-43c2-b3b3-b1c0e77c94ee",
         "ef3b79c7-b7ea-499f-9ba1-ab34beb14bdc",
-        "0d522db7-0e3b-4199-bf7d-6c6df05115b7"
+        "0d522db7-0e3b-4199-bf7d-6c6df05115b7",
+        "a4aeb87c-e41a-45b5-9dfc-2d7f4711fb47"
     ],
     "filterType": "GMSprite",
     "folderName": "background",
