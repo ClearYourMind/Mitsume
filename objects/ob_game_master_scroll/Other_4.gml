@@ -1,7 +1,7 @@
 /// @desc Init instance-based vars
 
 if instance_exists(ob_hero_abstract)
-	 hero = ob_hero_abstract
+	 hero = instance_find(ob_hero_abstract, 0)
 
 //// create GUI
 view_x = camera_get_view_x(view_camera[0])

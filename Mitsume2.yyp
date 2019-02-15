@@ -935,6 +935,14 @@
             }
         },
         {
+            "Key": "452f460e-3984-4705-b659-31794eec99e4",
+            "Value": {
+                "id": "6f6d60cc-bb8d-485c-a031-37b5752a0aff",
+                "resourcePath": "objects\\ob_hero_gui_scroll\\ob_hero_gui_scroll.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "456afe7a-6c77-4b70-8983-2f874f9f4a6e",
             "Value": {
                 "id": "a5032b89-b1a9-48b1-9b1c-0b8c136af4d1",
@@ -1308,6 +1316,14 @@
                 "id": "08871b71-562b-4d61-b994-bf446d503d24",
                 "resourcePath": "sprites\\sp_explode9\\sp_explode9.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "685744b4-a09a-4d42-8955-5e8010497edb",
+            "Value": {
+                "id": "c1106eb0-da00-4f4a-a49c-ccbc10029f40",
+                "resourcePath": "objects\\ob_hero_gui_scroll_paused\\ob_hero_gui_scroll_paused.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1699,6 +1715,14 @@
             "Value": {
                 "id": "270eee83-4496-41c1-8c3b-21dab3af623d",
                 "resourcePath": "views\\87656cf1-73b0-4d86-a55b-6baba84cf429.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "87eef744-5d79-4cc2-b226-e7f1d1e51562",
+            "Value": {
+                "id": "d81166b1-fe4e-4b6c-b63d-eba044fd3adb",
+                "resourcePath": "views\\87eef744-5d79-4cc2-b226-e7f1d1e51562.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2844,6 +2868,14 @@
                 "id": "132312b9-432f-49d4-8695-b0b439d068d5",
                 "resourcePath": "views\\e475e950-cbfb-434e-b308-29a988d16493.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e4a0890e-32fc-4960-816e-1ec6c6f32eef",
+            "Value": {
+                "id": "30a187bc-e5f2-4cdb-94bf-58084be38723",
+                "resourcePath": "objects\\ob_hero_gui_scroll_info\\ob_hero_gui_scroll_info.yy",
+                "resourceType": "GMObject"
             }
         },
         {

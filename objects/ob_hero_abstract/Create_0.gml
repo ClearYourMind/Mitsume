@@ -21,8 +21,8 @@ weaponNum = 0
 weapon = weaponList[weaponNum, 0]
 
 //arrow = noone
-arrowObject = ob_kill_arrow_scroll_stand
-guiObject = ob_hero_gui
+arrowObject = ob_arrow_scroll_stand
+guiObject = ob_hero_gui_scroll
 
 hasMagnet = false;
 
