@@ -48,4 +48,4 @@ deactivateTime = 20
 restartTime = sc_timeout_new(1.5)
 
 gameStarted = false
-debug = true
+debug = false

@@ -2,10 +2,10 @@
 
 waveNumber++
 
-waveScore += 1 + waveScore*0.025
+wavePoints += 1 + wavePoints*0.025
 
 curScore = 0
 with ob_scroll_spawn_area
 	spawnAllowed = true
 
-debugstr = "wave started. Score: "+string(waveScore)
+debugstr = "wave started. Score: "+string(wavePoints)

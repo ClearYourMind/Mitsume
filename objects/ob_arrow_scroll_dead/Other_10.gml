@@ -2,7 +2,7 @@
 
 image_speed = 0.25
 image_index = 1
-accelX = -150
+accelX = scrollSpeed
 accelY = 0
 if instance_exists(flare)
 	flare.spawn = false
