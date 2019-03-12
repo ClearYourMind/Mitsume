@@ -2,7 +2,7 @@
 
 if place_meeting(x, y, triggerObject) {
 	if not triggered {
-		sc_hidden_trigger()
+		event_perform(ev_other, ev_user0)  // activate hidden
 		triggered = true
 		with ob_game_master 
 			alarm_set(0, deactivateTime)

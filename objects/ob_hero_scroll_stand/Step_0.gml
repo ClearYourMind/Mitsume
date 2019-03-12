@@ -31,8 +31,9 @@ else
 	sc_weapon_firing(false)
 	
 if keys[k.altFire]
-if instance_exists(ob_safehouse) {
-	event_perform(ev_other, ev_user1) // to platform mode
+with ob_safehouse {
+	if (xx < -64) and (phase = sf.scrollSlowdown)
+		with other event_perform(ev_other, ev_user1) // to platform mode
 }
 	
 #endregion

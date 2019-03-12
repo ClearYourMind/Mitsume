@@ -1,3 +1,3 @@
 /// @desc
 
-sc_hidden_trigger()
+event_perform(ev_other, ev_user0) // activate hidden

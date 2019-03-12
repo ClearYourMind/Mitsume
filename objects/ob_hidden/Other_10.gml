@@ -1,4 +1,4 @@
-/// @desc Triggered action
+/// @desc Activate hidden objects
 
 var _hiddenObj = noone
 
@@ -36,3 +36,5 @@ if is_array(hiddenInstances)
 		}
 	
 	}
+
+activated = true
