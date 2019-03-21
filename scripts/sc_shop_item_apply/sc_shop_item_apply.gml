@@ -34,12 +34,7 @@ case itemtype.weapon3:
 	}
 	break
 case itemtype.killarrow:
-	if object_is_ancestor(hero.object_index, ob_hero)
-		hero.arrowObject = ob_kill_arrow
-	else
-	if object_is_ancestor(hero.object_index, ob_hero_abstract) {
-		hero.arrowObject = ob_kill_arrow_scroll_stand
-	}
+	hero.arrowObject = ob_kill_arrow
 	break
 case itemtype.life:
 	lives++
@@ -51,7 +46,7 @@ case itemtype.medkit:
 case itemtype.strength:
 	hero.level++
 	with hero
-		event_perform(ev_other, ev_user9)  // Level up
+		event_perform(ev_other, ev_user0)
 	break
 case itemtype.magnet:
 	hero.hasMagnet = true;
