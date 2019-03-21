@@ -4,7 +4,7 @@ waveNumber++
 
 wavePoints += 1 + wavePoints*0.025
 
-curScore = 0
+curPoints = 0
 with ob_scroll_spawn_area
 	spawnAllowed = true
 
