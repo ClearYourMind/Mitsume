@@ -41,5 +41,10 @@ case sf.platformSlowdown:
 	} else {
 		scrollSpeed = 0
 	}
+	
+	with ob_finish {
+		x = other.xx + 332
+		y = other.y  - 21
+	}
 	break
 }
