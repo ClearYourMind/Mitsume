@@ -1447,14 +1447,6 @@
             }
         },
         {
-            "Key": "6e03464d-7fb1-47be-a363-798ee2185972",
-            "Value": {
-                "id": "8b52d5d8-eae3-4077-93a3-d4d6d2a9180a",
-                "resourcePath": "scripts\\sc_spawner_spawn\\sc_spawner_spawn.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6eec186b-0ef5-48aa-88cd-d4468f403be0",
             "Value": {
                 "id": "1e2de272-f547-4a75-82f3-689e6e3b2651",
@@ -1988,6 +1980,14 @@
                 "id": "1105cd32-7faf-437b-890c-1dfa79f2f3fe",
                 "resourcePath": "sprites\\sp_gui_shop1\\sp_gui_shop1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9aaa9f25-8ddf-404c-abf6-3a841087b64a",
+            "Value": {
+                "id": "fdda41d2-5059-4355-98e1-7a6ce8c4d640",
+                "resourcePath": "objects\\ob_spawn_area_limited\\ob_spawn_area_limited.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2839,6 +2839,14 @@
             }
         },
         {
+            "Key": "de1b69cd-d555-4256-af8a-85077b51b279",
+            "Value": {
+                "id": "66aa2c0a-498b-424c-91c6-1a01b29e1cdc",
+                "resourcePath": "scripts\\sc_spawn_area_reset\\sc_spawn_area_reset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "de7fe8ca-50d7-4bf4-96db-3f0739839ede",
             "Value": {
                 "id": "7dea7e83-2cb4-42dc-a971-dbdb6a3d9097",
@@ -3302,7 +3310,7 @@
         "35d40666-db48-453d-862f-579c52bd3ca2",
         "e91a1b59-7acb-43d7-b4f7-60f374e40da5",
         "5e58c32a-dc4c-4b0d-8df5-f0cf8346e133",
-        "6e03464d-7fb1-47be-a363-798ee2185972"
+        "de1b69cd-d555-4256-af8a-85077b51b279"
     ],
     "tutorial": ""
 }

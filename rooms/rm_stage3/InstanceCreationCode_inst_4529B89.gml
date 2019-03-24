@@ -1,6 +1,3 @@
-triggerLoop = true
-triggerObject = ob_motion_group
-visibleActivation = false
 
 var i = 0
 hiddenInstances[i++] = hiddenSpawner_1

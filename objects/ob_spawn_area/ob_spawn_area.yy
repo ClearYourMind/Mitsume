@@ -103,6 +103,20 @@
             "value": "1",
             "varName": "spawnNumber",
             "varType": 1
+        },
+        {
+            "id": "3343547b-f439-4b8f-8475-2bfd5c3a07ea",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "spawnOutside",
+            "varType": 3
         }
     ],
     "solid": false,

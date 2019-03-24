@@ -1,0 +1,1 @@
+alreadySpawnedCount = 0
