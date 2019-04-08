@@ -46,7 +46,7 @@ case itemtype.medkit:
 case itemtype.strength:
 	hero.level++
 	with hero
-		event_perform(ev_other, ev_user0)
+		event_perform(ev_other, ev_user9)
 	break
 case itemtype.magnet:
 	hero.hasMagnet = true;
