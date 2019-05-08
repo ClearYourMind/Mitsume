@@ -9,11 +9,14 @@ if started {
 	} else {
 		if dAlpha < 0 {
 		// end
-			if script_exists(action)
-				show_debug_message("Transition with " + script_get_name(action)+" ended")
+			show_debug_message("Transition has finished")
+			if script_exists(action_on_finish) {
+				script_execute(action_on_finish, arg)
+				show_debug_message("Action " + script_get_name(action_on_finish) + " (arg = " + string(arg) + ") performed")
+			}
 			started = false
 			image_alpha = 0
-			action = noone
+			instance_destroy()
 		} else {
 			if not performing
 				performing = true
@@ -23,10 +26,12 @@ if started {
 				image_alpha = 1
 				dAlpha = -1
 				sc_timeout_start(fadeTime)
-				if script_exists(action) {
-					script_execute(action, arg)
-					show_debug_message("Transition action : " + script_get_name(action) + " performed")
+				show_debug_message("Transition has changed room")
+				if script_exists(action_on_room_change) {
+					script_execute(action_on_room_change, arg)
+					show_debug_message("Action " + script_get_name(action_on_room_change) + " (arg = " + string(arg) + ") performed")
 				}
+				show_debug_message(" ")
 			}
 		}
 	}

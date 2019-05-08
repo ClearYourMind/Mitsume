@@ -6,6 +6,10 @@ if not started {
 	sc_timeout_start(fadeTime)
 	dAlpha = 1
 	started = true
-	if script_exists(action)
-		show_debug_message("Transition with "+script_get_name(action)+ " started")
+	show_debug_message("Transition started")
+	if script_exists(action_on_start) {
+		script_execute(action_on_start, arg)
+		show_debug_message("Action " + script_get_name(action_on_start)+ " (arg = " + string(arg) + ") performed")
+	}
+	show_debug_message(" ")
 }

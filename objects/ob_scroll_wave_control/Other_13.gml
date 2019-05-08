@@ -1,5 +1,6 @@
 /// @desc Wave ended
-if waveNumber mod 2 = 0 {
+
+if waveNumber mod 1 = 0 {
 	with ob_road {
 		instance_change(ob_safehouse, true)
 		xx = (x * dx[0]) mod 600 + 1200
