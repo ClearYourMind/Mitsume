@@ -20,7 +20,7 @@ if not ob_transition_master.started {
 		if keysPressed[k.Pause] {
 			if varPos = 0 {
 				sc_play_sound(sn_select3, false)
-				sc_transition_start(sc_action_goto_room, room_next(room))
+				sc_transition_start()
 			}
 			if varPos = 1 {
 				varMode = md.wait

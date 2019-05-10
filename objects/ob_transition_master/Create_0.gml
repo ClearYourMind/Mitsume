@@ -10,7 +10,5 @@ color = 0
 dw = display_get_gui_width()
 dh = display_get_gui_height()
 
-action = noone
-arg = 0
-
+started = false
 performing = false

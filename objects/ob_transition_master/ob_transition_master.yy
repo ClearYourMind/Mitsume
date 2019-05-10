@@ -103,6 +103,48 @@
             "value": "noone",
             "varName": "action_on_finish",
             "varType": 5
+        },
+        {
+            "id": "094d0196-8120-417a-8583-88b3813035fd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "arg_on_start",
+            "varType": 0
+        },
+        {
+            "id": "6035c898-6501-4fc5-9b4c-f544daa47513",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "room_next(room)",
+            "varName": "arg_on_room_change",
+            "varType": 0
+        },
+        {
+            "id": "d617f872-7ad5-4710-9a06-452e2a74bc82",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "arg_on_finish",
+            "varType": 0
         }
     ],
     "solid": false,

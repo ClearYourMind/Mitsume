@@ -521,7 +521,7 @@
         {
             "Key": "20bd0b41-9c1a-4e88-b835-fad101557097",
             "Value": {
-                "id": "73fd95ab-7bab-46dd-914d-9c4acac5a053",
+                "id": "fc260de4-48ec-4407-abef-0051b016654d",
                 "resourcePath": "scripts\\sc_transition_start\\sc_transition_start.yy",
                 "resourceType": "GMScript"
             }
@@ -3291,11 +3291,11 @@
         "f47e0dc8-a59c-4acb-8cf2-bb77c95ac46b",
         "dc73f0b9-2299-4622-9503-599fa8487a02",
         "c04256de-99cf-4767-ba6b-384e6f9a75a5",
-        "20bd0b41-9c1a-4e88-b835-fad101557097",
         "bbb1ebdd-419b-46ed-b679-bb5f2cee576e",
         "b483a78f-c319-482b-8149-cd5708fc1247",
         "bf4c54f5-a5df-4017-a588-d99fc57599de",
         "1f4bb12a-839d-4f5b-a2d5-bdcadbaa10e1",
+        "20bd0b41-9c1a-4e88-b835-fad101557097",
         "48e0b616-d9fe-4717-aba8-c6c2be41e23c",
         "4ab3c4d4-69e1-43b9-b0b3-fbe48cc845c6",
         "5134204b-552d-4c07-bb54-d181bcff0e36",

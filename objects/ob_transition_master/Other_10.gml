@@ -8,8 +8,8 @@ if not started {
 	started = true
 	show_debug_message("Transition started")
 	if script_exists(action_on_start) {
-		script_execute(action_on_start, arg)
-		show_debug_message("Action " + script_get_name(action_on_start)+ " (arg = " + string(arg) + ") performed")
+		script_execute(action_on_start, arg_on_start)
+		show_debug_message("Action " + script_get_name(action_on_start)+ " (arg = " + string(arg_on_start) + ") performed")
 	}
 	show_debug_message(" ")
 }

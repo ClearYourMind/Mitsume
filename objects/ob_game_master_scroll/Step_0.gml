@@ -12,8 +12,8 @@ counter = (counter+1) mod 100000
 if sc_timeout_is_started(restartTime)
 if sc_timeout_over(restartTime) {
 	if lives>=0
-		sc_transition_start(sc_action_restart)
+		sc_transition_start([noone, sc_action_restart])
 	else
 		// game over
-		sc_transition_start(sc_action_exit_game)
+		sc_transition_start([noone, sc_action_exit_game])
 }
