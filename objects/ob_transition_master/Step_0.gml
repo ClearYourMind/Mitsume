@@ -10,10 +10,6 @@ if started {
 		if dAlpha < 0 {
 		// end
 			show_debug_message("Transition has finished")
-			if script_exists(action_on_finish) {
-				script_execute(action_on_finish, arg_on_finish)
-				show_debug_message("Action " + script_get_name(action_on_finish) + " (arg = " + string(arg_on_finish) + ") performed")
-			}
 			started = false
 			image_alpha = 0
 		} else {

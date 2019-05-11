@@ -33,6 +33,62 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "a3b68115-16ee-45e9-8ffd-657f02a8fd36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "noone",
+            "varName": "action_on_start",
+            "varType": 5
+        },
+        {
+            "id": "db23d474-6665-44fc-8253-234de64b6b9d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "sc_action_goto_room",
+            "varName": "action_on_room_change",
+            "varType": 5
+        },
+        {
+            "id": "4223b7bf-d37a-4e31-aa1b-6cdf96c05570",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "noone",
+            "varName": "action_on_finish",
+            "varType": 5
+        },
+        {
+            "id": "211c0ba0-7e89-455d-a7db-1e6f95f5d095",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "arg_on_start",
+            "varType": 0
+        },
+        {
             "id": "ef41fade-b5ac-4d6c-93c1-26978bb1b566",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -43,8 +99,22 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "room_next(room)",
-            "varName": "room_index",
-            "varType": 1
+            "varName": "arg_on_room_change",
+            "varType": 0
+        },
+        {
+            "id": "4cc83883-b376-42aa-98fb-5556b056e36f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "arg_on_finish",
+            "varType": 0
         }
     ],
     "solid": true,
