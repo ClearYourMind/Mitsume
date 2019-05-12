@@ -22,6 +22,6 @@ if tickerLine[l.visible] {
 		tickerLine[l.currenttext] =
 			string_copy(lines[tickerLine[l.currentline]], 1, tickerLine[l.currentlength])
 		
-		show_debug_message(" tickerLine = " + string(tickerLine[l.currentlength]))
+		//show_debug_message(" tickerLine = " + string(tickerLine[l.currentlength]))
 	}
 }

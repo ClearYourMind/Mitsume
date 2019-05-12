@@ -10,21 +10,23 @@ case sf.none:
 	if (xx < view_w)
 		phase = sf.scrollSlowdown
 	break
+	
 case sf.scrollSlowdown:
 	scrollSpeed *= power(0.775, dTime)
 
 	with ob_arrow_scroll
+	if instance_exists(flare)
 		flare.sparkleSpeedX = scrollSpeed
 	
 	if (xx < -128)
 		phase = sf.scrollSpeedup
 	break
+	
 case sf.scrollSpeedup:
-	with ob_scroll_wave_control
-		alarm_set(0, pauseTime) // pause between waves
 	if scrollSpeed > -150 {
 		scrollSpeed += -50 * dTime
 		with ob_arrow_scroll
+		if instance_exists(flare)
 			flare.sparkleSpeedX = scrollSpeed
 	} else
 		scrollSpeed = -150
@@ -33,8 +35,11 @@ case sf.scrollSpeedup:
 	if (xx < -600) {
 		instance_change(ob_road, true)
 		shopVisited = false
+		with ob_scroll_wave_control
+			alarm_set(0, pauseTime) // pause between waves
 	}
 	break
+	
 case sf.platformSlowdown:
 	if abs(scrollSpeed) > 2 {
 		scrollSpeed += 80 * dTime

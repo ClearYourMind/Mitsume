@@ -23,25 +23,26 @@ if argument_count = 0 {
 if argument_count>0 arg0 = argument[0]
 if argument_count>1 arg1 = argument[1]
 
-
-if array_length_1d(arg0) > 0
-if script_exists(arg0[0]) {
+if array_length_1d(arg0) > 0 {
 	ob_transition_master.action_on_start  = arg0[0]
 	if array_length_1d(arg1) > 0
 		ob_transition_master.arg_on_start = arg1[0]
-}
-if array_length_1d(arg0) > 1
-if script_exists(arg0[1]) {
+} else
+	ob_transition_master.action_on_start  = noone
+
+if array_length_1d(arg0) > 1 {
 	ob_transition_master.action_on_room_change  = arg0[1]
 	if array_length_1d(arg1) > 1
 		ob_transition_master.arg_on_room_change = arg1[1]
-}
-if array_length_1d(arg0) > 2
-if script_exists(arg0[2]) {
+} else
+	ob_transition_master.action_on_room_change = noone
+		
+if array_length_1d(arg0) > 2 {
 	ob_transition_master.action_on_finish  = arg0[2]
 	if array_length_1d(arg1) > 2
 		ob_transition_master.arg_on_finish = arg1[2]
-}
+} else
+	ob_transition_master.action_on_finish  = noone
 
 with ob_transition_master 
 	event_perform(ev_other, ev_user0) // start transition

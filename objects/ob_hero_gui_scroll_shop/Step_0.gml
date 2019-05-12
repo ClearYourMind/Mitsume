@@ -3,24 +3,6 @@ event_perform_object(ob_gui, ev_step, ev_step_normal)
 
 if not instance_exists(hero) exit
 
-
-if keysPressed[k.Pause] {
-	paused = not paused
-	sc_play_sound(sn_select, false)
-	if not paused {
-		instance_change(ob_hero_gui, false)
-		sc_gui_update(ob_hero_gui)
-		exit
-	}
-}
-
-if keysPressed[k.Down] {
-	sc_play_sound(sn_select4)
-	instance_change(ob_hero_gui_paused, false)
-	sc_gui_update(ob_hero_gui_paused)
-	exit
-}
-
 if keysPressed[k.Left] 
 if menuDx = 0 and not chosen {
 	sc_play_sound(sn_select2)
@@ -39,8 +21,9 @@ if menuDx = 0 {
 	var ok = false
 	if _item[item.type] = itemtype.exitshop {
 		sc_play_sound(sn_select3)
-		paused = false
-		instance_change(ob_hero_gui, false)
+		instance_change(ob_hero_gui_scroll, true)
+		sc_gui_update(ob_hero_gui_scroll)
+		sc_transition_start([noone, sc_action_goto_room, sc_action_return_to_scroll], [0, previousRoom])
 		ok = true
 	} else
 	if not _item[item.soldout] {

@@ -6,6 +6,7 @@ globalvar hero
 globalvar paused
 globalvar totalMaxSpeed
 globalvar debugstr
+globalvar previousRoom
 
 globalvar view_x
 globalvar view_y
@@ -37,6 +38,7 @@ paused = false
 
 totalMaxSpeed = 15 // pix per frame
 debugstr = ""
+previousRoom = -1
 
 view_xborder = camera_get_view_border_x(view_camera[0])
 view_yborder = camera_get_view_border_y(view_camera[0])
