@@ -23,13 +23,13 @@ case sf.scrollSlowdown:
 	break
 	
 case sf.scrollSpeedup:
-	if scrollSpeed > -150 {
+	if scrollSpeed > maxScrollSpeed {
 		scrollSpeed += -50 * dTime
 		with ob_arrow_scroll
 		if instance_exists(flare)
 			flare.sparkleSpeedX = scrollSpeed
 	} else
-		scrollSpeed = -150
+		scrollSpeed = maxScrollSpeed
 		
 	// destroy safehouse
 	if (xx < -600) {

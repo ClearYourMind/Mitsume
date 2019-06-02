@@ -5,7 +5,7 @@ scrollSpeed = 0
 
 ob_safehouse.phase = sf.scrollSpeedup
 
-with hero {
+with ob_heroparent {
 	accel = 350
 	maxspeedX = 85
 	maxspeedY = maxspeedYMove
